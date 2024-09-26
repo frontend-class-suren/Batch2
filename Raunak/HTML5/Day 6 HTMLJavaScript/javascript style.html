@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of javascript</title>
+   
+</head>
+<body>
+    <h2>Taste of javascript</h2>
+    <p id="text">click me to change the content</p>
+    <script>
+        function stylefunction() {
+          document.getElementById("text").style.fontSize = "25px"; 
+          document.getElementById("text").style.color = "red";
+          document.getElementById("text").style.backgroundColor = "yellow";        
+        }
+        function removefunction() {
+          document.getElementById("text").style.fontSize = "30px"; 
+          document.getElementById("text").style.color = "yellow";
+          document.getElementById("text").style.backgroundColor = "red";       
+
+        }
+    </script> 
+    <button  ondblclick="removefunction()" onclick="stylefunction()">Click me</button>
+  
+</body>
+</html>

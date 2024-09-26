@@ -1,0 +1,19 @@
+body{
+    background-color: thistle;
+}
+.exter{
+    background-image: url(https://img.freepik.com/premium-photo/serene-beach-landscape-with-minimal-color-palette-ai-generate-illustration_547674-13716.jpg);
+    color: skyblue;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+}
+.expara{
+    background-color: blanchedalmond;
+    text-align: center;
+    color: black;
+    margin-top: auto;
+    width: 400px;
+    height: 100px;
+    
+}

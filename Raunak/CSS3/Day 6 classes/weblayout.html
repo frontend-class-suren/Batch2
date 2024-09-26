@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header {
+        background-color: #a6a3a3;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .column {
+        float: left;
+        padding: 10px;
+      }
+
+      .column.side {
+        width: 25%;
+        border-left: 4px solid rgb(0, 0, 0);
+        border-right: 4px solid black;
+      }
+      .column.side ul,
+      li {
+        list-style-type: none;
+      }
+
+      .column.middle {
+        width: 50%;
+      }
+
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column.side,
+        .column.middle {
+          width: 100%;
+        }
+      }
+      .footer {
+        background-color: #c6c4c4;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Header</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">SERVICES</a>
+      <div class="log">
+        <img src="" alt="logo" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column side">
+        <h2>Side Content</h2>
+        <ul>
+          <li>Category 1</li
+          ><br />
+          <li>Category 2</li
+          ><br />
+          <li>Category 3</li
+          ><br />
+          <li>Category4</li
+          ><br />
+          <li>Category 5</li
+          ><br />
+          <li>Category 6</li
+          ><br />
+          <li>Category 7</li
+          ><br />
+          <li>Category 8</li
+          ><br />
+          <li>Category 9</li
+          ><br />
+          <li>Category 10</li
+          ><br />
+          <li>Category 11</li
+          ><br />
+          <li>Category 12</li
+          ><br />
+        </ul>
+      </div>
+
+      <div class="column middle">
+        <h2>Main Content</h2>
+        <p
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.</p
+        >
+        <p
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.</p
+        >
+      </div>
+
+      <div class="column side">
+        <h2>Recent Blogs</h2>
+        <ul>
+          <li>Category 1</li
+          ><br />
+          <img src="" alt="Ctimage" /><br />
+          <li>Category 2</li
+          ><br />
+          <li>Category 3</li
+          ><br />
+          <li>Category4</li
+          ><br />
+          <li>Category 5</li
+          ><br />
+          <li>Category 6</li
+          ><br />
+          <li>Category 7</li
+          ><br />
+          <li>Category 8</li
+          ><br />
+          <li>Category 9</li
+          ><br />
+          <li>Category 10</li
+          ><br />
+          <li>Category 11</li
+          ><br />
+          <li>Category 12</li
+          ><br />
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </body>
+</html>

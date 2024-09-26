@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in css</title>
+    <style>
+        input{
+            width: 20%;
+        }
+        input [placeholder]{
+            color: red;
+        }
+        input[type=number]{
+            background-color: aliceblue;
+            color: black;
+        }
+        input[type=email]:focus{
+             border: 8px solid rgb(91, 178, 254);
+             outline: none;
+             background-color: aliceblue;
+             color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your first name"><br>
+     <br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name"><br>
+    <br> <hr>
+    <label for="contact">Contact No.</label>
+    <input type="number" id="contact"><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="emailid"><br> <br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

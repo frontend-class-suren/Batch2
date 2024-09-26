@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <style>
+      .box {
+        float: left;
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(0, 136, 255);
+        /* box-shadow: 10px 10px 8px 10px lightblue; */
+      }
+      .box:hover{
+        box-shadow: 10px 10px 8px 10px lightblue ;
+    }
+    .box1{
+        float: right;
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: rgb(255, 174, 0);
+        /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */
+    }
+    .box1:hover{
+        box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="main">
+    <div class="box">
+        <h2>Shadow in the box</h2>
+      </div> <br>
+      <div class="box1">
+          <h2>Shadow</h2>
+      </div>
+  </div>
+  </body>
+</html>

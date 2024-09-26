@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(198, 200, 189);
+    color: rgb(0, 0, 0);
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+p{
+    background-color: rgb(255, 255, 255);
+    color: rgb(16, 15, 15);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 100%;
+    border: 5px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    border-top: 10px solid rgb(88, 88, 88);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left:10px ;
+    padding-right: 10px;
+}

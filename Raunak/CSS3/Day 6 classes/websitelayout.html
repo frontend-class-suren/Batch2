@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Website Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        padding: 24px;
+        background-color: darkgray;
+      }
+      nav {
+        justify-content: space-around;
+        display: flex;
+        background-color: darkslategray;
+      }
+      nav .menu ul {
+        list-style-type: none;
+        display: flex;
+      }
+      nav .menu ul > li {
+        padding: 10px;
+        color: aliceblue;
+      }
+      .container {
+        display: flex;
+      }
+      .container .column {
+        width: 33.33%;
+        margin: 10px;
+        border-right: 3px solid gray;
+        border-left: 3px solid gray;
+      }
+      .middle_column{
+        padding: 10px;
+      }
+      .middle_column p{
+        text-align: justify;
+      }
+      .container .column > ul {
+        list-style-type: none;
+        margin: 10px;
+      }
+      .container .column h3 {
+        text-decoration: underline;
+      }
+      .container .column ul > li {
+        padding: 10px;
+        text-align: start;
+      }
+      footer {
+        background-color: gray;
+        padding: 10px 10px;
+      }
+      footer h4 {
+        text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        .container .column{
+          width: 100%;
+          
+        }
+        .container {
+            display: block;
+        }
+        .container .column {
+        margin: 10px;
+        border-bottom: 3px solid gray;
+        border-left: none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My New Websites Using Css</h1>
+    </header>
+    <nav>
+      <div class="log">
+        <img src="" alt="Logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="column">
+        <h3>List of category</h3>
+        <ul class="list">
+          <li>Category1</li>
+          <li>Category2</li>
+          <li>Category3</li>
+          <li>Category4</li>
+          <li>Category5</li>
+          <li>Category6</li>
+        </ul>
+      </div>
+      <div class="middle_column">
+        <h1>This is first Category1 details of blog content</h1>
+        <div class="images">
+          <img src="" alt="content_image" />
+        </div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+          architecto provident officiis exercitationem odit, dolore quas animi
+          ipsa ullam, recusandae, accusamus libero? Error sit amet ea aperiam
+          libero nulla accusantium at rem aliquam praesentium corrupti quis,
+          harum recusandae, nobis porro nam. Voluptates accusantium pariatur rem
+          fugit rerum libero architecto ducimus, in vitae. Omnis dolore sed
+          molestias iure corrupti harum dolores hic illo porro itaque
+          exercitationem quibusdam perferendis tempora vitae eveniet nihil, quo
+          eligendi temporibus cumque facere! Doloribus voluptas culpa maiores
+          eveniet atque sunt ut qui corrupti voluptatum in laborum molestias
+          dolorem nihil quod praesentium maxime, distinctio perferendis earum
+          eum! Vero, hic? Quod natus officia corrupti, aut architecto a
+          consequatur deserunt! Aperiam quos maxime eos modi natus saepe omnis
+          sit blanditiis ducimus inventore eaque non totam dolorum, nostrum
+          harum commodi? Ab sit id suscipit quos! Quasi nemo labore dolor at
+          hic, sequi corporis sunt iure consectetur eius veritatis
+          exercitationem suscipit ipsam dolore aspernatur incidunt! Natus
+          aliquam, hic ducimus totam quibusdam deleniti repellendus adipisci
+          ipsum nobis deserunt voluptates quo, atque placeat molestias
+          laudantium nisi eum expedita beatae quos qui recusandae asperiores
+          autem. Fugit obcaecati, omnis esse autem eaque deserunt, molestias
+          odit in sed doloribus, non id cupiditate quae nesciunt dicta quibusdam
+          repellendus!
+        </p>
+      </div>
+      <div class="column">
+        <h3>Recent Blogs</h3>
+        <ul class="list-blogs">
+          <li>
+            <h4>Title of blogs</h4>
+            <img src="" alt="blogs_images" />
+          </li>
+          <li>
+            <h4>Title of blogs</h4>
+            <img src="" alt="blogs_images" />
+          </li>
+          <li>
+            <h4>Title of blogs</h4>
+            <img src="" alt="blogs_images" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <h4>Footer</h4>
+    </footer>
+  </body>
+</html>

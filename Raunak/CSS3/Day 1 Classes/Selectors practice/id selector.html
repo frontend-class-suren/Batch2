@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS id selectors</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        #head{
+            width: 700px;
+            height: 600px;
+            background-color: silver;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+        }
+        #left{
+            width: 300px;
+            height: 400px;
+            background-image: url(https://th.bing.com/th/id/OIP.PO6DY2_pU6bY1TlbnQdtQQHaHa?rs=1&pid=ImgDetMain);
+            background-position: -70px;
+            margin: 30px;
+            float: left;
+            border-radius: 30%;
+        }
+        #right{
+            width: 300px;
+            height: 300px;
+            background-color: peachpuff;
+            margin: 20px;
+            float: right;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head"><h2 id="header">Id selectors example</h2>
+        <div id="left"></div>
+        <div id="right">The id selector uses the id attribute of an HTML element to select a specific element.
+
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+        </div>
+    </div>
+</body>
+
+</html>

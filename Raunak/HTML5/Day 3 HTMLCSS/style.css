@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(204, 255, 0);
+    color: black;
+}
+h1{
+    color: rgb(78, 78, 86);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+p{
+    background-image: url(https://th.bing.com/th/id/OIP.VvQhAOdtPXNW5X07ePRTpgHaEK?rs=1&pid=ImgDetMain);
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 5, 5);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 5px dotted red;
+    border-radius: 5px;
+    border-top: 5px dashed yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}

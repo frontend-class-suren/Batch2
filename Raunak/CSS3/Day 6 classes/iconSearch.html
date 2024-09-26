@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search icon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      input[type="text"] {
+        width: 40%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url("https://th.bing.com/th/id/OIP.HNkYVQpTsntewfaemjPZtAHaHa?rs=1&pid=ImgDetMain");
+        background-position: 5px 2px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 10px 20px 12px 40px;
+      }
+      input[type="text"] {
+        transition: width 0.4s ease-in-out;
+      }
+      input[type="text"]:focus {
+        width: 100%;
+        background-color: aliceblue;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: aliceblue;
+        font-size: 16px;
+        resize: vertical;
+      }
+      select{
+        width: 20%;
+        padding: 10px;
+      }
+      input[type=button]{
+        background-color:blue;
+        color: rgb(255, 255, 255);
+        border: 4px solid blue;
+        font-size: 16px;
+      }
+      input[type=submit]{
+        background-color: green;
+        color: white;
+        border: 4px solid green;
+        font-size: 16px;
+      }
+      input[type=reset]{
+        background-color: red;
+        color: white;
+        border: 4px solid red;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Input field with an icon inside</h2>
+
+    <form>
+      <input type="text" name="search" placeholder="Search.." />
+    </form> <br>
+    <form>
+      <textarea>Text Me...</textarea>
+    </form><br>
+    <form>
+      <select id="Subject" name="Subject">
+        <option>Choose your Subject</option>
+      <option value="dsa">Data Structure and algorithm</option>
+      <option value="ai">Artificial Intelligence</option>
+      <option value="cn">Computer Network</option>
+      <option disabled value="toc">Theory of computation</option>
+      </select>
+      <br><br>
+      <input type="button" value="send">
+      <input type="submit" value="Submit">
+      <input type="reset" value="reset">
+     
+    </form>
+  </body>
+</html>

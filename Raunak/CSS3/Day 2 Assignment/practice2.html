@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="icon" type="image/x-icon" href="./favicon (2).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0eef2;
+        }
+
+        .header {
+            background-image: url(https://www.whiterocks.gr/wp-content/uploads/2023/01/SB_-40.jpg);
+            background-size: cover;
+            background-position: 5%;
+            color: rgb(255, 255, 255);
+            height: 600px;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            margin: 0;
+            margin-left: 2%;
+            float: left;
+            margin-top: 4%;
+        }
+
+        .header p {
+            margin-top: 7%;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .header button {
+            padding: 10px 20px;
+            background-color: #f04;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: left;
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+        .header button:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-right: 10%;
+            color: rgb(31, 161, 194);
+        }
+        .section-p{
+            text-align: center;
+            margin-right: -10%;
+        }
+
+        .grid-container {
+            margin-left: 10%;
+            width: 80%;
+            height: 10%;
+            background-size: 10%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+
+        .grid-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            margin-left: 3%;
+
+        }
+
+        .grid-item h3 {
+            margin: 10px 0;
+        }
+        .grid-item a:link {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+       }
+        .grid-item:visited {
+        color: rgb(0, 55, 255);
+        background-color: transparent;
+        text-decoration: none;
+     }
+
+    .grid-item a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .grid-item a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+        .container {
+            background-color: white;
+             display: flex;
+             margin: 5px;
+             width: 100%;
+             height: 50%;
+        }
+        .cont1,
+        h2 {
+            margin-left: 10%;
+       }
+       .left {
+         /* padding: 10px; */
+           display: flex;
+           flex: 1;
+           gap: 120px;
+           margin-left: 10%;
+           }
+
+          .left-1,
+          li, a{
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .left-2,
+        li, a{
+            text-decoration: none;
+        flex: 1;
+        padding: 5px;
+        }
+        #underline{
+            color: rgb(0, 70, 248);
+            padding: 2px;
+            text-decoration: none;
+        }
+        #underline:hover{
+            text-decoration: underline;
+        }
+        .container a:link {
+        color: rgb(0, 75, 237);
+        background-color: transparent;
+        text-decoration: none;
+       }
+       .container a:visited {
+        color: rgb(237, 22, 22);
+        background-color: transparent;
+        text-decoration: none;
+     }
+
+    .container a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .container a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+        .newsletter {
+            text-align: center;
+            margin-right: 10%;
+        }
+        .newsletter h2{
+            margin-right: 10%;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #f04;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .newsletter button:hover{
+            background-color: rgb(255, 142, 142);
+            color: black;
+        }
+
+        .discount-section {
+            background-image: url(https://www.wallpaperflare.com/static/809/65/229/coast-ocean-hills-outdoors-wallpaper.jpg);
+            background-size: cover;
+            color: white;
+            height: 700px;
+            background-position: 5%;
+            border-radius: 4px;
+        }
+        .discount-section h2{
+            font-size: 30px;
+            margin: 0;
+            margin-right: 5%;
+            float: right;
+            margin-top: 4%;
+        }
+        .discount-section p{
+            margin-top: 7%;
+            font-size: 20px;
+            float: right;
+           margin-right: 2%;
+           margin-left: 40%;
+           margin-top: 4%;
+        }
+        .discount-section button{
+            padding: 15px 20px;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+            margin-right: 8%;
+            margin-left: 30%;
+            margin-top: 2%;
+           background-color: rgb(0, 98, 196);
+            
+        }
+        .discount-section button:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .why-choose-us {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .why-choose-us p{
+            font-style: italic;
+        }
+
+        .why-choose-us h2 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-right: 10%;
+        }
+
+        .why-choose-us-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a:link {
+        color: rgb(0, 102, 255);
+        background-color: transparent;
+        text-decoration: none;
+       }
+       .footer a:visited {
+        color: rgb(46, 0, 198);
+        background-color: transparent;
+        text-decoration: none;
+     }
+
+    .footer a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .footer a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Travel</h1><br>
+        <p>Here are my favorite travel and adventure guides, paired with images from my journeys around the world.</p>
+        <a href="#t_details">
+             <button>Read more</button>
+        </a>
+    </div>
+
+    <div class="section-title">
+        <h2 id="t_details"></h2>
+        <h2>Start Your Journey</h2>
+        <p class="section-p"><i>The most searched countries in March</i></p>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://th.bing.com/th/id/R.236e7629e4430386687fcbfd1d1a7dff?rik=k%2f28h%2fRDYppiYA&riu=http%3a%2f%2fwww.greekboston.com%2fwp-content%2fuploads%2f2016%2f10%2fSantorini.jpg&ehk=P%2bTly70BJd8KLSob54r7hKmII77lfJunk8OqJCwAgVw%3d&risl=&pid=ImgRaw&r=0"
+                alt="Santorini_Greece">
+            <h3><i class="bi bi-geo-alt"></i> <a href="https://www.bing.com/maps?osid=63ecb03c-c1ba-415b-a225-98528c25aaf5&cp=36.414997~25.432491&lvl=16&pi=0&imgid=1c1eeeff-d2e1-48e5-8561-abc2ce814017&v=2&sV=2&form=S00027">Santorini, Greece</a></h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://th.bing.com/th/id/R.bc81dfba345c565bc35f038c411ba174?rik=nhfASo9xoQ5E6Q&pid=ImgRaw&r=0"
+                alt="Vernazza, Italy">
+            <h3><i class="bi bi-geo-alt"></i><a href="https://www.bing.com/maps?osid=10be1271-331b-41f1-afbe-8b94d2772f1f&cp=44.141783~9.696891&lvl=13.74&pi=0&imgid=c99bae1c-1543-4d31-b4ea-8873632308e1&v=2&sV=2&form=S00027"> Vernazza, Italy</a></h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://cdn20.patchcdn.com/users/22880695/20190129/114103/styles/T800x600/public/processed_images/san_francisco_sf_godlen_gate_at_nightshutterstock_170977130-1548780051-4748.jpg"
+                alt="San Francisco">
+            <h3><i class="bi bi-geo-alt"></i><a href="https://www.bing.com/maps?osid=6f5957a3-8076-412c-afed-f35b1d0a57ae&cp=37.783807~-122.513719&lvl=12.130216&pi=0&v=2&sV=2&form=S00027">San Francisco</a> </h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://static1.squarespace.com/static/57b9b98a29687f1ef5c622df/t/5810af1bff7c50b2d090bfdb/1477488425453/shipwreck+beach+zakynthos?format=1500w"
+                alt="Navagio, Greece">
+            <h3><i class="bi bi-geo-alt"></i> <a href="https://www.bing.com/maps?osid=96ace701-ddf1-416f-b581-9ebbc9ac2f85&cp=37.859472~20.614429&lvl=16&pi=0&imgid=2da76050-4cd7-4e01-ac5e-02776d66c862&v=2&sV=2&form=S00027">Navagio, Greece</a></h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://www.shutterstock.com/image-photo/railay-beach-krabi-thailand-tropical-600nw-2297372437.jpg"
+                alt="Ao Nang, Thailand">
+            <h3><i class="bi bi-geo-alt"></i><a href="https://www.bing.com/maps?osid=e2b2dcb5-86e3-408f-abfb-3c2d5c6984c7&cp=7.871116~98.809476&lvl=11.01&pi=0&imgid=ff878250-6121-49fb-8724-37307bf366b2&v=2&sV=2&form=S00027">Ao Nang, Thailand</a> </h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://smartcdn.gprod.postmedia.digital/vancouversun/wp-content/uploads/2018/12/0105-trav-front.jpg"
+                alt="Phi Phi Islands, Thailand">
+            <h3><i class="bi bi-geo-alt"></i><a href="https://www.bing.com/maps?osid=16b27353-cc26-4d4c-9f30-47a2815d9e5b&cp=7.733339~98.766639&lvl=16&pi=0&imgid=e176290c-bf04-4de6-aed8-4b065a6c8e72&v=2&sV=2&form=S00027"> Phi Phi Islands, Thailand</a></h3>
+        </div>
+    </div>
+
+ 
+    <div class="cont1">
+        <h2>Browse Tours By Activity</h2>
+      </div>
+      <div class="container">
+        <div class="left">
+          <div class="left-1">
+            <dd><a href="https://www.passportandpixels.com/nature-vacations-best-outdoors-holiday/" target="_blank" id="underline">Outdoor Activities</a></dd>
+            <br>
+            <dd><a href="https://wander-lush.org/cultural-trips-tourism-destinations/" target="_blank" id="underline">Cultural & Themed Tours</a></dd>
+            <br>
+            <dd><a href="https://www.viator.com/blog/Top-Family-Friendly-Activities-Around-the-World/l99475" target="_blank" id="underline">Family Friendly Tours</a></dd>
+            <br>
+            <dd><a href="https://travelohlic.com/21-best-seasonal-holidays-around-the-world/" target="_blank" id="underline">Holiday & Seasonal Tours</a></dd>
+             
+           </div>
+          <div class="left-2">
+            <dd><a href="https://city-tour.com/en/" target="_blank" id="underline">City Tours</a></dd><br>
+            <dd><a href="https://www.anantara.com/en/convento-di-amalfi?campid=8435708&gclid=b6054c59b1061ab635b12abe1b46effc&gclsrc=3p.ds&msclkid=b6054c59b1061ab635b12abe1b46effc" target="_blank" id="underline">Indulgence & Luxury Tours</a></dd><br>
+            <dd><a href="https://www.travelandleisure.com/trip-ideas/most-relaxing-peaceful-destinations-worldwide" target="_blank" id="underline">Relaxation Tours</a></dd><br>
+            <dd><a href="https://www.wildlifeworldwide.com/" target="_blank" id="underline">Wild & Adventure Tours</a></dd><br>
+
+        </div>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>Subscribe for updates & promotions</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Submit</button><br>
+            <br>
+            <i class="fa-brands fa-facebook"></i> | <i class="fa-brands fa-instagram"></i> | <i class="fa-brands fa-twitter"></i> | <i class="fa-brands fa-linkedin"></i> | <i class="fa-brands fa-discord"></i>
+        </div>
+        </div>
+    
+    <div class="discount-section">
+        <h2>Discount 10-30% Off</h2>
+        <br>
+        <p>Here are my favorite tour and adventure guides, paired places with images from my journeys around the world.
+        </p>
+        <a href="#s_details"> 
+            <button>See tours</button></a>
+       
+    </div>
+
+    <div class="why-choose-us">
+        <h2 id="s_details"></h2>
+        <h2>Why Choose Us</h2>
+        <p><i>The gladdest moment in human life, me thinks, is a departure into unknown lands.</i></p>
+        <div class="why-choose-us-grid">
+            <div class="grid-item">
+                <img src="https://herviewfromhome.com/wp-content/uploads/2019/10/shutterstock_697597147-600x600.jpg" alt="Beautiful Places">
+                <h3><a href="https://www.cntraveller.com/gallery/most-beautiful-places-in-the-world" target="_blank">Beautiful Places</a></h3>
+                <p>For refreshment</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://static3.depositphotos.com/1000188/102/i/950/depositphotos_1023267-stock-photo-nice-legs-in-water.jpg" alt="Passionate Travel">
+                <h3>Passionate Travel</h3>
+                <p>Travel with your family</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://img.freepik.com/premium-photo/sea-beach-with-sky_987694-425.jpg" alt="Amazing Guides">
+                <h3>Amazing Guides</h3>
+                <p>Proper guides facilities</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p> 2024 Travel.co | All rights reserved.</p>
+        <p>Follow us: <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com" target="_blank">Instagram</a> | <i class="fa-brands fa-twitter"></i><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position sticky</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            width: 100%;
+        }
+        /* this is  a parent container of left and right container. */
+        .banner{
+            position: relative;
+        }
+        .top_left{
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            padding: 20px;
+            color: white;
+
+        }
+        .top_right{
+            position: absolute;
+            width: 100px;
+            top: 20px;
+            right: 20px;
+        }
+        .top_right button{
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+        .top_right button:hover{
+            background-color: blanchedalmond;
+            color: black;
+        }
+
+        .nav {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .nav,
+        ul,
+        li {
+            list-style-type: none;
+            color: rgb(210, 66, 30);
+
+        }
+
+        ul,
+        li,
+        a {
+
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        nav,
+        ul {
+            display: flex;
+            
+        }
+        .about
+        {
+            width: 50%;
+            height: 50px;
+        }
+        .about :left{
+            width: 40%;
+            height: 50px;
+        }
+        .about :right{
+            width: 40%;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="https://img.freepik.com/free-vector/flat-design-minimal-technology-sale-banner_23-2149113342.jpg"
+            alt="banner_image">
+            <h2 class="top_left">This is left top content</h2>
+            <h2 class="top_right">
+                <button>About Us</button>
+            </h2>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Services</a></li>
+        </ul>
+    </div>
+    <div class="about">
+        <div class="left">
+            <h3>What is web development</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolor animi quod blanditiis commodi
+                saepe magni tempore. Quaerat id magni voluptate corrupti temporibus omnis aperiam doloremque
+                consequuntur sequi provident tempora illum, adipisci, maiores corporis repudiandae sapiente totam
+                obcaecati sit aspernatur voluptatum soluta odit. Obcaecati odio non iusto unde ipsum quam maiores velit
+                doloremque, fugit voluptates harum ut alias voluptatibus inventore. Recusandae illo neque atque
+                consequatur temporibus fuga perspiciatis optio saepe minus magni sint, impedit reiciendis unde dolorem.
+                Nemo quae sapiente repudiandae itaque amet iure perspiciatis optio, dicta vitae necessitatibus ad
+                praesentium numquam mollitia sit, officiis quibusdam id totam adipisci aut? Quam magnam dolorem iste eos
+                laborum velit tenetur omnis voluptas ad, necessitatibus rerum laudantium in distinctio? Possimus, cumque
+                laboriosam quae facilis amet enim, vel officia nihil est nemo deleniti molestiae vero, quos cum libero?
+                Possimus sint quasi, exercitationem corrupti, ipsam eaque ratione pariatur quibusdam iure autem modi
+                atque quo velit necessitatibus tenetur dignissimos vel. Temporibus maiores tempora eligendi, consectetur
+                libero ipsa delectus voluptatem? Rerum quibusdam distinctio, officia non iste fugit dolor saepe omnis
+                doloremque numquam cupiditate ratione animi quisquam iure illo maiores aliquam delectus nemo magni
+                voluptatibus quasi porro nisi quis! Aut eos architecto eius non sequi nisi perspiciatis officia.</p>
+        </div> <br>
+        <div class="right">
+            <h3>What are its important?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corporis illum, quod velit veritatis
+                vel temporibus sit id ad culpa reprehenderit atque commodi aperiam quia tenetur autem placeat sed.
+                Laudantium possimus facilis totam? Veniam praesentium quas dolorem corrupti earum voluptatibus, quis ut,
+                voluptatem numquam velit eligendi veritatis beatae minima alias. Ipsum autem exercitationem odio maiores
+                numquam cum sunt nostrum et earum eligendi dolorem, cupiditate unde nam velit ducimus tenetur magnam rem
+                quam. Quod deleniti totam aperiam assumenda consectetur quia molestiae corrupti laboriosam, atque,
+                dolorum non rerum, molestias porro. Autem sequi perferendis esse tenetur, veritatis explicabo velit
+                sapiente facere id corporis quam totam vero natus doloribus quos necessitatibus voluptates eos enim cum
+                assumenda eum saepe molestiae est? Iste optio voluptates perferendis eos autem veniam, odio sapiente,
+                dolores at provident earum quaerat quo eum iusto nobis ab veritatis tempora, id placeat laborum quae.
+                Ipsa, quae enim? Ratione a dolores sunt totam pariatur quisquam? Doloribus sit fugiat aspernatur
+                incidunt! Eveniet illo quia facere ipsum, exercitationem eum? Sit dignissimos, voluptates officia alias
+                neque nihil repellendus voluptatibus quas ad. Corrupti perferendis consequuntur quasi omnis
+                necessitatibus soluta debitis eum obcaecati tempora doloremque eius nulla amet nisi iste fugit illum
+                est, pariatur nesciunt? Vel distinctio repellat facilis?</p>
+        </div>
+        <div class="image">
+            <div class="leftimage">
+                <img src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg" alt="tech_image">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

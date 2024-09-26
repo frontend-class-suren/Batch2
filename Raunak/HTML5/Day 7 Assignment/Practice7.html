@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Novell Services Login</h2>
+    <form action="">
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Enter Username"><br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="text" placeholder="Enter password"><br>
+        <br>
+        <label for="city">City of Employment:</label>
+        <input type="text" placeholder="Enter City"><br>
+        <br>
+        <label for="server">Web server:</label>
+        <select id="server" name="server">
+            <option value="" disabled selected>-- Choose a server --</option>
+            <option value="server1">Server 1</option>
+            <option value="server2">Server 2</option>
+        </select><br><br> 
+        <p>Please specify your role</p>
+        <label for="admin"></label>
+        <input type="radio" id="admin" name="role"><span>Admin</span>
+        <br>
+        <label for="engineer"></label>
+        <input type="radio" id="engineer" name="role"><span>Engineer</span>
+        <br>
+        <label for="manager"></label>
+        <input type="radio" name="role" id="manager"><span>Manager</span>
+        <br>
+        <label for="guest"></label>
+        <input type="radio" name="role" id="guest"><span>Guest</span>
+        <br>
+        <p>Single Sign-on to the following:</p>
+        <label for="mail"></label>
+        <input type="checkbox" name="sso" id="mail"><span>Mail</span>
+        <br>
+        <label for="payroll"></label>
+        <input type="checkbox" name="sso" id="payroll"><span>Payroll</span>
+        <br>
+        <label for="selfservice"></label>
+        <input type="checkbox" name="sso" id="selfservice"><span>Self-service</span>
+        <br>
+        <br>
+        <input type="reset" value="Login">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

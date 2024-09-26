@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of time table</title>
+    <style>
+        table,
+        th,
+        td{
+            border: 1px solid rgb(122, 122, 122);
+            text-align: center;
+            border-style: inset;
+        }
+        caption{
+            color: rgb(58, 58, 224);
+        }
+        table{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Time Table</caption>
+        <tr>
+            <th rowspan="3" colspan="2">Day</th>
+            <th colspan="5">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2" colspan="3">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">Monday</td>
+            <td rowspan="2" style="background-color: lightyellow;">8:00 a.m.</td>
+            <td rowspan="2" style="background-color: mediumpurple;">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity : DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="2">Tuesday</td>
+            <td style="background-color: lightyellow;">8:00 a.m.</td>
+            <td style="background-color: lightyellow;">11:00 p.m.</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td style="background-color: lightyellow;">11:00 a.m.</td>
+            <td style="background-color: lightgreen;">2:00 p.m.</td>
+        </tr>
+        <tr>
+            <td style="background-color: lightgreen;">2:00 p.m.</td>
+            <td style="background-color: mediumpurple;">5:00 p.m.</td>
+            <td>XSL Transformation</td>
+        </tr>
+        <tr>
+            <td colspan="2">Wednesday</td>
+            <td style="background-color: lightyellow;">8:00 a.m.</td>
+            <td style="background-color: lightgreen;">12:00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
