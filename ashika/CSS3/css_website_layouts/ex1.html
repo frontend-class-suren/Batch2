@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Website Layout</title>
+  <style>
+    *{
+      box-sizing:border-box ;
+      /* margin: 0; */
+      /* padding: 0; */
+    }
+    header{
+      text-align: center;
+      padding: 25px;
+      background-color: darkgray;
+    }
+    nav{
+      justify-content: space-around;
+      display: flex;
+      background-color: darkslategray;
+    }
+    nav .menu ul{
+      list-style-type: none;
+      display: flex;
+    }
+    nav .menu ul>li{
+      padding: 10px;
+      color: white;
+    }
+    div .container{
+      display: flex;
+    }
+    div .left{
+      background-color: darkgray;
+      width: 20%;
+      height: 500px;
+      /* margin-left: -2px; */
+      text-align: center;
+      list-style-type: none;
+      margin-top: -15px;
+      border-left: 5px solid black;
+      border-left: 5px solid black;
+
+
+    }
+    div .main{
+      background-color: darkgray;
+      width: 59%;
+      height: 500px;float:center;
+      margin-top: -518px;
+      margin-left: 310px;
+      text-align: center;
+      list-style-type: none;
+      border-left: 5px solid black;
+      border-right: 5px solid black;
+
+    }
+    div .right{
+      background-color: darkgray;
+      width: 20%;
+      height: 500px;
+      float: right;
+      margin-top: -500px;
+      text-align: center;
+    list-style-type: none;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+
+    }
+  .list{
+      list-style-type: none;
+    }
+    footer{
+      text-align: center;
+      padding: 25px;
+      background-color: darkgray;
+      margin-top: 10px;
+    }
+    body{
+      background-color:rgb(219, 114, 114);
+    }
+     @media screen  and (max-width: 600px) {
+      .container .left .right{
+        width: 100%;
+      }
+      .container{
+        display: block;
+      
+      }
+      .container .left .right{
+        margin: 10px;
+        border-bottom: 3px solid black;
+        border-left: none;
+      }
+      /* .container .right{ */
+        /* width: 100%; */
+      /* } */
+     }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h2>MY NEW WEBSITE USING CSS</h2>
+  </header>
+  <nav>
+    <div class="logo">
+      <img src="" alt="logo">
+    </div>
+    <div class="menu">
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li> Services</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="left">
+      <h3>List of catagory</h3>
+      <ul class="list">
+        <li>catagory1</li>
+        <li>category2</li>
+        <li>category3</li>
+        <li>category4</li>
+        <li>category5</li>
+        <li>category6</li>
+        <li>category7</li>
+        <li>category8</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h3>Recent Blogs</h3>
+      <ul class="list">
+        <li>catagory1</li>
+        <li>category2</li>
+        <li>category3</li>
+        <li>category4</li>
+        <li>category5</li>
+        <li>category6</li>
+        <li>category7</li>
+        <li>category8</li>
+      </ul>
+    </div>
+    <div class="right">
+      <h3>title of blogs</h3>
+      <ul class="list">
+        <li>catagory1</li>
+        <li>category2</li>
+        <li>category3</li>
+        <li>category4</li>
+        <li>category5</li>
+        <li>category6</li>
+        <li>category7</li>
+        <li>category8</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <footer>
+      <h4>footer</h4>
+    </footer>
+  </div>
+</body>
+</html>

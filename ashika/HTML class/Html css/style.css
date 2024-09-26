@@ -1,0 +1,22 @@
+body{
+  background-color: beige;
+  
+}
+h1{color:violet;
+font-family: italy;
+font-size: 60px;}
+h2{
+  background-color: blue;
+  color:brown
+}
+p{
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfrWZydnu6Qn0ayNbqIJXCJroStbpUsQN6g&s);
+  color:aliceblue;
+  border: 5px dotted red;
+  border-radius:10px ;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 100px;
+  padding:50px;
+  border-bottom: 5px dashed black;
+  border-left:5px solid blue;
+}

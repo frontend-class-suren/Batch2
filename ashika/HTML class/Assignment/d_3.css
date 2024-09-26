@@ -1,0 +1,48 @@
+body{
+  background-image:url(https://assets.architecturaldigest.in/photos/64f84cc61d4896b633fba77a/master/w_1600%2Cc_limit/The%2520art%2520deco%2520inspired%2520de%25CC%2581cor%2520of%2520CIRQA%25201960%2520.jpg
+  ) ;
+}
+h1,p{
+  color: white;
+}
+h1{
+  font-size:  100px;;
+}
+p{
+  font-size: 25px;
+  font-family: serif;
+  font-weight: bolder;
+}
+
+div{
+  border: 5px solid beige;
+  border-radius:7px;
+  margin:10px;
+  padding: 15px;
+  border-right: 5px solid red;
+  border-left: 5px solid red;
+}
+a:link{
+  color: green;
+   background-color: transparent;
+   text-decoration: none;
+ }
+ 
+ a:visited {
+   color: pink;
+   background-color: transparent;
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   color: red;
+   background-color: transparent;
+   text-decoration: underline;
+ }
+ 
+ a:active {
+   color: yellow;
+   background-color: transparent;
+   text-decoration: underline;
+ }
+

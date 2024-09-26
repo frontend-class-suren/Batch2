@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>My First JavaScript</h1>
+
+<p id="style">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function styleFunction() {
+  document.getElementById("style").style.fontSize = "25px"; 
+  document.getElementById("style").style.color = "red";
+  document.getElementById("style").style.backgroundColor = "yellow";        
+}
+function removeStyle() {
+  document.getElementById("style").style.fontsize="15px";
+  document.getElementById('style').style.color = "black";
+  document.getElementById('style').style.backgroundColor = "red"; 
+
+}
+</script>
+
+<button ondblclick="removeStyle()" onclick="styleFunction()">Click Me!</button>
+
+</body>
+</html>

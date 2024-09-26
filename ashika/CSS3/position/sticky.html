@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky position in nav bar</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    /* this is a parent container container of left and right child container */
+    .banner{
+      position: relative;
+    }
+    /* start here child contaiiner as top left and top right */
+    .topleft{
+      position: absolute;
+      top: 20px;
+      left: 60px;
+      color: white;
+font-weight: 600;
+    }
+    .top_right{
+      position:absolute;
+      top: 20px;
+      right:60px ;
+      color: aliceblue;
+      background-color: beige;
+      color: blue;
+      
+
+    }
+    .nav{
+      background-color: black;
+      position: sticky;
+      top: 0;
+    
+    }
+    .nav,ul,li{
+     display: flex;
+    padding:20px
+    
+    }
+    .nav,a{
+      text-decoration: none;
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img src="https://cdn.prod.website-files.com/5e0f1144930a8bc8aace526c/65dd33d49a346d9be0b075ea_65dd12fa299e167d189f00f7-fed9c2116dfcf56370cea3063f4e88fa.jpeg" alt="This is banner image">
+ <h2 class="topleft">THis is a top-left content</h2>
+<h2 class="top_right">
+  <button>About us</button>
+</h2> 
+</div>
+<div class="nav">
+  <ul>
+    <li>
+      <a href="http:\\" target="_blank" rel="noopener noreferrer">Home</a>
+    </li>
+    <li>
+      <a href="http:\\" target="_blank" rel="noopener noreferrer">About Us</a>
+    </li>
+    <li> <a href="http:\\" target="_blank" rel="noopener noreferrer">Service</a></li>
+    <li> <a href="http:\\" target="_blank" rel="noopener noreferrer">Contact us</a></li>
+  </ul>
+</div>  
+<div class="about">
+  <div class="left">
+
+  </div>
+</div>
+  
+
+</body>
+</html>

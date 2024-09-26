@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box shadows</title>
+  <style>
+    .p-box{
+      width: 21%;
+      background-color: blue;
+      position: relative;
+      padding: 5px;
+      height: 20vh;
+    }
+    .box{
+      /* position: absolute; */
+      padding: 20px;
+      background-color: bisque;
+      /* box-shadow: 10px 10px; */
+      width: 20%;
+      /* height: 20vh; */
+      margin: 10px;
+      border-radius: 6px;
+    }
+    .box:hover{
+box-shadow: 10px 10px 5px 8px lavender;
+    }
+    .box1{
+       /* position: absolute;  */
+      padding: 20px;
+      background-color: rgb(153, 118, 76);
+      width: 20%;
+      margin: 10px;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+    .main{
+      display: flex;
+      position: relative;
+    }
+    .box1:hover{
+      box-shadow: 10px 10px  lavender, 10px 10px red, 10px 10px black;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h4>Shadow</h4>
+  </div>
+ <div class="main">
+  <div class="box1">
+    Shadow
+  </div>
+ </div>
+</body>
+</html>

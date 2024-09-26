@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown</title>
+  <style>
+    .dropdown{
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown_content{
+      display: none;
+      position: absolute;
+      background-color: cornsilk;
+      color: gray;
+      min-width:240px;
+      padding: 5px 10px;
+      z-index: 1;
+    }
+    .dropdown_content ul li{
+      border: 1px solid red;
+    }
+    .dropdown:hover .dropdown_content{
+      display: block;
+    }
+    span{
+      background-color: aquamarine;
+      padding: 12px 16px;
+      color: white;
+    }
+    ul{
+      list-style-type: none;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <span>Menu</span>
+    <div class="dropdown_content">
+      <ul>
+        <li>gallery</li>
+        <li>blogs</li>
+        <li>media</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

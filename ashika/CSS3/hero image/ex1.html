@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero image of slider</title>
+  <style>
+    .hero-img{
+      background: url(https://cdn.sweetescape.com/misc/home/pg_guarantee/img_pg-guarantee.jpg) no-repeat center fixed;
+      background-size: cover;
+      height: 550px;
+      position: relative;
+      /* opacity: 0.6; */
+    }
+    .hero-text{
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 20%;
+  transform: translate(-50%, -50%);
+  color: rgb(18, 17, 17);
+    }
+    .hero-text button{
+padding: 5px 8px;
+font-size: 18px;
+font-weight: 700;
+background-color: red;
+color: white;
+border: none;
+border-radius: 15px;
+}
+.hero-text button:hover{
+background-color: blue;
+/* color: white; */
+border: 3px solid black;
+}
+@media screen and(max-width:600px){
+  .hero-text{
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(18, 17, 17); 
+}
+}
+  </style>
+</head>
+<body>
+  <h1>Hero image for slider</h1>
+  <div class="hero-img">
+    <div class="hero-text">
+      <h1>Title for image</h1>
+      <h3>Sub-title for image</h3>
+      <button>Hire Me😊!</button>
+    </div>
+
+  </div>
+</body>
+</html>
