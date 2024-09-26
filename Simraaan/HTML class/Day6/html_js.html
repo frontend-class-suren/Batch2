@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JS</title>
+    <style>
+        #demo{background-color: aquamarine;
+        color: blue;}
+    </style>
+</head>
+<body>
+    <h1>HTML JAVA SCRIPT</h1>
+    <p id="style">JS can change the style of an element.</p>
+    <script>
+        function styleFunction(){
+            document.getElementById("style").style.fontSize="15px";
+            document.getElementById("style").style.color="red";
+            document.getElementById("style").style.backgroundColor="green";
+        }
+        function removeStyle(){
+            document.getElementById("style").style.fontSize="15px";
+            document.getElementById("style").style.color="black";
+            document.getElementById("style").style.backgroundColor="white";
+    
+        }
+    </script>
+    <!-- <button onclick="document.getElementById('demo').innerHTML =Date()">Click me to display todays date</button> -->
+     <button ondblclick="removeStyle()" onclick="styleFunction()">Click Me !</button>
+    <div>
+        <p id="style"></p>
+    </div>
+</body>
+</html>

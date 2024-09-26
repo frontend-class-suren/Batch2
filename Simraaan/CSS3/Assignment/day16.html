@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Opportunity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .body {
+            width: 100%;
+            position: relative;
+            /* background-color: antiquewhite; */
+            height: 700px;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F029%2F771%2F969%2Flarge_2x%2Fportrait-of-a-handsome-businessman-in-modern-office-asian-manager-looking-at-camera-and-smiling-confident-male-ceo-planning-and-managing-company-strategy-free-photo.jpeg&f=1&nofb=1&ipt=a33e18c060990249f91aff00940aa929fb109c3d33a7753e424ab578b120b0c2&ipo=images);
+            background-clip: padding-box;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            text-shadow: 5px 5px 7px rgb(19, 18, 18);
+
+            height: 15vh;
+            /* background-color: beige; */
+            justify-content: space-between;
+            /* text-align: center; */
+            /* border-bottom: 5px solid rgb(11, 196, 196);
+            box-shadow: 10px 0px rgb(11, 196, 196) ; */
+        }
+
+        .nav1 {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-size: 38px;
+            text-align: center;
+            margin-left: 50px;
+            color: white;
+            font-weight: bolder;
+            /* border-bottom: 2px solid rgb(11, 196, 196);
+            box-shadow: 5px 0px 10px rgb(11, 196, 196) ; */
+        }
+
+        .nav2 {
+            width: 55%;
+            /* height: 15vh; */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-size: 38px;
+            text-align: center;
+            /* margin-right: 20px; */
+            color: white;
+            font-weight: bold;
+            /* border-bottom: 2px solid rgb(11, 196, 196);
+            box-shadow: 5px 0px 10px rgb(11, 196, 196) ; */
+        }
+
+        hr {
+            color: #1aa7dd;
+            box-shadow: 5px 0px 10px rgb(11, 196, 196);
+        }
+
+        .list {
+            /* position: absolute; */
+            width: 23%;
+            float: right;
+            height: 80vh;
+            background-color: #1aa7dd;
+            margin-right: 2%;
+
+        }
+
+        .listcon {
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+
+        .list1 {
+            display: grid;
+            width: 80%;
+            height: 25pc;
+            margin-left: 2pc;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            /* width: 10%; */
+            height: 6vh;
+            padding: 10px;
+            /* border: 1px solid rgb(196, 131, 131); */
+            font-size: 20px black;
+        }
+
+        .list1 button {
+            height: 8vh;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            font-weight: 30;
+            border: 1px solid rgb(158, 142, 142);
+        }
+
+        .list1 button:hover {
+            box-shadow: 5px 5px 10px white;
+            transform: scale(1.001);
+        }
+
+        input[type="text"] input[type="email"] input[type="tel"]:hover {
+            border: 1px solid black;
+
+        }
+
+        .content {
+            width: 50%;
+            margin-left: 9pc;
+            margin-top: 13pc;
+            height: 10pc;
+            position: absolute;
+            color: white;
+            text-align: justify;
+            font-size: 1.7pc;
+            text-shadow: 4px 4px 2px rgb(41, 39, 39);
+        }
+
+        .second {
+            /* justify-content: center; */
+            width: 100%;
+            height: 29pc;
+            /* background-color: palegoldenrod; */
+            padding: 5pc;
+            text-align: center;
+            font-size: larger;
+        }
+
+        .blank {
+            width: 20%;
+            height: 0%;
+            margin-left: 28.5pc;
+
+        }
+
+        .blank hr {
+            color: #1aa7dd;
+            box-shadow: none;
+        }
+
+        .second button {
+            width: 15pc;
+            padding: 1.2pc;
+            border: 1px solid black;
+            font-size: large;
+            background-color: white;
+        }
+
+        .second button:hover {
+            background-color: #1aa7dd;
+            color: white;
+        }
+
+        .third {
+            width: 100%;
+            height: 24pc;
+            background-color: #1aa7dd;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .co1 {
+            width: 29%;
+            height: 20pc;
+            background-color: #1aa7dd;
+            margin: 2pc;
+            text-align: center;
+            padding: 4pc;
+
+        }
+        .co1:hover{
+            box-shadow: 7px 7px 7px 5px rgb(53, 51, 51);
+            transform: scale(1.001);
+        }
+
+        .co2 {
+            width: 29%;
+            height: 20pc;
+            background-color: #1aa7dd;
+            margin: 2pc;
+            text-align: center;
+            padding: 4pc;
+        }
+        .co2:hover{
+            box-shadow: 7px 7px 7px 5px rgb(53, 51, 51);
+            transform: scale(1.001);
+        }
+
+        .co3 {
+            width: 29%;
+            height: 20pc;
+            background-color: #1aa7dd;
+            margin: 2pc;
+            text-align: center;
+            padding: 4.4pc;
+        }
+        .co3:hover{
+            box-shadow: 7px 7px 7px 5px rgb(53, 51, 51);
+            transform: scale(1.001);
+        }
+
+        .third i {
+            /* background-size: 20px; */
+            background-color: white;
+            font-size: xxx-large;
+            padding: 20px;
+
+        }
+
+        .co3 i {
+            font-weight: bolder;
+            font-size: xx-large;
+            padding: 27px;
+        }
+
+        .third h1 {
+            color: white;
+        }
+
+        .forth {
+            width: 100%;
+            /* height: 48pc; */
+            /* background-color: white; */
+        }
+
+        .box1 {
+            width: 100%;
+            height: 25pc;
+            /* background-color: aliceblue; */
+            display: flex;
+        }
+
+        .b1 {
+            width: 100%;
+            height: 25pc;
+            /* background-color: antiquewhite; */
+            display: flex;
+        }
+
+        .box1 .img {
+            width: 70%;
+            height: 25pc;
+            /* background-color: azure; */
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F027%2F852%2F601%2Flarge_2x%2Fhandsome-business-couple-in-office-free-photo.jpg&f=1&nofb=1&ipt=980efaaa57611122ffcca4b04cc4b2074bfae0317404a6cc8efaabd95c56035d&ipo=images);
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            margin-left: 13pc;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 25pc;
+            /* background-color: aliceblue; */
+            display: flex;
+        }
+
+        .box2 .img {
+            width: 70%;
+            height: 25pc;
+            /* background-color: azure; */
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixahive.com%2Fwp-content%2Fuploads%2F2020%2F10%2FBoss-happy-with-the-employee-work-130932-pixahive.jpg&f=1&nofb=1&ipt=862b2b71c933e306e7a102f8a23bc1e3c1099164ee44c5bede44deb17fe81b01&ipo=images);
+            background-size: cover;
+
+        }
+
+        .content5 {
+            width: 85%;
+            margin-left: 2pc;
+            /* justify-content: space-around; */
+            padding: 20px;
+            margin-top: 1pc;
+            height: 25pc;
+
+        }
+
+        .content5 button {
+            height: 8vh;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            width: 45%;
+            font-weight: 30;
+            border: 1px solid rgb(158, 142, 142);
+
+        }
+
+        .box2 button {
+            width: 57%;
+
+        }
+
+        .content5 button:hover {
+            box-shadow: 5px 5px 10px #1aa7dd;
+            transform: scale(1.004);
+        }
+
+        .box2 .content5 {
+            width: 85%;
+            margin-left: 12pc;
+            /* justify-content: space-around; */
+            padding: 20px;
+            margin-top: 1pc;
+            height: 25pc;
+
+        }
+
+        .content5 h1 {
+            color: #1aa7dd;
+            font-size: 35px;
+        }
+
+        .content5 p {
+            font-size: large;
+        }
+
+        .fifth {
+            width: 100%;
+            height: 27pc;
+            background-color: #1aa7dd;
+        }
+
+        .box3 {
+            height: 15pc;
+        }
+
+        .box3 img {
+            background-color: white;
+            width: 14%;
+            margin-top: 1.3pc;
+            /* justify-content: center; */
+            margin-left: 36pc;
+        }
+        .con5{
+            width: 75%;
+            text-align: center;
+            margin-left: 11pc;
+            color: white;
+        }
+        footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 40px 0;
+            font-size: larger;
+        }
+        .box3 img:hover{
+            /* box-shadow: 1px 1px 1px 1px rgb(241, 234, 234); */
+            transform: scale(2.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="nav">
+            <div class="nav1">Employment Opportunity</div>
+            <div class="nav2">For any enquiries, call us: 800.123.9876</div>
+        </div>
+        <hr>
+        <div class="list">
+            <div class="listcon">
+                <h1>GET STARTED</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia libero dolorum sequi eius obcaecati
+                    totam, quisquam culpa ratione nihil nam.</p>
+            </div>
+            <div class="list1">
+                <input type="text" placeholder="FIRST NAME">
+                <input type="text" placeholder="LAST NAME">
+                <input type="email" name="" id="" placeholder="EMAIL">
+                <input type="tel" placeholder="PHONE" name="" id="">
+                <input type="text" placeholder="ZIP CODE" name="" id="">
+                <br><button type="submit">SEND A MESSAGE</button>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Real Opportunities,</h2><br>
+            <h1>Everyday Possibilities.</h1><br>
+            <h3>OPPOUTUNITIES FOR A BRIGHT FUTURE.</h3>
+        </div>
+    </div>
+    <div class="second">
+        <h1 style="color: #1aa7dd;">A Little Bit About Us</h1>
+        <h3 style="font-weight: 20px; color: rgb(75, 73, 73);">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Incidunt ea veritatis nostrum.</h3>
+        <br>
+        <div class="blank">
+            <hr>
+        </div><br>
+        <p style="font-weight: 20px; color: rgb(36, 35, 35);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Harum labore minus iusto eligendi pariatur
+            dignissimos quasi quas suscipit veritatis optio. Quasi repellat iusto molestiae cupiditate molestias debitis
+            libero laudantium nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illo et
+            necessitatibus doloribus pariatur ratione deserunt aut qui perspiciatis exercitationem aliquam autem
+            nostrum, libero nesciunt fugit quos unde distinctio amet a officia.
+        </p>
+        <br><br>
+        <button type="button">LEARN MORE</button>
+    </div>
+    <div class="third">
+        <div class="co1">
+            <i class="bi bi-graph-up-arrow"></i>
+            <br><br><br>
+            <h1>Growth</h1>
+            <p style="font-size: large; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                fuga, consequuntur at
+                quaerat natus.</p>
+
+        </div>
+        <div class="co2">
+            <i class="bi bi-book"></i>
+            <br><br><br>
+            <h1>Learning</h1>
+            <p style="font-size: large; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                fuga, consequuntur at
+                quaerat natus.</p>
+
+        </div>
+        <div class="co3">
+            <i>>></i>
+            <br><br><br><br>
+            <h1>Challenge</h1>
+            <p style="font-size: large; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                consequuntur at
+                natus.</p>
+
+        </div>
+    </div>
+    <div class="forth">
+        <div class="box1">
+            <div class="b1">
+                <div class="img"></div>
+            </div>
+
+            <div class="b1">
+                <div class="content5">
+                    <h1>Be Yourself, Be Challenged</h1><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima nostrum provident ratione
+                        tempore accusamus commodi consectetur alias quae vel, quas asperiores voluptas quibusdam
+                        consequatur assumenda veniam. Fugit odio ex esse nulla corporis assumenda repellendus error a
+                        cupiditate dolore, qui fuga placeat natus dolorum nam ipsum, modi minima voluptate illum?</p>
+                    <br><br>
+                    <button type="button">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="b1">
+                <div class="content5">
+                    <h1>Higher Opportunities</h1><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima nostrum provident ratione
+                        tempore accusamus commodi consectetur alias quae vel, quas asperiores voluptas quibusdam
+                        consequatur assumenda veniam. Fugit odio ex esse nulla corporis assumenda repellendus error a
+                        cupiditate dolore, qui fuga placeat natus dolorum nam ipsum, modi minima voluptate illum?</p>
+                    <br><br>
+                    <button type="button">GET STARTED</button>
+                </div>
+            </div>
+            <div class="b1">
+                <div class="img"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fifth">
+        <div class="box3">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fpassport-size-photo-png-1.png&f=1&nofb=1&ipt=c5cf500a54f56d88efff6ce217013bdb829df035561be988ed7242112f1b3b56&ipo=images"
+                alt="">
+        </div>
+        <div class="box4"><br>
+            <div class="con5">  <h2>"Lorem ipsum, dolor adipisicing elit. Dignissimos fuga 
+                dolorum nemo eos, exercitationem ad culpa aspernatur
+                quaerat explicabo sequi veniam delectus facilis itaque."</h2>
+                <br>
+                <h3>JHON SMITH</h3>
+                <h5>THERE ARE MANY VARIATIONS OF PASSAGES</h5>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2015-2016. All Rights Reserved | Designed by: buylandingpagedesign.com</p>
+
+    </footer>
+</body>
+
+</html>

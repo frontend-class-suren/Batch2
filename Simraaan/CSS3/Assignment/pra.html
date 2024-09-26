@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Lite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0px;
+        }
+
+        body {
+            max-width: 100%;
+        }
+
+        .sticky {
+            background-color: white;
+            top: 0;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            right: 0;
+
+        }
+
+        .nav_left {
+            float: left;
+            font-size: larger;
+            font-family: cursive;
+            color: #ff5500;
+        }
+
+        .nav_right ul {
+            display: flex;
+            float: right;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+        }
+
+        .nav_right ul:hover {
+            color: #cb7575;
+        }
+
+        ul li {
+            list-style-type: none;
+
+        }
+
+        .sticky,
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: gray;
+            padding: 25px;
+
+
+        }
+
+        .banner {
+            position: relative;
+            width: 80%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .banner img {
+            border-radius: 10px;
+
+        }
+
+        .top-right {
+            position: absolute;
+            top: 50px;
+            right: 90px;
+            font-size: larger;
+            text-align: center;
+            font-weight: 400;
+            font-family: cursive;
+
+
+        }
+
+        .center {
+            position: absolute;
+            top: 125px;
+            right: 180px;
+            text-align: center;
+            font-weight: 300;
+            font-size: large;
+            word-spacing: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .mid-right a button {
+            top: 200px;
+            right: 200px;
+            position: absolute;
+            background-color: #cb7575;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-family: cursive;
+
+        }
+
+        .float {
+            position: absolute;
+            top: 400px;
+            right: 70px;
+            padding: 10px;
+            /* border-radius: 15px; */
+            float: left;
+            font-family: cursive;
+            font-weight: lighter;
+            font-size: small;
+            text-align: center;
+            height: 10px;
+
+        }
+
+        .up {
+            background-color: #ff5500;
+            color: white;
+            padding: 4px;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+
+        .dwn {
+            background-color: white;
+            padding: 4px;
+            border-radius: 0px 0px 10px 10px;
+
+
+        }
+
+        .head {
+            text-align: center;
+            font-weight: 2;
+            color: #f1c522;
+            font-family: cursive;
+
+        }
+
+        .fa-circle-check {
+            color: green
+        }
+
+        .fa-heart {
+            color: red;
+            font-size: xx-large;
+        }
+
+        .banner2 {
+            width: 100%;
+            height: auto;
+            /* background-color: antiquewhite; */
+            position: relative;
+            display: flex;
+        }
+
+        .left_banner {
+            width: 50%;
+            height: 400px;
+            /* background-color: aquamarine; */
+            display: flex;
+
+        }
+
+        .right_banner {
+            width: 50%;
+            height: 400px;
+            /* background-color: beige; */
+            display: flex;
+
+        }
+
+        .left_banner .image {
+            width: 45%;
+            height: 400px;
+            /* background-color: rgb(152, 113, 226); */
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.QAIzup1FTkYCi_WbRYKlvgHaJ4%26pid%3DApi&f=1&ipt=9c82db9ef44e96c4322a344229b2eed28b546e4dc26fd9d2111690b07687e02a&ipo=images);
+            background-size: cover;
+            border-radius: 15px;
+            margin-left: 40px;
+        }
+
+        .left_banner .content {
+            width: 50%;
+            height: 400px;
+            /* background-color: olive; */
+            text-align: center;
+            padding: 30px;
+            margin-left: 20px;
+        }
+
+        .right_banner .image {
+            width: 47%;
+            height: 400px;
+            /* background-color: rgb(152, 113, 226); */
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.BR1D12-S-4GreWnKdVgQuwHaLH%26pid%3DApi&f=1&ipt=74e3a11efd6f7313358e80dda89431df9fa1521161ceeb25e8d6c0a09e8e9310&ipo=images);
+            background-size: cover;
+            border-radius: 15px;
+            margin-left: 20px;
+
+
+        }
+
+        .right_banner .content {
+            width: 50%;
+            height: 400px;
+            /* background-color: olive; */
+            text-align: center;
+            padding: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+
+        }
+
+        .content h3 {
+            font-size: xx-large;
+            font-weight: lighter;
+            font-family: cursive;
+
+        }
+
+        .content p {
+            font-weight: 50;
+            font-size: large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .banner2 a {
+            text-align: center;
+            text-decoration: none;
+            background-color: #f1c522;
+            border-radius: 100px;
+            font-size: small;
+            padding: 5px;
+            color: black;
+        }
+
+        .banner2 a:hover {
+            color: white;
+        }
+
+        .mid {
+            background-color: #f9f9f9;
+            width: 100%;
+            height: auto;
+        }
+
+        .details {
+            height: auto;
+            /* background-color: plum; */
+            display: flex;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .details .im1 {
+            width: 30%;
+            height: 300px;
+            /* background-color: #f10c0c; */
+            /* margin-left: 0px; */
+            margin: 40px;
+
+        }
+
+        .details .im2 {
+            margin: 40px;
+            width: 30%;
+            height: 300px;
+            /* background-color: #f1c522; */
+            /* margin-left: 50px; */
+
+        }
+
+        .details .im3 {
+            margin: 40px;
+            width: 30%;
+            height: 300px;
+            /* background-color: #8fad1f; */
+            /* margin-left: 50px;
+            margin-right: 50px; */
+
+        }
+
+        .i1 {
+            border-radius: 30px;
+            /* border-radius: 10px; */
+            width: 100%;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.X2CStLZnAF0rxZGrgjPsyAHaE7%26pid%3DApi&f=1&ipt=2f924f01aad1670938f7d9dfde26cc0a67b4dc45555755a762e94d2dbdc5b844&ipo=images);
+            background-size: cover;
+            height: 75%;
+            padding: 10px;
+            /* background-color: #8fad1f; */
+        }
+
+        .i2 {
+            border-radius: 30px;
+            /* border-radius: 10px; */
+            width: 100%;
+            padding: 10px;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjcharpentier.com%2Fwp-content%2Fuploads%2F2020%2F11%2Fwedding-3695979_1920.jpg&f=1&nofb=1&ipt=0f7f3598a9f274edc46d790d6ef2478a4c7e3d1d6d2480a01852df5f05f9aae4&ipo=images);
+            height: 75%;
+            background-size: cover;
+        }
+
+        .i3 {
+            border-radius: 30px;
+            padding: 10px;
+            width: 100%;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdontai.com%2Fwp%2Fwp-content%2Fuploads%2F2018%2F04%2Fglendale-la-cali-google-2018-4-17.png&f=1&nofb=1&ipt=675d7d5bad028876e139ee32b3815763f7ce1d5ffd972cc078593b3d0e9a6e92&ipo=images);
+            height: 75%;
+            background-size: contain;
+        }
+
+        .details h2 {
+            font-size: large;
+            font-weight: 100;
+            font-family: cursive;
+            padding: 10px;
+            margin: 10px;
+            /* text-align: left; */
+        }
+
+        .details p {
+            font-weight: 2;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+
+        .last1 {
+            /* background-color: pink; */
+            width: 100%;
+            height: auto;
+            position: relative;
+
+        }
+
+        .last1 .head {
+            width: 100%;
+            text-align: center;
+            /* background-color: white; */
+            height: 100px;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .last1 .mid {
+            background-color: white;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+
+            display: flex;
+
+        }
+
+        .d1 {
+            width: 20%;
+            height: 100px;
+            /* background-color: antiquewhite; */
+            margin: 10px;
+            text-align: left;
+            font-size: x-large;
+            font-family: cursive;
+            color: #f1c522;
+            margin-top: 110px;
+
+        }
+
+        .d2 {
+            height: 550px;
+            width: 40%;
+            /* background-color: #cb7575; */
+            margin-left: 150px;
+        }
+
+        .d3 {
+            height: 550px;
+            width: 30%;
+            margin: 10px;
+            /* background-color: beige; */
+            text-align: justify;
+        }
+
+        .d3 p {
+            font-weight: 2;
+            font-size: 17px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 2px;
+            margin: 15px;
+            color: #77787b;
+
+        }
+
+        .d3 h2 {
+            font-size: x-large;
+            font-weight: 100;
+            font-family: cursive;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .last {
+            background-color: #f9f9f9;
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .gallery {
+            /* background-color: #cb7575; */
+            width: 80%;
+            height: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+
+        }
+
+        .gall1 {
+            /* background-color: #7a2a2a; */
+            width: 100%;
+            height: 500px;
+            display: flex;
+            border-radius: 10px;
+
+
+        }
+
+        .gall2 {
+            /* background-color: #0a0505; */
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+
+            display: flex;
+
+        }
+
+        .g1 {
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-QqwCcu-TcSE%2FV4FSGOSztdI%2FAAAAAAAAAJQ%2FadubBopWxkg4K3tc3b-UN_NeJiEkTqmPwCLcB%2Fs1600%2F2_386218195577fe3508630e.jpg&f=1&nofb=1&ipt=00e87cf3529988236ea868cba68b52d45549a154e10157ad50efcdb0d156c6a4&ipo=images);
+            background-size: contain;
+            width: 33.3%;
+            height: 100%;
+            border-radius: 10px;
+
+            /* background-color: #77787b; */
+        }
+
+        .g2 {
+            width: 33.3%;
+            border-radius: 10px;
+
+            height: 100%;
+            /* background-color: #77787b; */
+        }
+
+        .g21 {
+            width: 100%;
+            height: 50%;
+            /* background-color: #0d1a3f; */
+            border-radius: 10px;
+
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwedding-pictures.onewed.com%2Fmatch%2Fimages%2F180941%2F20110218-JLB_2432.full.jpg&f=1&nofb=1&ipt=c95ced8af48fffe6a47efa9ed3a52ea3b2a01022d85ad5f08a9c4ae025f392ed&ipo=images);
+            background-size: cover;
+
+        }
+        .g22{width: 100%;
+            height: 50%;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kHX-I7VR9tcJM9344iZJsgHaE7%26pid%3DApi&f=1&ipt=b24970e3ce38619258cd8fdb37576bb140615af038169ebc97e32552f7731849&ipo=images);
+            border-radius: 10px;
+            background-size: cover;
+
+        }
+        .g3{ background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-QqwCcu-TcSE%2FV4FSGOSztdI%2FAAAAAAAAAJQ%2FadubBopWxkg4K3tc3b-UN_NeJiEkTqmPwCLcB%2Fs1600%2F2_386218195577fe3508630e.jpg&f=1&nofb=1&ipt=00e87cf3529988236ea868cba68b52d45549a154e10157ad50efcdb0d156c6a4&ipo=images);
+            background-size: contain;
+            width: 33.3%;
+            border-radius: 10px;
+
+            height: 100%;
+
+        }
+       .gall2 .g21 {
+            width: 100%;
+            height: 50%;
+            /* background-color: #0d1a3f; */
+            /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwedding-pictures.onewed.com%2Fmatch%2Fimages%2F180941%2F20110218-JLB_2432.full.jpg&f=1&nofb=1&ipt=c95ced8af48fffe6a47efa9ed3a52ea3b2a01022d85ad5f08a9c4ae025f392ed&ipo=images); */
+            background-size: cover;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.hOEhbU2qMP-zmmBnD3u-EAHaHa%26pid%3DApi&f=1&ipt=85f97252ed60cc9ff4e201ac66f3ec89db707ec005da28a52d129df8824f064f&ipo=images);
+            border-radius: 10px;
+
+        }
+       .gall2 .g3{ 
+            /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-QqwCcu-TcSE%2FV4FSGOSztdI%2FAAAAAAAAAJQ%2FadubBopWxkg4K3tc3b-UN_NeJiEkTqmPwCLcB%2Fs1600%2F2_386218195577fe3508630e.jpg&f=1&nofb=1&ipt=00e87cf3529988236ea868cba68b52d45549a154e10157ad50efcdb0d156c6a4&ipo=images); */
+            background-size: cover;
+            width: 33.3%;
+            height: 100%;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.moonlightbridal.com%2Fimg%2Fblog%2Fa775a2ebb6534f238d7d3fe8e0db238e-inline.jpg&f=1&nofb=1&ipt=993cbb94ba283528fc46d960676a4b02df574d05d3e0feb34c6d25c4dd723250&ipo=images);
+            border-radius: 10px;
+
+       }
+       .gall2 .g22{width: 100%;
+            height: 50%;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.greenvelope.com%2Fblog%2Fwp-content%2Fuploads%2Foutdoor-wedding-with-black-chairs.jpeg&f=1&nofb=1&ipt=1ae54c904b5994ffb346ab1c54f699f6a5dff4c86c8296e1d5b9d048af58bfeb&ipo=images);
+            background-size: cover;
+            border-radius: 10px;
+
+       }
+       .g4{
+            background-size: contain;
+            width: 33.3%;
+            height: 100%;
+            border-radius: 10px;
+
+        }
+        .g23
+        {width: 100%;
+            height: 50%;
+            border-radius: 10px;
+            background-size: cover;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fjust-married-couple-with-their-car_23-2149479897.jpg&f=1&nofb=1&ipt=5e199b431f6f6b481fd54f49743b0c0e31d4af1479cb650d89e3900745876b11&ipo=images);
+
+       }
+       .g24
+        {width: 100%;
+            height: 50%;
+            border-radius: 10px;
+            background-size: cover;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.QCoDMLbTW7I9XxZ-CiuHzQEsDG%26pid%3DApi&f=1&ipt=daf592b469a82a7e356e5bf850a4a8ed275dc711a31abb360672c958d47119d1&ipo=images);
+
+       }
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="nav_left">
+            <ul>
+                <li class="li1"><a href=""><span style="color: #ff5500;">BRATT </span><i
+                            class="fa-regular fa-heart"></i> <span style="color: #ff5500;"> JOLIE </span></a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <ul>
+                <li><a href="">HOME PAGE</a></li>
+                <li><a href="">OUR MODEL</a></li>
+                <li><a href="">THE WEDDING</a></li>
+                <li><a href="">PEOPLE</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">RSVP</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div><br><br><br><br>
+    <div class="banner">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbestlifeonline.com%2Fwp-content%2Fuploads%2Fsites%2F3%2F2022%2F11%2Fyoung-couple-love-language-in-common-satisfied-study.jpg%3Fquality%3D82%26strip%3Dall&f=1&nofb=1&ipt=f08d5b302cd083d9dd5e9eb41cbecbe1fd176dba048146292e07a022d67fe9a2&ipo=images"
+            alt="" width="100%" height="500px">
+        <h2 class="top-right">👋 HI THERE, YOU'RE INVITED <br>
+            <span style="font-size: xx-large;">WE'RE GETTING MARRIED</span>
+        </h2>
+        <h5 class="center"><i class="fa-solid fa-circle-check"></i> Wedding HTML Template
+            <br><i class="fa-solid fa-circle-check"></i> Bootstrap v5.1.3 Layout
+        </h5>
+        <br>
+        <div class="mid-right"><a href=""><button>DISCOVER MORE</button></a></div>
+        <div class="float">
+            <h3 class="up">SAVE THE DATE</h3>
+            <h3 class="dwn">14th October 2024</h3>
+        </div>
+
+    </div> <br><br>
+    <h1 class="head">LOVE STORY <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+        </svg> <i class="fa-solid fa-heart"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+        </svg>
+    </h1>
+    <br><br>
+    <div class="banner2">
+        <div class="left_banner">
+            <div class="image"> </div>
+            <div class="content">
+                <h3>NESLI <span style="font-size: small;">THE BRIDE</span></h3> <br>
+                <p style="text-align: justify; ">Nesli is amazing. When I first met her I knew she was amazing and
+                    passing day reminds me of how amazing she is !</p>
+                <br><br><br><br><br><br><br><br>
+                <pre><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a> <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></pre>
+            </div>
+        </div>
+        <div class="right_banner">
+            <div class="image"></div>
+            <div class="content">
+                <h3>KADIR <span style="font-size: small;">THE GROOM</span></h3> <br>
+                <p style="text-align: justify;">Kadir is amazing. When I first met him I knew he was amazing and passing
+                    day reminds me of how amazing he is !</p>
+                <br><br><br><br><br><br><br><br>
+                <pre><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a> <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></pre>
+            </div>
+        </div>
+    </div> <br><br><br><br><br><br>
+    <div class="mid"> <br>
+        <div class="head">
+            <h1 style="font-weight: 2;">THE WEDDING <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                </svg> <i class="fa-solid fa-heart"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                </svg>
+            </h1>
+        </div>
+        <div class="details">
+            <div class="im1">
+                <div class="i1">
+                </div>
+                <h2>
+                    THE RECEPTION</h2>
+
+                <p><i class="fa-solid fa-location-dot"></i> 5th Avenue at, Central Park S
+                    <br>
+
+                    <i class="fa-regular fa-clock"></i> 5:00 PM
+                </p>
+
+
+            </div>
+            <div class="im2">
+                <div class="i2"></div>
+                <h2>WEDDING CEREMONY</h2>
+                <p><i class="fa-solid fa-location-dot"></i> 5th Avenue at, Central Park S <br>
+
+                    <i class="fa-regular fa-clock"></i> 6:30 PM to 9:30 PM
+                </p>
+            </div>
+            <div class="im3">
+                <div class="i3"></div>
+                <h2>LOCATION</h2>
+                <p> <i class="fa-solid fa-location-dot"></i> 5th Avenue at, Central Park S, <br> New York, NY 10019,
+                    United States</span> </p>
+            </div>
+
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="last1">
+        <div class="head">GROOMSMEN & BRIDESMAID <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+            </svg> <i class="fa-solid fa-heart"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+            </svg>
+        </div>
+        <div class="mid">
+            <div class="d1"> <span style="color: #ff5500;">GROOM SIDE</span> <br>
+                <hr> <span style="color:black">BRIDE SIDE</span>
+            </div>
+            <div class="d2"><br><img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.UWzKkFeQB_CVgTj7X46KGgHaFj%26pid%3DApi&f=1&ipt=2c85b055e741907a90a63e12a25e49fdc046992dcf2a340bd40e76beaee5ec7d&ipo=images"
+                    style="border-radius: 20px;" width="80%" height="40%" alt=""> <br><br><br> <br><br><img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.t2DiOypGUA0xZLhK_N7aFgHaEK%26pid%3DApi&f=1&ipt=56e912092f63fcfbc9fbd1c0a5b5c0b3dee41d320291921bbe7715a704c353fc&ipo=images"
+                    style="border-radius: 20px;" width="80%" height="40%" alt=""> </div>
+            <div class="d3">
+                <div class="c1"> <br>
+                    <h2>Cem Adrian <span style="font-size: small; font-weight: lighter; 
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        ">COSUIN</span></h2>
+                    <p>Wedding Lite is free HTML <br> template provided by Tooplate <br>website. It is based on
+                        Bootstrap <br> v5.1.3 CSS layout. You are free to <br> use it for your wedding.</p>
+                </div> <br><br><br>
+                <div class="c2">
+                    <h2>Halil Ibrahim <span style="font-size: small; font-weight: lighter; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            ">BEST FRIEND</span></h2>
+                    <p>Feel free to make a PayPal <br> contribution to contact [at] <br> tooplate.com to support the
+                        open <br> community of free HTML <br> templates. Thank you.</p>
+                </div>
+            </div>
+        </div>
+
+    </div> <br><br><br>
+    <div class="last"> <br>
+        <div class="head" style="font-size: x-large;"> GALLERY <br> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+            </svg> <i class="fa-solid fa-heart"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+            </svg></div>
+        <div class="gallery">
+            <div class="gall1">
+                <div class="g1"></div>
+                <div class="g2">
+                    <div class="g21"></div>
+                    <div class="g22"></div>
+                </div>
+                <div class="g3"></div>
+
+            </div> <br><br>
+            <div class="gall2">
+                <div class="g2">
+                    <div class="g21"></div>
+                    <div class="g22"></div>
+                </div>
+                <div class="g3"></div>
+
+
+
+                <div class="g4">
+                    <div class="g23"></div>
+                    <div class="g24"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

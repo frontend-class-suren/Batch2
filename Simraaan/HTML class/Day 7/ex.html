@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .left,
+        .right {
+            float: left;
+            width: 20%;
+            background-color: green;
+            text-align: center;
+            font-size: 2vw;
+            padding: 30px;
+
+        }
+
+        .main {
+            width: 60%;
+            float: left;
+            padding: 30px;
+            text-align: center;
+            background-color: seagreen;
+            color: lightcoral;
+            font-size: 2vw;
+        }
+
+        @media screen and (max-width:800px) {
+
+            .left,
+            .right,
+            .main {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">Left Menu</div>
+    <div class="main">Main Content</div>
+    <div class="right">Right Menu</div>
+
+</body>
+
+</html>

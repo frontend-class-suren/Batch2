@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            text-align: center;
+            padding: 25px;
+            background-color: darkgray;
+        }
+
+        nav {
+            justify-content: space-between;
+            background-color: darkslategrey;
+            display: flex;
+        }
+
+        nav .menu ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav .menu ul>li {
+            padding: 10px;
+            color: aliceblue;
+        }
+
+        .mid {
+            width: 100%;
+            height: 450px;
+            background-color: gray;
+            display: flex;
+            text-align: justify;
+        }
+
+        .left {
+            width: 20%;
+            float: left;
+            height: 450px;
+            background-color: aqua;
+            color: black;
+            /* border: 0px 2px 0px 2px solid black; */
+            border-right: 5px solid black;
+            border-left: 5px solid black;
+
+        }
+
+        .right {
+            width: 20%;
+            float: right;
+            height: 450px;
+            background-color: aqua;
+            color: black;
+            border-right: 5px solid black;
+            border-left: 5px solid black;
+
+
+        }
+
+        .main {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aliceblue;
+            height: 450px;
+        }
+        .main img{
+            float: left;
+        }
+        .mid ul{
+            list-style-type: none;
+        }
+        .mid h3{
+            text-decoration: underline;
+        }
+        .left{
+            text-align: justify;
+        }
+        .right{
+            text-align: justify;
+        }
+        @media screen and (max-width:600px){
+           .mid .main{ width: 100%;}
+            .mid{
+                display: block;
+            }
+            .mid  {
+                margin: 10px;
+                border-bottom: 3px solid black;
+                border-left: none;
+            }
+            
+        }
+        footer{
+            width: 100%;
+            background-color: rgb(83, 83, 71);
+            height: 70px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>My New Website Using CSS</h2>
+    </header>
+    <nav>
+        <div class="log">
+            <img src="" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>SERVICES</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mid">
+        <div class="left">
+            <h3>Recent Blogs</h3>
+            <ul class="list">
+                <li>
+                    <h4>Title of Blogs</h4>
+                    <img src="" alt="blog_imgs">
+                </li>
+                <li>Catagory 1</li>
+                <li>Catagory 2</li>
+                <li>Catagory 3</li>
+                <li>Catagory 4</li>
+                <li>Catagory 5</li>
+                <li>Catagory 6</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>This is first class of recent blogs</h1>
+            <img src="" alt="image">
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ad debitis repellat consectetur
+                aspernatur aut blanditiis saepe, incidunt velit id? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, sint doloribus! Officia magnam doloremque ipsum dolorem praesentium perspiciatis amet voluptate ullam, laborum natus exercitationem mollitia dolores assumenda unde ut quam iste alias nostrum pariatur sit aperiam fugiat laudantium neque consequatur? Dolores nesciunt ab doloremque culpa corporis aspernatur eum inventore? Aspernatur facere veniam ad molestiae porro illo, tenetur nulla dolor nobis sequi officiis, quia voluptatem placeat totam harum unde. Nam, omnis eius ullam, dolore minima sequi explicabo obcaecati temporibus quaerat blanditiis voluptatibus excepturi accusamus ea quidem provident autem nulla fugiat culpa voluptate architecto inventore assumenda facilis, cumque sapiente? Aperiam, sequi temporibus.</p>
+             <!-- <h3>Recent Blogs</h3>
+            <ul class="list">
+                <li>
+                    <h4>Title of Blogs</h4>
+                    <img src="" alt="blog_imgs">
+                </li>
+                <li>Catagory 1</li>
+                <li>Catagory 2</li>
+                <li>Catagory 3</li>
+                <li>Catagory 4</li>
+                <li>Catagory 5</li>
+                <li>Catagory 6</li>
+            </ul> -->
+        </div>
+        <div class="right">
+            <h3>Recent Blogs</h3>
+            <ul class="list">
+                <li>
+                    <h4>Title of Blogs</h4>
+                    <img src="" alt="blog_imgs">
+                </li>
+                <li>Catagory 1</li>
+                <li>Catagory 2</li>
+                <li>Catagory 3</li>
+                <li>Catagory 4</li>
+                <li>Catagory 5</li>
+                <li>Catagory 6</li>
+            </ul>
+        </div>
+        <!-- <div class="footer">FOOTER</div> -->
+    </div>
+    <footer>Footer</footer>
+    <br><br><br>
+    <!-- <div class="container">
+        <div class="left">
+            <h3>Recent Blogs</h3>
+            <ul class="list">
+                <li>
+                    <h4>Title of Blogs</h4>
+                    <img src="" alt="blog_imgs">
+                </li>
+                <li>Catagory 1</li>
+                <li>Catagory 2</li>
+                <li>Catagory 3</li>
+                <li>Catagory 4</li>
+                <li>Catagory 5</li>
+                <li>Catagory 6</li>
+            </ul>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

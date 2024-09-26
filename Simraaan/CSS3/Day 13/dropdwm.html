@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <style>
+        .dropdwn{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown_content
+        {
+            display: none;
+            position: absolute;
+            background-color: cornsilk;
+            color: gray;
+            min-width: 240px ;
+            padding: 12px 16px;
+            z-index: 1;
+
+        }
+        .dropdown_content ul li{
+            border: 1px solid red;
+        }
+        .dropdwn:hover .dropdown_content{
+            display: block;
+        }
+        span{
+            background-color: rgb(17, 53, 22);
+            padding: 12px 6px;
+            color: rgb(214, 238, 230);
+            padding: 30px;
+            margin: 5px;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdwn">
+        <span>Menu</span>
+        <div class="dropdown_content">
+            <ul>
+                <li>Gallery</li>
+                <li>Blogs</li>
+                <li>Media</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

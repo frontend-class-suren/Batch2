@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(29, 179, 179);
+}
+h1{color: blue;}
+p{color: whitesmoke;
+font-size: larger;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+h2{background-color: plum;
+color: mediumseagreen;
+font-size: 200%;
+font-family: monospace;
+background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Ct8l296j_hOvHsFBsrPyeQHaPO%26pid%3DApi&f=1&ipt=a8356824bb189f6e37dbd033678220e5ad5229675486ac6a92ba0cc29a928a05&ipo=images);
+border: 5px double white;
+border-radius: 10px ;
+
+margin-top: 100px;
+margin-left: 50px;
+padding-left: 20px;
+padding-right: 10px;
+padding-top: 15px;
+padding-bottom: 25;
+}
+

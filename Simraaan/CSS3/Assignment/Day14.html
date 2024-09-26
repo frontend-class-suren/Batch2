@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            max-width: 100%;
+        }
+
+        .contain1 {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            background-color: darkcyan;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc.pxhere.com%2Fimages%2F66%2Fb8%2Ffb80e3fc401511ff8d9c38eb0bdb-1573331.jpg!d&f=1&nofb=1&ipt=200eb0483dc47580e25125bfbaa61b583433981c8484169539b0e46456d605f2&ipo=images);
+            background-size: cover;
+
+        }
+
+        /* .contain1:hover{
+            opacity: 0.9;
+
+        } */
+
+        .nav {
+            background-color: beige;
+            display: flex;
+            width: 100%;
+            height: 10%;
+            z-index: 9999;
+            /* position: absolute; */
+            padding: 15px;
+            position: fixed;
+            font-size: x-large;
+            font-family: serif;
+
+        }
+
+        .nav h2 {
+            text-indent: 50px;
+            /* font-size: xx-large; */
+            padding: -2px;
+        }
+
+        .nav h3 {
+            float: right;
+            margin-left: auto;
+            margin-right: 70px;
+            color: #bbbbbb;
+        }
+
+        .body {
+            /* width: 100%;
+            height: 100%;
+            /* background-color: pink; */
+            /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdm0qx8t0i9gc9.cloudfront.net%2Fthumbnails%2Fvideo%2FH5BOVymHiplawzr0%2Fvideoblocks-business-woman-working-on-computer-sitting-by-the-window-in-the-office-portrait-of-a-young-woman-in-business-attire-in-the-workplace_h3tiihsibb_thumbnail-1080_01.png&f=1&nofb=1&ipt=587cbfc50472224e1cec747da0291647c68920fabac5feddc742eb838f7e7ba4&ipo=images);
+            background-size: cover; */
+            width: 600px;
+            margin-left: 100px;
+            color: rgb(24, 23, 23);
+            font-size: large;
+            padding: 100px;
+            /* margin-top: 200px; */
+        }
+
+        .bo1 {
+            margin-top: 40px;
+            margin-left: -20px;
+
+        }
+
+        .body p {
+            font-size: 20px;
+            text-align: justify;
+            /* justify-content: center; */
+            color: black;
+
+        }
+
+        .button01 {
+            background-color: #f15137;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            /* cursor: pointer; */
+            border-radius: 20px;
+            margin-top: 20px;
+            width: 50%;
+            font-weight: bold;
+        }
+
+        .button01:hover {
+            background-color: #a52a0e;
+
+
+        }
+
+        .contain2 {
+            width: 100%;
+            background-color: white;
+            height: 270px;
+            display: flex;
+        }
+
+        .con1 img {
+            background-color: rgb(212, 204, 204);
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 200px;
+            float: left;
+        }
+
+        .h {
+            font-size: x-large;
+        }
+
+        .contain2 .bi {
+            background-color: rgb(212, 204, 204);
+            border-radius: 300px;
+            width: 100px;
+            padding: 20px;
+            height: 100px;
+            margin-bottom: auto;
+            margin-top: 35px;
+            margin-left: 200px;
+            font-size: 60px;
+            text-align: center;
+            display: flex;
+            /* font-weight: bolder; */
+        }
+
+        .dwn {
+            margin-left: 100px;
+            text-align: center;
+
+
+
+        }
+
+        .dwn h1 {
+            font-size: large;
+            /* margin-left: 100px; */
+            /* line-break: normal; */
+            /* text-align: center; */
+
+        }
+
+        .dwn p {
+            /* margin-right: 500px; */
+            /* text-align: center; */
+            margin-top: -30px;
+            /* font-size: 20px; */
+
+
+        }
+
+        /* .con2 img {
+            background-color: grey;
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 300px;
+        }
+
+        .con3 img {
+            background-color: grey;
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 300px;
+            float: right;
+
+        } */
+
+        .heades1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111111;
+            /* background-color: #333; */
+            color: white;
+            padding: 50px;
+        }
+
+        .header-texts {
+            max-width: 50%;
+        }
+
+        .header-texts h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header-texts p {
+            font-size: 19px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .cta-buttons {
+            background-color: #f15137;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            /* cursor: pointer; */
+            border-radius: 20px;
+            margin-top: 20px;
+            width: 40%;
+
+        }
+
+        .cta-buttons:hover {
+            background-color: #a52a0e;
+        }
+
+        .header-images {
+            max-width: 40%;
+        }
+
+        .header-images img {
+            width: 100%;
+            border: 4px solid rgb(117, 114, 114);
+            /* border: 4px solid rgb(190, 190, 190); */
+            padding: 4px;
+        }
+
+        .contain4 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .featuresmain {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .feature-box {
+            background-color: #fff;
+            /* display: flex; */
+            padding: 20px;
+            border-radius: 8px;
+            width: 25%;
+            margin: 10px;
+            /* box-shadow: 10px 4px 10px darkslategrey; */
+        }
+        
+
+        .feature-box:hover {
+            transform: scale(1.02);
+            box-shadow: 10px 4px 10px darkslategrey;
+
+        }
+
+        .feature-box i {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .feature-box h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            /* display: inline; */
+            text-align: center;
+
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #666;
+            text-align: justify;
+
+
+        }
+
+        .heades2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111111;
+            color: white;
+            padding: 50px;
+        }
+
+        .header-text8 {
+            max-width: 50%;
+        }
+
+        .header-text8 h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header-text8 p {
+            font-size: 19px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .cta-button8 {
+            background-color: #f15137;
+            color: white;
+            border: none;
+            width: 40%;
+            padding: 12px;
+            font-size: 16px;
+            /* cursor: pointer; */
+            border-radius: 20px;
+            /* margin-top: 20px; */
+        }
+
+        .cta-button8:hover {
+            background-color: #a52a0e;
+        }
+
+        .header-image8 {
+            max-width: 40%;
+        }
+
+        .header-image8 img {
+            width: 100%;
+            border: 4px solid rgb(117, 114, 114);
+            padding: 4px;
+        }
+
+        .test {
+            display: ;
+        }
+
+        .test-head {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .testimonial {
+            padding: 35px;
+            display: flex;
+            border-radius: 5px;
+        }
+
+        .testimonial p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .name {
+            color: rgb(255, 140, 0);
+            font-weight: bold;
+            margin-top: 160px;
+            float: left;
+            /* display: block; */
+
+            /* width: 100px; */
+            text-align: left;
+            margin-left: -50px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+
+        }
+
+        .fa-quote-left {
+            margin: 30px;
+            margin-top: -19px;
+            font-size: x-large;
+            color: #c1c1c1;
+        }
+
+        .head {
+            background-color: #f15137;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .head h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid rgb(196, 131, 131);
+            font-size: 20px black;
+
+        }
+
+        .button2 {
+            margin-right: 100%;
+            padding: 13px;
+            background-color: white;
+            text-align: center;
+            color: #111110;
+            border: none;
+            border-radius: 50px;
+            font-size: 13px;
+            width: 27%;
+            /* cursor: pointer; */
+            font-weight: bold;
+            /* transition: background-color 0.3s ease; */
+        }
+
+        button:hover {
+            background-color: #aca4a4;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media screen and(max-width:600px) {
+           .nav{display: block;
+
+
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h2>Business <span style="color: #e74d2b;">Opportunity</span></h2>
+        <h3><i class="h bi bi-heart-fill"></i> GET STARTED FOR <span style="color: #e74d2b;">FREE</span></h3>
+    </div>
+    <div class="contain1">
+
+        <div class="body">
+            <div class="bo1">
+                <h1 style="font-size: 44px;">START YOUR NEW <br> BUSINESS TODAY</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolores corrupti quos sapiente maxime
+                    odio animi dicta minima placeat inventore consectetur!</p><br><br>
+                <button class="button01" type="button">GET STARTED</button>
+            </div>
+        </div>
+    </div>
+    <!-- <br><br><br><br> -->
+    <div class="contain2">
+        <div class="con1">
+            <!-- <img src="https://static.thenounproject.com/png/2349285-200.png" alt=""> -->
+            <i class="bi bi-command"></i>
+            <br>
+            <div class="dwn">
+                <h1>NO TECHNICAL HASSLE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+        </div>
+        <div class="con2">
+            <!-- <img src="https://www.freeiconspng.com/thumbs/alarm-icon/alarm-clock-icon-8.jpg" alt=""> -->
+            <i class="bi bi-alarm"></i>
+            <!-- <h1>Start</h1> --> <br>
+            <div class="dwn">
+                <h1>NO LIMITATIONS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+
+        </div>
+        <div class="con3">
+            <i class="bi bi-arrows-move"></i>
+            <!-- <img src="https://www.freeiconspng.com/thumbs/alarm-icon/alarm-clock-icon-8.jpg" alt=""> -->
+            <!-- <h1>Start</h1> --> <br>
+            <div class="dwn">
+                <h1>STAY FOCUSED</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="heades1">
+        <div class="container1 header-texts">
+            <h1>Create Your Business</h1>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p>
+            <p>
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                vel illum qui
+                dolorem eum fugiat quo voluptas nulla pariatur.
+            </p>
+            <a href="#h_details"> <button class="cta-buttons">GET STARTED</button></a>
+        </div>
+        <div class="header-images">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fxmpcmhrn%2Fproduction%2Ff363771ad3c072ec71f1ea5e8f3868d18de231a6-1200x800.jpg&f=1&nofb=1&ipt=07bed778d23a5a0249189cc324a13962db2d5a6308eea7400f167c1f60d81111&ipo=images"
+                alt="Business Image">
+        </div>
+    </div>
+
+    <div class="contain4">
+        <h2 id="h_details"></h2>
+        <h1>HOW IT WORKS</h1>
+        <div class="featuresmain">
+            <div class="feature-box">
+                <i class="fas fa-cog"></i> <br>
+                <h2>AUTOMATION</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-calendar-alt"></i><br>
+                <div class="he">
+                <h2>RECURRING PAYMENTS</h2>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <!-- <br><br><br> -->
+        </div>
+        <div class="featuresmain">
+            <div class="feature-box">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+                <h2>INTUITIVE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h2>EXTENSIBLE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div> <br><br>
+    </div>
+    <div class="heades2">
+        <div class="header-image8">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Jw1ij013jxt8j7XConLE_gHaE7%26pid%3DApi&f=1&ipt=eda6c266a00e8e959b3e9a8ab6fd71b6b64e262906a7827d6b23e18b9f0f317a&ipo=images"
+                alt=" Image">
+        </div>
+        <div class=" header-text8">
+            <h1>100% Online & Secure</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dicta autem officiis illum aspernatur
+                quod aliquid at, inventore, itaque cupiditate molestias voluptates possimus consectetur odit recusandae!
+                Eius assumenda praesentium sapiente.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ab et odit fugit atque aliquam fuga
+                vero hic neque accusamus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum harum
+                dolorum ex repellat quam voluptatum necessitatibus tempora. Odio, aliquid? Rerum iure natus ipsum aut
+                accusantium assumenda impedit, voluptatibus at.
+            </p>
+            <a href="#b_details"><button class="cta-button8">GET STARTED</button></a>
+        </div>
+    </div> <br><br>
+    <div class="test">
+        <!-- <h2 id="b_details"></h2> -->
+        <h1 class="test-head">TESTIMONIALS</h1>
+        <div class="testimonials">
+            <div class="testimonial">
+                <!-- <div class="sign"> <i class="fa-solid fa-quote-left"></i></div> -->
+
+                <i class="fa-solid fa-quote-left"></i>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+
+                <div class="name">JOHN SMITH</div>
+            </div>
+            <!-- <div class="name">JOHN SMITH</div> -->
+
+
+            <div class="testimonial">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <br><br><br>
+                <div class="name">DANIEL SCOTT</div>
+
+            </div>
+            <!-- <div class="name">DANIEL SCOTT</div> -->
+
+            <div class="testimonial">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+
+                <div class="name">KIMBERLY CARTER</div>
+            </div>
+            <!-- <div class="name">KIMBERLY CARTER</div> -->
+
+            <div class="testimonial">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p> <br><br>
+                <div class="name">LINDA HILL</div>
+            </div>
+            <!-- <div class="name">LINDA HILL</div> -->
+
+        </div>
+    </div>
+    <div class="head">
+        <h2 id="b_details"></h2>
+        <h1>START YOUR NEW BUSINESS TODAY</h1> <br><br>
+        <form action="">
+            <input type="text" name="fullname" placeholder="Full Name">
+            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="state" placeholder="State">
+            <input type="tel" name="Phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <br><br><br><br><br><br>
+            <button type="submit" class="button2">GET STARTED</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>© Copyright 2014-2015. All Rights Reserved | Designed by: buylandingpagedesign.com</p>
+    </div>
+    </div>
+
+</body>
+
+</html>

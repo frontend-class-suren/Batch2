@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-img {
+            background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F51%2F33%2F8fnPXL.jpg&f=1&nofb=1&ipt=0b589813d234b61073f02477d003eaf51efdbf3531e4e06776b1fd7359d0dcb7&ipo=images) no-repeat center;
+            background-size: cover;
+            height: 800px;
+            position: relative;
+            /* opacity: 0.7; */
+
+        }
+
+        .hero-text {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero-text button{
+            padding: 8px 8px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: brown;
+            color: white;
+            border-radius: 12px 5px;
+        }
+        .hero-text button:hover{
+            background-color: darkgray;
+            border: 2px solid brown;
+            color: brown;
+        }
+        @media screen and (max-width:600px) {
+            .hero-text {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hero Image For Carousel or Slider</h1>
+    <div class="hero-img">
+        <div class="hero-text">
+            <h1>Title for Images</h1>
+            <h3>Sub-title of Image</h3>
+            <button>Contact Us</button>
+        </div>
+    </div>
+</body>
+
+</html>

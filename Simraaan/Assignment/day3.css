@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    background-image: url(https://th.bing.com/th/id/OIG4.DnXmvKdpBTMqvgkYkQOC?w=1024&h=1024&rs=1&pid=ImgDetMain);
+}
+h2,h1,h3,p{
+    color: white;
+}
+
+div{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 10px double beige;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 100px;
+
+}
+h3{
+    font-size: larger;
+    font-weight: lighter;
+}
+h2{font-size: 200%;}
+button{background-color: slategray; color: black;
+    border-radius: 3px;
+
+}
+

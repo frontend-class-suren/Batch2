@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons & images</title>
+    <style>
+        input[type="text"]{
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F367%2F249%2Foriginal%2Fsearch-vector-icon.jpg&f=1&nofb=1&ipt=9ad6fcbf205270339d32e2f1503f7c28b517df29998ee64265617fed4a420527&ipo=images);
+            padding: 10px 10px;
+            /* background-color: antiquewhite; */
+            background-repeat: no-repeat;
+            background-position: 8px 1px;
+            background-size: contain;
+            padding-left: 40px;
+        }
+        input[type="text"]{
+            transition: width 0.9s ease-in-out;
+        }
+        input[type="text"]:focus{
+            width: 70%;
+        }
+        textarea{
+            resize: none;
+            width: 30%;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        select{
+            width: 40%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: cornsilk;
+        }
+        input[type=button]
+        {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        input[type=submit]
+        {
+            background-color: rgb(204, 204, 111);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        input[type=reset]
+        {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Input with Icon and images
+    </h2>
+    <form action="">
+        <input type="text">
+    </form>
+    <br><hr>
+    <h2>Message Here !</h2>
+    <textarea  placeholder="Type Your Message Here....."></textarea>
+    <br><br><br><br>
+    <select name="" id="">
+        <!-- <option disabled></option> -->
+        <option value=""></option>
+        <option disabled ="" >Choose Your Subject</option>
+        <option value="">Data Structure</option>
+        <option value="">DataBase Management</option>
+        <option value="">Cyber Security</option>
+        <option value="">IT</option>
+        <option value="">Projects</option>
+
+    </select>
+    <br><br>
+    <input type="button" value="Submit">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</body>
+</html>
