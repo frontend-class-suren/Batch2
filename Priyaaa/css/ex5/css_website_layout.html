@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Website Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+     header{
+        text-align: center;
+        padding: 25px;
+        background-color: gainsboro;
+     }
+     nav{
+       justify-content: space-between;
+       display: flex;
+       background-color: darkgrey;
+     }
+     nav .menu ul{
+          list-style-type: none;
+          display: flex;
+     }
+     nav .menu ul>li{
+        padding: 10px;
+        color: blue;
+     }
+     .container{
+         display: flex;
+     }
+     .container .left{
+        background-color: aqua;
+        padding: 5%;
+        width: 300px;
+        height:500px;
+        margin-top: 50px;
+        margin-left: -1280px;
+        text-align: center;
+        border-right: 5px solid black;
+     }
+     .list{
+        margin-left: 10px;
+        list-style-type: none;
+     }
+    .container{
+        display: flex;
+     }
+     .container .middle{
+        margin-top:200px;
+        width:500px;
+        background-color: beige;
+        margin-top:50px;
+        margin-left: 20px;
+        height: 500px;
+    
+     }
+     .container .right{
+        background-color: aqua;
+        border-left: 5px solid black;
+        width: 300px;
+        height: 500px;
+        margin-left: 30px;
+        margin-top: 50px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My new website using css</h2>
+    </header>
+    <nav> 
+        <div class="log">
+            <img src="" alt="logo">
+        </div>
+            <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+   <div class="container">
+    <div class="left">
+        <h3>recent blogs</h3>
+        <ul class="list">
+          <li>category 1</li>
+          <li>category 2</li>
+          <li>category 3</li>
+          <li>category 4</li>
+          <li>category 5</li>
+          <li>category 6</li>
+        </ul> </div>
+        <div class="middle">
+            <h1>this is first class of recent blogs</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam ab explicabo suscipit voluptatibus, animi quidem nisi sapiente quis in corrupti molestias tempore recusandae aliquid sint quisquam itaque maxime, reiciendis, atque odit! Sequi quam adipisci perspiciatis laudantium voluptatum praesentium similique! Magnam dignissimos deserunt est voluptatibus omnis, laborum eveniet consequuntur! Nemo?</p>
+                    
+            <ul class="column">
+           
+          <li>category 1</li>
+          <li>category 2</li>
+          <li>category 3</li>
+          <li>category 4</li>
+          <li>category 5</li>
+          <li>category 6</li>
+        </ul>
+        </div>
+        <div class="right">
+            <h3>red blogs</h3>
+        <ul class="list">
+           
+          <li>category 1</li>
+          <li>category 2</li>
+          <li>category 3</li>
+          <li>category 4</li>
+          <li>category 5</li>
+          <li>category 6</li>
+        </ul>
+        </div>
+   
+   </div>
+    </nav>
+</body>
+</html>

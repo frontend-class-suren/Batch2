@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            max-width: 100%;
+        }
+        h1{
+            color: rgb(134, 240, 240);;
+        }
+        .stick{
+            background-color: white;
+            top: 0;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            right: 0;
+            font-size: 20px;
+        }
+        .nav{
+    background-color: rgb(240, 248, 246);
+    color: black;
+    position:sticky;
+    top: 0%;
+}
+.nav,ul,li{
+    list-style-type: none;
+    text-decoration: none;
+    width: 1200px;
+    margin-left: 30px;
+
+}
+ul,li a{
+    text-decoration: none;
+    color:blue;
+    padding: 3%;
+    padding: 15px;
+    text-align: center;
+}
+.nav ul{
+    display: flex;
+    
+}
+        
+        .div1{
+            background-image: url(https://bennicarolweddingphotography.com/wp-content/uploads/2024/03/adventure-pre-wedding-session-italian-alps-84.jpg);
+            background-repeat: no-repeat;
+            margin-left: 200px;
+            width: 900px;
+            height: 800px;
+        }
+        .hi{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 50px;
+        }
+        .marry{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 50px;
+        }
+        .wed{
+            font-size: 20px;
+            color: whitesmoke;
+            margin-left: 50px;
+        }
+        .more{
+            margin-left: 50px;
+            padding:-5%;
+            border-radius: 8px;
+            background-color: rgb(240, 56, 56);
+            font-size: 20px;
+            color: whitesmoke;
+        }
+        .save{
+            position: absolute;
+            float: left;
+            padding: 5px;
+            border-radius: 15px;
+            margin-left: 700px;
+        }
+        .up{
+            background-color: orangered;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px ;
+        }
+        .down{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 0px 0px 10px 10px;
+        }
+        .love{
+            text-align: center;
+            margin-top: -150px;
+            color: rgb(204, 204, 83);
+        }
+        .heart{
+            margin-left: 650px;
+        }
+        .div2{
+            background-image: url(https://st4.depositphotos.com/10614052/21941/i/450/depositphotos_219419544-stock-photo-beautiful-young-woman-resting-outdoors.jpg);
+            width: 400px;
+            height: 400px;
+            background-repeat: no-repeat;
+            margin-left: 10px;
+            border-radius: 30px;
+        }
+        .sarah{
+            width: 200px;
+            color: black;
+        }
+        .bride{
+            margin-left: 420px;
+            font-size: 20px;
+        }
+        .social_media{
+            display: flex;
+        }
+        .social_media{
+            width: 200px;
+            float: left;
+            display: flex;
+        }
+        .div3{
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/036/107/987/small_2x/ai-generated-handsome-attractive-european-man-on-isolated-background-photo.jpg);
+            background-repeat: no-repeat;
+            width: 350px;
+            height: 400px;
+            margin-left: 650px;
+            border-radius: 20px;
+            margin-top: -260px;
+        }
+        .groom{
+            margin-left: 360px;
+            font-size: 20px;
+        }
+        .bratt{
+        width:200px;
+        color: black;
+        }
+        .social{
+            display: flex;
+            
+        }
+        .back{
+            background-color: rgb(233, 230, 230);
+            width: 1200px;
+            height:950px;
+            margin-left:-600px;
+            margin-top: 200px;
+        }
+        .the{
+            text-align: center;
+        }
+        .rest{
+            background-image: url(https://t3.ftcdn.net/jpg/02/83/46/46/360_F_283464691_hwArzj9PzTURj2AYpVaCIviRKPKp8T1f.jpg);
+            width:500px;
+            height:300px;
+            background-repeat: no-repeat;
+            border-radius: 15%;
+        }
+        .table{
+            margin-top: 30px;
+            text-align: left;
+        }
+        .ceremony{
+          background-image: url(https://media.istockphoto.com/id/1064650180/photo/bride-and-groom-saying-vows-during-wedding-ceremony-outdoors.jpg?s=612x612&w=0&k=20&c=WKF6m_t2NcQpcCJMboAnNpBuFGPaJpyOqFAIBc9beg0=);
+          width: 500px;
+          height: 300px;
+          border-radius: 15%;
+          margin-left: 600px;
+          margin-top: -410px;
+        }
+        .park{
+            margin-left: 600px;
+            text-align: left;
+        }
+        .location{
+            background-image: url(https://todocodigo.net/img/626.jpg);
+            width: 500px;
+            height: 300px;
+            border-radius: 15px;
+            margin-left:300px;
+            margin-top: 50px;
+        }
+        .locate{
+            text-align: center;
+            margin-left: -20px;
+        }
+        .and{
+            color: rgb(211, 211, 52);
+        }
+        .maid{
+            margin-left: -250px;
+        }
+        .join{
+            margin-left: 230px;
+        }
+        .side{
+            margin-left:-300px;
+
+        }
+    .div4{
+        background-image: url(https://img.freepik.com/free-photo/portrait-handsome-young-man-with-crossed-arms_176420-15569.jpg);
+        width: 400px;
+        height: 400px;
+        background-repeat: no-repeat;
+        border-radius: 15%;
+        margin-left:-300px;
+        margin-top: -100px;
+    }
+    .cousin{
+        margin-left: 450px;
+        width: 200px;
+        font-size: 20px;
+    }
+    .girl{
+        margin-left: -550px;
+        color: blue;
+    }
+    .div5{
+        background-image: url(https://img.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_231208-10760.jpg);
+        width: 400px;
+        height: 400px;
+        border-radius: 15%;
+        background-repeat: no-repeat;
+        margin-left: -300px;
+
+    }
+    .best{
+        margin-left: 450px;
+        width: 200px;
+        font-size: 20px;
+    }
+    .div6{
+        background-color: rgb(248, 246, 246);
+        width: 1340px;
+        height: 1400px;
+        margin-left: -700px;
+        margin-top: 100px;
+    }
+    .gallery{
+       text-align: center;
+    }
+    .hand{
+        background-image: url(https://media.weddingz.in/images/ffcdc7c84def0fd8611d4c24b8463306/Christain-wedding.jpg);
+        width: 500px;
+        height: 500px;
+        background-repeat: no-repeat;
+        border-radius: 15%;
+    }
+    .ring{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwbRbZ7MrYrwKzD_R9-_SRrl_LhNWXutU9Q&s);
+        width: 500px;
+        height: 1000px;
+        background-repeat: no-repeat;
+        margin-left: 520px;
+        margin-top: -450px;
+    
+    }
+    .wine{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTV1ebe78Z3WE8oGzYefwqHjCZKLpfA-TpuKVptC66pxHBtT5dtXMNBVtGFyyjlwnxHtw&usqp=CAU);
+        width: 500px;
+        height:400px;
+        background-repeat: no-repeat;
+        margin-left: -190px;
+        margin-top: -200px;
+    }
+    .hand2{
+        background-image: url(https://media.weddingz.in/images/ffcdc7c84def0fd8611d4c24b8463306/Christain-wedding.jpg);
+        width: 500px;
+        height: 500px;
+        background-repeat: no-repeat;
+        border-radius: 15%;
+        margin-top: -1350px;
+        margin-left: 125px;
+    }
+    .party{
+        background-image: url(https://lh6.googleusercontent.com/4FYPwFzUS5MSQfszwyhoXTQerGNnGGASbAyuYTGRHOS2eIyqOMxEUb90BGFplvGKWBu9CT0h4D-TYDOqBFY6sAowMgVtbSqUr-AyruPfNSsfQCCHo8n9H2QI1BT0qCbFCRf7VP-g);
+        width: 1240px;
+        height: 800px;
+        margin-left: -630px;
+        margin-top: -150px;
+        border-radius: 10%;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>WEDDING LITE TEMPLATE</h1><br><br><br>
+    </div>
+    <div class="stick">
+   <div class="nav_left">
+    <ul>
+        <li><a href=""><h5 style="color:  rgb(247, 67, 67);">BRATT<i id="regular" class="fa-regular fa-heart" style="color: red;"></i>JOLIE</h5></a></li>
+    </ul>
+   </div>
+      <div class="nav">  
+        <ul>
+            <li><a href="http://" >HOMEPAGE</a></li>
+            <li><a href="http://" >STORY</a></li>
+            <li><a href="http://" >WEDDING</a></li>
+            <li><a href="http://" >PEOPLE</a></li>
+            <li><a href="http://" >GALLERY</a></li>
+            <li><a href="http://" >RSVP</a></li>
+            <li><a href="http://" >CONTACT</a></li>
+        </ul>
+</div>
+</div>
+
+    </div><br>
+    <div class="div1"><br><br><br>
+      <div class="hi"><h1 style="color: red;"><i class="fa-solid fa-hands-clapping" style="color: yellow;"></i>HI THERE, YOU ARE INVITED</h1>
+    </div><br><br><br>
+      <div class="marry"><h2 style="color: whitesmoke;">WE'RE GETTING MARRIED</h2></div>
+    
+    <br><br><br><br><br><br><br><br>
+    <div class="wed">
+       <p><i class="fa-solid fa-circle-check" style="color: green;"></i>Wedding HTML Template</p>
+       <p><i class="fa-solid fa-circle-check" style="color: green;"></i>Bootstrap V5.1.3 layout</p>
+    </div><br><br><br>
+    <div>
+        <button class="more">DOWNLOAD MORE!</button>
+    </div>
+    <div>
+        <div class="save">
+            <h3 class="up">SAVE THE DATE</h3>
+            <h3 class="down">14th October 2024</h3>
+        </div>
+    </div>
+    </div>
+    <div>
+        <h1 class="love">LOVE STORY</h1>
+        <div class="heart">
+        <i class="fa-solid fa-heart" style="color: red ;"></i>
+    </div>
+    </div>
+    <div class="div2">
+        <div class="bride">
+        <h3>JOLIE</h3> <br>
+        <P>THE BRIDE</P><br>
+        <P class="sarah">Sarah is amazing. When I first met her I new she was amazing and every passing day reminds
+            me of just how amazing she is!</P>
+            <div class="social_media">
+                <i style="color: blue;"  class="fa-brands fa-facebook"></i>
+                <i style="color: blue;" class="fa-brands fa-twitter"></i>
+                <i style="color: red;" class="fa-brands fa-instagram"></i>
+                <i style="color: green;" class="fa-brands fa-whatsapp"></i>
+             </div>
+    </div>
+    <div class="div3">
+        <div class="groom">
+            <h3>BRATT</h3><br>
+            <p>THE GROOM</p><br>
+            <p class="bratt">I really love her incredibly unique blends of talents. She's talented artist, always
+                excited abour a genuinely loving person.</p>
+                <div class="social">
+                    <i style="color: blue;" class="fa-brands fa-facebook"></i>
+                    <i style="color: blue;" class="fa-brands fa-twitter"></i>
+                    <i style="color: red;" class="fa-brands fa-instagram"></i>
+                    <i style="color: green;" class="fa-brands fa-whatsapp"></i>
+    </div>
+    </div>
+    <div>
+    <div class="back">
+       <div class="the"><h1 style="color: rgb(224, 224, 93);">THE WEDDING</h1>
+        <i class="fa-solid fa-heart" style="color: red ;"></i>
+        <div class="rest">
+        </div>
+           <div class="table">
+            <h1 class="receipt" style="color: black;">THE RECEPTION</h1><br>
+            <P ><i class="fa-solid fa-location-dot" style="color: white;"></i> 5th Avenue, at Centeral Park S</P>
+            <p ><i class="fa-regular fa-clock" style="color: white;"></i> 5:00 PM</p>
+           </div>
+            <div class="ceremony">
+           </div>
+           <div class="park">
+           <h1 style="color: black;">WEDDING CEREMONY</h1><br>
+           <p><i class="fa-solid fa-location-dot" style="color: white;"></i> 5th Avenue, at Centeral Park S</p>
+           <p><i class="fa-regular fa-clock" style="color: white;"></i>6:30 PM to 9:30 PM</p>
+           </div>
+           <div class="location">
+           </div>
+           <div class="locate">
+            <h1 style="color: black;">LOCATION</h1><br>
+            <p><i class="fa-regular fa-clock" style="color: white;"></i>5th Avenue at, Central Park S,</p>
+            <p>New YORK, NY 10019, United States</p>
+           </div>
+          </div>
+    </div>
+</div>
+<div class="maid">
+   <h1 class="and">GROOMSMEN & BRIDESMAID</h1> 
+   <div class="join">
+       <i class="fa-solid fa-heart" style="color: red ;"></i>
+</div>
+<div class="side" ><br><br><br><br>
+    <h2 style="color: red;">GROOM SIDE</h2>
+</div>
+</div>
+<div class="div4">
+<div class="cousin">
+    <h1>KEVIN</h1><br>
+    <h2>COUSIN</h2>
+    <p>Wedding Lite is a free HTML template provided by Tooplate website. It is based on Bootstrap v5.1.3 css layout. Ypu are free to use it for your wedding. </p>
+</div>
+</div>
+<div class="girl"><br><br><br>
+    <h2>BRIDE SIDE</h2>
+</div>
+<div class="div5">
+<div class="best">
+    <h1>CRISTINE</h1><br>
+    <h2>BEST FRIEND</h2>
+    <p>Feel free to make a PayPal contribution to contact[at] tooplate.com to support the open community of free HTML Templates. Thankyou.</p>
+</div>
+</div>
+<div class="div6">
+<div class="gallery">
+    <h1 style="color: rgb(214, 214, 80);">GALLERY</h1>
+    <i class="fa-solid fa-heart" style="color: red ;"></i>
+</div>
+<div class="hand">
+</div>
+<div class="ring"></div>
+</div>
+<div class="hand2"></div>
+<div class="wine"></div>
+<div class="party"></div>
+</body>
+</html>

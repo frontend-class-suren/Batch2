@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan and rowspan</title>
+    <style>
+        table, th, td{
+            border:1px solid black;
+            border-collapse:collapse;
+            border-radius: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Cell that span two rows</h2>
+    <p>To make a cell span more than one row,now use the row span table</p>
+    <table style="width: 30%;">
+    <tr>
+     <th>name</th>
+     <td>jill</td>
+     <td>james</td>
+     <td>jack</td>
+    </tr>    
+    <tr>
+        <th rowspan="3">April fool</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>holiday</td>
+        <td>vacation</td>
+        <td>no holiday</td>
+    </tr>
+    <tr>
+        <td>holiday</td>
+        <td>vacation</td>
+        <td>no holiday</td>
+    </tr>
+    
+    </table>
+</body>
+</html>

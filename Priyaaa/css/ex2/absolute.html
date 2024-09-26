@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div.relative {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 600px;
+  height: 200px;
+  border: 3px solid #73AD21;
+  left:50px;
+}
+.absolute h2{
+font-size: larger;
+color: white;
+}
+.absolute, button{
+    padding: 5px 6px;
+    background-color: #73AD21;
+    color: white;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="relative">
+        <img width="1430" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BjFcg6Sp0FkUslmmrCuWQQPFlTn0e23efg&s" alt="">this element is relative
+    <div class="absolute">this is absolute<br>
+        <button>Read</button></div> </div>
+
+</body>
+</html>

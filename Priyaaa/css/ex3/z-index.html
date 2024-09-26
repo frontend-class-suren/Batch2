@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index element layer order </title>
+    <style>
+.container{
+    position: relative;
+}
+.black-box {
+  position:absolute;
+  color: aquamarine;
+  background-color: yellowgreen;
+  z-index: 4;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+  width: 300px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: lightgray;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+  left: 270px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+    </style>
+</head>
+<body>
+    <h1>z-index element</h1>
+    <div class="container">
+        <div class="black-box">Black box (z-index: 4)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+      </div>
+
+    
+</body>
+</html>

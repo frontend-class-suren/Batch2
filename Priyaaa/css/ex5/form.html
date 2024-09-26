@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS form</title>
+    <style>
+        input{
+            width:15%;
+        }
+        input[placeholder]{
+         color: red;
+        }
+        input[type="number"]{
+            border: 1px solid red;
+            background-color: black;
+            color: white;
+        }
+        input[type="email"]:focus{
+            background-color: aqua;
+            border: 1px solid green;
+            color: white;
+            outline: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        First Name
+        <input type="text"placeholder="Enter your first name">
+        <br><br>
+        Last name
+        <input type="text" placeholder="enter your last name">
+        <br>
+        <hr>
+        Contact no.
+        <input type="number">
+        <br> <br>
+        <input type="email" name="" id="" >
+        <br>
+
+    </form>
+</body>
+</html>

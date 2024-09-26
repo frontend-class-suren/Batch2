@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        .main{
+            display: flex;
+            margin: 8px;
+        }
+        .box{
+            float: left;
+            padding: 20px;
+            background-color: skyblue;
+           box-shadow: 10px 10px 5px 8px aquamarine;
+            width: 20%;
+            height: 10vh;
+            position: absolute;
+            border-radius: 6px;
+        }
+        /*.box:hover{
+          box-shadow: 10px 10px 5px 8px red inset;
+    }*/
+        .p-box{
+            width: 21%;
+            background-color: cadetblue;
+            position: relative;
+            height: 20vh;
+            padding: 5px;
+
+        }
+        .box1{
+            float: right;
+          margin: 10px;
+          position: absolute;
+          width: 20%;
+          padding: 20px;
+          background-color: aliceblue;
+          border: 1px solid gray;
+          border-radius: 6px;
+          /*box-shadow:10px 10px;*/
+        }
+        .box1:hover{ 
+            box-shadow: 5px 5px 3px blue, 10px 10px 5px red, 15px 15px 8px green;
+        }
+        .card{
+            background-color:green;
+            width: 15%;
+            height: 100px;
+            padding: 2%;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 green, 0 6px;
+        }
+        .one{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        .container{
+            padding: 1%;
+            width: 100%;
+            background-color: whitesmoke;
+            font-size: 8x;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-box" >
+    <div class="box">
+        <h4>shadow</h4>
+    </div>
+</div><br><br><br><br><br><br>
+<div class="box1">
+  <h4>shadow</h4>
+</div><br><br><br><br><br><br><br><br><br>
+<div class="card">
+   <h4 class="one">1</h4>
+
+<div class="container">
+    <h1>January 1,2021</h1>
+</div>
+</div>
+</body>
+</html>

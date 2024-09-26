@@ -1,0 +1,23 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+color: yellowgreen;
+font-family: cursive;
+font-size: medium;
+}
+h2{
+    background-color: wheat;
+    color: thistle;
+}
+p{
+    background-image: url(https://i.pinimg.com/474x/a3/56/05/a3560522d341e2110f3bad9e03c3cb5a.jpg);
+    color: aliceblue;
+    border: 5px dotted red;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 100px;
+    padding: 50px;
+    border-bottom: 5px dashed orange;
+    border-left:5px solid blue ;
+}
