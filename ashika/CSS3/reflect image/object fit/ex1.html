@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>object fit</title>
+  <style>
+    div{
+      width: 25%;
+      float: left;
+    }
+    .image img{
+      width: 200px;
+      object-fit:fill;
+    }
+    .image1 img{
+      object-fit: contain;
+
+    }
+    .image2 img{
+      width: 200px;
+      object-fit: cover;
+    }
+    .image3 img{
+      object-fit: scale-down;
+      /* -webkit-box-reflect: below 0px; */
+    }
+  </style>
+</head>
+<body>
+<div class="image">
+  <h2>fill</h2>
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" width="300" height="350" alt="object-fit">
+</div>  
+
+<div class="image1">
+  <h2>contain</h2>
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" width="300" height="350" alt="object-fit">
+</div>  
+<div class="image2">
+  <h2>cover</h2>
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" width="300" height="350" alt="object-fit">
+</div>  
+<div class="image3">
+  <h2>
+    scaledown
+  </h2>
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" width="300" height="350" alt="object-fit">
+</div>
+<hr size="10px" color="green">  
+<img src="https://www.w3schools.com/css/img_5terre.jpg" width="" height="" alt="object-fit">
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltips in</title>
+  <style>
+    .tooltip{
+      position: relative;
+      display: inline-block;
+      border-bottom: 2px solid black;
+    }
+    .tooltip .tooltip_text{
+      position: absolute;
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: white;
+      text-align:center;
+      border-radius: 5px;
+      padding: 5px 0;
+      z-index: 1;
+      top: -5px;
+      left: 105%;
+    }
+    .tooltip:hover .tooltip_text{
+      visibility: visible;
+    }
+    .tool.text1{
+      position: absolute;
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: white;
+      text-align:center;
+      border-radius: 5px;
+      padding: 5px 0;
+      z-index: 1;
+      top: -5px;
+      left: 105%;
+    }
+    .tool:hover .text1{
+      visibility: visible;}
+  </style>
+</head>
+<body>
+  <div class="tooltip">
+    <button>open</button>
+    <span class="tooltip_text">click me!</span>
+  </div><br><br><br><br>
+  <div class="tool">
+    <button>bottom</button>
+    <span class="text1">bottom tooltip</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .zola {
+      background-color: whitesmoke;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      height: 70px;
+      padding-top: 15px;
+    }
+    .zola h1 {
+      letter-spacing: 5px;
+      margin-left: 20%;
+    }
+    button {
+      background-color: rgb(25, 157, 205);
+      border: none;
+      border-radius: 30px;
+      width: 250px;
+      color: white;
+      padding: 10px;
+      font-weight: 900;
+    }
+button:hover{
+  box-shadow: 5px 5px 5px whitesmoke;
+  background-color: black;
+  color: white;
+}
+    .zola h3 {
+      margin-left: 30%;
+    }
+
+    .get {
+      display: flex;
+      background-color: rgba(204, 6, 75, 0.96);
+      color: white;
+      padding-left: 30%;
+      padding-top: 15px;
+      height: 50px;
+    }
+
+    .div1 img {
+      width: 100%;
+      object-fit: fill;
+      height: 550px;
+    }
+
+    .wedding {
+      color: white;
+      margin-top: -25%;
+      margin-left: 20%;
+    }
+
+    .icons {
+      display: flex;
+      margin-top: 10%;
+      text-align: center;
+      padding:50px 70px 40px;
+    }
+    .icons i{
+      font-size: 40px;
+      width: 80px;
+      height: 80px;
+      background-color: lightgray;
+      border-radius: 50%;
+      text-align: center;
+      margin-top: 20px;
+      padding-top:15px;
+      color:rgb(25, 157, 205) ;
+      margin-bottom: 20px;
+    }
+    .icon3{
+      margin-top: 30px;
+    }
+    .icon1:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+    background-color: whitesmoke;
+  }
+      .icon2:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+      background-color: whitesmoke;
+    }
+    .icon3:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+    background-color: whitesmoke;
+    /* padding: 20px; */
+    margin-top: 5px;
+    }
+      .icon4:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+    background-color: whitesmoke;
+    }
+    .div2{
+      background-color:  #0e4e96;
+      width: 100%;
+      height: 680px;
+      color: white;
+      text-align: center;
+      padding-top: 80px;
+      margin-top: 50px;
+    }
+    .pic{
+      display:flex;
+      margin-left: 10%;
+      margin-top: 5%;
+    }
+    .pic img{
+      padding: 20px;
+    }
+    .couple{
+      display: flex;
+      margin-top: 40px;
+      padding: 0 200px 0 200px;
+      text-align: center;
+      font-size: 15px;
+    }
+    .img1{
+      border-radius: 50%;
+    }
+    .couple1:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+    background-color: whitesmoke;
+    /* padding: 50px; */
+    /* width: 500px; */
+    }
+    .couple2:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+    background-color: whitesmoke;
+    /* padding: 50px; */
+    /* width: 500px; */
+    }
+    .couple3:hover{
+      box-shadow: 5px 5px  5px black;
+      border-radius: 30px;
+    background-color: whitesmoke;
+    /* padding: 50px; */
+    /* width: 500px; */
+    }
+    .free{
+      margin-top: -25%;
+      margin-left: 40%;
+    }
+    .last{
+      margin-top: 15%;
+    }
+    .top{
+      display: flex;
+      text-align: center;
+      padding: 50px;
+      margin-left: 10%;
+    }
+    .truck{
+      padding-right: 50px;
+    }
+    .truck:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+      border-radius: 20px;
+      /* padding: 20px; */ 
+    }
+    .rotate{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .rotate:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+      border-radius: 20px;
+      /* padding: 20px;
+      width: 400px;} */}
+    .tag{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .tag:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+      border-radius: 20px;
+      /* padding: 20px;
+      width: 400px; */
+      }
+      .bottom{
+      display: flex;
+      text-align: center;
+      padding: 50px;
+      margin-left: 11%;
+    }
+    .piggy{
+      padding-right: 60px;
+      margin-left: 30px;
+    }
+    .piggy:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+      border-radius: 20px;
+    }
+    .mail{
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-left: 25px;
+    }
+    .mail:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+      border-radius: 20px;
+    }
+    .person{
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-left: 50px;
+    }
+    .person:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+      border-radius: 20px;
+      }
+      .start{
+        background-color: #0e4e96;
+        color: white;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        padding-top: 7%;
+        font-size: 25px;
+      }
+      .span1{
+        opacity: 0.5;
+        font-weight: 900;
+      }
+      .span1:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 5px 5px 5px gray;
+      padding:5px 25px 5px 25px;
+        border-radius: 20px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="zola">
+    <h1><i class="fa-solid fa-heart" style="font-size: 40px; opacity: 0.6;"></i> ZOLA</h1>
+    <h3><span class="span1">LOG IN</span> <button style="margin-left: 20px;">START YOUR REGISTRY</button></h3>
+  </div><br><br><br>
+  <div class="get">
+    <h2>GET $25</h2>
+    <p style="padding-left: 10px;padding-top: 5px;">to spend at zola PLUS</p>
+    <h2 style="padding-left: 10px;"> 20% OFF</h2>
+    <p style="padding-left: 10px;padding-top: 5px;">post wedding when you sign up today</p>
+  </div>
+  <div class="div1">
+    <img
+      src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJha2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+      alt="">
+    <div class="wedding">
+      <h1 style="margin-left: 60px;padding-bottom: 10px; font-size: 50px;">THE EASIEST</h1>
+      <h1 style="padding-bottom: 10px; font-size: 50px;">WEDDING REGISTRY</h1>
+      <p style="margin-left:-60px;padding-bottom: 10px; font-size: 20px;">All the you could want,convinence fou you and
+        your guests, free<br>wedding website and more.</p><br>
+      <button>
+        <h3>START YOUR REGISTRY</h3>
+      </button>
+    </div>
+  </div>
+  <div class="icons">
+    <div class="icon1">
+      <i class="fa-solid fa-gift"></i>
+      <h4>So Easy To Use</h4><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatum dicta natus possimus modi nisi in
+        . </p>
+    </div>
+    <div class="icon2">
+      <i class="fa-solid fa-mug-hot"></i>
+      <h4>Our Store Has It All</h4><br>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est beatae a asperiores eveniet doloribus illum.</p>
+    </div>
+    <div class="icon3">
+      <img src="https://i0.wp.com/prospects365.com/wp-content/uploads/2020/01/20-percent-off.png?fit=256%2C256&ssl=1"
+        width="70" height="70" alt="" style="margin-bottom: 20px;">
+      <h4>20% Off Post-Wedding</h4>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum alias fugit id rerum numquam hic placea.</p>
+    </div>
+    <div class="icon4">
+      <i class="fa-solid fa-truck"></i>
+      <h4>FREE Shipping<br>And Returns</h4>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam, dolor dicta architecto delectus aperiam.</p>
+    </div>
+  </div>
+  <div class="div2">
+    <div class="header">
+      <h2>Brands Everyone Will Love</h2>
+      <p>When over 500 registry stapies and cool up-and-comers,there'scsomething everyone will love,with every price range in mind<br>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    </div>
+  <div class="pic">
+    <div class="pic1">
+      <img src="https://roxboroughelectrics.com/cdn/shop/products/sj-3_700x.jpg?v=1606757208" width="300" height="300" alt="">
+      <h3 style="background-color: whitesmoke; color:#0e4e96;width: 260px; margin-left: 20px;margin-right: 5px;padding: 15px; margin-top: -25px;"><strong>Cuisinart</strong></h3>
+    </div>
+    <div class="pic2">
+      <img src="https://www.styledsettings.com/cdn/shop/files/bgcan1.jpg?v=1714403646&width=2188" width="300" height="300" alt="">
+      <h3  style="background-color: whitesmoke; color:#0e4e96;width: 260px; margin-left: 20px;padding: 15px; margin-top: -25px;"><strong>OXO</strong></h3>
+    </div>
+    <div class="pic3">
+      <img src="https://i2.wp.com/smokedbbqsource.com/wp-content/uploads/2023/03/kitchen-aid-grinder-attachment-metal.jpg" width="300" height="300" alt="">
+      <h3  style="background-color: whitesmoke; color:#0e4e96;width: 260px;margin-left: 20px;margin-right: 5px;padding: 15px; margin-top: -25px;"><strong>KitechenAid</strong></h3>
+    </div>
+    <div class="pic4">
+      <img src="https://i.pinimg.com/564x/33/a7/3b/33a73b8d556b7aa990d61f06b89a2d76.jpg" width="300" height="300" alt="">
+      <h3  style="background-color: whitesmoke; color:#0e4e96;width: 260px;margin-left: 20px;margin-right: 5px;padding: 15px; margin-top: -25px;">Crate&Barrel</h3>
+    </div>
+  </div>
+  <button style="margin-top: 3%;">
+    <h3>START YOUR REGISTRY</h3>
+  </button>
+  </div><br><br><Br>
+  <div class="div3">
+    <center>
+      <h1>Rated 5 Stars On Google</h1>
+      <br><p>Join <strong>over 500,000</strong> couples who have registered at Zola.</p>
+    </center>
+    <div class="couple">
+      <div class="couple1">
+        <img class="img1" src="https://t4.ftcdn.net/jpg/02/77/68/51/360_F_277685185_UAYxm224UPelni1rxsuAUZQbfhly0RpL.jpg" width="150" height="150" alt="">
+        <p style="padding-left: 20px;">"LOVED having our gifts and cash funds on one page.Our moms were legit jeleaous about our gifts too"</p>
+        <img src="https://t3.ftcdn.net/jpg/01/64/65/46/360_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg" width="100" alt="">
+        <h3>CAROLYN & NAT</h3>
+        <h4>Dallas,TX</h4>
+      </div>
+      <div class="couple2">
+        <img class="img1" src="https://st.depositphotos.com/62628780/60981/i/450/depositphotos_609810412-stock-photo-couple-love-smile-while-hugging.jpg" width="150" height="150" alt="">
+        <p style="padding-left: 20px;">"The best customer service on the planet.Price matched my neohew's olates on the spot."</p>
+        <img src="https://t3.ftcdn.net/jpg/01/64/65/46/360_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg" width="100" alt="">
+        <h3>MAUREEN</h3>
+        <h4>Fort Lauderdale,FL</h4>
+      </div>
+      <div class="couple3">
+        <img class="img1" src="https://t3.ftcdn.net/jpg/03/07/61/52/360_F_307615248_ElMPibAB9BD5d30ax2nMSMcBDtUAZ8dd.jpg" width="150" height="150" alt="">
+        <p style="padding-left: 20px;">"Lives up to the type! And Can't recommened the app enough super helpful and super fun."</p>
+        <img src="https://t3.ftcdn.net/jpg/01/64/65/46/360_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg" width="100" alt="">
+        <h3>MESSY & KENYTA</h3>
+        <h4>Brooklyn,NY</h4>
+      </div>
+    </div>
+  </div><br><Br><Br><Br><BR>
+  <div class="div4">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/016/404/093/small_2x/banner-with-pattern-from-different-hearts-and-valentines-day-symbols-elements-top-view-creative-valentines-day-flat-lay-background-photo.jpg" width="100%" height="500" alt="">
+ <div class="free">
+  <h2>Create a <a href="https://www.theknot.com/gs/wedding-websites " target="_blank" style="color: red;">Free</a></h2>
+  <h2>Wedding Website,Too</h2><br>
+  <p>Choose from over <strong>100 gorgeous, easy-to-use</strong><br>
+  designs,made to match every wedding style<br>and colour scheme.All of them are free and can<br>be personalized in minutes.</p><br><br><br>
+  <button>GET STARTED</button>
+ </div>
+  </div>
+  <div class="last">
+    <center>
+      <h1>Make It Easy For Your Whole Crew</h1>
+    </center>
+    <div class="top">
+      <div class="truck">
+        <i class="fa-solid fa-truck" style="font-size: 40px;color:  rgb(25, 157, 205); padding-left: 40px;margin-bottom: 20px; "></i>
+        <h3>Free Shipping<br>and Returns</h3>
+        <p>From your BFF<sub>s</sub> to aunties,everyone will love it.</p>
+      </div>
+      <div class="rotate">
+        <i class="fa-solid fa-rotate" style="font-size: 40px;color:  rgb(202, 11, 56); padding-left: 40px;margin-bottom: 20px;"></i>
+        <h3>Smarter Exchanges</h3>
+        <p>Do it before gifts<br>(without guests finding out).</p>
+      </div>
+      <div class="tag">
+        <i class="fa-solid fa-tag" style="font-size: 40px;color:  rgb(25, 157, 205); padding-left: 40px;margin-bottom: 20px;"></i>
+        <h3>Price Matching</h3>
+        <p>Because your guests deserve the best.</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="piggy">
+      <i class="fa-solid fa-piggy-bank" style="font-size: 40px;color:palevioletred; padding-left: 40px;margin-bottom: 20px; "></i>
+      <h3>Lowest Cash<br>Fund Fee</h3>
+      <p>The absolute lowest of any registry</p>
+    </div>
+    <div class="mail">
+      <i class="fa-solid fa-envelope" style="font-size: 40px;color:lightpink; padding-left: 40px;margin-bottom: 20px;"></i>
+      <h3>Free Thank-You<br>Note Manager</h3>
+      <p>We'll tell you sent you what<br>and their address.</p>
+    </div>
+    <div class="person">
+      <i class="fa-solid fa-person" style="font-size: 40px;color:  rgb(25, 157, 205); padding-left: 40px;margin-bottom: 20px;"></i>
+      <h3>Top-Notech<br>Customer Service</h3>
+      <p>Ask us anything-we're just a call <br>or email away.</p>
+    </div>
+  </div>
+</div>
+<div class="start">
+  <i><h1>Start your registry today!</h1></i><br>
+  <button>Sign Up Now</button>
+</div>
+</body>
+</html>
