@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            margin-top: 60px;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+            width: 140px;
+            background-color: blue;
+            padding: 7px 0;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+       /* .tooltip .tooltip_text{
+            visibility: hidden;
+            width: 100px;
+            position: absolute;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            z-index: 1;
+            /*bottom: 150%;
+            left: 105%;
+            margin-left: -60px;
+    }
+        .tooltip:hover .tooltip_text{
+            visibility: visible;
+        }*/
+        .tooltip .tooltiptext::after {
+         content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: blue transparent transparent transparent;
+}
+
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        <button>arrow</button>
+        <span class="tooltiptext">arrow of tooltip</span>
+    </div>
+</body>
+</html>
