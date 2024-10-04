@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Button</title>
+    <style>
+      .btn button {
+        background-color: rgb(29, 223, 15);
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: none;
+        margin-left: 40%;
+        transition: 0.4s;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+      }
+      @keyframes example {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      .btn button:hover {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid cyan;
+        color: rgb(0, 213, 255);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+    <button class="button" style="vertical-align:middle"><span>LINK BELOW</span></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        img{
+            margin-left: 40px;
+        }
+        .image img {
+          width: 200px;
+          height: 300px;
+          object-fit: cover;
+        }
+        .image1 img{
+          width: 200px;
+          height: 300px;
+          object-fit: contain;
+        }
+        .image2 img{
+          width: 200px;
+          height: 300px;
+          object-fit: fill;
+        }
+        .image3 img{
+          width: 200px;
+          height: 300px;
+          object-fit: scale-down;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Using object-fit: cover</h2>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/R.32f111138533abd7ee5c51206a8b8ed1?rik=FsHNIvLU22Xt2g&pid=ImgRaw&r=0" alt="Paris" width="300" height="300">
+        </div>
+        <hr>
+        <h2>Using object-fit: contain</h2>
+        <div class="image1">
+            <img src="https://th.bing.com/th/id/R.32f111138533abd7ee5c51206a8b8ed1?rik=FsHNIvLU22Xt2g&pid=ImgRaw&r=0" alt="Paris" width="300" height="300">
+        </div>
+        <hr>
+        <h2>Using object-fit: fill</h2>
+        <div class="image2">
+            <img src="https://th.bing.com/th/id/R.32f111138533abd7ee5c51206a8b8ed1?rik=FsHNIvLU22Xt2g&pid=ImgRaw&r=0" alt="Paris" width="300" height="300">
+        </div>
+        <hr>
+        <h2>Using object-fit : scale-down</h2>
+        <div class="image3">
+            <img src="https://th.bing.com/th/id/R.32f111138533abd7ee5c51206a8b8ed1?rik=FsHNIvLU22Xt2g&pid=ImgRaw&r=0" alt="Paris" width="300" height="300">
+        </div>
+    
+</body>
+</html>

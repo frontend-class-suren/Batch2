@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.top-bar {
+    background-color: #223480;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.top-bar .contact-info {
+    font-size: 14px;
+    margin-left: 70%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top-bar .book-now {
+    background-color: #68a43e; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 50px;
+}
+
+.top-bar .book-now:hover {
+    background-color: #558931; 
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-left: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #64b62a; 
+}
+.hero-section {
+    background-image: url(https://th.bing.com/th/id/R.087a96070cf9969fe3b0a2441c1a5cfe?rik=Ox7h8nY9Cmu%2fUw&riu=http%3a%2f%2fwww.pittsburghdesirablekitchens.com%2fwp-content%2fuploads%2f2020%2f01%2fCleaning-Cabinets.jpg&ehk=TA%2bRiVFZgEBFhzAXbQhcH1ktpnP9jRZSqqTtYClcO0g%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+   
+}
+
+.hero-text {
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+    margin-right: 30%;
+}
+.hero-text h2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-text h1 {
+    color: #2a2a72;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-text p {
+    color: #2a2a72;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text a {
+    background-color: #223480; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hero-text a:hover {
+    background-color: #1a2a62;
+}
+
+.hero-image {
+    max-width: 50%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    background-color: rgb(46, 217, 46);
+    /* max-width: 800px; */
+    padding: 20px;
+}
+.container h1 {
+    margin-top: 90px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+.head h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+}
+.services-container2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+/* .service {
+    margin-left: 15%;
+    width: 30%;
+    padding: 10px;
+} */
+.service img {
+    margin-left: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.service h3 {
+    margin-top: 4%;
+    margin-left: 25%;
+    font-size: 18px;
+    color: #2e8b57;
+}
+.service p {
+    margin-top: 5%;
+    color: #6c757d;
+    font-size: 14px;
+}
+.clean{
+    color: rgb(34, 0, 92);
+    margin-left: 10px;
+}
+.sections {
+    margin-top: 10%;
+    margin: 20px 0;
+    padding: 20px;
+}
+.satisfaction-contain {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+}
+.satisfaction-contain img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* border-radius: 8px; */
+}
+.satisfaction-content {
+    background-color: #2e3e74;
+    color: white;
+    padding: 97px;
+    /* border-radius: 8px; */
+    width: 40%;
+}
+.satisfaction-content h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.satisfaction-content p {
+    font-size: 14px;
+}
+.testimonial-contain {
+    margin-top: 40px;
+}
+.testimonial-contain h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #2e3e74;
+    margin-bottom: 20px;
+}
+.testimonial-contain p {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: #6c757d;
+}
+.testimonial-contain .client-name {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #28a745;
+}
+.footer {
+    background-color: #2e3e74;
+    color: white;
+    /* padding: 40px 20px; */
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.footer-section {
+    margin-top: 5%;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #6ab04c;
+}
+.footer-section ul li{
+    margin: auto;
+    width: 100px;
+    text-align: start;
+}
+ .footer-section a {
+    font-size: 14px;
+    color: #dcdde1;
+    text-decoration: none;
+    line-height: 1.6;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.mailing-list input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.mailing-list button {
+    padding: 10px 20px;
+    background-color: #6ab04c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mailing-list button:hover {
+    background-color: #57a44c;
+}
+.copyright {
+    background-color: #1a2a62;
+    padding: 30px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #dcdde1;
+}
+@media screen and (max-width: 768px) {
+    .top-bar, header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
