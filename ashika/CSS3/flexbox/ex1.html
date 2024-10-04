@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <style>
+    .flex{
+      display: flex;
+      background-color: dodgerblue;
+    }
+    .flex > div{
+      background-color: white;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      width: ;
+    }
+    @media screen and (min-width:600px){
+      .flex{
+        display: flex;
+        flex-direction:column;
+      }
+    } 
+  </style>
+</head>
+<body>
+  <h2>Create a flex container</h2>
+ <div class="flex">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+ </div> 
+ <p>Aflexible layout must have a parentwith the <em>display</em> property set to <em>flex</em>.</p>
+
+ <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p></p>
+</body>
+</html>
