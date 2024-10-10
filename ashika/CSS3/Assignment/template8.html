@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .get {
+      display: flex;
+      background-color: rgb(21, 5, 80);
+      /* padding: 20px 50px 0px 60%; */
+      color: white;
+      /* position: fixed; */
+    }
+
+    .get p {
+      padding: 20px 50px 10px 60%;
+    }
+
+    .btn1{
+      padding: 8px;
+      margin-left: -25px;
+      border: none;
+      background-color: rgb(39, 241, 39);
+      color: white;
+    }
+    .sticky {
+      display: flex;
+      background-color: whitesmoke;
+      text-justify: center;
+      height: 50px;
+    }
+
+    .nav {
+      margin-left: 25%;
+    }
+
+    .sticky li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 20px 10px 20px 20px;
+      margin-top: -5px;
+      color: rgb(133, 131, 131);
+      font-weight: bold;
+    }
+
+    .sticky li:hover {
+      background-color: black;
+      color: white;
+      height: 50px;
+      margin-top: -1px;
+    }
+
+    .header {
+      color: rgb(21, 5, 80);
+      margin-top: -25%;
+      margin-left: 10%;
+      word-spacing: 3px;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+
+    .header button {
+      background-color: rgb(21, 5, 80);
+      color: white;
+      padding: 15px;
+      border: none;
+    }
+
+    .header button:hover {
+      background-color: black;
+      color: white;
+      box-shadow: 5px 5px 5px blue;
+    }
+
+    .div2 {
+      background-color: rgb(39, 241, 39);
+      /* color: white; */
+      width: 100%;
+      height: 500px;
+      /* margin-top: -20%; */
+    }
+
+    .welcome {
+      /* padding-top: 20%; */
+      margin-top: -15%;
+      text-align: center;
+      color: white;
+    }
+
+    .welcome p {
+      text-align: unset;
+      padding: 2% 15% 10% 15%;
+    }
+
+    .img1 img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    .img1 p {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .img1:hover{
+      box-shadow: 5px 5px 5px black;
+      background-color: whitesmoke;
+    }
+
+    .img2 img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+
+    .img2 p {
+      padding-right: 20px;
+      padding-left: 20px; 
+    }
+.img2:hover{
+  box-shadow: 5px 5px 5px black;
+  background-color: whitesmoke; 
+}
+    .img3 img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+  .img3 p {
+      padding-right: 20px;
+      padding-left: 20px; 
+    }
+.img3:hover{
+  box-shadow: 5px 5px 5px black;
+  background-color: whitesmoke; 
+}
+    .image {
+      display: flex;
+      padding: 10%;
+      text-align: center;
+      margin-top: -7%;
+    }
+
+    .div3 {
+      height: 300px;
+    }
+
+    .image1 {
+      /* background-repeat: no-repeat; */
+      background-size: 300px;
+      margin-left: 250px;
+    }
+.divA{
+  margin-top: -50px;
+}
+    .para {
+      background-color:rgb(21, 5, 80);
+      color: white;
+      width: 500px;
+      height: 450px;
+      margin-left: 750px;
+      margin-top: -300px;
+      padding: 3%;
+      text-align: justify;
+    }
+    .para2 {
+      width: 50%;
+      text-align: center;
+      margin-left: 350px;
+    }
+
+    .div4 {
+      background-color:rgb(21, 5, 80);
+      background-size: cover;
+      height: 300px;
+      padding: 2%;
+    }
+
+    .para1 {
+      color: white;
+      width: 300px;
+      text-align: justify;
+      margin-left: 180px;
+    }
+
+    .FAQ {
+      display: block;
+      color: white;
+      margin-left: 580px;
+      width: 140px;
+      margin-top: 20px;
+    }
+    .FAQ li:hover{
+color: yellow; text-decoration: underline;
+    }
+.FAQ1{
+  margin-left: 60px;
+margin-top: 20px;
+  color: white;
+}
+.FAQ1 li:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+    .list {
+      margin-left:66%;
+      margin-top: -225px;
+      color: white;
+    }
+
+    .imp {
+      margin-left: 30%;
+      margin-top: -200px;
+      color: white;
+    }
+    .links{
+      display: flex;
+    }
+    button:hover{
+      background-color: white;
+      color: black;
+      box-shadow: 5px 5px 5px white;
+    }
+    .john{
+      color: rgb(39, 241, 39); text-align: center;
+    }
+    .john:hover{
+      color: red;
+      text-shadow:2px 8px 2px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="get">
+    <p>GET STARTED TODAY ! <strong>(800)786-3828</strong></p>
+    <button class="btn1">
+      <h3>BOOK NOW</h3>
+    </button>
+  </div>
+  <div class="sticky">
+    <h2 style="color:rgb(21, 5, 80); margin-top: 10px;margin-left: 15%;">CLEANING SERVICES,INC</h2>
+    <div class="nav">
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <li>GET AN ESTIMATE</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+  </div>
+  <div class="div1">
+    <img src="https://facilityservice.org/wp-content/uploads/2020/03/03.jpg" width="100%" height="600" alt="">
+    <div class="header">
+      <p>A WIDE RANGE OF</p><br>
+      <H1 style="margin-top: -20px;margin-bottom: 5px;">CLEANING SERVICES</H1>
+      <p>for catering to both residental and corporate</p><br><Br>
+      <button>
+        <h3>CONTACT US TODAY</h3>
+      </button>
+    </div>
+  </div>
+  <div class="div2"></div>
+  <div class="welcome">
+    <h1>WELCOME TO CLEANING SERVICES,INC.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, minus. Fugit sunt est delectus maxime debitis
+      quas, deleniti consectetur. Tenetur obcaecati commodi enim vero vitae temporibus officiis sapiente. Quis odit
+      vitae ipsa doloribus omnis eos, qui eius libero natus itaque, laudantium minus incidunt fugit debitis eligendi
+      quidem suscipit ullam officia.</p>
+  </div>
+  <center>
+    <h2 style="color:rgb(21, 5, 80) ;">OUR SERVICES</h2>
+  </center>
+  <div class="image">
+    <div class="img1">
+      <img
+        src="https://nextdaycleaning.com/wp-content/uploads/2020/02/Differences-between-Residential-Cleaning-and-Commercial-Cleaning-1024x683.jpg"
+        alt="">
+      <h2 style="color:rgb(21, 5, 80)  ;">RESIDENTAL</h2>
+      <h2 style="color: rgb(39, 241, 39);">CLEANING</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit beatae eius ea? Atque, deleniti aut! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae.</p>
+    </div>
+    <div class="img2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYmoFZJDmwPo-YYMZRgx2HgB23n2iPPQysA&s" alt="">
+      <h2 style="color:rgb(21, 5, 80)  ;">COMMERCIAL</h2>
+      <h2 style="color: rgb(39, 241, 39);">CLEANING</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit beatae eius ea? Atque, deleniti aut! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae.</p>
+    </div>
+    <div class="img3">
+      <img
+        src="https://cleanmethod.com/wp-content/uploads/2022/09/What-Happens-During-A-Rough-Construction-Cleaning-1.jpg"
+        alt="">
+      <h2 style="color:rgb(21, 5, 80)  ;">COMMERCIAL</h2>
+      <h2 style="color: rgb(39, 241, 39);">CLEANING</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit beatae eius ea? Atque, deleniti aut! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae.</p>
+    </div>
+  </div>
+  <div class="divA">
+    <div class="div3">
+      <img class="image1" src="https://www.asilsera.com/images/haberler/bir-kadin-icin-temiz-dunyanin-anlami.jpg"
+        width="500" height="450" alt="">
+    </div>
+    <div class="para">
+      <h1>100% SATISFACTION</h1>
+      <h1>GUARANTED</h1>
+      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolorem rem officiis optio repellendus enim
+        ad non cum magnam ratione architecto delectus ipsum assumenda iure esse eligendi natus, tenetur sapiente
+        temporibus quae commodi eaque eum. Corporis, incidunt alias ipsum facere cumque laborum obcaecati ullam aliquid?
+        Blanditiis deserunt placeat sit laboriosam aliquid assumenda corrupti porro doloremque quasi neque officiis
+        similique sunt impedit repudiandae, veniam officia itaque eveniet consectetur autem. Distinctio sint soluta vel
+        tempore blanditiis excepturi ullam, tempora facilis perspiciatis voluptates molestiae sapiente voluptatibus
+        ratione id natus vitae eius corporis, fugit suscipit error doloremque fugiat possimus. Commodi unde a
+        perferendis perspiciatis?</P>
+    </div><br><br>
+  </div>
+  <h1 style="color:rgb(21, 5, 80); text-align: center;">WHAT OUR CLIENTS SAY</h1><br>
+  <i class="fa-solid fa-quote-left" style="font-size: 50px;margin-left: 48%;padding-bottom: 10px; opacity: 0.6;"></i>
+  <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore, perspiciatis unde totam
+    vitae ipsa, expedita dolores officiis ipsam eius numquam. Eaque facere nam aspernatur, mollitia repudiandae deleniti
+    enim possimus.</p><br>
+  <h4 class="john">JOHN SMITH</h4><br>
+  <div class="div4">
+    <div class="para1">
+      <h2 style="margin-top: 50px;">WHO WE ARE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint deserunt dolorum quis porro dolore sequi quae
+        recusandae distinctio. Ratione nostrum ipsa exercitationem vitae eos dignissimos veritatis suscipit blanditiis,
+        officia, ab, dolorum asperiores ex totam quam perspiciatis cumque laborum corporis eius!</p>
+    </div>
+    <div>
+      <h1 class="imp"><span style="margin-left: 120px;">IMPORTANT LINKS</span></h1>
+      <div class="links">
+        <ul class="FAQ">
+          <li>FAQ's</li>
+          <li>Welcome Packet</li>
+          <li>Cleaning Products</li>
+          <li>Videos & Tips</li>
+          <li>Testimonials</li>
+        </ul>
+        <ul class="FAQ1">
+          <li>Sito Map</li>
+          <li>Privacy Policy</li>
+          <li>Our Locations</li>
+          <li>Notice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="list">
+    <h2>JOIN OUR MAKING LIST</h2>
+    <form action="">
+      <input type="email" placeholder="Enter your Email here" style="padding: 10px;width: 300px; margin-top: 30px;">
+    </form><br>
+    <button style="background-color:rgb(39, 241, 39); color: white; border: none;padding: 10px; width: 300px;margin-top: -15px;"><h3>SUBSCRIBE</h3></button>
+  </div>
+
+</body>
+
+</html>
