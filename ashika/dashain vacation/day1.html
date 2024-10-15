@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+.body{
+  font-family: sans-serif ,"lato";
+}
+    .sticky {
+      background-color: black;
+      height: 70px;
+      position: fixed;
+      width: 100%;
+    }
+
+    ul,
+    a {
+      list-style-type: none;
+      text-decoration: none;
+      display: flex;
+      padding: 10px 20px 10px 20px;
+      color: white;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown_content {
+      display: none;
+      position: absolute;
+      background-color: whitesmoke;
+      color: black;
+      min-width: 240px;
+      padding: 5px 10px;
+      /* z-index: 1; */
+    }
+
+    .more li {
+      color: black;
+      border: 1px solid whitesmoke;
+    }
+
+    .dropdown:hover .dropdown_content {
+      display: block;
+    }
+
+    li:hover {
+      background-color: whitesmoke;
+      color: black;
+    }
+
+    .div1 {
+      text-align: center;
+      color: white;
+      margin-top: -5%;
+    }
+
+    .div2 {
+      text-align: center;
+      margin-top: 5%;
+    }
+    .para1{
+text-align: center;
+text-align: justify;
+padding: 0px 15% 0px 15%;
+    }
+    .img2{
+       padding-top: 5%; 
+      /* padding-right: 20px; */
+      display: flex;
+      /* text-align: center; */
+      /* padding-left: 20%; */
+    margin-left: 30%;
+    }
+ .p1{
+    display: flex;
+  padding-left: 26%;
+  margin-top: 5%;
+  
+    }
+    .p1 p{
+      padding-left: 13%;
+      font-weight: bolder;
+    }
+    .img2 img{
+      padding: 30px;
+      margin-top: -8%;
+      border-radius: 40px;
+    }
+    .tour{
+      background-color: black;
+      width: 100%;
+      height: 900px;
+      color: white;
+    }
+    .div3{
+      width: 800px;
+      height: 130px;
+      border: 1px solid black;
+      background-color: white;
+      color: gray;
+      text-align: left;
+      /* padding: 10px; */
+      margin-top: 40px;
+    }
+    .div3 h3{
+      padding: 10px;
+    }
+    .span1{
+      background-color: orangered;
+      width: 300px;
+      color: white;
+      margin-left: 30px;
+    }
+    #span2{
+       background: rgb(101, 30, 30); 
+       color: white;border-radius: 50%;
+      margin-left:85%;
+      padding:15px;
+      /* margin-top: -5%; */
+      margin-top: -80px;
+    }
+    .new{
+      background-color: white;
+      width: 300px;
+      height: 500px;
+      color: black;
+      text-align: left;
+      text-align: justify;
+      padding: 5%;
+      padding-right: 50px;
+    }
+    .div4{
+      display: flex;
+      padding: 40px;
+    }
+    .paris{
+      background-color: white;
+      width: 300px;
+      height: 500px;
+      color: black;
+      text-align: left;
+      text-align: justify;
+      padding: 5%;}
+      .san{
+      background-color: white;
+      width: 300px;
+      height: 500px;
+      color: black;
+      text-align: left;
+      text-align: justify;
+      padding: 5%;}
+
+  </style>
+</head>
+
+<body>
+  <div class="sticky">
+    <ul>
+      <a href="">
+        <li>HOME</li>
+      </a>
+      <a href="">
+        <li>BAND</li>
+      </a>
+      <a href="">
+        <li>TOUR</li>
+      </a>
+      <a href="">
+        <li>CONTACT</li>
+      </a>
+      <div class="dropdown">
+        <a href=""><span>MORE </span> <i class="fa fa-caret-down" style="padding-left: 10px;"></i></a>
+        <div class="dropdown_content">
+          <ul class="more">
+            <li>Merchandise</li>
+            <li>Extra</li>
+            <li>Media</li>
+          </ul>
+        </div>
+      </div>
+      <i class="fa fa-search" style="padding-left:65%; padding-top: 20px;"></i>
+    </ul>
+  </div>
+  <div class="img1">
+    <img
+      src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?cs=srgb&dl=pexels-thibault-trillet-44912-167636.jpg&fm=jpg"
+      width="100%" height="900px" alt="">
+    <div class="div1">
+      <h1>Chicago</h1>
+      <h3>THANK YOU ! Chicago-A night we won't forget.</h3>
+    </div>
+  </div>
+  <div class="div2">
+    <h1>THE BAND</h1>
+    <br>
+    <h3><em>We Love Music</em></h3>
+    <div class="para1">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem corrupti, accusantium ducimus quia quaerat
+        porro, excepturi et facere fugiat fugit, ipsum repellat ratione error. Ad neque tempora aspernatur nobis
+        reiciendis iure corporis, quae id deleniti ut. Cumque, provident sit nobis culpa quae corrupti qui ea! Obcaecati
+        quas, dolorum eos quis in aspernatur voluptatum quos doloremque et ea nisi magni totam earum maxime modi, minus
+        numquam consequuntur perspiciatis atque distinctio veniam voluptates, alias adipisci illo. Suscipit voluptas
+        explicabo voluptatem rerum, illo dolorum qui laborum aut placeat est voluptate amet tempore ex, iure ipsum sequi
+        ad fuga eveniet omnis doloribus non! Blanditiis eius at, sint vel dicta laborum! Similique placeat veniam
+        dolorum tempore voluptatem repellat saepe aspernatur cum? Vitae dicta alias nam possimus eos, labore ipsum nisi
+        accusamus, soluta reprehenderit adipisci? Eligendi eaque ex asperiores laudantium, perferendis quae totam,
+        placeat iste voluptates ratione maxime ipsum rerum vel minima doloribus voluptas fuga maiores iusto architecto
+        saepe, cumque fugit possimus quidem? Iure adipisci dolor velit alias corrupti, reiciendis optio laboriosam odio!
+        Quo laborum suscipit quas veniam quasi aliquam officia temporibus sit explicabo nobis sed magnam hic laudantium
+        fugiat, amet corporis delectus et, exercitationem cumque saepe nesciunt dolore repellat? Vitae ut saepe minus
+        omnis fugit.</p>
+    </div>
+<div class="p1">
+  <p>Name</p>
+  <p>Name</p>
+  <p>Name</p>
+</div>
+<div class="img2">
+  <img src="https://images.pexels.com/photos/16890783/pexels-photo-16890783/free-photo-of-man-taking-pictures-with-camera.jpeg" width="200" height="250" alt="">
+  <img src="https://images.pexels.com/photos/16890783/pexels-photo-16890783/free-photo-of-man-taking-pictures-with-camera.jpeg"width="200" height="250" alt="">
+  <img src="https://images.pexels.com/photos/16890783/pexels-photo-16890783/free-photo-of-man-taking-pictures-with-camera.jpeg"width="200" height="250" alt="">
+</div>
+<div class="tour">
+  <center>
+    <h1 style="padding-top: 70px;">TOUR DATES</h1>
+    <em><h4 style="color: gray;margin-top: 20px;">Remember to book your tickets!</h4></em>
+    <div class="div3">
+      <h3>September <span class="span1">Sold Out</span></h3><hr>
+      <h3>October <span class="span1">Sold Out</span></h3><hr>
+      <h3>November <span id="span2">3</span></h3>
+    </div>
+  </center>
+  <div class="div4">
+    <div class="new">
+      <img width="200" height="200" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D"  alt="">
+   <h3>New York</h3><br>
+   <p>Fri 27 Nov 2016</p><br>
+<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+<button>Buy Tickets</button>
+    </div>
+    <div class="paris">
+      <img width="200" height="200" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D"  alt="">
+   <h3>New York</h3><br>
+   <p>Fri 27 Nov 2016</p><br>
+<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+<button>Buy Tickets</button>
+    </div>
+    <div class="san">
+      <img width="200" height="200" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D"  alt="">
+   <h3>New York</h3><br>
+   <p>Fri 27 Nov 2016</p><br>
+<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+<button>Buy Tickets</button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
