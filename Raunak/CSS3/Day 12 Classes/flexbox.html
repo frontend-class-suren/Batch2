@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+@media screen and (min-width: 480px) {
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+<div class="map">
+    <h2>Contact Us!</h2>
+    <br>
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.240983339902!2d83.46472217529848!3d27.648014976216725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39968570d1d63f31%3A0x95ec313c0e04cee8!2zTHVtYmluaSBDaXR5IENvbGxlZ2Ug4KSy4KWB4KSu4KWN4KSs4KS_4KSo4KWAIOCkuOCkv-Ckn-ClgCDgpJXgpLLgpYfgpJw!5e0!3m2!1sen!2snp!4v1728033153947!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
+
+

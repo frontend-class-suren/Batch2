@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+  --bg:#732393;
+}
+
+body {
+  background-color: var(--bg);
+  --blue:#ff8000;
+  color:var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+    --blue:#008000;
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  --blue: #0000ff; /* local variable will override global */
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Override Global Variable With Local Variable</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>
+    <button>Yes</button>
+    <button>No</button>
+  </p>
+</div>
+
+</body>
+</html>
+
+

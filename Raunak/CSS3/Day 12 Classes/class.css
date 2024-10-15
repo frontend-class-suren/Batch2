@@ -1,0 +1,27 @@
+.main{
+    padding: 50px;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/892/348/original/abstract-retro-style-of-midcentury-geometric-design-header-template-graphics-style-of-simple-sign-shape-background-illustration-vector.jpg);
+}
+.nav_bar{
+    display: flex;
+    background-color: rgb(247, 136, 31);
+}
+.nav_bar a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+.nav_bar a:hover{
+    background-color: white;
+    color: rgb(255, 170, 50);
+}
+.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 40%;
+    background-color: bisque;
+}
