@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif; ;
+}
+#hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://totalfood.com/wp-content/uploads/2023/05/food-trends-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+#hero_content{
+    position: absolute;
+}
+#hero_content h1{
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px black;
+}
+#hero_content h2{
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 2px black;
+}
+#hero_content a{
+    color: white;
+    font-size: 2.8rem;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid orange;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#hero_content a:hover{
+    border: 1px solid orange;
+    color: black;
+    background: white;
+    transition: .4s;
+}
+#header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0, 0, 0, 0.5);
+}
+#navbar h1{
+    color: orange;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-around;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+}
+#navbar ul li a:hover{
+    color: orange;
+    cursor: pointer;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#phone a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid orange;
+}
+#phone a:hover{
+    color: orange;
+    cursor: pointer;
+    
+}
+#mobile_menu{
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: orange;
+}
+#mobile_menu ul{
+    display: flex;
+    justify-content: center;
+}
+#mobile_menu ul li{
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+#mobile_menu ul li:hover{
+    color: rgb(204, 199, 190);
+    cursor: pointer;
+}
+#mobile_menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    padding: 25px 0 25px 0;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu_row{
+    display: flex;
+    padding: 0 100px 0 100px ;
+}
+#menu_col{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid  #bbb;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+#menu_col h2{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#images{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+}
+#images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+#chef{
+    padding: 25px 0 25px 0;
+    background-color: #bbb;
+}
+#chef_row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chef_col{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 5px;
+}
+#img{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#about{
+    padding: 25px 0 25px 0;
+}
+#about_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px 0 100px;
+}
+.about_col{
+    flex: 1;
+}
+#about_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+#about_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.about_col h1{
+    text-align: center;
+    text-decoration: underline;
+    line-height: 1.4;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about_col p{
+    text-align: justify;
+    font-weight: 300;
+}
+#contact{
+    background-color: gray;
+    padding: 25px 0 25px 0;
+}
+#contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+.contact_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.contact_col p,h3{
+    font-weight: 300;
+    color: black;
+    margin: 10px;
+}
+.contact_col p a{
+    text-decoration: none;
+    color: black;
+}
+.social a{
+    color: orange;
+    margin: 3px;
+    filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+.social a:hover{
+    filter: grayscale(0);
+}
+.contact_col form{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+}
+.contact_col form h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact_col form input{
+    width: 100%;
+    height: 17pt;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+}
+.contact_col form textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+}
+.contact_col form button{
+    margin: auto;
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    border: 1px solid rgb(255, 255, 255);
+}
+.contact_col form button:hover{
+    background-color: rgb(255, 255, 255);
+    color: orange;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#footer{
+    background-color:rgb(41, 41, 41);
+    padding: 20px;
+    position: relative;
+}
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+#footer h5 a{
+    color: white;
+    text-decoration: none;
+}
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: white;
+    font-size: 1.2rem;
+}
+@media screen and (max-width : 768px) {
+    #header{
+        position: absolute;
+    }
+    #mobile_menu{
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+    html{
+        font-size: 95%;
+    }
+    #menu_row,#about_row,#contact_row{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+}
+@media screen and (max-width : 360px){
+    html{
+        font-size: 70%;
+    }
+    #about_img{
+        width: 220px;
+        height: 220px;
+        
+    }
+}
