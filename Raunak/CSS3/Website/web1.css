@@ -430,17 +430,11 @@ p {
 	position: relative;
 	border: 10px solid white;
 }
-/* #about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid crimson;
-	z-index: -1;
-} */
-
+#about .col-left .about-img:hover{
+	transform: scale(1.1);
+	transition: all .55s ease;
+	cursor: pointer;
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
