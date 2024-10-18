@@ -428,12 +428,14 @@ p {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	border: 10px solid white;
+	border: 8px solid white;
+	border-radius: 8px;
 }
 #about .col-left .about-img:hover{
 	transform: scale(1.1);
 	transition: all .55s ease;
 	cursor: pointer;
+	box-shadow: 4px 4px 4px #485563;
 }
 #contact .contact {
 	flex-direction: column;
