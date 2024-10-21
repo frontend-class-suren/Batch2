@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    min-height: 100vh;
+    background-image: url(/Simraaan/Concert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    box-shadow: 3px 3px 5px rgb(199, 190, 190);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav a:hover{
+background-color: grey;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(165, 159, 159);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.menu-button{
+    display:none;
+}
+@media(max-width: 1000px){
+    .hideonphone{
+        display: none;
+    }
+        .menu-button{
+            display: block;
+        }
+    
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+.mid{
+    height: 90vh;
+    max-width: 70%;
+    /* background-color: pink; */
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+
+
+}
+.mid p{
+    text-align: justify;
+}
+.inside {
+    margin-left: 40vh;;
+}
+.img{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.img img{
+    margin-left: -30vh;
+    border-radius: 10px;
+}
+ i{
+    color: rgb(122, 119, 119);
+
+}
+.black_container
+{
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    /* align-items: center; */
+    text-align:center ;
+    color: white;
+    font-size: larger;
+}
+.month{
+    width: 60%;
+    line-height: 5.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: rgb(136, 132, 132);
+    background-color:white ;
+    
+
+}
+.month button{
+    height: 20px;
+    width: 10vh;
+    background-color: red;
+    /* padding: 7px 5px; */
+    color: white;
+    border: none;
+}
+.three button
+{
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    height: 5vh;
+    width:5vh ;
+    padding: 10px;
+    margin-right: 10px;
+}
+.container{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+.fri img{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fri{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.up
+{
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+}
+.down{
+    text-align: left;
+    color: black;
+    padding: 10px;
+    font-size: medium;
+    /* line-height: 19px; */
+}
+.down span{
+    color: grey;
+}
+.down button{
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 0;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    font-size: medium;
+}
+.down  p{
+    margin-top: -15px;
+}
+.down h4{
+    font-size: larger;
+}
+.down button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.white{
+    height: 50vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    text-align: center;
+
+}
+.white h2{
+    letter-spacing: 5px;
+}
+.details
+{
+    width: 60%;
+    height: 35vh;
+    /* background-color: antiquewhite; */
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+.contact{
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    font-size: larger;
+    line-height: 25px;
+    padding: 20px 20px;
+    word-spacing: 5px;
+}
+.contact i{
+    color: black;
+
+}
+.fill{
+    padding: 20px 20px;
+    line-height: 25px;
+}
+input{
+    padding: 8px;
+}
+.msg input{
+    /* margin-left: -25.5vh; */
+    padding: 8px 14vh;
+}
+.fill button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: none;
+    background-color: black;
+    color: white;
+    float: right;
+}
+.fill button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.last{
+    height: 130vh;
+    width: 100%;
+
+}
+.image{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FI4q21gLGTlE%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=f12ca658af59ec04aeb67b635f67b29f19a7f652d3f4a00506dc5825d0412a88&ipo=images);
+    
+}
+footer {
+    text-align: center;
+    font-size: larger;
+    color: grey;
+}
+footer i{
+    font-size: 25px;
+}
+footer i:hover{
+    color: black;
+}
+
+

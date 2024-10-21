@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mask1 img {
+            -webkit-mask-image: url(./mask.png);
+            mask-image: url( ./mask.png);
+            mask-repeat: no-repeat;
+            object-fit: fill;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mask1">
+        masking image
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80"
+          width="100%"  alt="">
+    </div>
+    <hr size="4px" width="50%" color="black">
+    <div class="image1">
+        original image
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80"
+            alt="">
+    </div>
+</body>
+
+</html>

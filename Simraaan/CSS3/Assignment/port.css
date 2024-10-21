@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar{
+    height: 15vh;
+    /* position: fixed; */
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.main{
+    height: 100vh;
+    /* position: fixed; */
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    cursor: pointer;
+     
+}
+span{
+    color: rgb(230, 22, 57);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:rgb(230, 22, 57) ;
+    transition: .4s;
+}
+.btn{
+    background-color: rgb(230, 22, 57);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    display: flex;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    /* background-color: #fcfcfc; */
+    width: 90%;
+    height: 70%;
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+/* .newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    
+} */
+ .intro{
+    padding: 60px 30px;
+    width: 60%;
+    height: 100%;
+    /* background-color: blueviolet; */
+ }
+ .image
+ {
+    margin-bottom: 20px;
+    height: 90%;
+    width: 35%;
+    /* background-color: pink; */
+    /* float: right; */
+    border-radius: 100%;
+    /* background-size: cover; */
+    /* object-fit: cover; */
+    /* background-image: url(/Simraaan/me.jpg.jpg); */
+    
+ }
+ .image img{
+    /* background-repeat: no-repeat; */
+    object-fit: cover;
+    background-size: cover;
+    opacity: 0.7;
+    /* box-shadow: 5px 2px 3px 4px white; */
+}
+.me{
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+    /* background-color: black; */
+    text-align: justify;
+    color: white;
+}
+.about h2{
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about h5{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom:25px ;
+    text-transform: capitalize;
+}
+.about p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color:rgb(230, 22, 57) ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(230, 22, 57);
+    cursor: pointer;
+}
+.services{
+    background: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    padding: 20px 35px;
+    width: 335px;
+    background-color: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    margin: 25px;
+    color:rgb(230, 22, 57) ;
+    text-align: center;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{ background-color:rgb(230, 22, 57) ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(230, 22, 57);
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color:rgb(230, 22, 57) ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid rgb(230, 22, 57);
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social
+{
+    display: flex;
+
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(230, 22, 57) ;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color:rgb(230, 22, 57) ;
+    bottom: 35px;
+    font-size: 14px;
+}
+.type{
+    position: relative;
+}
+.type::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid white;
+    animation: typing 4.5s steps(20) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px ;
+    }
+}

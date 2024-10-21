@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    position: sticky;
+    background-color: aqua;
+    top: 0;
+    height: 9vh;
+    width: 100%;
+
+}
+
+.nav,
+a {
+    background-color: black;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 21px;
+}
+
+    ul,
+    li {
+        list-style-type: none;
+    }
+
+    .nav ul {
+        display: flex;
+
+    }
+
+    a:hover {
+        background-color: grey;
+    }
+
+.navbar .fa-magnifying-glass{
+    float: right;
+    padding: 20px;
+    color: white;
+}
