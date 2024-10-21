@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        div.fixed{
+            background-color:lightblue;
+            position: fixed;
+            top: 0%;
+        }
+        div.fixed, ul{
+            list-style-type: none;
+            display: flex;
+            width: -webkit-fill-available;
+        }
+        ul, li{
+            padding: 20px;
+        }
+        li:hover{
+            background-color:seashell;
+            color: black;
+        }
+        li, a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .image{
+        height: 500px;
+        }
+        .image{
+         background-image: url(village.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         height:650px;
+        }
+        .priya{
+            font-size: 30px;
+            padding: 15%;
+            text-align: center;
+        }
+        .div2{
+            background-color: rgb(123, 189, 207);
+            background-size: cover;
+            height: 700px;
+            text-align: center;
+            font-size: 40px;
+            padding: 5%;
+        }
+        hr{
+            width: 500px;
+            margin-left: 350px;
+            border: 3px solid blue;
+        }
+        .image1{
+            background-image: url(myimage.jpg);
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 400px;  
+            outline: 5px solid white;  
+        }
+        .para{
+            margin-left: 650px;
+            height: 500px;
+            width: 100%;
+            color: white;
+            font-size: 30px;
+            text-align: justify;
+        }
+        .div3{
+            background-color: rgb(228, 237, 240);
+            height: 800px;
+        }
+        .skill{
+            color:slategrey;
+            text-align: center;
+            padding: 5%;
+            font-size: 40px;
+        }
+        .hr1{
+            width: 300px;
+            margin-left: 510px;
+            margin-top: -50px;
+        }
+        .hr2{
+          width: 500px;
+          margin-top: -80px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: blue;
+          margin-left:200px;
+        }
+        .design{
+            margin-left: 0px;
+            padding: 8%;
+            font-size: 30px;
+        }
+        .hr3{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left: 680px;
+            margin-top: -50px;
+        }
+        .hr4{
+          width: 300px;
+          margin-top: -50px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: blue;
+          margin-left:200px;
+        }
+        .hr5{
+            width:400px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left:480px;
+            margin-top:-50px;
+        }
+        .photoshop{
+            font-size: 30px;
+            padding: 5%;
+            margin-left: 40px;
+        }
+        .hr6{
+          width: 400px;
+          margin-top:-50px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: blue;
+          margin-left:200px;
+        }
+        .hr7{
+            width:300px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left:580px;
+            margin-top:-50px;
+        }
+        .project{
+            font-size: 30px;
+            padding: 5%;
+            margin-left: 40px;    
+        }
+        .pjr{
+            font-size: 50px;
+            padding: 5%;
+            text-align: center;
+            color:rosybrown;
+        }
+        .hr8{
+            width: 300px;
+            margin-top: -50px;
+            margin-left: 510px;
+        }
+        .project1{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 500px;
+            padding: 5%;
+            margin-left: 100px;
+            margin-top: 100px;
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+        }
+        .img{
+            background-image: url(https://i.pinimg.com/736x/b8/d0/fb/b8d0fb76130d48d7a690ff02ae6507cf.jpg);
+            width:40%;
+            height: 500px;
+            margin-left:635px;
+            margin-top: -500px;        
+        }
+        .img1{
+            background-image: url(https://unbounce.com/photos/zola-full.jpg);
+            width: 40%;
+            height: 670px;
+            margin-left: 100px;
+        }
+        .project2{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 670px;
+            padding: 5%;
+            margin-left: 639px;
+            margin-top: -670px;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+        .project3{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 600px;
+            padding: 5%;
+            margin-left: 100px;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+        .img2{
+        background-image: url(https://www.buylandingpagedesign.com/blog/wp-content/uploads/2015/08/professional-cleaning-service-lead-generation-high-converting-landing-page-design-001.jpg);
+        width: 40%;
+        height: 600px;
+        margin-left:639px;
+        margin-top: -600px;
+        }
+        .img3{
+            background-image: url(https://www.buylandingpagedesign.com/template/small-business-idea-lead-generation-responsive-landing-page-design-010.jpg);
+            width: 40%;
+            height: 500px;
+            margin-left: 100px;
+        }
+        .project4{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 500px;
+            padding: 5%;
+            margin-left:639px;
+            margin-top:-500px;
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+        }
+        .project5{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 650px;
+            padding: 5%;
+            margin-left:100px;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+        .img4{
+            background-image: url(https://images01.nicepagecdn.com/page/14/31/wix-template-preview-14317.jpg);
+            width: 40%;
+            height: 650px;
+            margin-left: 639px;
+            margin-top: -650px;
+        }
+        .me{
+            text-align: center;
+            padding: 5%;
+            font-size: 40px;
+        }
+        .div4{
+            background-color: rgb(196, 224, 235);
+            height: 400px;
+        }
+        .hr9{
+            width: 350px;
+            margin-left:490px;
+            margin-top: -50px;
+        }
+        .location{
+        font-size: 25px;
+        margin-left: 150px;
+        margin-top: 50px;
+        background-color: white;
+        width: 20%;
+        height: 150px;
+        text-align: center;
+        padding: 1%;
+        border-radius: 10px;
+        }
+        .location:hover{
+            box-shadow: 1px 1px 2px 2px rgb(120, 189, 212);
+        }
+        .phone{
+            margin-left: 400px;
+            margin-top: -190px;
+            background-color: white;
+            width:100%;
+            height: 150px;
+            text-align: center;
+            padding: 3%;
+            border-radius: 10px;
+        }
+        .phone:hover{
+            box-shadow: 1px 1px 2px 2px rgb(120, 189, 212);
+        }
+        .mail{
+            margin-left: 750px;
+            margin-top: -150px;
+            background-color: white;
+            width: 150%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .mail:hover{
+            box-shadow: 1px 1px 2px 2px rgb(120, 189, 212);
+        }
+        .div5{
+            background-color: grey;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="fixed">
+    <nav>
+        <ul>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#SKILLS">SKILLS</a></li>
+            <li><a href="#PROJECTS">PROJECTS</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+    </nav>
+   </div> 
+   <section id="HOME"> 
+   <div class="image">
+      <div class="priya">
+        <h1>I'm Priya Saru</h1>
+        <h3 style="color:maroon;">A Front End Developer</h3>
+      </div>
+   </div>
+</section>
+   <div>
+    <section id="ABOUT">
+        <div class="div2">
+         <h1>ABOUT <span style="color: white;">ME</span></h1>
+         <hr><br><br> 
+         <div class="image1">
+            <div class="para">
+                <h1 style="color: firebrick;">Priya Saru</h1><br>
+                <p>I am a front end developer. I am passionate about creating user experiences and have a strong understanding of usability and accesibility standards. I specialize in building responsive, interacting, and visually appealing websites or applications, focusing on the client-side to ensure seamless perfomance across devices.</p>
+            </div>
+         </div>       
+        </div>
+    </section>
+   </div>
+   <section id="SKILLS">
+        <div class="div3">
+        <h1 class="skill">MY SKILLS</h1>
+        <hr class="hr1">
+        <div>
+            <H2 class="design">Web Design</H2>
+            <hr class="hr2">
+            <hr class="hr3">
+        </div>
+        <div>
+            <h2 class="photoshop">Adobe Photoshop</h2>
+            <hr class="hr4">
+            <hr class="hr5">
+        </div>
+        <div>
+            <h2 class="project">Projects</h2>
+            <hr class="hr6">
+            <hr class="hr7">
+        </div>
+        </div>
+   </section>
+   <section id="PROJECTS">
+    <h1 class="pjr">Projects</h1>
+    <hr class="hr8">
+    <div class="project1">
+     <h1 style="color: black;">Project 1</h1><br>
+     <h3 style="color: lightskyblue">Employment Opportuniities</h3><br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fuga eum sint totam harum ducimus iure animi exercitationem ratione quisquam? Est minus distinctio magnam eum ab. Vitae molestias distinctio iure qui nam, aspernatur adipisci voluptate quidem labore, eligendi perferendis reiciendis nulla sequi illo architecto necessitatibus. Cum tenetur velit aperiam molestiae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis, officiis autem dolores dicta fugiat unde nulla sunt quam repellat vitae, nam mollitia. Cum soluta adipisci facere architecto quo commodi, accusamus nobis? Ut quia esse quos, corporis laborum mollitia voluptatem ipsum aliquid, officia inventore quae. Quos omnis iure quia dicta?</p>
+    </div>
+    <div class="img"></div>
+    <div class="img1"></div>
+    <div class="project2">
+     <h1 style="color: black;">Project 2</h1><br>
+     <h3 style="color:lightskyblue">Kitchen Appliances</h3><br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita blanditiis facere quasi totam minima. Saepe nihil tempora enim quod officia quo eligendi veritatis, soluta cumque? Veniam, dignissimos velit modi, voluptatibus molestias in consequatur cupiditate aspernatur, odio est labore vitae fuga incidunt officiis neque id? Veniam reiciendis fuga necessitatibus reprehenderit, voluptates voluptatem dicta quaerat odio enim deleniti distinctio repudiandae, suscipit nisi. Aut nam porro delectus officia vel maiores voluptatum! Rerum voluptatibus hic veritatis sunt, provident reprehenderit eum ducimus fugiat voluptate reiciendis sequi, itaque, sint id quia accusantium expedita error. Dolore non, sit tempora provident quo dolorem libero enim commodi id dicta!</p>
+    </div>
+    <div class="project3">
+     <h1 style="color: black;">Project3</h1><br>
+     <h3 style="color: lightskyblue">Cleaning Service</h3><br>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus culpa nihil quaerat excepturi dolore corrupti numquam et aspernatur accusantium quos quasi, sequi tenetur fugit similique id reprehenderit fuga non quo ipsa porro odit fugiat! A numquam explicabo repellendus veritatis provident, enim ab sunt laborum, necessitatibus est, culpa eius deleniti minima consectetur alias temporibus mollitia ullam! Dolorum, fuga. Numquam voluptatem nihil ea officiis mollitia. Veritatis facilis animi ullam dignissimos reiciendis atque natus accusantium, expedita quisquam. Aliquam, sint sit modi non beatae saepe alias quas quae. Est ab dolores voluptatibus aperiam rem, tempore reiciendis laboriosam voluptatem, facilis perferendis neque dolor praesentium repellendus!</p>  
+    </div>
+    <div class="img2"></div>
+    <div class="img3"></div>
+    <div class="project4">
+     <h1 style="color: black;">Project4</h1><br>
+     <h3 style="color: lightskyblue">Business Opportunity</h3><br>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quod, modi reiciendis omnis, ex, qui recusandae odio officia sapiente voluptates nulla quisquam consequatur repellat quam nisi non quia nihil atque molestiae accusantium voluptas pariatur. Eos debitis assumenda molestiae, quia explicabo rem voluptatem ad impedit aliquam saepe velit mollitia? Unde eos aspernatur consequatur accusantium ullam illo, maiores expedita reiciendis! Officiis qui unde laboriosam blanditiis debitis provident quas optio quam deleniti obcaecati enim ut dolor exercitationem distinctio aut corporis maiores tenetur odit, quis aspernatur modi magnam corrupti? Eum sunt delectus ex. Cumque error nulla harum nostrum incidunt similique nemo dolorum eveniet officiis?</p>
+    </div>
+    <div class="project5">
+     <h1 style="color: black;">Project 5</h1><br>
+     <h3 style="color:lightskyblue">Travel</h3><br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident iure omnis dolorem nobis laudantium doloremque tenetur esse quidem ab cupiditate aliquam repudiandae, vel id, ipsa a. Consequatur voluptas nemo voluptatem? Quam voluptates impedit quia rerum ad non obcaecati saepe eos ex, ea quaerat corrupti aut asperiores laborum sequi dolorem expedita modi exercitationem fugit commodi laudantium sed voluptatem odit atque. Corrupti quas fugiat perferendis ex iste, repellat culpa cupiditate nostrum velit ea distinctio id, dolorum, hic aperiam voluptates eaque molestiae totam nihil enim! Ipsam sed minus quos possimus incidunt accusamus consequatur veniam, mollitia doloremque perferendis obcaecati vitae eum eveniet odio.</p>
+    </div>
+    <div class="img4"></div>
+</section>
+<section id="CONTACT">
+    <div class="div4">
+    <h1 class="me">CONTACT <span style="color: blue;">ME</span></h1>
+    <hr class="hr9">
+    <div class="location">
+        <i style="margin-left: 10px;" class="fa-sharp fa-solid fa-location-dot"></i><br><br>
+        <h3>Drivertole, Rupandehi</h3><br><br>
+        <div class="phone">
+        <i style="margin-left: 10px;" class="fa-solid fa-phone"></i><br><br>
+        <h3>9847436225</h3><br><br>
+        </div>
+        <div class="mail">
+        <i style="margin-left: 10px;" class="fa-solid fa-envelope"></i><br><br>
+        <h3>sarupriya232@gmail.com</h3>
+    </div>
+    </div>
+</div>
+</section>
+<div class="div5">
+    <h3>Powered by <a href="https://w3schools.com">W3 schools</a></h3>
+</div>
+</body>
+</html>
