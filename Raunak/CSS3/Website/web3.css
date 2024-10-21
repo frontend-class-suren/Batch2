@@ -318,16 +318,17 @@ body{
 }
 
 #footer{
-    background-color:rgb(41, 41, 41);
+    /* background-color:rgb(41, 41, 41); */
     padding: 20px;
     position: relative;
+    text-align: center;
 }
 #footer h5{
     text-align: center;
     color: orange;
 }
 #footer h5 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 #top{
@@ -336,7 +337,7 @@ body{
     right: 12px;
 }
 #top a{
-    color: white;
+    color: black;
     font-size: 1.2rem;
 }
 @media screen and (max-width : 768px) {
