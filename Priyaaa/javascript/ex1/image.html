@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="flower()">Show image</button>
+    <img id="image" src="boy.jpeg" alt="">
+    <img id="image" src="boy2.jpeg" alt="">
+    <img id="image" src="boy3.jpeg" alt="">
+    <img id="image" src="girl.jpeg" alt="">
+    <img id="image" src="girl1.jpeg" alt="">
+    <button onclick="img()">Hide image</button>
+    <script>
+    function flower(){
+        document.getElementById("image").style.display ="block";
+    }
+    function img(){
+        document.getElementById("image").style.display ="none";
+    }
+    </script>
+</body>
+</html>

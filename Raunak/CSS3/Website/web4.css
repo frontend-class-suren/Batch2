@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary : #2c2b2b;
+    --secondary: #ffd936;
+    --white: #efefef;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary);
+}
+#main{
+    background-image: url(main.png);
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+section{
+    margin: 80px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+.nav-list a{
+    color: var(--white);
+}
+.nav-list a:hover{
+    /* border: 1px solid white; */
+    color: orange;
+    background: transparent;
+    transition: .4s;
+}
+.btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-secondary{
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background: transparent;
+    transition: .4s;
+    color: orange;
+}
+.btn-primary{
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+}
+.btn-primary:hover{
+    /* background: transparent; */
+    transition: .4s;
+    color: orange;
+    border: 1px solid rgb(0, 0, 0);
+    background: transparent;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+.main-content .intro-heading{
+    font-size: 50px;
+}
+.main-content .main-heading{
+    font-size: 110px;
+    margin-top: -20px;
+}
+.main-content p{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+.menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 30px;
+}
+.section-title{
+    font-size:50px;
+    text-align: center;
+}
+.section-title .line{
+    width: 150px;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--secondary);
+    margin: auto;
+}
+.services{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.service{
+    width: 350px;
+}
+.service img{
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.service img:hover{
+    transform: scale(1.05);
+}
+#testimonial{
+    background: rgb(207, 185, 226);
+}
+#testimonial .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+}
+#testimonial h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#testimonial .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 16px;
+}
+#about-us .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+#about-us .container .about-content{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+#about-us .container .about-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#questions {
+    min-height: 500px;
+    background-image: url(main-2.png);
+    background-position: bottom center;
+    background-size: cover;
+}
+#questions .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+#questions h1{
+    font-size: 50px;
+}
+footer{
+    margin-top: -60px;
+}
+footer .container{
+    display: flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+@media screen and (max-width: 520px) {
+    .menu-btn{
+        display: block;
+    }
+    .nav-list{
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .nav-list li :not(:last-child){
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+    
+    #about-us .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 16px;
+    }
+}

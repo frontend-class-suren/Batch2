@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable in css</title>
+    <style>
+        :root{
+            --primary:#ff8000;
+            --secondary:#7329;
+            --text_color:#ffffff;
+            --bg:black;
+        }
+        body{
+            background-color: var(--bg);
+            
+        }
+        .container{
+            background-color: var(--primary);
+            color: var(--text_color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, iste.</h2>
+    </div>
+    
+</body>
+</html>

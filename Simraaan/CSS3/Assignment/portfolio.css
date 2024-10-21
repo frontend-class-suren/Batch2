@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(55, 144, 223);
+}
+.page2{ width: 100%;
+    height: 100vh;
+    background-color: rgb(168, 137, 78);
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: plum;
+
+}
+.banner{
+    width: 100%;
+    background-color: aqua;
+    height: 10vh;
+    top: 0%;
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    justify-content: space-between;
+}
+.simran{
+    width: 50%;
+    background-color: red;
+    height: 10vh;
+}
+.work{
+    width: 10.3%;
+    background-color: pink;
+    height: 10vh;
+    margin-right: -25vh;
+
+}
+.about{
+    width: 10.3%;
+    background-color: rgb(39, 17, 21);
+    height: 10vh;
+    margin-right: -25vh;
+}
+.touch{
+    width: 10.3%;
+    background-color: pink;
+    height: 10vh;
+}
+.info{
+    height: 10vh;
+    width: 50%;
+    background-color: pink;
+    /* padding: 80vh; */
+    margin-top: 100pc;
+}

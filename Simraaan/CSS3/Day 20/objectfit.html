@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit Property</title>
+    <style> 
+    div{
+        width: 25%;
+        float: left;
+    }
+    .div1 img{
+    
+    width: 200px;
+    height: 250px;
+    -webkit-box-reflect: right 20px;
+    }
+    .div2 img{
+        object-fit: contain;
+    width: 200px;
+    box-reflect: below 50px;
+    height: 250px;
+
+
+    }
+    img{
+        -webkit-box-reflect: right 20px;
+    }
+    .div3 img{
+        object-fit: fill;
+    width: 200px;
+    height: 250px;
+
+
+    }
+    .div4 img{
+        object-fit: scale-down;
+    width: 200px;
+    height: 250px;
+
+
+    }
+    </style>   
+</head>
+<body>
+<div class="div1">
+    <img src="https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg" width="300" height="350" alt="">
+<h3>cover</h3>
+</div>   
+<div class="div2">
+    <img src="https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg" width="300" height="350" alt="">
+<h3>contain</h3>
+</div> 
+<div class="div3">
+    <img src="https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg" width="300" height="350" alt="">
+<h3>fill</h3>
+</div>
+<div class="div4">
+    <img src="https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg" width="300" height="350" alt="">
+<h3>scale down</h3>
+</div>
+<hr size="5px" width="50%" color="pink">
+<img src="https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg" width="300" height="350" alt="">
+</body>
+</html>

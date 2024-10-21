@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
+            <li><a href="#">HOME</a> </li>
+            <li><a href="#">BAND</a> </li>
+            <li><a href="#">TOUR</a> </li>
+            <li><a href="#">CONTACT</a> </li>
+            <li><a href="#">MORE</a> </li>
+        </ul>
+        <ul>
+            <li><a href="#">COLDPLAY</a></li>
+            <li><a class="hideonphone" href="#">HOME</a> </li>
+            <li><a class="hideonphone" href="#">BAND</a> </li>
+            <li><a class="hideonphone" href="#">TOUR</a> </li>
+            <li><a class="hideonphone" href="#">CONTACT</a> </li>
+            <li><a class="hideonphone" href="#">MORE</a> </li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+<div class="body"></div>
+<div class="mid">
+    <br><br>
+    <h3>THE BAND</h3><br>
+    <i>We love music</i><br><br>
+    <p>We have created a fictional band website. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        reiciendis sapiente labore consequatur numquam expedita inventore unde. Porro veritatis totam vitae explicabo
+        tenetur neque. Voluptates excepturi officia tempora enim quo dicta iusto numquam. Dolorum cumque totam
+        repellendus natus earum ullam nemo nostrum dolore est, blanditiis voluptates aliquid debitis. Sit explicabo
+        omnis inventore suscipit vero consequatur mollitia earum cumque voluptatem perspiciatis!</p>
+    <br><br>
+    <div class="inside">
+        <div class="img">
+            <div class="name">
+                <p>Name</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4848557.jpg&f=1&nofb=1&ipt=4022ee7241db2a5541ecf8f4fdd82a24b2f5634078134c5caacf195cf7d9c223&ipo=images"
+                    alt="" width="90%">
+            </div>
+            <div class="name">
+                <p>Name</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4848557.jpg&f=1&nofb=1&ipt=4022ee7241db2a5541ecf8f4fdd82a24b2f5634078134c5caacf195cf7d9c223&ipo=images"
+                    alt="" width="90%">
+            </div>
+            <div class="name">
+                <p>Name</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4848557.jpg&f=1&nofb=1&ipt=4022ee7241db2a5541ecf8f4fdd82a24b2f5634078134c5caacf195cf7d9c223&ipo=images"
+                    alt="" width="90%">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="black_container">
+    <br><br><br>
+    <h2>TOUR DATES</h2><br>
+    <i>Remember to book your tickets!</i><br><br>
+    <div class="month">
+        <p>September <span><button>Sold Out</button></span></p>
+        <hr>
+        <p>October <span><button>Sold Out</button></span></p>
+        <hr>
+        <p>November <span class="three"><button>3</button></span></p>
+        <hr>
+    </div>
+    <br>
+    <div class="container">
+        <div class="fri">
+            <div class="up"> <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffthmb.tqn.com%2F46kRLp_KEU0hds9MhIGBNyAhQT4%3D%2F1889x1591%2Ffilters%3Afill(auto%2C1)%2FGettyImages-585245881-56fbf9393df78c7841b17ef7.jpg&f=1&nofb=1&ipt=fbd8dd16034f8180e32f8f131e83d119cc418f64aed7ef2a0d82318db5552cb7&ipo=images"
+                    alt="" height="100%" width="100%"></div>
+            <div class="down">
+                <h4>New York</h4><br>
+                <span>Fri 27 Nov 2024</span>
+                <br><br>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button>Buy Tickets</button>
+            </div>
+        </div>
+        <div class="fri">
+            <div class="up"><img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2017%2F11%2F17%2F260309-Eiffel_Tower-Paris-France-748x665.jpg&f=1&nofb=1&ipt=ce23d25a4a71156778989586647768215b6b8c62b987d8381867b642429436ae&ipo=images"
+                    height="100%" width="100%" alt=""></div>
+            <div class="down">
+                <h4>Paris</h4><br>
+                <span>Sat 28 Nov 2024</span>
+                <br><br>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button>Buy Tickets</button>
+            </div>
+
+        </div>
+        <div class="fri">
+            <div class="up">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa.cdn-hotels.com%2Fgdcs%2Fproduction101%2Fd1059%2F303687a0-9beb-11e8-be36-0242ac110002.jpg&f=1&nofb=1&ipt=727a46d5d8b89f75730d4e9112df5af4e9dbb502f650f6ab98fd7316a28cdb5e&ipo=images"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="down">
+                <h4>San Farnsisco</h4><br>
+                <span>Sun 29 Nov 2024</span>
+                <br><br>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button>Buy Tickets</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="white"><br><br>
+    <h2>CONTACT</h2><br>
+    <i>Fan? Drop a note !</i>
+    <div class="details">
+        <div class="contact"><br><br>
+            <p><i class="fa-solid fa-location-dot"></i> Chicago,US</p>
+            <p><i class="fa-solid fa-phone"></i> Phone:+00151515</p>
+            <p><i class="fa-solid fa-envelope"></i> Email:mail@mail.com</p>
+        </div>
+        <div class="fill"><br><br>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email"><br>
+            <div class="msg" style="line-height: 50px;">
+                <input type="text" placeholder="Message">
+            </div>
+            <button>SEND</button>
+        </div>
+    </div>
+</div>
+<div class="last">
+    <div class="image"></div>
+    <footer><br><br>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <br><br>
+        <p>Powered by <u>w3.css</u></p>
+    </footer>
+</div>
+
+
+</html>

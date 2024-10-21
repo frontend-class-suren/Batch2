@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="font">Hello, JavaScript Developer!</p>
+    <button onclick="hide()">Hide content</button>
+    <button onclick="show()">Show</button>
+    <button ondblclick="decrease()" onclick="fontSize()">Click to increase font</button>
+    <script>
+        function fontSize(){
+            document.getElementById('font').style.fontSize="40px";
+            document.getElementById('font').style.color="blue";
+        }
+        function decrease(){
+            document.getElementById("font").style.fontSize="15px";
+            document.getElementById("font").style.color="red";
+        }
+        function hide(){
+            document.getElementById("font").style.display = "none";
+        }
+        function show(){
+            document.getElementById('font').style.display ="block ";
+        }
+         
+    </script>
+</body>
+</html>
