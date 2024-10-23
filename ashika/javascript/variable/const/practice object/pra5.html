@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>laptop property and value</h2>
+  <p id="lap"></p>
+  <script>
+    const lap={
+      name:"dell",
+      ram:"5GB",
+      brand:"vostro",
+      price:"1 lakhs",
+    }
+    lap.processor ="intel core i7";
+    lap.storage="512GB";
+    document.getElementById('lap').innerHTML=lap.name;
+    document.getElementById('lap').style.color="red";
+  </script>
+</body>
+</html>
