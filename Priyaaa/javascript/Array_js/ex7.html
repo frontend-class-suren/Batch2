@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Shoes Brand</h2>
+    <p id="shoes"></p>
+    <script>
+        const shoes = ["Nike","Adidas", "Jordan", "Puma"];
+        shoes[3]= "Reebook";
+        shoes.push("Caliber");
+        document.getElementById("shoes").innerHTML = shoes;
+        document.getElementById("shoes").style.fontStyle = "italic";
+    </script>
+</body>
+</html>

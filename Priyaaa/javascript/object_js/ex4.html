@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Laptop Properties and Values</h2>
+    <p id="laptop"></p>
+    <script>
+        const laptop = {
+         name :"DESKTOP-E0GUCIS",
+         RAM : "4GB",
+         brand : "Acer",
+         price : "1lc"
+        }
+        laptop.processor = "Intel Core i5";
+        laptop.storage = "512GB"
+        document.getElementById("laptop").innerHTML = laptop.name;
+        document.getElementById("laptop").style.color = "blue";
+    </script>
+</body>
+</html>

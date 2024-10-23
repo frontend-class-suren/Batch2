@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Gold Star Shoe Properties</h2>
+    <p id="shoes"></p>
+    <script>
+        const shoes = {
+            brand : "Gold star",
+            price : "3000",
+            design : "sport wear",
+            quality : "premium"
+        }
+        shoes.fabric = "leather";
+        document.getElementById("shoes").innerHTML = shoes.brand;
+        document.getElementById("shoes").style.fontFamily = 'Courier New', Courier, monospace;
+    </script>
+</body>
+</html>

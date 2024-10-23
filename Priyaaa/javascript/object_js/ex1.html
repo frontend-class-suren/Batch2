@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Car Property and Values</h2>
+    <p id="cars"></p>
+    <script>
+        const car = {
+            type:"fiat", 
+            model:"500",
+            color:"white",
+            price:"24lac"
+        }
+        car.color = "red";
+        car.owner= "simran"
+        document.getElementById("cars").innerHTML = "Car.name:"+car.type+", "+"car owner is:"+car.owner+", "+"car price is:"+car.price;
+    </script>
+</body>
+</html>

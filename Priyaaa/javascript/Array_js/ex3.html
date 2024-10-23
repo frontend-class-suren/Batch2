@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Country Name</h2>
+    <p id="travel"></p>
+    <script>
+        const country = ["Nepal", "China", "France", "Switzerland"];
+        country[1] = "America";
+        country.push("Japan");
+        document.getElementById("travel").innerHTML = country;
+        document.getElementById("travel").style.color = "blue";
+    </script>
+</body>
+</html>
