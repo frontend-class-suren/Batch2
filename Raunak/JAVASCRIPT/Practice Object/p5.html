@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>Air Conditioner Full Details</h2>
+    <p id="Air_Conditioner"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const Air_Conditioner ={Model: 2024, Price: 90000 , color:"White" ,Brand: "Sansui"};
+ 
+    //    change the property 
+     
+    Air_Conditioner.color = "AliceBlue";
+
+    // Add the property 
+
+    Air_Conditioner.owner = "Cristiano Ronaldo"
+
+    document.getElementById("Air_Conditioner").innerHTML = " Air Conditioner model is " + Air_Conditioner.Model +  " | Air Conditioner Price " + Air_Conditioner.Price + " | Air Conditioner Brand is " + Air_Conditioner.Brand+ " | Air Conditioner Color is " +Air_Conditioner.color;
+    
+    document.getElementById("Air_Conditioner").style.color ="Dark Silver";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "Air Conditioner Owner is "+Air_Conditioner.owner;
+    document.getElementById("owner").style.color = "Crimson";
+
+    </script>
+    
+</body>
+</html>

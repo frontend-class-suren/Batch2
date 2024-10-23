@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Details</title>
+</head>
+<body>
+    <h2>Bike Brands</h2>
+    <p id="Bike" style="color: rgb(238, 165, 39);"></p>
+
+    <script>
+        //create a const element
+     const Bike =["KTM","Yamaha","TVS","Bajaj"];
+
+     //replace the element
+
+     Bike[1] = "Honda";
+
+     //Add the element
+
+     Bike.push("Hero");
+
+     document.getElementById("Bike").innerHTML = Bike;
+
+    </script>
+    
+</body>
+</html>

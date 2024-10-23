@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operators</title>
+</head>
+<body>
+    <h2 style="color: blue;">Assignment Operators</h2>
+    <h3>Multiplication</h3>
+    <h3 id="multi">Multiplication</h3>
+   
+
+    <br>
+    <hr>
+
+    <h2 style="color: blue;">Assignment Operators</h2>
+    <h3>Addition</h3>
+    <h3 id="add">Addition</h3>
+   
+    <br>
+    <hr>
+
+    <h2 style="color: blue;">Assignment Operators</h2>
+    <h3>Substraction</h3>
+    <h3 id="sub">Substraction</h3>
+  
+
+    <br>
+    <hr>
+
+    <h2 style="color: blue;">Assignment Operators</h2>
+    <h3>Division</h3>
+    <h3 id="div">Division</h3>
+    
+
+    <script>
+        {
+            let x = 10;
+            let y = 10;
+            let z = (x*y);
+
+            document.getElementById("multi").innerHTML = "The value of z is " +z;
+        }
+    </script>
+
+    <br>
+
+    <script>
+        {
+            let x = 10;
+            let y = 20;
+            let z = (x+=y);
+
+            document.getElementById("add").innerHTML = "The value of z is " +z;
+        }
+    </script>
+
+    <br>
+
+    <script>
+        {
+            let x = 50;
+            let y = 10;
+            let z = (x-=y);
+
+            document.getElementById("sub").innerHTML = "The value of z is " +z;
+        }
+    </script>
+
+    <br>
+
+    <script>
+        {
+            let x = 20;
+            let y = 5;
+            let z = (x/=y);
+
+            document.getElementById("div").innerHTML = "The value of z is " +z;
+        }
+    </script>
+
+    
+</body>
+</html>

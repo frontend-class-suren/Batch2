@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>Jeans Full Details</h2>
+    <p id="Jeans"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const Jeans ={Model: 2020, Brands:"Calvin Klein", Price: "3000", color:"Light Blue", Size: "XL"};
+ 
+    //    change the property 
+     
+    Jeans.color = "Blue";
+
+    // Add the property 
+
+    Jeans.owner = "Mike Tyson"
+
+    document.getElementById("Jeans").innerHTML = " Jeans model is " + Jeans.Model +  " | Jeans Price " + Jeans.Price + " | Jeans Brand is " + Jeans.Brands+ " | Jeans Color is " +Jeans.color+ " | Jeans Size is " +Jeans.Size;
+    
+    document.getElementById("Jeans").style.color ="Blue";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "Jeans Owner is "+Jeans.owner;
+    document.getElementById("owner").style.color = "Gray";
+
+    </script>
+    
+</body>
+</html>

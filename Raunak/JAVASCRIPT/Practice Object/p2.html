@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>laptops Full Details</h2>
+    <p id="laptops"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const laptops ={Model: 2022, Price: "1lakh", color:"Metallic Silver",Type:"Gaming"};
+ 
+    //    change the property 
+     
+    laptops.color = "Silver";
+
+    // Add the property 
+
+    laptops.owner = "Peter"
+
+    document.getElementById("laptops").innerHTML = " laptops model is " + laptops.Model +  " | laptops Price " + laptops.Price + " | laptops color is "  + laptops.color + " | laptops Type is " + laptops.Type;
+    
+    document.getElementById("laptops").style.color ="Red";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "laptops Owner is "+laptops.owner;
+    document.getElementById("owner").style.color = "Blue";
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>Car Full Details</h2>
+    <p id="cars"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       const car ={type: "Fiat", model:200, color:"silver"};
+ 
+    //    change the property 
+     
+    car.color = "Metallic Black";
+
+    // Add the property 
+
+    car.owner = "James"
+
+    document.getElementById("cars").innerHTML = car.color;
+    
+    document.getElementById("owner").innerHTML = "Car Owner is "+car.owner;
+
+    </script>
+    
+</body>
+</html>

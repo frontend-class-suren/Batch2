@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>Truck Full Details</h2>
+    <p id="Trucks"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <br>
+    <hr>
+
+    <h2>laptops Full Details</h2>
+    <p id="laptops"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner1"></p>
+
+    <br>
+    <hr>
+
+    <h2>Bike Full Details</h2>
+    <p id="Bike"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner2"></p>
+
+     <br>
+     <hr>
+
+     <h2>Mobiles Full Details</h2>
+     <p id="Mobiles"></p>
+     <br>
+     <h2>Owner Details</h2>
+     <p id="owner3"></p>
+
+     <br>
+     <hr>
+
+    <h2>Air Conditioner Full Details</h2>
+    <p id="Air_Conditioner"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner4"></p>
+
+    <br>
+    <hr>
+
+    <h2>AirPlanes Full Details</h2>
+    <p id="AirPlanes"></p>
+    <br>
+    <h2>Pilot Details</h2>
+    <p id="Pilot"></p>
+
+    <br>
+    <hr>
+
+    <h2>Shoes Full Details</h2>
+    <p id="Shoes"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner5"></p>
+
+    <br>
+    <hr>
+
+    <h2>Jeans Full Details</h2>
+    <p id="Jeans"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner6"></p>
+
+    <br>
+    <hr>
+
+    <h2>TV Full Details</h2>
+    <p id="TV"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner7"></p>
+     
+    <br>
+    <hr>
+
+    <h2>Wifi Full Details</h2>
+    <p id="Wifi"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner8"></p>
+
+
+
+    <!-- //Truck Details -->
+
+    <script>
+       
+       //Create a Object Property
+
+       const Truck ={type: "Monster", model:800, color:"silver"};
+ 
+    //    change the property 
+     
+    Truck.color = "Metallic Black";
+
+    // Add the property 
+
+    Truck.owner = "James"
+
+    document.getElementById("Trucks").innerHTML = " Truck Type is " + Truck.type +  " | Truck Model " + Truck.model + " | Truck Color is " + Truck.color;
+     
+    document.getElementById("Trucks").style.color ="Blue";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "Truck Owner is "+Truck.owner;
+    document.getElementById("owner").style.color ="red";
+
+    </script>
+
+    <!-- //laptops Details -->
+
+    <script>
+       
+        //Create a Object Property
+ 
+        const laptops ={Model: 2022, Price: "1lakh", color:"Metallic Silver",Type:"Gaming"};
+  
+     //    change the property 
+      
+     laptops.color = "Silver";
+ 
+     // Add the property 
+ 
+     laptops.owner = "Peter"
+ 
+     document.getElementById("laptops").innerHTML = " laptops model is " + laptops.Model +  " | laptops Price " + laptops.Price + " | laptops color is "  + laptops.color + " | laptops Type is " + laptops.Type;
+     
+     document.getElementById("laptops").style.color ="Red";
+ 
+     //Owner Details
+     document.getElementById("owner1").innerHTML = "laptops Owner is "+laptops.owner;
+     document.getElementById("owner1").style.color = "Blue";
+ 
+     </script>
+
+     <!-- //Bike Details -->
+
+     <script>
+       
+        //Create a Object Property
+ 
+        const Bike ={Model: 2022, Price: "5lakh", color:"Black", Company: "TVS"};
+  
+     //    change the property 
+      
+     Bike.color = "Blue";
+ 
+     // Add the property 
+ 
+     Bike.owner = "John Cena"
+ 
+     document.getElementById("Bike").innerHTML = " Bike model is " + Bike.Model +  " | Bike Price " + Bike.Price + " | Bike Color is " +Bike.color+  " | Bike Company is " + Bike.Company;
+     
+     document.getElementById("Bike").style.color ="Dark Gray";
+ 
+     //Owner Details
+     document.getElementById("owner2").innerHTML = "Bike Owner is "+Bike.owner;
+     document.getElementById("owner2").style.color = "Orange";
+ 
+     </script>
+
+     <!-- Mobile Details  -->
+
+     <script>
+       
+        //Create a Object Property
+ 
+        const Mobiles ={Model: 2024, Type:"Gaming", Price: 40000, color:"Blue",};
+  
+     //    change the property 
+      
+     Mobiles.color = "Cyan";
+ 
+     // Add the property 
+ 
+     Mobiles.owner = "Thomas Shelby"
+ 
+     document.getElementById("Mobiles").innerHTML = " Mobiles model is " + Mobiles.Model +  " | Mobiles Price " + Mobiles.Price + " | Mobiles Type is " + Mobiles.Type+ " | Mobile Color is " +Mobiles.color;
+     
+     document.getElementById("Mobiles").style.color ="Dark Green";
+ 
+     //Owner Details
+     document.getElementById("owner3").innerHTML = "Mobiles Owner is "+Mobiles.owner;
+     document.getElementById("owner3").style.color = "Silver";
+ 
+     </script>
+
+     <!-- //Air_Conditioner Details -->
+
+     <script>
+       
+        //Create a Object Property
+ 
+        const Air_Conditioner ={Model: 2024, Price: 90000 , color:"White" ,Brand: "Sansui"};
+  
+     //    change the property 
+      
+     Air_Conditioner.color = "AliceBlue";
+ 
+     // Add the property 
+ 
+     Air_Conditioner.owner = "Cristiano Ronaldo"
+ 
+     document.getElementById("Air_Conditioner").innerHTML = " Air Conditioner model is " + Air_Conditioner.Model +  " | Air Conditioner Price " + Air_Conditioner.Price + " | Air Conditioner Brand is " + Air_Conditioner.Brand+ " | Air Conditioner Color is " +Air_Conditioner.color;
+     
+     document.getElementById("Air_Conditioner").style.color ="Dark Silver";
+ 
+     //Owner Details
+     document.getElementById("owner4").innerHTML = "Air Conditioner Owner is "+Air_Conditioner.owner;
+     document.getElementById("owner4").style.color = "Crimson";
+ 
+     </script>
+
+     <!-- //AirPlanes Details -->
+
+     <script>
+       
+        //Create a Object Property
+ 
+        const AirPlanes ={Model: 2024, Type:"International", Route: "Bhw To Ktm", color:"Blue And White",Airlines:"Buddha AirLines"};
+  
+     //    change the property 
+      
+     AirPlanes.color = "Blue";
+ 
+     // Add the property 
+ 
+     AirPlanes.Pilot = "Lionel Messi"
+ 
+     document.getElementById("AirPlanes").innerHTML = " AirPlanes model is " + AirPlanes.Model +  " | AirPlanes Type " + AirPlanes.Type + " | AirPlanes Route is " + AirPlanes.Route+ " | AirPlanes Color is " +AirPlanes.color+ " | Airplanes Airlines Name is " +AirPlanes.Airlines;
+     
+     document.getElementById("AirPlanes").style.color ="Brown";
+ 
+     //Pilot Details
+     document.getElementById("Pilot").innerHTML = "AirPlanes Pilot is "+AirPlanes.Pilot;
+     document.getElementById("Pilot").style.color = "Dark Silver";
+ 
+     </script>
+
+     <!-- //Shoes Details -->
+     
+     <script>
+       
+        //Create a Object Property
+ 
+        const Shoes ={Model: 2020, Brands:"Converse", Price: "4000", color:"Black", Size: 40};
+  
+     //    change the property 
+      
+     Shoes.color = "Black And Blue";
+ 
+     // Add the property 
+ 
+     Shoes.owner = "Jackson"
+ 
+     document.getElementById("Shoes").innerHTML = " Shoes model is " + Shoes.Model +  " | Shoes Price " + Shoes.Price + " | Shoes Brand is " + Shoes.Brands+ " | Shoes Color is " +Shoes.color+ " | Shoes Size is " +Shoes.Size;
+     
+     document.getElementById("Shoes").style.color ="Dark Gray";
+ 
+     //Owner Details
+     document.getElementById("owner5").innerHTML = "Shoes Owner is "+Shoes.owner;
+     document.getElementById("owner5").style.color = "Green";
+ 
+     </script>
+
+     <!-- //Jeans Details -->
+
+     <script>
+       
+        //Create a Object Property
+ 
+        const Jeans ={Model: 2020, Brands:"Calvin Klein", Price: "3000", color:"Light Blue", Size: "XL"};
+  
+     //    change the property 
+      
+     Jeans.color = "Blue";
+ 
+     // Add the property 
+ 
+     Jeans.owner = "Mike Tyson"
+ 
+     document.getElementById("Jeans").innerHTML = " Jeans model is " + Jeans.Model +  " | Jeans Price " + Jeans.Price + " | Jeans Brand is " + Jeans.Brands+ " | Jeans Color is " +Jeans.color+ " | Jeans Size is " +Jeans.Size;
+     
+     document.getElementById("Jeans").style.color ="Blue";
+ 
+     //Owner Details
+     document.getElementById("owner6").innerHTML = "Jeans Owner is "+Jeans.owner;
+     document.getElementById("owner6").style.color = "Gray";
+ 
+     </script>
+
+     <!-- //TV Details -->
+     
+     <script>
+       
+        //Create a Object Property
+ 
+        const TV ={Model: 2024, Brands:"Sony", Price: "70000", color:"Black",Size: "40 Inches"};
+  
+     //    change the property 
+      
+     TV.color = "Black And Silver";
+ 
+     // Add the property 
+ 
+     TV.owner = "Tyson"
+ 
+     document.getElementById("TV").innerHTML = " TV model is " + TV.Model +  " | TV Price " + TV.Price + " | TV Brand is " + TV.Brands+ " | TV Color is " +TV.color+ " | TV Size is " +TV.Size;
+     
+     document.getElementById("TV").style.color ="Black";
+ 
+     //Owner Details
+     document.getElementById("owner7").innerHTML = "TV Owner is "+TV.owner;
+     document.getElementById("owner7").style.color = "Blue";
+ 
+     </script>
+
+     <!-- //Wifi Details -->
+
+     <script>
+       
+        //Create a Object Property
+ 
+        const Wifi ={Ip: "198.10.2.23", Brands:"World-Link", Price: "9000", color:"White", Speed: "866 Mbps"};
+  
+     //    change the property 
+      
+     Wifi.color = "Black And Blue";
+ 
+     // Add the property 
+ 
+     Wifi.owner = "Kevin"
+ 
+     document.getElementById("Wifi").innerHTML = " Wifi Ip is " + Wifi.Ip +  " | Wifi Price " + Wifi.Price + " | Wifi Brand is " + Wifi.Brands+ " | Wifi Color is " +Wifi.color+ " | Wifi Speed is " +Wifi.Speed;
+     
+     document.getElementById("Wifi").style.color ="Orange";
+ 
+     //Owner Details
+     document.getElementById("owner8").innerHTML = "Wifi Owner is "+Wifi.owner;
+     document.getElementById("owner8").style.color = "Dark Green";
+ 
+     </script>
+
+     
+     
+     
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>Truck Full Details</h2>
+    <p id="Trucks"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const Truck ={type: "Monster", model:800, color:"silver"};
+ 
+    //    change the property 
+     
+    Truck.color = "Metallic Black";
+
+    // Add the property 
+
+    Truck.owner = "James"
+
+    document.getElementById("Trucks").innerHTML = " Truck Type is " + Truck.type +  " | Truck Model " + Truck.model + " | Truck Color is " + Truck.color;
+     
+    document.getElementById("Trucks").style.color ="Blue";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "Truck Owner is "+Truck.owner;
+    document.getElementById("owner").style.color ="red";
+
+    </script>
+    
+</body>
+</html>
