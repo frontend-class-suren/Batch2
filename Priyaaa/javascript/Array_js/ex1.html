@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Car Brand</h2>
+    <p id="car" style="color: red;"></p>
+    <script>
+        const car = ["saab", "Tata", "BMW"];
+        car[0] = "Toyota";
+        car.push("Audi");
+        document.getElementById("car").innerHTML = car; 
+    </script>
+</body>
+</html>

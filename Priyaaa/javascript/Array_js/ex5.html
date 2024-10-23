@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: forestgreen; font-size: 50px;">Mobile Brand</h2>
+    <p id="mobile"></p>
+    <script>
+        const mobile = ["Samsung", "Iphone", "Nokia","Redmi"];
+        mobile[2]= "Vivo";
+        mobile.push("Realme");
+        document.getElementById("mobile").innerHTML = mobile;
+        document.getElementById("mobile").style.color ="red";
+        document.getElementById("mobile").style.fontSize = "30px";
+    </script>
+</body>
+</html>

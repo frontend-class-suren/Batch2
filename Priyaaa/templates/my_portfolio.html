@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .fixed{
+            background-color:rgb(74, 74, 212);
+            position: fixed;   
+        }
+        .fixed, ul{
+            list-style-type: none;
+            display: flex;
+            width: -webkit-fill-available;
+        }
+        ul, li{
+            padding: 20px;
+        }
+        li:hover{
+            width: 100%;
+            background-color: white;
+        }
+        a:hover{
+            color: black;
+        }
+        li, a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;  
+            display: block;     
+        }
+        .menu{
+            margin-left:500px;
+        }
+        .menu:hover{
+            color: black;
+        }
+        .image{
+         background-image: url(village.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         height:650px;
+        }
+        .priya{
+            font-size: 40px;
+            padding: 15%;
+            text-align: center;
+        }
+        .div2{
+            background-color: rgb(200, 228, 236);
+            background-size: cover;
+            height: 650px;
+            text-align: center;
+            font-size: 40px;
+            padding: 4%;
+        }
+        hr{
+            width: 500px;
+            margin-left: 350px;
+            border: 3px solid blue;
+        }
+        .saru{
+           outline: 5px solid white;
+           border-radius: 20px; 
+            margin-left:-500px;
+        }
+        .para{
+            margin-left:700px;
+            height: 500px;
+            width: 40%;
+            color:black;
+            font-size: 30px;
+            text-align: justify;
+            margin-top:-400px;
+        }
+        .div3{
+            background-color: rgb(228, 237, 240);
+            height:700px;
+        }
+        .skill{
+            color:slategrey;
+            text-align: center;
+            padding: 5%;
+            font-size: 40px;
+        }
+        .hr1{
+            width: 300px;
+            margin-left: 510px;
+            margin-top: -60px;
+        }
+        .hr2{
+          width: 500px;
+          margin-top: -80px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: blue;
+          margin-left:200px;
+        }
+        .design{
+            margin-left: 0px;
+            padding: 8%;
+            font-size: 30px;
+            margin-top: -50px;
+        }
+        .hr3{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left: 680px;
+            margin-top: -50px;
+        }
+        .hr4{
+          width: 300px;
+          margin-top: -50px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: blue;
+          margin-left:200px;
+        }
+        .hr5{
+            width:400px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left:480px;
+            margin-top:-50px;
+        }
+        .photoshop{
+            font-size: 30px;
+            padding: 5%;
+            margin-left: 40px;
+        }
+        .hr6{
+          width: 400px;
+          margin-top:-50px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: rgb(6, 6, 241);
+          margin-left:200px;
+        }
+        .hr7{
+            width:300px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left:580px;
+            margin-top:-50px;
+        }
+        .project{
+            font-size: 30px;
+            padding: 5%;
+            margin-left: 40px;    
+        }
+        .service{
+          font-size:40px;
+          text-align: center;
+          padding: 3%;
+        }
+        .delux{
+            width: 300px;
+            margin-top: -20px;
+            margin-left: 520px;
+        }
+        .html{
+            background-color: rgb(198, 219, 243);
+            width:30%;
+            height: 520px;
+            margin-left:50px;
+            margin-top: 50px;
+            border-radius: 30px;
+        }
+        .html5{
+            background-repeat: no-repeat;
+            margin-left: 130px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .html1{
+            text-align:justify;
+            font-size: 20px;
+            padding: 5%;
+        }
+        .html:hover{
+            box-shadow: 1px 1px 3px 3px rgb(127, 127, 221);
+        }
+        button{
+            padding: 2%;
+            font-size: 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: orangered;
+            color: white;
+        }
+        button:hover{
+            border: none;
+            background-color: blue;
+            color: white;
+        }
+        .css{
+            background-color: rgb(198, 219, 243);
+            width:30%;
+            height: 520px;
+            margin-left:480px;
+            margin-top:-520px;
+            border-radius: 30px;
+        }
+        .css3{
+            margin-left: 150px;
+            margin-top: 15px;
+        }
+        .css1{
+            text-align:justify;
+            font-size: 20px;
+            padding: 5%;
+        }
+        .css:hover{
+            box-shadow: 1px 1px 3px 3px rgb(127, 127, 221);
+        }
+        .javascript{
+            background-color: rgb(198, 219, 243);
+            width:30%;
+            height: 520px;
+            margin-left:900px;
+            margin-top:-520px;
+            border-radius: 30px;
+        }
+        .java{
+            margin-left: 100px;
+            margin-top: 15px;
+        }
+        .javascript:hover{
+            box-shadow: 1px 1px 3px 3px rgb(127, 127, 221);
+        }
+        .java1{
+            text-align:justify;
+            font-size: 20px;
+            padding: 5%;
+        }
+        .project{
+            font-size: 30px;
+            padding: 5%;
+            margin-left: 40px;    
+        }
+        .pjr{
+            font-size: 50px;
+            padding: 5%;
+            text-align: center;
+            color:rosybrown;
+        }
+        .hr8{
+            width: 300px;
+            margin-top: -50px;
+            margin-left: 510px;
+        }
+        .project1{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 500px;
+            padding: 5%;
+            margin-left: 100px;
+            margin-top: 100px;
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+        }
+        .img{
+            background-image: url(https://i.pinimg.com/736x/b8/d0/fb/b8d0fb76130d48d7a690ff02ae6507cf.jpg);
+            width:40%;
+            height: 500px;
+            margin-left:635px;
+            margin-top: -500px;        
+        }
+        .img1{
+            background-image: url(https://unbounce.com/photos/zola-full.jpg);
+            width: 40%;
+            height: 670px;
+            margin-left: 100px;
+        }
+        .img2{
+            background-image: url(https://www.buylandingpagedesign.com/template/small-business-idea-lead-generation-responsive-landing-page-design-010.jpg);
+            width: 40%;
+            height: 500px;
+            margin-left: 100px;
+        }
+        .project2{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 500px;
+            padding: 5%;
+            margin-left:639px;
+            margin-top:-500px;
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+        }
+        .project3{
+            background-color: rgb(99, 97, 97);
+            width:40%;
+            height: 600px;
+            padding: 5%;
+            margin-left: 100px;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+        .img3{
+        background-image: url(https://www.buylandingpagedesign.com/blog/wp-content/uploads/2015/08/professional-cleaning-service-lead-generation-high-converting-landing-page-design-001.jpg);
+        width: 40%;
+        height: 600px;
+        margin-left:639px;
+        margin-top: -600px;
+        }
+        .details{
+            text-align: center;
+            padding: 5%;
+            font-size: 40px;
+        }
+        .div4{
+            background-color: rgb(212, 226, 231);
+            height: 400px;
+        }
+        .hr9{
+            width: 350px;
+            margin-left:490px;
+            margin-top: -50px;
+        }
+        .location{
+        font-size: 25px;
+        margin-left:100px;
+        margin-top: 50px;
+        background-color: white;
+        width: 25%;
+        height: 150px;
+        text-align: center;
+        padding: 1%;
+        border-radius: 10px;
+        }
+        .location:hover{
+            box-shadow: 1px 1px 2px 2px rgb(120, 189, 212);
+        }
+        .phone{
+            margin-left: 400px;
+            margin-top: -170px;
+            background-color: white;
+            width:110%;
+            height: 150px;
+            text-align: center;
+            padding: 3%;
+            border-radius: 10px;
+        }
+        .phone:hover{
+            box-shadow: 1px 1px 2px 2px rgb(120, 189, 212);
+        }
+        .mail{
+            margin-left: 800px;
+            margin-top: -150px;
+            background-color: white;
+            width: 120%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .mail:hover{
+            box-shadow: 1px 1px 2px 2px rgb(120, 189, 212);
+        }
+        .div5{
+            background-color: rgb(218, 213, 213);
+            height: 150px;
+        }
+        .facebook{
+            margin-left: 550px;
+            padding: 3%;
+        }
+        .facebook:hover{
+            color: rgb(46, 46, 194);
+        }
+        .instagram{
+            margin-left:650px;
+            margin-top:-58px;
+        }
+        .instagram:hover{
+           color: #ee1038;
+        }
+        .whatsapp{
+            margin-left:700px;
+            margin-top:-20px;
+        }
+        .whatsapp:hover{
+            color: green;
+        }
+        .git{
+            margin-left:750px;
+            margin-top:-20px;
+            color: rgb(59, 59, 59);
+        }
+        .git:hover{
+            color: black;
+        }
+        .school{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        @media screen and (max-width:600px) {
+            .fixed{
+                display: none;
+            }
+            .menu{
+                display: block;
+            }
+            .image{
+                background-image: url(village.jpg);
+                background-size:cover;
+                width: 100%;
+            }
+            .priya{
+                font-size: 20px;
+                text-align: center;
+            }
+            .div2{
+                width: 100%;
+                height:800px;
+            }
+            /*hr{
+               width: 400px;
+               margin-left: -10px;
+            }
+            .saru{
+                background-image: url(myimage.jpg);
+                margin-left: 50px;
+                width: 80%;
+                height: 300px;
+            }
+            .para{
+                margin-left: 0px;
+                width:100%;
+                margin-top: 50px;
+                font-size: 20px;
+            }*/
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <nav>
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#SKILLS">SKILLS</a></li>
+                <li><a href="#Services">SERVICES</a></li>
+                <li><a href="#PROJECTS">PROJECTS</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+                <li class="menu"><a href="Menu"><i class="fa-solid fa-bars"></i></a></li>            
+        </nav>
+       </div>
+       <div>
+        <section id="HOME"> 
+            <div class="image">
+           <div class="priya">
+           <h1>I'm Priya Saru</h1>
+            <h3 style="color:maroon;">A FrontEnd Developer</h3>
+        </section>        
+       </div>
+       </div>
+    </div>
+    <div>
+        <section id="ABOUT">
+            <div class="div2">
+             <h1>ABOUT <span style="color: white;">ME</span></h1>
+             <hr><br><br> 
+             <div>
+             <img class="saru" width="45%" src="myimage.jpg" alt="">   
+                <div class="para">
+                    <h1 style="color: firebrick;">Priya Saru</h1><br>
+                    <p>I am a front end developer. I am passionate about creating user experiences and have a strong understanding of usability and accesibility standards. I specialize in building responsive, interacting, and visually appealing websites or applications, focusing on the client-side to ensure seamless perfomance across devices.</p>
+                </div>
+             </div>       
+            </div>
+        </section>
+       </div>
+       <section id="SKILLS">
+        <div class="div3">
+        <h1 class="skill">MY SKILLS</h1>
+        <hr class="hr1">
+        <div>
+            <H2 class="design">Web Design</H2>
+            <hr class="hr2">
+            <hr class="hr3">
+        </div>
+        <div>
+            <h2 class="photoshop">Adobe Photoshop</h2>
+            <hr class="hr4">
+            <hr class="hr5">
+        </div>
+        <div>
+            <h2 class="project">Projects</h2>
+            <hr class="hr6">
+            <hr class="hr7">
+        </div>
+        </div>
+   </section>
+   <section id="Services">
+    <h1 class="service">SERVICES</h1>
+    <hr class="delux">
+    <div class="html">
+    <img class="html5" width="30%" height="110px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="">
+    <div class="html1">
+    <h1>HTML</h1><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere modi perferendis iure at necessitatibus mollitia dolor odit doloribus excepturi reprehenderit nostrum aliquid fugit obcaecati, suscipit corporis, architecto tempore vitae voluptates. Illo est veritatis doloribus. Quo velit voluptate reprehenderit sunt, autem harum explicabo tempore quia nesciunt, accusamus nisi qui, quaerat obcaecati.</p>
+<br><button>Read More</button>
+</div>    
+</div>
+<div class="css">
+<img class="css3" width="30%" height="110px" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
+<div class="css1">
+    <h1>CSS</h1><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere modi perferendis iure at necessitatibus mollitia dolor odit doloribus excepturi reprehenderit nostrum aliquid fugit obcaecati, suscipit corporis, architecto tempore vitae voluptates. Illo est veritatis doloribus. Quo velit voluptate reprehenderit sunt, autem harum explicabo tempore quia nesciunt, accusamus nisi qui, quaerat obcaecati.</p>
+<br><button>Read More</button>
+</div>
+</div>
+<div class="javascript">
+<img class="java" width="50%" height="110px" src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png" alt="">
+<div class="java1">
+    <h1>JAVASCRIPT</h1><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere modi perferendis iure at necessitatibus mollitia dolor odit doloribus excepturi reprehenderit nostrum aliquid fugit obcaecati, suscipit corporis, architecto tempore vitae voluptates. Illo est veritatis doloribus. Quo velit voluptate reprehenderit sunt, autem harum explicabo tempore quia nesciunt, accusamus nisi qui, quaerat obcaecati.</p>
+<br><button>Read More</button>
+</div>
+</div>
+   </section>
+   <section id="PROJECTS">
+    <h1 class="pjr">Projects</h1>
+    <hr class="hr8">
+    <div class="project1">
+     <h1 style="color: black;">Project 1</h1><br>
+     <h3 style="color: lightskyblue">Employment Opportuniities</h3><br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fuga eum sint totam harum ducimus iure animi exercitationem ratione quisquam? Est minus distinctio magnam eum ab. Vitae molestias distinctio iure qui nam, aspernatur adipisci voluptate quidem labore, eligendi perferendis reiciendis nulla sequi illo architecto necessitatibus. Cum tenetur velit aperiam molestiae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis, officiis autem dolores dicta fugiat unde nulla sunt quam repellat vitae, nam mollitia. Cum soluta adipisci facere architecto quo commodi, accusamus nobis? Ut quia esse quos, corporis laborum mollitia voluptatem ipsum aliquid, officia inventore quae. Quos omnis iure quia dicta?</p>
+    </div>
+    <div class="img"></div>
+    <div class="img2"></div>
+    <div class="project2">
+     <h1 style="color: black;">Project 2</h1><br>
+     <h3 style="color: lightskyblue">Business Opportunity</h3><br>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quod, modi reiciendis omnis, ex, qui recusandae odio officia sapiente voluptates nulla quisquam consequatur repellat quam nisi non quia nihil atque molestiae accusantium voluptas pariatur. Eos debitis assumenda molestiae, quia explicabo rem voluptatem ad impedit aliquam saepe velit mollitia? Unde eos aspernatur consequatur accusantium ullam illo, maiores expedita reiciendis! Officiis qui unde laboriosam blanditiis debitis provident quas optio quam deleniti obcaecati enim ut dolor exercitationem distinctio aut corporis maiores tenetur odit, quis aspernatur modi magnam corrupti? Eum sunt delectus ex. Cumque error nulla harum nostrum incidunt similique nemo dolorum eveniet officiis?</p>
+    </div>
+    <div class="project3">
+        <h1 style="color: black;">Project3</h1><br>
+        <h3 style="color: lightskyblue">Cleaning Service</h3><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus culpa nihil quaerat excepturi dolore corrupti numquam et aspernatur accusantium quos quasi, sequi tenetur fugit similique id reprehenderit fuga non quo ipsa porro odit fugiat! A numquam explicabo repellendus veritatis provident, enim ab sunt laborum, necessitatibus est, culpa eius deleniti minima consectetur alias temporibus mollitia ullam! Dolorum, fuga. Numquam voluptatem nihil ea officiis mollitia. Veritatis facilis animi ullam dignissimos reiciendis atque natus accusantium, expedita quisquam. Aliquam, sint sit modi non beatae saepe alias quas quae. Est ab dolores voluptatibus aperiam rem, tempore reiciendis laboriosam voluptatem, facilis perferendis neque dolor praesentium repellendus!</p>  
+       </div>
+       <div class="img3"></div>
+</section>
+<section id="CONTACT">
+    <div class="div4">
+    <h1 class="details">CONTACT <span style="color: blue;">ME</span></h1>
+    <hr class="hr9">
+    <div class="location">
+        <i style="margin-left: 10px; margin-top: 10px;" class="fa-sharp fa-solid fa-location-dot"></i><br><br>
+        <h3>Drivertole, Rupandehi</h3><br><br>
+        <div class="phone">
+        <i style="margin-left: 10px; margin-top: 10px;" class="fa-solid fa-phone"></i><br><br>
+        <h3>9847436225</h3><br><br>
+        </div>
+        <div class="mail">
+        <i style="margin-left: 10px; margin-top: 20px;" class="fa-solid fa-envelope"></i><br><br>
+        <h3>sarupriya232@gmail.com</h3>
+    </div>
+    </div>
+</div>
+</section>
+<div class="div5">
+<div class="facebook">
+    <i class="fa-brands fa-facebook fa-2xl"></i>
+</div>
+    <div class="instagram">
+    <i class="fa-brands fa-square-instagram fa-2xl"></i>
+</div>
+<div class="whatsapp">
+    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+</div>
+<div class="git">
+    <i class="fa-brands fa-github fa-2xl"></i>
+</div>
+<h3 class="school">Powered by <a style="color: blue;" href="https://w3schools.com">W3 Schools</a></h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const Variable Using Array</title>
+</head>
+<body>
+    <h2>Cars Arrays:</h2>
+    <p id="cars"></p>
+    <script>
+        //step1-create an array:
+        const cars = ["saab","Tata","BMW"];
+       // type error -> cars = ["saab","abc", "xyz"];
+       //step2-change an element:
+       cars[0] = "Toyota";
+       //step3-add an element:
+       cars.push("Audi");
+       document.getElementById("cars").innerHTML = cars;
+       //document.getElementById("cars").innerHTML = cars[3];
+    </script>
+</body>
+</html>

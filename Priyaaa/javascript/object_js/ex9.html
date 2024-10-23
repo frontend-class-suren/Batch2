@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Person Properties</h2>
+    <p id="person"></p>
+    <script>
+        const person = {
+            name : "Ram Poudel",
+            age : "15",
+            school : "Horizon School",
+            contact : "98XXXXXXXX"
+        }
+        person.address = "Butwal";
+        person.class = "9"
+        document.getElementById("person").innerHTML = "Person name is:"+person.name+","+"Person school name is:"+person.school+","+"Person address is:"+person.address;
+        document.getElementById("person").style.fontFamily = 'Courier New', Courier, monospace;
+    </script>
+</body>
+</html>

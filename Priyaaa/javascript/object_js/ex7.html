@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clothes Properties</h2>
+    <p id="clothes"></p>
+    <script>
+        const clothes = {
+            brand : "Wild yak",
+            price : "5000",
+            quality : "premium",
+            design: "sport wear"
+        }
+        clothes.fabric = "cotton";
+        document.getElementById("clothes").innerHTML = "Clothes Brand name is:"+clothes.brand+ ","+"Clothes quality is:"+clothes.quality+","+"Clothes fabric is:"+clothes.fabric;
+        document.getElementById("clothes").style.color = "blue";
+        document.getElementById("clothes").style.fontStyle = "italic";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScropt const variables has block scope</h2>
+
+<p id="demo"></p>
+<p id="scope"></p>
+
+<script>
+const  x = 10;
+// Here x is 10
+var y = 20;
+var y =30;
+//y = 10;
+let z = 25;
+//let z = 10;
+z = 12;
+{  
+const x = 2;
+// Here x is 2
+//document.getElementById("scope").innerHTML = "x is" + x;
+}
+
+// Here x is 10
+//document.getElementById("demo").innerHTML = "x is " + x +y;
+document.getElementById("demo").innerHTML = x + y + z;
+</script>
+</body>
+</html>

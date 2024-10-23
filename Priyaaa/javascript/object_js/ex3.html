@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mobile Property and Values</h2>
+    <p id="mobile"></p>
+    <script>
+        const mobile = {           
+            model : "Redmi Note 10S",
+            ROM: "64GB",
+            color: "black",
+            display : "6.1inch"
+        }
+        mobile.RAM = "6GB";
+        mobile.battery = "5000MaH"
+        document.getElementById("mobile").innerHTML = "Mobile model is:"+mobile.model+","+"Mobile RAM is:"+mobile.RAM+","+"Mobile display is:"+mobile.display;
+        document.getElementById("mobile").style.color = "red";
+    </script>
+</body>
+</html>

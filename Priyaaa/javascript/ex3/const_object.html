@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const Variable Using Object</title>
+</head>
+<body>
+    <h2>Car Property and Values</h2>
+    <p id="cars"></p>
+    <h2>Here is car owner name</h2>
+    <p id="person"></p>
+    <script>
+        //You can create a const object:
+        const car = {
+            type:"fiat", 
+            model:"500",
+            color:"white",
+            price:"24lac"
+        }
+        //You can change a property:
+        car.color = "red";
+        car.owner= "simran"
+        document.getElementById("cars").innerHTML = "Car.name:"+car.type+", "+"car owner is:"+car.owner+", "+"car price is:"+car.price;
+        //document.getElementById("cars").innerHTML = car.color;
+        //document.getElementById("person").innerHTML = car.owner;
+    </script>
+</body>
+</html>

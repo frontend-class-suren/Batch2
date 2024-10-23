@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: seagreen; font-size: 40px;">Programming Languages</h2>
+    <p id="language"></p>
+    <script>
+        const language = ["HTML", "CSS", "Java","Bootstrap"];
+        language[2] = "Javascript";
+        language.push("React");
+        document.getElementById("language").innerHTML = language[2];
+        document.getElementById("language").style.color = "blue";
+        document.getElementById("language").style.fontSize = "30px";
+        document.getElementById("language").style.fontStyle = "italic";
+    </script>
+</body>
+</html>
