@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page design</title>
+  <style>
+    *{
+      padding:0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+header{
+  width: 100%;
+  height: 100vh;
+  background: url(pizza.jpg);
+  background-size: 50% 90%;
+  background-repeat: no-repeat;
+  background-position:bottom right;
+  position: relative;
+}
+nav{
+  width: 100%;
+  height: 70px;
+  padding:0px 70px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 0px 5px grey;
+}
+.logo{
+font-weight: bold;
+font-size: 2em;
+letter-spacing: 2px;
+transition: 0.5s ease;
+}
+.logo span{
+  color: brown;
+}
+.menu a{
+text-decoration: none;
+color: black;
+padding: 10px 20px;
+}
+.menu a:last-child{
+  background: brown;
+  color: white;
+  border-radius: 8px;
+}
+.h-text{
+  position: absolute;
+  top: 30%;
+  left:5%;
+  padding: 15px;
+}
+.h-text p {
+  color:#262626;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.h-text h1{
+  font-size: 4em;
+  line-height: 1.5em;
+
+}
+.h-text h1 span{
+ color: brown; 
+}
+.h-text h2{
+  font-size: 4em;
+  margin-bottom: 0.5em;
+} 
+#order{
+  text-decoration: none;
+  color: white;
+  background:brown;
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* transition: 0.4s ease; */
+}
+#order:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 6px 6px 5px lightgrey;
+  /* transform: translate(-25px); */
+  opacity: 0.7;
+}
+#dis{
+  text-decoration: none;
+ color: white;
+ background: #262626;
+ padding: 10px 20px;
+ border-radius: 8px; 
+}
+#dis:hover{
+  background-color: brown;
+box-shadow: 6px 6px 5px lightgray;
+opacity: 0.8;
+}
+#pizza{
+  position: absolute;
+  bottom: 13%;
+  left: 5%;
+}
+#pizza img{
+  transition: 0.4s ease;
+  padding-right: 10px;
+  
+}
+#pizza img:hover{
+  transform: translateY(-20px);
+}
+ .menu a:hover{
+  background-color:black;
+  color: white;
+  /* box-shadow: 10px 10px 2px gray; */
+}
+.logo:hover{
+  transform:translateX(5px);
+}
+@media (max-width:700px){
+  html{
+    /* width: 100%; */
+    font-size: 55%;
+  }
+  #pizza img{
+    display: inline-flex;
+    width: 70px;
+
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><span>PI</span>ZZAHAT</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Foods</a>
+        <a href="#">Offer's</a>
+        <a href="#">Your Order</a>
+        <a href="#">Delivery</a>
+        <a href="#">Cart</a>
+      </div>
+    </nav>
+    <div class="h-text">
+      <p>Free Home Delivery</p>
+      <h1>Quality F<span>oo</span>ds</h1>
+      <h2>Pizza of the Week</h2>
+      <a href="#" id="order">Order now!!</a>
+      <a href="#" id="dis">25% Off Hurry!!</a>
+    </div>
+    <div id="pizza">
+<img src="pizza2.webp" alt="" width="100">
+<img src="pizza2.webp" alt="" width="100">
+<img src="pizza2.webp" alt="" width="100">
+    </div>
+  </header>
+</body>
+</html>

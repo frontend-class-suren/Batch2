@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Restaurant and its value</h2>
+  <p id="res"></p>
+  <h2>Owner of the restro</h2>
+  <p id="owner"></p>
+  <script>
+    const res={
+      Name = "Dipowan",
+      location = "KTM",
+established = "Early 20s",
+
+    }
+    res.owner="Michel";
+    document.getElementById('res').innerHTML="Restaurant name:" +res.name+ "restaurant location:"+res.location+"Establishment:"+res.established;
+    document.getElementById('owner').innerHTML=res.owner;
+  </script>
+</body>
+</html>

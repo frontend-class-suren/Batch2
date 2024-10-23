@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="image()">HIDE image</button>
+  <button ondblclick="image1()">show image</button>
+<h2 id="image">
+  <img src="girl2.webp"  alt="">
+  <img src="girl1.png" alt="">
+ <img src="girl3.png"  alt="">
+<img src="goblin.png" alt="">
+</h2>
+  <script>
+    function image(){
+      document.getElementById("image").style.display="none"; 
+    }
+    function image1(){
+      document.getElementById("image").style.display="block";
+    }
+  </script>
+</body>
+</html>

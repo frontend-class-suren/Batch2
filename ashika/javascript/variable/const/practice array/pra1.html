@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Cars brands</h2>
+  <p id="cars"></p>
+  <script>
+    // step 1 = create an array
+    const cars = ["BMW","Tesla","Toyota","Ferrari"];
+
+    // step 2 = change an element
+    cars[2] = "Thar";
+
+    // step 3 = Add an element
+cars.push("BYD");
+document.getElementById('cars').innerHTML =cars;
+  </script>
+</body>
+</html>

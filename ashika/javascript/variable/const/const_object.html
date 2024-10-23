@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>car properties and value</h3>
+  <p id="car"></p>
+  <h2>here is a name of car owner</h2>
+  <p id="person"></p>
+  <script>
+    // you can create a const object:
+    const car = {
+      type:"Fiat",
+      model:"500",
+      color:"white",
+      price:"24lac"
+    }
+    car.color="red";
+    car.owner="Simran";
+    document.getElementById("car").innerHTML="car name:"+car.type+"car owner:"+car.owner+"car price:"+car.price;
+    document.getElementById("person").innerHTML=car.owner;
+  </script>
+</body>
+</html>
