@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operators</title>
+</head>
+<body>
+    <h2 style="color: rgb(100, 100, 100);">String Operators</h2>
+    <h3>Comparison</h3>
+    <h3 id="comp"></h3>
+
+    <br>
+    <hr>
+
+    <h2 style="color: rgb(100, 100, 100);">String Operators</h2>
+    <h3>Addition</h3>
+    <h3 id="add"></h3>
+
+    <br>
+    <hr>
+
+    <h2 style="color: rgb(100, 100, 100);">String Operators</h2>
+    <h3>Assignment Addition</h3>
+    <h3 id="assign"></h3>
+
+
+    <script>
+        {
+            let text = 18;
+            let text1 = 4;
+
+            let result = text1 < text;
+            
+            document.getElementById("comp").innerHTML = " The result is " +result;
+        }
+    </script>
+
+    <br>
+
+    <script>
+        {
+            let text = "My name is";
+            let text1 = "James Bond";
+
+            let result = text + " " + text1;
+            
+            document.getElementById("add").innerHTML =  result;
+        }
+    </script>
+
+    <br>
+
+    <script>
+        {
+            let text = "Have a";
+            text += " good day";
+            
+            document.getElementById("assign").innerHTML =  text ;
+        }
+    </script>
+    
+</body>
+</html>

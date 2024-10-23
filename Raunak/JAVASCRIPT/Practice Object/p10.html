@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>Wifi Full Details</h2>
+    <p id="Wifi"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const Wifi ={Ip: "198.10.2.23", Brands:"World-Link", Price: "9000", color:"White", Speed: "866 Mbps"};
+ 
+    //    change the property 
+     
+    Wifi.color = "Black And Blue";
+
+    // Add the property 
+
+    Wifi.owner = "Kevin"
+
+    document.getElementById("Wifi").innerHTML = " Wifi Ip is " + Wifi.Ip +  " | Wifi Price " + Wifi.Price + " | Wifi Brand is " + Wifi.Brands+ " | Wifi Color is " +Wifi.color+ " | Wifi Speed is " +Wifi.Speed;
+    
+    document.getElementById("Wifi").style.color ="Orange";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "Wifi Owner is "+Wifi.owner;
+    document.getElementById("owner").style.color = "Dark Green";
+
+    </script>
+    
+</body>
+</html>

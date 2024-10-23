@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <button onclick="show()">Show It</button>
+    <button onclick="hide()">Hide It</button>
+    <h2 id="Image">
+      <img src="style/m4.avif" >
+      <img src="style/m6.avif" >
+      <img src="style/m7.avif" >
+      <img src="style/m8.avif" >
+      <img src="style/w1.avif" >
+      <img src="style/w2.avif" >
+    </h2>
+    
+    <script>
+      function hide() {
+        document.getElementById("Image").style.display = "none";
+      }
+      function show() {
+        document.getElementById("Image").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

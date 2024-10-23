@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>TV Full Details</h2>
+    <p id="TV"></p>
+    <br>
+    <h2>Owner Details</h2>
+    <p id="owner"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const TV ={Model: 2024, Brands:"Sony", Price: "70000", color:"Black",Size: "40 Inches"};
+ 
+    //    change the property 
+     
+    TV.color = "Black And Silver";
+
+    // Add the property 
+
+    TV.owner = "Tyson"
+
+    document.getElementById("TV").innerHTML = " TV model is " + TV.Model +  " | TV Price " + TV.Price + " | TV Brand is " + TV.Brands+ " | TV Color is " +TV.color+ " | TV Size is " +TV.Size;
+    
+    document.getElementById("TV").style.color ="Black";
+
+    //Owner Details
+    document.getElementById("owner").innerHTML = "TV Owner is "+TV.owner;
+    document.getElementById("owner").style.color = "Blue";
+
+    </script>
+    
+</body>
+</html>

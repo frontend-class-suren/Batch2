@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constant</title>
+  </head>
+  <body>
+    <h2>Cars Name</h2>
+    <p id="cars_details"></p>
+
+    <script>
+      const cars = ["Scorpion", "BMW", "Chevy"];
+
+      //   Replace the Element
+
+      cars[0] = "Tesla";
+
+      // Add the Element
+
+      cars.push("Toyota");
+
+      document.getElementById("cars_details").innerHTML = cars;
+    </script>
+  </body>
+</html>

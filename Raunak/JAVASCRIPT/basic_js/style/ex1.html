@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style in js</title>
+</head>
+<body>
+    <h2 id="font">I am a javascript Developer</h2>
+    <button onclick="show()">Show</button>
+    <button onclick="hide()">Hide It</button>
+    <button ondblclick="decrease()" onclick="fontsize()">Click Me</button>
+    <script>
+        function fontsize(){
+            document.getElementById('font').style.fontSize ="50px";
+            document.getElementById('font').style.color ="orange";
+        }
+        function decrease(){
+            document.getElementById('font').style.fontSize ="25px";
+        }
+        function hide(){
+            document.getElementById('font').style.display = "none";
+        }
+        function show(){
+            document.getElementById('font').style.display = "block";
+        }
+    </script>
+</body>
+</html>

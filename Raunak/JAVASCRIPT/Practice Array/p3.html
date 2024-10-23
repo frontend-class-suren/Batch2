@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Details</title>
+</head>
+<body>
+    <h2>Laptop Brands</h2>
+    <p id="laptop" style="color: rgb(81, 137, 192);"></p>
+
+    <script>
+        //create a const element
+     const laptop =["Acer","Asus","Dell","Hp"];
+
+     //replace the element
+
+     laptop[3] = "Macbook";
+
+     //Add the element
+
+     laptop.push("Lenovo");
+
+     document.getElementById("laptop").innerHTML = laptop;
+
+    </script>
+    
+</body>
+</html>

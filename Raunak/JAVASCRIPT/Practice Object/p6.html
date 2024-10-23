@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Object</title>
+</head>
+<body>
+    <h2>AirPlanes Full Details</h2>
+    <p id="AirPlanes"></p>
+    <br>
+    <h2>Pilot Details</h2>
+    <p id="Pilot"></p>
+
+    <script>
+       
+       //Create a Object Property
+
+       const AirPlanes ={Model: 2024, Type:"International", Route: "Bhw To Ktm", color:"Blue And White",Airlines:"Buddha AirLines"};
+ 
+    //    change the property 
+     
+    AirPlanes.color = "Blue";
+
+    // Add the property 
+
+    AirPlanes.Pilot = "Lionel Messi"
+
+    document.getElementById("AirPlanes").innerHTML = " AirPlanes model is " + AirPlanes.Model +  " | AirPlanes Type " + AirPlanes.Type + " | AirPlanes Route is " + AirPlanes.Route+ " | AirPlanes Color is " +AirPlanes.color+ " | Airplanes Airlines Name is " +AirPlanes.Airlines;
+    
+    document.getElementById("AirPlanes").style.color ="Brown";
+
+    //Pilot Details
+    document.getElementById("Pilot").innerHTML = "AirPlanes Pilot is "+AirPlanes.Pilot;
+    document.getElementById("Pilot").style.color = "Dark Silver";
+
+    </script>
+    
+</body>
+</html>
