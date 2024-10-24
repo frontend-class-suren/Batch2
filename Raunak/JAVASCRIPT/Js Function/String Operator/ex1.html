@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+
+    <!-- //String Operators -->
+
+    <!-- //Comparison -->
+    
+    <h2>String Operators</h2>
+    <h3>Comparison</h3>
+    <p>Text1 : <span id="Text1"></span></p>
+    <p>Text2 : <span id="Text2"></span></p>
+    <p>The Text is <strong id="equal"></strong> </p>
+
+    <br>
+    <hr size="4px" color="red">
+
+    <!-- //Addition -->
+
+    <h2>String Operators</h2>
+    <h3>Addition</h3>
+    <p>Text1 : <span id="T1"></span></p>
+    <p>Text2 : <span id="T2"></span></p>
+    <p>The Text is <strong id="add"></strong> </p>
+
+
+    <!-- //Comparison -->
+
+    <script>
+        {
+          let Text1 = 20;
+          let Text2 = 9;
+          function equal(Text1, Text2) {
+            return Text1 <Text2;
+            console.log(Text1 <Text2);
+          }
+          let Total = equal(20, 20);
+  
+          document.getElementById("equal").innerHTML = Total;
+          document.getElementById("Text1").innerHTML = Text1;
+          document.getElementById("Text2").innerHTML = Text2;
+        }
+      </script>
+
+     <!-- //Addition -->
+
+     <script>
+        {
+          let T1 = " Have a ";
+          let T2 = " good day ";
+          function add(T1, T2) {
+            return T1 +T2;
+            console.log(T1 +T2);
+          }
+          let Total = add(" Have a "," good day " );
+  
+          document.getElementById("add").innerHTML = Total + " ";
+          document.getElementById("T1").innerHTML = T1;
+          document.getElementById("T2").innerHTML = T2;
+        }
+      </script>
+
+   
+    
+</body>
+</html>

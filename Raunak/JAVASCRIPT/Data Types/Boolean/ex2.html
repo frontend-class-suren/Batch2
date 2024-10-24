@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Data Types</title>
+</head>
+<body>
+    <h2 style="color: lightslategray;">All Eight(8) Data Types</h2>
+
+    <!-- //Undefined Data -->
+
+    <p id="data"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //String Data -->
+
+    <p id="string"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //Number Data -->
+
+    <p id="num"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //Null Data -->
+
+    <p id="null"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //Boolean Data -->
+
+    <p id="bool"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //BigInt Data -->
+
+    <p id="bigint"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //Object Data -->
+
+    <p id="obj"></p>
+    <hr size="10px" color="orange">
+
+    <!-- //Aray Data -->
+     <p id="array"></p>
+     <hr size="10px" color="orange">
+
+     <!-- //Symbol Data -->
+      <p id="sym"></p>
+
+
+
+
+
+
+    <script>
+
+        //Undefined Data
+        let x;
+        // let y = typeof(x);
+
+        document.getElementById("data").innerHTML = typeof(x);
+
+       //String Data
+        let a = "Have a good day";
+        document.getElementById("string").innerHTML = typeof(a)+ " : " +a;
+
+        //Number Data
+        let num = 2130;
+        document.getElementById("num").innerHTML = typeof(num)+ " = " +num;
+
+        //Null Data
+        let sum = null;
+        document.getElementById("null").innerHTML = typeof(null)+ " = " +null;
+
+        //Boolean Data
+        let num1 = true;
+        let num2 = false;
+        document.getElementById("bool").innerHTML = typeof(num1)+ " = " +num1+ " and " +typeof(num2)+ " = " +num2;
+
+        //BigInT Data
+        let n1 = BigInt(123456789012345678901234567890);
+        document.getElementById("bigint").innerHTML = typeof(n1)+ " = " +n1;
+        
+        //Object Data
+        const laptops = { Model: 2024 , Type: "Gaming" , Price: "1 Lakh" , Brand: "Acer"}
+        console.log(typeof(laptops));
+        document.getElementById("obj").innerHTML = typeof(laptops)+ " = " + " This Laptop is " +laptops.Model+ " Model. " + " This is " +laptops.Type+ " type. " + " It Costs almost " +laptops.Price+ ". " + "The Name of the laptop Brand is " +laptops.Brand;
+
+        //Array Data
+        const Bikes = [" Duke " , " Apache " , " Crossfire " , " Ns Pulsar "];
+        console.log(typeof(Bikes));
+        document.getElementById("array").innerHTML = typeof(Bikes)+ " = " + " Name of the bikes - " +Bikes;
+
+        //Symbol Data
+        let person = Symbol("@");
+        console.log(typeof(person));
+        document.getElementById("sym").innerHTML = typeof(person);
+
+
+    </script>
+    
+</body>
+</html>

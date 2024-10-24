@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+
+    <!-- //Assignment Operators -->
+
+    <!-- //Addition -->
+    <h2>Assignment Operators</h2>
+    <h3>Addition</h3>
+    <p>Number1 : <span id="n1"></span></p>
+    <p>Number2 : <span id="n2"></span></p>
+    <p>Total Addition : <strong id="add"></strong> </p>
+
+    <br>
+    <hr size="8px" color="lightgreen">
+
+    <!-- //Substraction -->
+
+    <h2>Assignment Operators</h2>
+    <h3>Substraction</h3>
+    <p>Number1 : <span id="sub1"></span></p>
+    <p>Number2 : <span id="sub2"></span></p>
+    <p>Total Substraction : <strong id="sub"></strong> </p>
+
+    <br>
+    <hr size="8px" color="lightgreen">
+
+    <!-- //Multiplication Operators -->
+
+    <h2>Assignment Operators</h2>
+    <h3>Multiplication</h3>
+    <p>Number1 : <span id="mult1"></span></p>
+    <p>Number2 : <span id="mult2"></span></p>
+    <p>Total Multiplication : <strong id="mult"></strong> </p>
+
+    <br>
+    <hr size="8px" color="lightgreen">
+
+    <!-- //Division Operators -->
+
+    <h2>Assignment Operators</h2>
+    <h3>Division</h3>
+    <p>Num1 : <span id="div1"></span></p>
+    <p>Num2 : <span id="div2"></span></p>
+    <p>Total Division : <strong id="div"></strong> </p>
+
+    <br>
+    <hr size="8px" color="lightgreen">
+
+    <!-- //Modulus Operators -->
+
+    <h2>Arthimetic Operators</h2>
+    <h3>Modulus</h3>
+    <p>Num1 : <span id="mod1"></span></p>
+    <p>Num2 : <span id="mod2"></span></p>
+    <p>Total Modulus : <strong id="mod"></strong> </p>
+
+
+    <!-- //Addition Operators -->
+    
+    <script>
+        {
+          let n1 = 20;
+          let n2 = 30;
+          function add(n1, n2) {
+            return n1 +=n2;
+            console.log(n1 +=n2);
+          }
+          let Total = add(20, 30);
+  
+          document.getElementById("add").innerHTML = Total;
+          document.getElementById("n1").innerHTML = n1;
+          document.getElementById("n2").innerHTML = n2;
+        }
+      </script>
+
+      <br>
+
+      <!-- //Substraction Operators -->
+
+      <script>
+        {
+          let sub1 = 50;
+          let sub2 = 40;
+          function sub(sub1, sub2) {
+            return sub1 -=sub2;
+            console.log(sub1 -=sub2);
+          }
+          let Total = sub(50, 40);
+  
+          document.getElementById("sub").innerHTML = Total;
+          document.getElementById("sub1").innerHTML = sub1;
+          document.getElementById("sub2").innerHTML = sub2;
+        }
+      </script>
+
+      <br>
+      <!-- //Multiplication Operators -->
+      
+      <script>
+        {
+          let mult1 = 10;
+          let mult2 = 4;
+          function mult(mult1, mult2) {
+            return mult1 *=mult2;
+            console.log(mult1 *=mult2);
+          }
+          let Total = mult(10, 4);
+  
+          document.getElementById("mult").innerHTML = Total;
+          document.getElementById("mult1").innerHTML = mult1;
+          document.getElementById("mult2").innerHTML = mult2;
+        }
+      </script>
+
+      <br>
+
+      <!-- //Division Operators -->
+
+      <script>
+        {
+          let div1 = 100;
+          let div2 = 50;
+          function div(div1, div2) {
+            return div1 /= div2;
+            console.log(div1 /= div2);
+          }
+          let Total = div(100, 50);
+          document.getElementById("div").innerHTML = Total;
+          document.getElementById("div1").innerHTML = div1;
+          document.getElementById("div2").innerHTML = div2;
+        }
+      </script>
+
+      <br>
+
+      <!-- //Modulus Operators -->
+
+    <script>
+        {
+          let mod1 = 100;
+          let mod2 = 20;
+          function mod(mod1, mod2) {
+            return mod1 %= mod2;
+            console.log(mod1 %= mod2);
+          }
+          let Total = mod(100, 20);
+          document.getElementById("mod").innerHTML = Total;
+          document.getElementById("mod1").innerHTML = mod1;
+          document.getElementById("mod2").innerHTML = mod2;
+        }
+      </script>
+      
+</body>
+</html>

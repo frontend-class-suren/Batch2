@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <h2> JavaScript Functions </h2>
+    <p>Num1 : <span id="num1"></span></p>
+    <p>Num2 : <span id="num2"></span></p>
+    <p>Total Sum: <strong id="sum"></strong> </p>
+    <h3>Three Number multiplication value is : <strong id="values"></strong></h3>
+    <h3>My Name is : <strong id="name"></strong></h3>
+
+    <script>
+        let num1 = 20;
+        let num2 = 10;
+        function sum(num1,num2){
+            return num1 + num2;
+            console.log(num1+num2);
+        }
+        function mult(n1,n2,n3){
+            return n1*n2*n3;
+        }
+        function fullname(name){
+            return name;
+           
+        }
+        let fullname = name("James Bond");
+        let Total = sum(20,10);
+        let values = mult(2,3,4);
+
+        document.getElementById("name").innerHTML = fullname;
+
+        document.getElementById("sum").innerHTML = Total;
+        document.getElementById("num1").innerHTML = num1;
+        document.getElementById("num2").innerHTML = num2;
+        document.getElementById("values").innerHTML = values;
+        
+        
+    </script>
+</body>
+</html>
