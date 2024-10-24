@@ -60,7 +60,20 @@
     <p>Num2 : <span id="mod2"></span></p>
     <p>Total Modulus : <strong id="mod"></strong> </p>
 
-    <!-- //Arthimetic Operators -->
+    <br />
+    <hr size="5px" color="orange" />
+
+    <!-- //Exponenetial Operators -->
+
+    <h2>Arthimetic Operators</h2>
+    <h3>Exponenetial</h3>
+    <p>Num1 : <span id="exp1"></span></p>
+    <p>Num2 : <span id="exp2"></span></p>
+    <p>Total Exponenetial : <strong id="exp"></strong> </p>
+
+
+
+    <!-- //Addition Operators -->
 
     <script>
       {
@@ -80,13 +93,15 @@
 
     <br />
 
+    <!-- //Substraction Operators -->
+
     <script>
       {
         let num1 = 20;
         let num2 = 10;
         function sub(num1, num2) {
           return num1 - num2;
-          console.log(num1 + num2);
+          console.log(num1 - num2);
         }
         let Total = sub(20, 10);
         document.getElementById("sub").innerHTML = Total;
@@ -149,6 +164,25 @@
         document.getElementById("mod").innerHTML = Total;
         document.getElementById("mod1").innerHTML = mod1;
         document.getElementById("mod2").innerHTML = mod2;
+      }
+    </script>
+
+    <br>
+
+    <!-- //Exponenetial Operators -->
+
+    <script>
+      {
+        let exp1 = 2;
+        let exp2 = 2;
+        function exp(exp1, exp2) {
+          return exp1 ** exp2;
+          console.log(exp1 % exp2);
+        }
+        let Total = exp(2, 2);
+        document.getElementById("exp").innerHTML = Total;
+        document.getElementById("exp1").innerHTML = exp1;
+        document.getElementById("exp2").innerHTML = exp2;
       }
     </script>
 
