@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>car properties and values</h2>
+    <p id="car"></p>
+    <h2>Car owner </h2>
+    <p id="owner"></p>
+<script>
+        //You can create a const object
+        const car = {
+            type:"Fiat",
+            model:"500",
+            color:"Black",
+            price:"2cr"
+        }
+        //You can change the property
+        car.color = "white"
+        car.owner = "Simran"
+        document.getElementById("car").innerHTML = "Car name: "+ car.type + " Car Model: "+ car.model + " Car is owned by: "+car.owner
+        document.getElementById("owner").innerHTML = car.owner
+
+    </script>
+</body>
+</html>

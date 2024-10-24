@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DataTypes</title>
+</head>
+<body>
+    <h2>Here all Eight(8) Data Types</h2>
+    <p id="check"></p>
+    <hr color="Olive" size="10px">
+    <p id="string"></p>
+    <hr color="Olive" size="10px">
+    <p id="number"></p>
+    <hr color="Olive" size="10px">
+    <p id="null"></p>
+    <hr color="Olive" size="10px">
+    <p id="BOOL"></p>
+    <hr color="Olive" size="10px">
+    <p id="Bigint"></p>
+    <hr color="Olive" size="10px">
+    <p id="object"></p>
+    <hr color="Olive" size="10px">
+    <p id="Array"></p>
+    <hr color="Olive" size="10px">
+    <p id="symbol"></p>
+    <hr color="Olive" size="10px">
+
+
+
+    <script>
+        let x;
+        // let y= type(x)
+        document.getElementById("check").innerHTML = typeof(x)
+        //sting data
+        let a = "Hello";
+        document.getElementById("string").innerHTML = typeof(a)
+
+        //Number Data 
+        let num = 111;
+        document.getElementById("number").innerHTML = typeof(num)+ " = " + num;
+
+        //Null DAta
+        let sum = null
+        document.getElementById("null").innerHTML = typeof(sum)+" = "+null
+
+        //Booleans Data
+        let num1 = true
+        let num2 = false
+        document.getElementById("BOOL").innerHTML = typeof(num1)+ " = "+ num1 + " and " + typeof(num2)+ " = " + num2
+
+        //Bigint Data
+        let numbers= BigInt(123847526572857833408394347643576)
+        document.getElementById("Bigint").innerHTML = typeof(numbers)+" = "+numbers
+
+        //Object Data
+        const students = {
+            FullName: "Simran Shrestha"
+        }
+        console.log(typeof(students));
+        document.getElementById("object").innerHTML = typeof(students)+" = "+students.FullName;
+
+        //Array Data
+        let laptops = ["Acer", "ASUS", "HP", "Mac"]
+        console.log(typeof(laptops))
+        document.getElementById("Array").innerHTML = typeof(laptops)+" = "+laptops[3];
+
+        //Symbol Data
+        let symbol = Symbol("@")
+        document.getElementById("symbol").innerHTML = typeof(symbol)+" = "+symbol;
+
+
+        
+    </script>
+</body>
+</html>

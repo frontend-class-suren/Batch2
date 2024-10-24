@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>How To Create a Function</h2>
+    <hr size="5px" color="lavender">
+    <p>Total Sum: <span id="sum"></span></p>
+    <hr size="5px" color="lavender">
+    <h2>The Multiplication value is <span id="value"></span></h2> 
+    <hr size="5px" color="lavender">
+    <h1>My friend's name is <span id="name"></span></h1>
+    <hr size="5px" color="lavender">
+<h2>The Division value is <span id="div"></span></h2>
+<hr size="5px" color="lavender">
+<h2>The Subtraction value is <span id="sub"></span></h2>
+<hr size="5px" color="lavender">
+<h2>The Modulus value is <span id="mod"></span></h2>
+
+    <script>
+        function sum(num1, num2)
+        {
+            return num1 + num2;
+        }
+        function mult(simran, ashika, priya,raunak)
+        {
+            return simran * ashika * priya * raunak;
+        }
+        function fullname(Firstname, Lastname){
+            return Firstname+ " "+ Lastname
+        }
+        function div(nbr1, nbr2){
+            return nbr1 / nbr2;
+        }
+        function sub(one,two){
+            return one - two
+        }
+        function mod(x,y){
+            return x % y;
+        }
+
+    
+         Total = sum(10,10)
+         Total = sum(100,100)
+         Total = sum(200,100)
+
+        document.getElementById("sum").innerHTML = Total
+        let value = mult(2,2,2,2)
+        document.getElementById("value").innerHTML = value
+
+        let myname = fullname("Ashika", "Aryal")
+        document.getElementById("name").innerHTML = myname
+
+        let nbr = div(100,2)
+        document.getElementById("div").innerHTML = nbr
+
+        let subt = sub(100,20)
+        document.getElementById("sub").innerHTML = subt
+
+        let modu = mod(156,10)
+        document.getElementById("mod").innerHTML = modu
+        
+      
+    </script>
+</body>
+</html>
