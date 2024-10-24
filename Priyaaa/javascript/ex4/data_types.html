@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here are all eight Data types</h2>
+    <p id="check"></p>
+    <hr size="5px" color="green">
+    <p id="string"></p>
+    <hr size="5px" color="green">
+    <p id="number"></p>
+    <hr size="5px" color="green">
+    <p id="null"></p>
+    <hr size="5px" color="green">
+    <p id="bool"></p>
+    <hr size="5px" color="green">
+    <p id="BigInt"></p>
+    <hr size="5px" color="green">
+    <p id="object"></p>
+    <hr size="5px" color="green">
+    <p id="array"></p>
+    <hr size="5px" color="green">
+    <p id="symbol"></p>
+<script>
+    let x;
+  // let y = typeof(x)
+  document.getElementById("check").innerHTML = typeof(x);
+  //string data
+  let a = "Hello";
+  document.getElementById("string").innerHTML = typeof(a)+"="+a;
+  //number data
+  let num = 1200;
+  document.getElementById("number").innerHTML = typeof(num)+"="+num;
+  //null data
+  let sum = null;
+  document.getElementById("null").innerHTML = typeof(sum)+"="+sum;
+// booleans data
+let num1 = true;
+let num2 = false;
+document.getElementById("bool").innerHTML = typeof(num1)+"="+num1+" "+"and"+" "+typeof(num2)+"="+num2;
+//bigint data
+let numbers =BigInt("123456789012345678901234567890");
+document.getElementById("BigInt").innerHTML = typeof(numbers)+ " = " +numbers;
+//object data
+const student ={
+    fullname: "ABC XYZ"
+}
+console.log(typeof(student));
+console.log(student.fullname);
+document.getElementById("object").innerHTML = typeof(student)+" = "+student.fullname;
+//Array data
+let laptops = ["acer", "asus", "toshibha","Mac","Hp"];
+console.log(typeof(laptops));
+document.getElementById("array").innerHTML = typeof(laptops)+"="+laptops[1];
+
+//symbol data
+let person = Symbol("@")
+console.log(typeof(person));
+document.getElementById("symbol").innerHTML = typeof(person);//+" = "+person;
+</script>
+</body>
+</html>

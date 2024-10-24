@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasript Function</title>
+</head>
+<body>
+    <h2>How to create function</h2>
+    <h3>My name is: <strong id="name"></strong></h3>
+    <p>Total sum: <strong id="sum"></strong></p>
+    <h3>three number multiplications vslue is : <strong id="value"></strong></h3>
+    <script>
+        //let num1 = 20;
+        //let num2 = 10;
+        function sum(num1, num2){
+          return num1 + num2;
+          console.log(num1+num2)
+        }
+        function mult(number1, number2, number3){
+            return number1*number2*number3;
+        }
+        function fullname(first_name, last_name){
+            return first_name + " " + last_name;
+        }
+        let myname = fullname("Ashika", "Aryal");
+        console.log(myname);
+        document.getElementById("name").innerHTML = myname;
+        let Total = sum(200,100);
+        let value = mult(2,3,4);
+        document.getElementById("sum").innerHTML = Total;
+        document.getElementById("value").innerHTML = value;
+        //document.getElementById("num1").innerHTML = sum.num1;
+        //document.getElementById("num2").innerHTML = num2;
+    </script>
+</body>
+</html>
