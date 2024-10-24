@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>The sum is: <span id="sum"></span></h3>
+  <h3>The diff is: <span id="sub"></span></h3>
+  <h3>The mult is: <span id="mult"></span></h3>
+  <h3>The div is: <span id="div"></span></h3>
+  <h3>The rem is: <span id="rem"></span></h3>
+  <h3>The Inc is: <span id="inc"></span></h3>
+  <h3>The Dec is: <span id="dec"></span></h3>
+  <h3>The Exp is: <span id="exp"></span></h3>
+  <script>
+    function sum(num1 , num2 , num3){
+      return num1 + num2 + num3;
+      console.log(num1 + num2 + num3);
+    }
+    function sub(num1 ,num2 , num3){
+      return num1 - num2 - num3;
+      console.log(num1 - num2 - num3);
+    }
+    function mult(num1 , num2 ,num3){
+      return num1*num2*num3;
+      console.log(num1*num2*num3);
+    }
+    function div(num1 , num2){
+      return num1/num2;
+      console.log(num1/num2);
+    }
+    function rem(num1 , num2){
+      return num1 % num2;
+      console.log(num1 % num2);
+    }
+    function inc(num1,num2){
+      return 
+    }
+    let Total = sum(20 ,30,10);
+    let Diff  = sub(60,20,10);
+    let Multi = mult(10,10,3);
+    let Divi = div(200,20);
+    let Rem = rem(60,7);
+    document.getElementById('sum').innerHTML = Total;
+    document.getElementById('sum').style.color="red"
+    document.getElementById('sub').innerHTML = Diff;
+    document.getElementById('sub').style.color="red"
+    document.getElementById('mult').innerHTML = Multi;
+    document.getElementById('mult').style.color="red"
+    document.getElementById('div').innerHTML = Divi;
+    document.getElementById('div').style.color="red"
+    document.getElementById('rem').innerHTML =Rem;
+    document.getElementById('rem').style.color="red"
+  </script>
+</body>
+</html>

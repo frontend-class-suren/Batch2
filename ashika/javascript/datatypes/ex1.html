@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>All eight Datatypes</h2>
+  <p id="check"></p>
+  <hr sixe="2px" color="red">
+  <p id="string"></p>
+
+  <hr size="2px" color="blue">
+  <p id="num"></p>
+
+  <hr size="2px" color="green">
+  <p id="null"></p>
+
+  <hr size="2px" color="violet">
+  <p id="bool"></p>
+
+  <hr size="2px" color="black">
+  <p id="bigint"></p>
+
+  <hr size="2px" color="blue">
+  <p id="object"></p>
+
+  <hr size="2px" color="blue">
+  <p id="array"></p>
+
+  <hr size="2px" color="blue">
+  <p id="symbol"></p>
+  <script>
+    let X;
+  //  let y= typeof(x);
+  document.getElementById('check').innerHTML = typeof(X);
+//  string data
+let a ="hello";
+document.getElementById('string').innerHTML = typeof(a)+":"+a;
+//number data
+let num = 1200;
+document.getElementById('num').innerHTML = typeof(num)+":"+num;
+//null datatype
+let sum = null;
+document.getElementById('null').innerHTML = typeof(null)+":"+null;
+
+//booleans data
+let num1 = true;
+let num2 = false;
+document.getElementById('bool').innerHTML = typeof(num1)+":"+num1+"and" +""+typeof(num2)+":"+num2;
+
+//bigint data
+let numbers= BigInt("123456789098765433234556366535627283778");
+document.getElementById('bigint').innerHTML=typeof(numbers)+":"+numbers;
+
+//object data
+const student ={
+  fullname:"Ashika Aryal",
+  address:"Khaireni"
+}
+console.log(typeof(std));
+console.log(student.fullname);
+document.getElementById('object').innerHTML= typeof(student)+"="+student.fullname;
+
+
+
+//array data
+let laptop =["Acer","Asus","dell"];
+console.log(typeof(laptop));
+document.getElementById('array').innerHTML=typeof(laptop)+":"+laptop[2];
+
+
+//symbol data
+let person = Symbol("@")
+console.log(typeof(person));
+document.getElementById('symbol').innerHTML=typeof(person)+person
+  </script>
+</body>
+</html>
