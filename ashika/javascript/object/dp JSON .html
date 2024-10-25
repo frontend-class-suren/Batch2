@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Using JSON property</h2>
+  <p>JavaScript objects can be converted to a string with JSON method JSON.stringify().
+
+    JSON.stringify() is included in JavaScript and supported in all major browsers.</p>
+    <p id="demo"></p>
+    <p id="demoType"></p>
+    <script>
+      const person={
+        name:'Ashika',
+        age:'20',
+        city:'Butwal'
+      };
+      //Stringfy object using JSON.stringify method
+      let myString = JSON.stringify(person);
+      //display string
+      document.getElementById('demo').innerHTML=myString;
+      document.getElementById('demoType').innerHTML=typeof(myString);
+    </script>
+</body>
+</html>

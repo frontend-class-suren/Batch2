@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>How to add a new property in object</h2>
+  <p id="person"></p>
+  <script>
+    const person = {
+      f_name:"Ashika",
+      l_name:"Aryal",
+      address:"Khaireni"
+    }
+    person.age = "20 year"
+    person.number = "93484533232"
+    delete person.l_name;
+    delete person["address"]
+    // document.getElementById('person').innerHTML = person.l_name;
+    document.getElementById('person').innerHTML = person.number;
+    // document.getElementById('person').innerHTML = person.address;
+
+
+  </script>
+</body>
+</html>

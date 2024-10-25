@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Farenheit to celsius</title>
+</head>
+<body>
+  <h2>Convert Farenheit to celsius</h2>
+  <h4 id="toCelsius"></h4>
+  <script>
+    function toCelsius(farenheit){
+      return (5/9)*(farenheit-32);
+    }
+    let value = toCelsius(77);
+    document.getElementById('toCelsius').innerHTML = "77 farenheit is:"+value+""+"Celsius";
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family:-apple-system, sans-serif;
+}
+html{
+  font-size: 62.5%;
+  overflow: hidden;
+}
+body{
+  background: url(./images/restro.jpg);
+  position: fixed;
+}
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  background:white;
+  backdrop-filter: blur(10px);
+  transition: all 0.5 ease;
+}
+.logo{
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 0.3 ease;
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+.navbar a{
+  font-size: 1.9rem;
+color: black;
+margin-left: 4rem;
+font-weight: 500;
+transform: 0.5 ease;
+}
+.navbar a:hover, .navbar a:active{
+  color: black;
+  border-bottom: 2px solid skyblue;
+}
+#menu-icon{
+  color: gray;
+  font-size: 3.6rem;
+  cursor: pointer;
+  display: none;
+}
+.home .welcome h1{
+  font-size: 3.7rem;
+  font-weight: 500;
+  font-family: cursive;
+  color: white;
+}
