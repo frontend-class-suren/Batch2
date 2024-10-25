@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Convert fahrenheit to celsius:</h2>
+    <h4 id="tocelsius"></h4>
+    <script>
+        function toCelsius(fahrenheit){
+            return(5/9)*(fahrenheit-32);
+        }
+        let value = toCelsius(77);
+        document.getElementById("tocelsius").innerHTML = "77 fahrenheit is : "+value+" "+"Celsius"
+    </script>
+</body>
+</html>

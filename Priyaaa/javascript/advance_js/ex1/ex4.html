@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <h2>How to adding a new property in object</h2>
+    <p id="person"></p>
+    <script>
+        const person = {
+            f_name: "Priya",
+            l_name: "Saru",
+            address: "Drivertole"
+        };
+        
+        person.age = "20 year" 
+        person.number = "98xxxxx"
+        //how to delete property value of object
+        delete person.l_name;
+        delete person["adderess"]
+        document.getElementById("person").innerHTML = person.address;
+        // document.getElementById("person").innerHTML = person.l_name;
+        // document.getElementById("person").innerHTML = person.number;
+        // document.getElementById("person").innerHTML = person.f_name;
+        // document.getElementById("person").innerHTML = person.age;
+    </script>
+</body>
+</html>

@@ -17,6 +17,12 @@
     <p>Division of two numbers : <strong id="div"></strong></p>
     <br>
     <p>Remainder of the division numbers : <strong id="mod"></strong></p>
+    <br>
+    <p>Increment of the number: <strong id="inc"></strong></p>
+    <br>
+    <p>Decrement of the number: <strong id="dec"></strong></p>
+    <br>
+    <p>Exponentiation of the number: <strong id="exp"></strong></p>
 
     <script>
         function sum(num1,num2){
@@ -39,7 +45,18 @@
             return num1 % num2;
             console.log(num1%num2)
         }
-        
+        function inc(num){
+            return num++;
+            console.log(num++)
+        }
+        function dec(num1,num2){
+            return num1--;
+            console.log(num1--)
+        }
+        function exp(num1,num2){
+            return num1**num2;
+            console.log(num1**num2)
+        }
         let Total = sum(200,100);
         document.getElementById("sum").innerHTML = Total;
         document.getElementById("sum").style.color = "blue";
@@ -58,6 +75,18 @@
         let Modulus = mod(50, 3);
         document.getElementById("mod").innerHTML = Modulus;
         document.getElementById("mod").style.color = "navy";
+
+        let Increment = inc(5);
+        document.getElementById("inc").innerHTML = Increment;
+        document.getElementById("inc").style.color = "darkgreen";
+
+        let Decrement = dec(5);
+        document.getElementById("dec").innerHTML = Decrement;
+        document.getElementById("dec").style.color = "brown";
+
+        let Exponentiation = exp(5,2);
+        document.getElementById("exp").innerHTML = Exponentiation;
+        document.getElementById("exp").style.color = "purple";
 
     </script>
 </body>

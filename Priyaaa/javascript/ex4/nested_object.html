@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object</title>
+</head>
+<body>
+    <h2>Property values in an object can be other objects:</h2>
+    <p id="price"></p>
+    <script>
+        const person ={
+            fname: "Priya",
+            lname: "Saru",
+            age: "20 years",
+            country: "Nepal",
+            myCars:{
+                car1: {
+                brand: "BMW",
+                model: "g8",
+                price: "3cr",
+                year: "1997"
+            },
+                car2: "Tata",
+                car3: "Ford"
+            }
+        }
+        // You can access nested objects using the dot notation or the bracket notation:
+        let priceBMW = person.myCars.car1['price']
+        document.getElementById("price").innerHTML = priceBMW;
+    </script>
+</body>
+</html>

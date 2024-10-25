@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Variables</title>
+</head>
+<body>
+   <h2>local variables can only be accessed from within the function.</h2>
+   <p id="local"></p>
+   <p id="outside"></p>
+   <p id="demo1"></p>
+   <script>
+    let carName = "SUZUKI 800+";
+    let text = "outside : "+" "+ carName;
+    document.getElementById("demo1").innerHTML = text;
+    function myfunction(){
+        let carName = "TATA EV+";
+        let text = "Inside: "+ typeof carName+ "" + carName;
+        document.getElementById("local").innerHTML = text;
+    }
+    myfunction();
+   </script> 
+</body>
+</html>

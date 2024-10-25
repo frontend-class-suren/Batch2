@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <h1>Javascripts object</h1>
+    <h2>Object Methods</h2>
+    <p>A method is a function definitation stored as a proerty value</p>
+    <p id="person"></p>
+    <hr>
+    <p id="details"></p>
+    <hr>
+     <p id="ageG"></p>
+    <script>
+        const person = {
+            firstName : "Priya",
+            lastName : "Saru",
+            age : "20 years",
+            gender : "F",
+            fullName : function(){
+                return this.firstName+" "+this.lastName;
+            },
+            details: function(){
+                return this.firstName+"<br>"+this.lastName+"<br>"+this.age;
+            }
+        };
+        // how to add object method or custom method out the object block
+        person.ageG = function(){
+            return this.age+" ,"+"Gender is: "+this.gender;
+        }
+        document.getElementById("person").innerHTML = person.fullName().toLocaleUpperCase();
+        document.getElementById("details").innerHTML = person.details().toLocaleLowerCase();
+        document.getElementById("ageG").innerHTML = person.ageG();
+    </script>
+</body>
+</html>
