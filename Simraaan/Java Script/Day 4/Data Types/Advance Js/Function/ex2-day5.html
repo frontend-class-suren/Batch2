@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Convert Farhenheit To Celcius:</h2>
+    <h4 id="tocelcius"></h4>
+    <script>
+        function toCelcius(Farhenheit)
+        {
+            return (5/9)*(Farhenheit-32);
+        }
+        let value = toCelcius(77)
+        document.getElementById("tocelcius").innerHTML = "77 farhenhiet is:" + " " +  value+ "celcius"
+    </script>
+</body>
+</html>

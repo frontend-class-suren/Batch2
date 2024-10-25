@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <h1>JS Objects</h1>
+    <h2>Object Methods</h2>
+    <p id="person"></p>
+    <hr>
+    <p id="details"></p>
+    <hr>
+    <p id="object"></p>
+    <script>
+
+        const person = {
+            firstname: "simran",
+            lastname: "shrestha",
+            age: "19",
+            gender: "Female",
+            height: "5'5",
+            fullname : function(){
+                return this.firstname+ " " + this.lastname;
+            },
+            details: function(){
+                return this.fullname()+ "<br> "+ this.age+ "<br>"+this.gender+"<br>"+ this.height;
+            }
+        };
+        //How to add an object method or costum out of the object block
+        person.clg = function(){
+            return this.age + " "+ "Gender is" + " "+ this.gender
+        }
+        document.getElementById("person").innerHTML = person.fullname().toUpperCase();
+        document.getElementById("details").innerHTML = person.details();
+        document.getElementById("object").innerHTML = person.clg();
+
+
+    </script>
+</body>
+</html>

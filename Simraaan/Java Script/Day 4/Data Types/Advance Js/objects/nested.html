@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object</title>
+</head>
+<body>
+    <h2>Property Values in an object can be other objects.</h2>
+    <p id="me"></p>
+    <script>
+        const person = {
+            fname:"Dewo",
+            lname: "Shrestha",
+            age: "19",
+            country: "Nepal",
+            cars: {
+                car1: {
+                    brand: "Thar",
+                    model: "2024",
+                    price: "7cr",
+                },
+                car2: "BMW",
+                car3: "Range Rover",
+                car4: "Tesla"
+            }
+        }
+        let priceThar = person.cars.car1["price"]
+        document.getElementById("me").innerHTML = priceThar;
+    </script>
+</body>
+</html>

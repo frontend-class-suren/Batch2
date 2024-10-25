@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Variables</title>
+</head>
+<body>
+    <h2>Local Variables can only be accessed from within the function.</h2>
+    <p id="outside"></p>
+    <p id="local"></p>
+    <script>
+        //variables w the same name can be used in different function or outside function block
+        let carName = "THAR";
+        let text = "Outside of a Function"+ " " + carName;;
+        document.getElementById('outside').innerHTML = text;
+        function myFunction(){
+            let carName = "TATA EV+"
+            let text = "Inside:"+ typeof carName + ""+ carName;
+        document.getElementById('local').innerHTML = text;
+        }
+        myFunction();
+    </script>
+</body>
+</html>
