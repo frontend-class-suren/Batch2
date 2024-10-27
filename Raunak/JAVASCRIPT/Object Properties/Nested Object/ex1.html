@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Object</title>
+  </head>
+  <body>
+    <h2>Nested Object</h2>
+    <p id="obj"></p>
+
+    <br>
+    <hr>
+
+    <p id="price"></p>
+
+    <!-- //Nested Object -->
+
+    <script>
+      const myObj = {
+        name: "James",
+        age: 40,
+        myCars: {
+          car1: {
+            Brand: "BMW",
+            model: "2020",
+            price: "1cr",
+          },
+          car2: "BMW",
+          car3: "Fiat",
+        },
+      };
+      let priceBMW = myObj.myCars.car1["price"];
+      document.getElementById("price").innerHTML = myObj.myCars.car1["Brand"]+ " price is " + myObj.myCars.car1["price"];
+      document.getElementById("obj").innerHTML = myObj.name+ " has a " +myObj.myCars.car2 + " " ;
+    </script>
+  </body>
+</html>

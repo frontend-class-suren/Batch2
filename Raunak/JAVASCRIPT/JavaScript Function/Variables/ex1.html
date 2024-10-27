@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Variables</title>
+  </head>
+  <body>
+    <h2>Local Variables</h2>
+    <p id="local1"></p>
+    <p id="local2"></p>
+
+    <!-- //Local Variables -->
+
+    <script>
+
+        //variables call inside the function
+
+      let carName = "Ferrari";
+      let text = "Outside: " + " " + carName;
+      document.getElementById("local1").innerHTML = text;
+       
+    //Variables Recognize inside the fucntion
+
+      function myFunction() {
+        let carName = "B M W";
+        let text = " Inside : " + " " + carName;
+        document.getElementById("local2").innerHTML = text;
+      }
+
+      myFunction();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+<body>
+    <h2>Object Constructor</h2>
+    <p id="obj"></p>
+    <p id="detail"></p>
+
+    <!-- //Object Constructor -->
+
+    <script>
+
+        //Constructor Function for person
+
+        function person(first, last, age, eye){
+            this.first = first;
+            this.last = last;
+            this.age = age;
+            this.eye = eye;
+        }        
+
+        // Create a person Object
+
+        const myName= new person("James", "Bond", 40, "Blue");
+
+        //Loop Section
+        
+        let details = " ";
+        for(x in myName){
+            details += myName[x]+ " " + "<br>";
+        }
+
+        // Display the Object
+        
+        document.getElementById("obj").innerHTML = details;
+
+        // document.getElementById("obj").innerHTML = " My Name is " + myName.first+ "  " + myName.last+ " . " + " I am " + myName.age+ " . " + "My Eye Colour is " +myName.eye + " . ";
+
+    </script>
+    
+</body>
+</html>

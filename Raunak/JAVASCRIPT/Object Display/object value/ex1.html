@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object values in Js</title>
+</head>
+<body>
+    <h2>Display Properties in Object Values()</h2>
+    <ul>
+        <caption>Person Details</caption>
+    </ul>
+    <li id="value"></li>
+
+    <!-- //Object Values Properties -->
+
+    <script>
+        
+        //Create a object
+
+        const person = {
+        firstName: " James ",
+        lastName: " Bond ",
+        Age:  40 ,
+        gender: " Male "
+        }
+
+        // Create an Array 
+        
+        const myArray = Object.values(person);
+
+        //Display the Array
+
+        document.getElementById("value").innerHTML = myArray;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Stringify in Js</title>
+  </head>
+  <body>
+    <h2>JSON Stringify() in Loop</h2>
+    <h3>Person Details</h3>
+    <p id="string"></p>
+    <p id="typeof"></p>
+
+    <!-- //JSON Stringify Properties -->
+
+    <script>
+
+      //Create a object
+
+      const person = {
+        firstName: " James ",
+        lastName: " Bond ",
+        Age:  40 ,
+        gender: " Male "
+        }
+
+      // Build a Stringify Object property
+
+      let myString = JSON.stringify(person);
+
+      //Display the String
+
+      document.getElementById("string").innerHTML = myString;
+      document.getElementById("typeof").innerHTML = typeof(myString);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Methods</title>
+  </head>
+  <body>
+    <h2 style="color: orangered;">Details of a person</h2>
+
+    <!-- //Object Methods -->
+
+    <p id="name" style="color: red;"></p>
+    <p id="age" style="color: blue;"></p>
+    <p id="ageG"></p>
+
+    <script>
+      const person = {
+        firstName: "James",
+        lastName: "Bond",
+        Age: 40,
+        gender: "male",
+        fullName: function () {
+          return  "My name is " +this.firstName.toUpperCase() + " " + this.lastName.toUpperCase();
+        },
+        age: function () {
+          return  "I am "+ this.Age + " years old ";
+        },
+      };
+
+      //Add the property in Object Methods 
+
+      person.ageG =  function(){
+        return this.Age+ " " +this.gender;
+      }
+      
+      document.getElementById("name").innerHTML = person.fullName();
+      document.getElementById("age").innerHTML = person.age();
+      document.getElementById("ageG").innerHTML = person.ageG();
+
+    </script>
+  </body>
+</html>

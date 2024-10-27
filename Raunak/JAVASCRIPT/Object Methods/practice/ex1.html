@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="family"></p>
+
+<script>
+
+// Constructor function for Person objects
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create two Person objects
+
+const myFather = new Person("James", "Bond", 40, "blue");
+const myMother = new Person("Sophie", "Taylor", 30, "green");
+
+// Display age
+
+document.getElementById("family").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+
+</script>
+
+    
+</body>
+</html>

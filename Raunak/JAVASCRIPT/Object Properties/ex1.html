@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Properties</title>
+  </head>
+  <body>
+    <h2>Object Properties</h2>
+    <p id="obj"></p>
+
+    <!-- //Object Properties -->
+
+    <script>
+      const person = {
+        firstname: "James",
+        lastname: "Bond",
+        age: 40,
+        eyecolor: "blue",
+      };
+         
+      //Add the property
+
+      person.nationality = "English";
+
+      //Delete the property
+
+      delete person.lastname;
+
+      delete person["nationality"];
+      
+      document.getElementById("obj").innerHTML =  person.firstname + " " + person.lastname + " nationality " + " is " + person.nationality + ".";
+    </script>
+  </body>
+</html>

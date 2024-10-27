@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Entries in Js</title>
+  </head>
+  <body>
+    <h2>Object Entries() in Loop</h2>
+    <h3>Bike Details</h3>
+    <p id="entries"></p>
+
+    <!-- //Object Entries Properties -->
+
+    <script>
+      //Create a object
+
+      const bikes = {
+        RTR : " 4 Lakh ", 
+        DUKE : " 6 Lakh ",
+        NS : " 4 Lakh ",
+        BAJAJ : " 3 Lakh ",
+      };
+
+      // Build a Object Entries property
+
+      let text = " ";
+      for (let [bike, value] of Object.entries(bikes)) {
+        text += bike + "  :  " + value + " <br> ";
+      }
+
+      //Display the object
+
+      document.getElementById("entries").innerHTML = text;
+    </script>
+  </body>
+</html>
