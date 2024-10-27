@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using object.entries</title>
+</head>
+
+<body>
+    <h2>Using Object.entries() </h2>
+    <p id="demo"></p>
+    <script>
+        const fruits = {
+            Bananas: 300, Apple: 400, Strawberry: 600, Peach: 400
+        };
+        let text = " ";
+        for (let [fruit, value] of Object.entries(fruits)) {
+            text += fruit + ":" + value + "," + "<br>";
+
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

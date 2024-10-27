@@ -27,10 +27,10 @@
         }
 
         span {
-            color:rgb(250, 10, 10);
+            color: rgb(250, 10, 10);
         }
 
-        div {
+        .main {
             background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fback_origin_pic%2F03%2F60%2F66%2F4ea23a28571ab43f20f907a348b7ec99.jpg&f=1&nofb=1&ipt=fa9ebbbd7843f5ce202fcbe8d7163d084be9d102ad981f25d562286c043f64b6&ipo=images);
             background-size: cover;
             background-position: top center;
@@ -40,7 +40,8 @@
             background-repeat: no-repeat;
             /* opacity: 0.9; */
         }
-        .mid{
+
+        .mid {
             width: 50%;
             text-align: center;
             margin-left: auto;
@@ -49,19 +50,32 @@
             background: none;
             margin-top: 20vh;
         }
-        h1{
+
+        h1 {
             font-size: 10vh;
             color: rgb(250, 10, 10);
         }
-        h4{
+
+        h4 {
             font-size: xx-large;
             color: rgb(250, 10, 10);
+        }
+
+        .bg_image {
+            position: relative;
+        }
+
+        .img {
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpaperheart.com%2Fwp-content%2Fuploads%2F2018%2F04%2Fbest-scenery-wallpaper-scenery-images.jpg&f=1&nofb=1&ipt=8f9149bf5a08c5af0d1292a558dd31bdf70f6449cf370c4ff3e370ef3891da95&ipo=images);
+        }
+        .layer{
+
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="main">
         <div class="nav">
             <h3>LO<span>GO</span></h3>
         </div>
@@ -71,6 +85,11 @@
             <br>
             <h4>35 Days Left</h4>
         </div>
+    </div>
+    <div class="bg_image">
+        <div class="img"></div>
+        <div class="layer"></div>
+        <div class="text"></div>
     </div>
 </body>
 

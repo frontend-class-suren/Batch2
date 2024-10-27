@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Object.values() creates an array from the property:</h2>
+    <ul>
+        <caption>
+            Person Details
+        </caption>
+        <li id="demo"></li>
+    </ul>
+    <script>
+         //create person object
+         const person = {
+            fullname: "Simran Shrestha",
+            addrress: "Manigram",
+            email: "simran@gmail.com",
+            contact: 9837438242
+        }
+        //CREATE  Array from obj value
+        const mY = Object.values(person)
+        //Display the Array
+        document.getElementById("demo").innerHTML = mY
+    </script>
+</body>
+</html>
