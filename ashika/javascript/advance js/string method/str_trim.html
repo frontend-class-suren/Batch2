@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript String trim()</title>
+</head>
+<body>
+  <h2>JavaScript String trim()</h2>
+  <p>The trim() method removes whitespace from both sides of a string:</p>
+  <hr>
+  <p id="trim"></p>
+  <script>
+    let text = "  Hello World  ";
+    let txtLength = text.length;
+    let newText = text.trim();
+    let afterTrim = newText.length;
+    document.getElementById('trim').innerHTML= afterTrim;
+  </script>
+</body>
+</html>

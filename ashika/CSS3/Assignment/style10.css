@@ -13,7 +13,7 @@ html{
   overflow: hidden;
 }
 body{
-  background: url(./images/restro.jpg);
+  background-image: url(./images/restro.jpg);
   position: fixed;
 }
 .header{
@@ -63,4 +63,5 @@ transform: 0.5 ease;
   font-weight: 500;
   font-family: cursive;
   color: white;
+  margin-top: 20%;
 }
