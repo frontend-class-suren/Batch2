@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="bike"></p>
+
+<script>
+
+// Constructor function for Person objects
+
+function bike(brand, price, mmilage,) {
+  this.brand = brand;
+  this.price = price;
+  this.mmilage = mmilage;
+  
+}
+
+// Create two Person objects
+
+const mybike = new bike("TVS", "3 Lakh", 45,);
+const mybikes = new bike("KTM", "5 Lakh", 45,);
+
+// Display age
+
+document.getElementById("bike").innerHTML =
+"My Bike Name is " + mybike.brand + ". It cost almost  " + mybike.price + "."; 
+
+</script>
+
+    
+</body>
+</html>
