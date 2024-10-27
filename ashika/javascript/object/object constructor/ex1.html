@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Object constructor functions</h2>
+  <p>Sometimes we need to create many objects of the same type.
+
+    To create an object type we use an object constructor function.
+    
+    It is considered good practice to name constructor functions with an upper-case first letter.</p>
+    <p id="demo"></p>
+    <script>
+      function person(first,last,age,eye,email,number){
+        this.firstname=first;
+        this.lastname=last;
+        this.age=age;
+        this.myemail=email;
+        this.contact=number;
+        this.eyecolor=eye;
+      }
+      const myteacher = new person('ashika','aryal','20','ashika200@gmail.com','333333333','brown');
+      let details ='';
+      for(let x in myteacher){
+        details+= myteacher[x]+","+"<br>";
+      }
+      //display
+      // document.getElementById('demo').innerHTML= "my name is:"+" "+myteacher.firstname;
+      document.getElementById('demo').innerHTML= details;
+      
+    </script>
+</body>
+</html>
