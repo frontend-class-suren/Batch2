@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Displaying Properties in a loop</h2>
+  <h4>Person Detsils:</h4>
+  <p id="demo"></p>
+  <script>
+    // create person object
+    const person = {
+        fullName: "Priya Saru",
+        address: "Drivertole",
+        email_id: "abc@gmail.com",
+        contact: "98xxxxx"
+    }
+    // build text for store all obj properties and value 
+    let text = "";
+    for(let x in person){
+        text+= person[x]+"<br>"
+    }
+    // displaying value of objects 
+    document.getElementById("demo").innerHTML = text;
+  </script>  
+</body>
+</html>

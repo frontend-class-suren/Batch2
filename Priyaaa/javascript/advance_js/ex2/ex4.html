@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Constructors</title>
+</head>
+<body>
+    <h2>JavaScript Object Constructors</h2>
+    <p id="demo"></p>
+    <script>
+        function person(first,last,age,eye,email,number){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyecolor = eye;
+            this.myEmail = email;
+            this.contact = number;
+        }
+        // create a person object 
+        const myTeacher = new person("John", "Doe", 40, "black", "abc@gmail.com", 98678474);
+        let detail = "";
+        for(let x in myTeacher){
+        detail+= myTeacher[x]+","+"<br>";
+       }
+        // display age 
+        document.getElementById("demo").innerHTML = "My teacher is"+" "+ myTeacher.age + ".";
+    </script>
+</body>
+</html>
