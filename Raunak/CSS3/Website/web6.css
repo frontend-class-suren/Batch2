@@ -69,7 +69,7 @@ section{
     grid-gap: 24px;
     align-items: center;
 }
-.home-img{
+.home-img img{
     max-width: 100%;
     width: 600px;
     height: auto;
