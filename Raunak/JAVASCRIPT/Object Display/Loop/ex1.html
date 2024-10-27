@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in Js</title>
+</head>
+<body>
+    <h2>Display Properties in Loop</h2>
+    <h3>Person Details</h3>
+    <p id="loop"></p>
+
+    <!-- //Loop Properties -->
+
+    <script>
+        
+        //Create a object
+
+        const person = {
+        firstName: "James",
+        lastName: "Bond",
+        Age: 40,
+        gender: "Ma"
+        }
+
+        // Build a text / object property
+        
+        let text = " ";
+        for(let x in person){
+            text += person[x]+ "  " +"<br>";
+        }
+
+        //Display the object
+
+        document.getElementById("loop").innerHTML = text;
+
+    </script>
+</body>
+</html>
