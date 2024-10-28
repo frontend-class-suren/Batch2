@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String To Array</title>
+  </head>
+  <body>
+    <!-- //String To Array -->
+
+    <h2> String To Array</h2>
+    <p id="split"></p>
+
+    <br>
+    <hr size="4px" color="lightblue">
+    
+    <h4>Beautiful</h4>
+    <p id="splits"></p>
+
+    <!-- //String To Array -->
+
+    <script>
+      let text = "Have a good day dear.";
+      let myarray = text.split(" | ");
+
+      document.getElementById("split").innerHTML = myarray;
+    </script>
+
+    <!-- //Seperator Method -->
+
+    <script>
+      {
+        let text = "Beautiful";
+        const myarray = text.split("");
+        text = "";
+        for (let i = 0; i < myarray.length; i++) {
+          text += myarray[i] + "<br>";
+        }
+        document.getElementById("splits").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

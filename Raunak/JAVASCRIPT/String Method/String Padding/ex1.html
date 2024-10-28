@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>String Padding</title>
+  </head>
+  <body>
+
+    <!-- //Padding Start -->
+     
+    <h2>String Padding Start</h2>
+    <p id="padstart"></p>
+
+    <br />
+    <hr size="4px" color="lightblue" />
+
+    <!-- //Padding End -->
+
+    <h2>String Padding End</h2>
+    <p id="padEnd"></p>
+
+    <br />
+    <hr size="4px" color="lightblue" />
+
+    <!-- //Repeat String -->
+
+    <h2>String Repeat</h2>
+    <p id="repeat"></p>
+
+    
+    <br />
+    <hr size="4px" color="lightblue" />
+
+    <!-- //Replacing String -->
+
+    <h2>String Replacing</h2>
+    <p id="replace">Hello, Good Morning !</p>
+    <button onclick="myFunction()">Click Me</button>
+
+
+    <!-- //String Padding Start-->
+
+    <script>
+      let text = "1024";
+      text = text.padStart(8, "x");
+
+      document.getElementById("padstart").innerHTML = text;
+    </script>
+
+    <!-- String Padding End -->
+
+    <script>
+      {
+        let text = "1024";
+        text = text.padEnd(8, "x");
+
+        document.getElementById("padEnd").innerHTML = text;
+      }
+    </script>
+
+    <!-- //String Repeat -->
+
+    <script>
+      {
+        let text = " Have a good day ";
+        let result = text.repeat(2);
+
+        document.getElementById("repeat").innerHTML = result + "";
+      }
+    </script>
+
+    <!-- //Replacing String -->
+
+    <script>
+        {
+            function myFunction(){
+        let text = "Hello, Good Morning !";
+        let newtext = text.replace("Morning", "Evening");
+        document.getElementById("replace").innerHTML = newtext;
+    }
+}
+    </script>
+  </body>
+</html>
