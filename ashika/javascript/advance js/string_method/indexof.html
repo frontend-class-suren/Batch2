@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript string index()</title>
+</head>
+<body>
+  <h2>Javascript string index()</h2>
+  <p>The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found:</p>
+  <hr size="2px"  color="red">
+  <p id="demo"></p>
+  <script>
+    let text = 'Please locate where "locate" occurs!';
+    let index = text.indexOf('locate');
+    if (index == -1){
+      document.getElementById('demo').innerHTML = 'Results not found!';
+    }
+    else{
+    document.getElementById('demo').innerHTML ="Results position starts from:" + " "+"["+  index+"]";
+  }
+  </script>
+</body>
+</html>

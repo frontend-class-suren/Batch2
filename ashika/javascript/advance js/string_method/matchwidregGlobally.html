@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>perform global search for "ain"</title>
+</head>
+<body>
+  <h2>perform global search for "ain"</h2>
+  <p id="demo"></p>
+  <script>
+    let text = "The rain in SPAIN stays mainly in the plain";
+    // const Array = text.match(/ain/g);
+    const Array = text.match(/ain/gi)
+    document.getElementById('demo').innerHTML =" Length of array in matching word:"+"["+Array.length+"]"+Array;
+
+  </script>
+</body>
+</html>
