@@ -1,0 +1,40 @@
+ /* Center the search bar */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    /* Style the search bar */
+    .search-bar {
+      width: 300px;
+      padding: 10px;
+      border: 2px solid #333;
+      border-radius: 25px;
+      outline: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    /* Style the search button */
+    .search-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-left: -45px; /* Adjust to overlap the input */
+    }
+
+    .search-button:hover {
+      background-color: #555;
+    }
+
+    /* Add focus effect */
+    .search-bar:focus {
+      border-color: #555;
+      box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+    }

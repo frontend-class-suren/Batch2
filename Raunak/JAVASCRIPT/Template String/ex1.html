@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template String</title>
+  </head>
+  <body>
+    
+    <h2>Template String</h2>
+    <p id="temp"></p>
+
+    <!-- //Template String -->
+
+    <script>
+      let header =  "List Of Bikes";
+      let tags = ["Apache 1604v", "NS Pulsar", "Duke", "Crossfire"];
+
+      let html = `<h2 style ="color:orange">${header}</h2><ul>`;
+      for (const x of tags) {
+        html += `<li style ="color: blue">${x}</li>`;
+      }
+
+      html += `</ul>`;
+
+      document.getElementById("temp").innerHTML = html;
+    </script>
+  </body>
+</html>

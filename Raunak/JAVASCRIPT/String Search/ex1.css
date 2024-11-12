@@ -1,0 +1,12 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+#main h2{
+    color: chocolate;
+    text-decoration: underline;
+}
+#main h3{
+    color: steelblue;
+    text-decoration: underline;
+}

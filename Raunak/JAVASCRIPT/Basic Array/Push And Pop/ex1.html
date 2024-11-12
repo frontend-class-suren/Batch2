@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push And Pop</title>
+</head>
+<body>
+
+    <!-- //Pushing And Poping -->
+
+    <h2>Pushing And Poping</h2>
+    <p id="pop"></p>
+
+    <br>
+    <hr size="4px" color="lightblue">
+
+    <h2>After Pop( ) method the latest value is : </h2>
+    <span id="after"></span>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let latestArr = fruits;
+
+        //Poping Out (Removing item from array)
+
+        let remove = fruits.pop();
+
+        //Pushing In (Adding new item in array)
+
+        let additem = fruits.push("Cherry");
+
+        document.getElementById("pop").innerHTML = "Removing item from last " + " = " +fruits;
+        document.getElementById ("after").innerHTML = "Latest Value After Pop ( ) " + " = " +fruits;
+    </script>
+
+    
+
+    <script>
+        
+    </script>
+</body>
+</html>

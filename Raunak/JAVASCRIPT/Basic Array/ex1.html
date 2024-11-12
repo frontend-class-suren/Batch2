@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Array</title>
+</head>
+<body>
+
+    <!-- //Converting to string  -->
+    
+    <h2>Converting an array to a string <span style="color: orange;"></span></h2>
+    <p id="arry"></p>
+
+    <br>
+    <hr style="color: blue;">
+
+    <!-- //Check string -->
+
+    <h2>to check whether it is string</h2>
+    <p id="change" style="color: violet;"></p>
+
+    <br>
+    <hr style="color: blue;">
+
+    <!-- //Check the length -->
+     <h2>Checking The length</h2>
+     <p id="length"></p>
+
+    <!-- //Array String -->
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let changearray = fruits.toString();
+
+
+        document.getElementById("arry").innerHTML = fruits.toString();
+        document.getElementById("change").innerHTML = typeof(changearray);
+    </script>
+
+    <!-- //Check the length   -->
+
+    <script>
+        {
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            document.getElementById("length").innerHTML = fruits.length;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Insensitive</title>
+  </head>
+  <body>
+    <h2>Match ( ) Insensitive</h2>
+    <p id="ins"></p>
+
+    <script>
+      {
+        let text = "The rain in SPAIN stays mainly in the plain";
+
+        //   Insensitive Search
+
+        const myArr = text.match(/ain/gi);
+
+        document.getElementById("ins").innerHTML =
+          " Matching word is " + " [ " +myArr.length+ " ] " + "= " + myArr;
+      }
+    </script>
+  </body>
+</html>

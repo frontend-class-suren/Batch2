@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match All ( )</title>
+  </head>
+  <body>
+    <h2>Match All ( )</h2>
+    <p>I love cats. Cats are very easy to love. Cats are very popular.</p>
+    <p id="matchall"></p>
+
+    <!-- //Match All -->
+
+    <script>
+      let text =
+        "I love cats. Cats are very easy to love. Cats are very popular.";
+      const iterator = text.matchAll("Cats");
+
+      document.getElementById("matchall").innerHTML = Array.from(iterator);
+    </script>
+  </body>
+</html>

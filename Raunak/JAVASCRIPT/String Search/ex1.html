@@ -1,26 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>String Search</title>
-</head>
-<body>
-
+    <link rel="stylesheet" href="ex1.css" />
+  </head>
+  <body>
     <!-- //String Search   -->
-    
-    <h2>String Search</h2>
-    <h4>Beautiful</h4>
-    <p id="search"></p>
 
-    <!-- //String Search -->
+    <div id="main">
+      <h2>String Search</h2>
+      <h3>IndexOf Beautiful</h3>
+      <p id="index"></p>
+
+      <br />
+      <hr size="4px" color="orange" />
+
+      <!-- //lastIndexOf Search -->
+
+      <h3>lastIndexOf Beautiful</h3>
+      <p id="lastindex"></p>
+
+      <br />
+      <hr size="4px" color="orange" />
+
+      <!-- //Text Not Found -->
+
+      <h3>Text Not Found</h3>
+      <p id="notfound"></p>
+
+      <br />
+      <hr size="4px" color="orange" />
+
+      <!-- //String Search( ) -->
+
+      <h3>String Search( )</h3>
+      <p id="search"></p>
+
+      <br />
+      <hr size="4px" color="orange" />
+
+      <!-- //String Match ( ) -->
+
+      <h3>String Match( )</h3>
+      <p>The rain in SPAIN stays mainly in the plain.</p>
+      <p id="match"></p>
+    </div>
+
+    <!-- //IndexOf Search -->
 
     <script>
+      let text = "Hey Beautiful";
+      let index = text.indexOf("Beautiful");
+      console.log("index");
+
+      document.getElementById("index").innerHTML =
+        "Result Position Start From " + "[" + index + "]";
+    </script>
+
+    <!-- //lastIndexOf Search -->
+
+    <script>
+      {
+        let text = "Hey Beautiful you are so Beautiful";
+        let index = text.lastIndexOf("Beautiful");
+
+        document.getElementById("lastindex").innerHTML =
+          "Result Position Start From " + "[" + index + "]";
+      }
+    </script>
+
+    <!-- //Text Not Found -->
+
+    <script>
+      {
+        let text = "Hey Beautiful you are so Beautiful";
+        let index = text.lastIndexOf("Gorgeous");
+        if (index == -1) {
+          document.getElementById("notfound").innerHTML = "Result Not Found ! ";
+        } else {
+          document.getElementById("notfound").innerHTML =
+            "Result Position Start From " + "[" + index + "]";
+        }
+      }
+    </script>
+
+    <!-- //String Search( ) -->
+
+    <script>
+      {
         let text = "Hey Beautiful";
-        let index = text.indexOf("Beautiful");
+        let index = text.search("Beautiful");
         console.log("index");
 
-        document.getElementById("search").innerHTML = index;
+        document.getElementById("search").innerHTML =
+          "Result Position Start From " + "[" + index + "]";
+      }
     </script>
-</body>
+
+    <!-- //String Match( ) -->
+
+    <script>
+    {
+      let text = "The rain in SPAIN stays mainly in the plain";
+    //   const myArr = text.match("ain");
+
+      //Using Regular Expression
+
+      const myArr = text.match(/ain/);
+      
+      document.getElementById("match").innerHTML = " Matching word is "+ "= " + myArr;
+    }
+    </script>
+  </body>
 </html>
