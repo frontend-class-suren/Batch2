@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String split()</title>
+</head>
+<body>
+    <h2>The split().method</h2>
+    <p id="split"></p>
+    <script>
+        let txt = "Hello";
+        const myArray = txt.split("");
+        text = "";
+        for(let i = 0; i < myArray.length; i++){
+            text+= myArray[i]+"<br>"
+        }
+        document.getElementById("split").innerHTML = text;
+    </script>
+</body>
+</html>

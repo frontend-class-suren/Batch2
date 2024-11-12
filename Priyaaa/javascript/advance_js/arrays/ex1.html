@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Arrays</title>
+</head>
+<body>
+    <h2>Converting an Array to a String using <span style="color: red;">toString()</span>method.</h2>
+    <p id="demo"></p>
+    <p>let's check type after converted to string arrays by using toString()</p>
+    <strong id="change" style="color: blue;"></strong>
+    <script>
+        const cars = ["Suzuki", "Tata", "Mustang", "Toyota"];
+        let changeArray = cars.toString();
+        document.getElementById("demo").innerHTML = changeArray;
+        document.getElementById("change").innerHTML = typeof(changeArray);
+    </script>
+</body>
+</html>

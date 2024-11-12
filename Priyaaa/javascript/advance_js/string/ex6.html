@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Padding</title>
+</head>
+<body>
+    <h2>JavaScript String padStart()</h2>
+    <p id="padstart"></p>
+    <script>
+        let amount = "24";
+        // let padAmount = amount.padStart(8,"43793232"); 
+        // let padAmount = amount.padStart(6,"4"); 
+        let padAmount = amount.padStart(6, "x");
+        document.getElementById("padstart").innerHTML = padAmount;
+    </script>
+</body>
+</html>

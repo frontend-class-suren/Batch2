@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+</head>
+<body>
+    <h1>JavaScript String slice()</h1>
+    <p>slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: start position, and end position (end not included).</p>
+<hr size="5px" color="aqua">
+<p>"Apple, Banana, Kiwi";</p>
+<p id="slice"></p>
+<script>
+    let text = "Apple, Banana, Kiwi";
+    //  let part = text.slice(15, 19);
+    // let part = text.slice(7); 
+    // let part = text.slice(-12);
+    let part = text.slice(-12, -6);
+    document.getElementById("slice").innerHTML = part;
+
+</script>
+</body>
+</html>

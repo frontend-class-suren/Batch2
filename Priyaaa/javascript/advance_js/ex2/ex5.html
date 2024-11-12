@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Function Methods</title>
+</head>
+<body>
+    <h2>Constructor Function Methods</h2>
+    <h2>And adding an method to an object</h2>
+    <p id="demo"></p>
+    <script>
+        // constructor function for person object
+        function Person(first, last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyecolor = eye;
+            this.fullName = function(){
+                return this.firstName + " "+ this.lastName
+            };  
+        }
+        // create a person object
+        const myFather = new Person("John", "Doe", 40, "black");
+        // add a name method
+        Person.prototype.changeName = function(name){
+            this.lastName = name;
+        }
+        // myFather.changeName = function (name){
+            // this.lastName = name;
+        // }
+        // change name
+        myFather.changeName("Smith");
+        // display full name
+        document.getElementById("demo").innerHTML = "My father name is"+" "+myFather.fullName();
+    </script>
+</body>
+</html>

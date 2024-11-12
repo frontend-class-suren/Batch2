@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String match()</title>
+</head>
+<body>
+    <h2>JavaScript String match()</h2>
+    <p id="demo"></p>
+    <script>
+        let text = "The rain in SPAIN stays mianly in the plain";
+        // const myArr = text.match("ain"); 
+        // using regular expression
+         const myArr = text.match(/ain/);
+        document.getElementById("demo").innerHTML ="Matching length is" +" ["+myArr.length+"] = "+myArr;
+    </script>
+</body>
+</html>

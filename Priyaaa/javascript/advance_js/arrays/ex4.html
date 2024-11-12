@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Join()</title>
+</head>
+<body>
+    <h2>JavaScript Array Join()</h2>
+    <p>The join() method also joins all array elements into a string.
+        It behaves just like toString(), but in addition you can specify the separator:</p>
+    <p id="join"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let arrJoin = fruits.join("-");
+        document.getElementById("join").innerHTML = arrJoin;
+    </script>
+</body>
+</html>

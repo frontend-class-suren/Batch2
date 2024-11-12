@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perform a global search for "ain"</title>
+</head>
+<body>
+    <h2>Perform a global search for "ain"</h2>
+    <p id="global"></p>
+    <script>
+        let text = "The rain in SPAIN stays mainly in the plain";
+        // let myArr = text.match(/ain/g); 
+        // Perform a global, case-insensitive search for "ain": 
+        const myArr = text.match(/ain/gi);
+        document.getElementById("global").innerHTML = "length of the array in matchinf word is:"+"["+myArr.length+"] = "+myArr;
+
+    </script>
+</body>
+</html>

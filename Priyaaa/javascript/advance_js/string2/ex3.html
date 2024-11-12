@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String search()</title>
+    <style>
+        .container{
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+        .highlight{
+            color: red;
+        }
+        .search{
+            background-color: antiquewhite;
+            color: black;
+            padding: 30px;
+        }
+        input{
+            width: 40%;
+            height: 30px;
+            color: blueviolet;
+            font-size: 24px;
+            border-radius: 10px;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>JavaScript String search()</h2>
+    <p class="para">The <span class="highlight">search()</span> method searches a string for a string (or a regular expression) and returns the position of the match:</p>
+</div>
+<div class="search">
+    <h1>JavaScript string search()</h1>
+    <br><input type="text" placeholder="Search here!......">
+    <p id="demo"></p>
+</div>
+<script>
+    let text = "Please locate where 'locate' occurs!";
+    let searchkey = text.search("locate");
+    if(searchkey == -1){
+        document.getElementById("demo").innerHTML = "Result not found try Next Keyword";
+    }
+    else{
+        document.getElementById("demo").innerHTML = "Result is found the position start from:"+"["+searchkey+"]";
+    }
+</script>
+</body>
+</html>
