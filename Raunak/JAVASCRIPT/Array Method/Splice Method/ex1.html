@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice Array Method</title>
+</head>
+<body>
+    <p id="sp1"></p>
+    <p id="sp2"></p>
+    <p id="sp3"></p>
+
+    <!-- //Splice Array Method -->
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("sp1").innerHTML = " Original Items <br> " + fruits;
+
+        let removed = fruits.splice(2,2,"Lemon","Strawberry");
+        document.getElementById("sp2").innerHTML = " New Items <br>" +fruits;
+
+        document.getElementById("sp3").innerHTML = " Removed Items <br> " +removed;
+    </script>
+</body>
+</html>

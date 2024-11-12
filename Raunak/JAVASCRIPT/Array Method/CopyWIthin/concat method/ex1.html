@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concatenating Method</title>
+  </head>
+  <body>
+    <h2>Concatenating Method</h2>
+    <p id="concat"></p>
+
+    <!-- //Concatenating Method -->
+
+    <script>
+      const arr1 = ["Messi", "Ronaldo"];
+      const arr2 = ["Suarez", "Neymar", "Iniesta"];
+      const arr3 = ["Pele", "Maradona"];
+      const myChildren = arr1.concat(arr2, arr3);
+
+      document.getElementById("concat").innerHTML = myChildren;
+    </script>
+  </body>
+</html>

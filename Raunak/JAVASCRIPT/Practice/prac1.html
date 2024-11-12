@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Format</title>
+    <link rel="stylesheet" href="prac1.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">TEXT EDITOR</div>
+        <div class="button-container">
+
+            <button onclick="formatText1('bold')">Bold</button>
+
+            <button onclick="formatText2('italic')">Italic</button>
+
+            <button onclick="formatText3()" title="Left Align">
+                <i class="fas fa-align-left"></i>
+            </button>
+
+            <button onclick="formatText4()" title="Center Align">
+                <i class="fas fa-align-center"></i>
+            </button>
+
+            <button onclick="formatText5()" title="Right Align">
+                <i class="fas fa-align-right"></i>
+            </button>
+
+            <button onclick="transformText1('uppercase')">Upper Case</button>
+
+            <button onclick="transformText2('lowercase')">Lower Case</button>
+
+            <button onclick="capitalizeText()">Capitalize</button>
+
+            <button onclick="font_variant()">Font-Variant</button>
+
+            <button onclick="underline('underline')">Underline</button>
+
+            <button onclick="clearText()">Clear Text</button>
+
+        </div>
+
+        <textarea id="textarea1"  rows="14" placeholder="Your Text Here..."></textarea>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

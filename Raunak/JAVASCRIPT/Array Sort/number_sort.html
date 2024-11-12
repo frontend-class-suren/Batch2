@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Sorting</title>
+  </head>
+  <body>
+    <h2>Sort The Array in Ascending Order</h2>
+    <p id="num1"></p>
+    <p id="num2"></p>
+
+    <!-- //Number Sorting -->
+
+    <script>
+      const points = [40, 100, 1, 5, 25, 10];
+      document.getElementById("num1").innerHTML = points;
+    //   points.sort();
+
+      points.sort(function (a, b) {
+        return a - b;
+      });
+      document.getElementById("num2").innerHTML = points;
+    </script>
+  </body>
+</html>
