@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavaScript Arrays</h1>
+<h2>The copyWithin() Method</h2>
+<p>copyWithin() copies array elements to another position in an array, overwriting existing values:</p>
+<p>Copy to index 2, all elements from index 0:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.copyWithin(2,0);
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  body{
+    background-color: bisque;
+  }
+#edit{
+  text-align: center;
+  padding: 2.5%;
+  font-size: 50px;
+  margin-top: 2%;
+}
+button{
+  background-color: green;
+  color: white;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px 25px;
+}
+ .container{
+display: flex;
+justify-content: center;
+}
+button:hover{
+  background-color: black;
+  color: white;
+}
+textarea{
+  width: 85%;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+</style>
+</head>
+<body>
+  <h1 id="edit">TEXT EDITOR</h1>
+  <div class="container">
+    <button onclick="button1()" title="Bold text">Bold</button>
+    <button onclick="button2()" title="Italic text">Italic</button>
+    <button onclick="button3()" title="Left align" ><i class="fa-solid fa-align-left"></i></button>
+    <button onclick="button4()" title="Center align"><i class="fa-solid fa-align-center"></i></button>
+    <button onclick="button5()" title="Right align"><i class="fa-solid fa-align-right"></i></button>
+    <button onclick="button6()" title="Uppercase text">Uppercase</button>
+    <button onclick="button7()" title="Lower text">Lowercase</button>
+    <button onclick="button8()" title="Capitalize text">Capitalize</button>
+    <button onclick="button9()" title="Clear text">Clear Text</button>
+
+  </div>
+  <textarea id="area" rows="18" placeholder="Text here............!"></textarea>
+<script>
+  function button1() {
+  document.getElementById("area")
+      .style.fontWeight = "bold";
+}
+
+function button2() {
+  document.getElementById("area")
+      .style.fontStyle = "italic";
+}
+
+function button3() {
+  document.getElementById("area")
+      .style.textAlign = "left";
+}
+
+function button4() {
+  document.getElementById("area")
+      .style.textAlign = "center";
+}
+
+function button5() {
+  document.getElementById("area")
+      .style.textAlign = "right";
+}
+
+function button6() {
+  document.getElementById("area")
+      .style.textTransform = "uppercase";
+}
+
+function button7() {
+  document.getElementById("area")
+      .style.textTransform = "lowercase";
+}
+
+function button8() {
+  document.getElementById("area")
+      .style.textTransform = "capitalize";
+}
+
+function button9() {
+  document.getElementById("area")
+      .style.fontWeight = "normal";
+  document.getElementById("area")
+      .style.textAlign = "left";
+  document.getElementById("area")
+      .style.fontStyle = "normal";
+  document.getElementById("area")
+      .style.textTransform = "capitalize";
+  document.getElementById("area")
+      .value = "";
+}
+</script>
+</body>
+</html>
