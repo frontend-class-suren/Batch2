@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .main{
+            background-color: aliceblue;
+            height: 100vh;
+        }
+        .half{
+            background-color: rgb(228, 228, 127);
+            height: 30vh;
+            padding: 50px 10px;
+            text-align: center;
+        }
+        textarea{
+            height: 50vh;
+            width: 100%;
+            font-size: xx-large;
+            padding: 10px;
+        }
+        button{
+            color: white;
+            background-color: green;
+            padding: 15px;
+            border: none;
+            margin: 5px;
+            border-radius: 10px;
+            font-size: larger;
+        }
+        button:hover{
+            background-color: rgb(3, 43, 3);
+            /* border: 1px solid white; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+<div class="half">
+    <h1>TEXT EDITOR</h1>
+    <button onclick="edit1()">Bold</button>
+    <button onclick="edit2()">Italic</button>
+    <button onclick="edit3()"><i class="fa-solid fa-align-left"></i></button>
+    <button onclick="edit4()"><i class="fa-solid fa-align-center"></i></button>
+    <button onclick="edit5()"><i class="fa-solid fa-align-right"></i></button>
+    <button onclick="edit6()">Upper Case</button>
+    <button onclick="edit7()">Lower Case</button>
+    <button onclick="edit8()">Capitalize</button>
+    <button onclick="edit9()">Clear Text</button>
+</div>
+<!-- <input id="textarea" type="text" placeholder="Your Text Here ....."> -->
+ <textarea name="" id="textarea" rows="14" placeholder="Your Text Here ....."></textarea>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

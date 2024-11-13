@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Template Strings</h1>
+    <p id="demo"></p>
+    <script>
+        let header = "List of Web Technology Class Students";
+        let tags = ["Ashika", "Priya", "Raunak" , "Simran"];
+        let html = `<h2 style="color:green;">${header}</h2><ul>`;
+            for(const x of tags){
+                html += `<li style="color:red;">${x}</li>`
+            }
+            html +=`</ul>`;
+                document.getElementById("demo").innerHTML = html;
+    </script>
+</body>
+</html>

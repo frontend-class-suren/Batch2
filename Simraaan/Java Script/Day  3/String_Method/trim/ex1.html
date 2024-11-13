@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String substring()</title>
+</head>
+<body>
+   <h2>JavaScript String substring()</h2> 
+   <p>The difference is that start and end values less than 0 are treated as 0 in substring().</p>
+   <hr>
+   <p id="trim"></p>
+   <script>
+    let text = "  Hello Good Morning  ";
+    let txtLength = text.length;
+    let newText = text.trim();
+    let afterTrim = newText.length;
+    document.getElementById("trim").innerHTML = txtLength;
+   </script>
+</body>
+</html>

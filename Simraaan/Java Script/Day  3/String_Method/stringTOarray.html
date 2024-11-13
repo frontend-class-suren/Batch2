@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript String Methods</h1>
+    <h2>The split().Method</h2>
+    <p id="split"></p>
+    <script>
+        let txt = "Hello world this is my first code in JS";
+        const My = txt.split("");
+        let text = "";
+        for (let i = 0; i < My.length;i++){
+            text += My[i]+ "<br>"
+        }
+        document.getElementById("split").innerHTML = text;
+
+    </script>
+</body>
+</html>

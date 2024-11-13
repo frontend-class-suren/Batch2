@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String match()</title>
+</head>
+<body>
+    <h1>JavaScript String match()</h1>
+    <h2>The rain in Spain is mainly in the plain</h2>
+    <p id="demo"></p>
+    <script>
+        let text = "The rain in SPAIN is mainly in the plain";
+        // let my = text.match("me");
+         //for global search, case-sensitive search in "ain"
+        //  const my = text.match(/ain/g)
+         //Perform a global, case-insensitive search for "ain":
+         const my = text.match(/ain/gi)
+        document.getElementById("demo").innerHTML = "Matching length is"+"[" + my.length+ "] = "+ my ;
+    </script>
+</body>
+</html>

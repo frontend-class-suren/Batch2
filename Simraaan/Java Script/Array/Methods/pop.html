@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JavaScript Array pop()</title>
+</head>
+<body>
+    <h1>
+        JavaScript Array pop()</h1>
+        <h4>The pop() method removes the last element from an array:
+        </h4>
+        <p id="pop"></p>
+        <hr>
+        <h4>After the pop() value array is <span id="after"></span> </h4>
+        <script>
+            const fruits = ["Banana", "Orange","Apple"];
+            let remove = fruits.pop();
+            let latestArr = fruits;
+            let additm = fruits.push("Cherry");
+            document.getElementById("pop").innerHTML = "Removing items from the last index is : " + remove;
+            document.getElementById("after").innerHTML = "Latest value is : "+ latestArr;
+        </script>
+</body>
+</html>

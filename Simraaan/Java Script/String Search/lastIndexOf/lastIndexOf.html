@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String lastIndexOf()</title>
+</head>
+<body>
+    <h1>JavaScript String lastIndexOf()</h1>
+    <p>The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:</p>
+    <hr>
+    <p id="lastI"></p>
+    <script>
+        let text = 'My name is Simran Shrestha "Simran" ';
+        let index = text.lastIndexOf("Me");
+        if(index== -1){
+            document.getElementById("lastI").innerHTML = "Error !"
+        }
+        else{
+            document.getElementById("lastI").innerHTML = "Result is" + ":" + index;
+        }
+    </script>
+</body>
+</html>
