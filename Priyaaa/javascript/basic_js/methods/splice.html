@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice array method</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const fruits =  ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = "Original Array:<br> "+fruits;
+        let removed = fruits.splice(2, 2, "lemon", "kiwi");
+        document.getElementById("demo2").innerHTML = "After removing array:<br>"+fruits;
+        document.getElementById("demo3").innerHTML = "Removed array items: <br>"+removed;
+    </script>
+</body>
+</html>

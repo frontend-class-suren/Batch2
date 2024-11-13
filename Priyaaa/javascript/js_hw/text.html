@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: lightslategray;
+        }
+        #text{
+            text-align: center;
+            padding: 2%;
+            font-size: 50px;
+            color: white;
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            background-color: rgb(17, 119, 17);
+            color: white;
+            border: none;
+            padding: 20px 25px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: rgb(65, 64, 64);
+        }
+        textarea{
+            width: 80%;
+            border:none;
+            border-radius: 8px;
+            padding: 10px;
+            /* resize: none; */
+            font-size: 15px;
+            margin-left: 110px;
+            margin-top: 30px;
+        }
+        textarea:hover{
+            box-shadow: 0 2px 8px green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">TEXT EDITOR</h1>
+    <div class="button-container">
+    <button onclick="editor1('bold')" title="Bold Text">Bold</button>
+
+    <button onclick="editor2('italic')" title="Italic Text">Italic</button>
+    <button onclick="editor3()" title="Left Align"><i class="fa-solid fa-align-left"></i></button>
+    <button onclick="editor4()" title="Center Align"><i class="fa-solid fa-align-center"></i></button>
+    <button onclick="editor5()" title="Right align"><i class="fa-solid fa-align-right"></i></button>
+    <button onclick="editor6('uppercase')" title="Uppercase Text">Upper Case</button>
+    <button onclick="editor7('lowercase')" title="Lowercase Text">Lower Case</button>
+    <button onclick="editor8('capitalize')" title="Capitalize Text">Capitilize</button>
+    <button onclick="editor9()" title="Clear Text">Clear Text</button>
+    </div>
+    <textarea id="textarea1" rows = "15" placeholder="Your text here....."></textarea>
+   <script src="script.js"></script>
+</body>
+</html>
