@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getFullYear() Method</h2>
+    <p>The getFullYear() method returns the year of a date as a four digit number:</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="year"></p>
+    <script>
+        const d = new Date("2021-03-25");
+        document.getElementById("demo").innerHTML = d.getFullYear();
+        const date = new Date();
+    document.getElementById("year").innerHTML = date.getFullYear();
+    </script>
+</body>
+</html>

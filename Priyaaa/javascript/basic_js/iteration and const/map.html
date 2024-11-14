@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array map method</title>
+</head>
+<body>
+    <h3>Fetching array data using map array method</h3>
+    <p id="list"></p>
+    <!-- Here is script for array hoe to fetched data from array  -->
+     <script>
+        // create arrays 
+        const numbers = [12, 23, 56, 27, 11, 0, 10];
+        // declare empty variable for storing data in 
+        numbers.sort();
+        let txt = "";
+        const list_number = numbers.map(myFunction);
+        document.getElementById("list").innerHTML = txt;
+        // create a function for execute to display all array elements one
+        function myFunction(value){
+        txt += value + "<br>";
+        }
+     </script>
+</body>
+</html>

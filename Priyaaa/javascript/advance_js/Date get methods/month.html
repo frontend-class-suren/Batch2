@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getMonth() Method</h2>
+    <p>The getMonth() method returns the month of a date as a number (0-11).</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="month"></p>
+    <script>
+        const d = new Date("2021-03-25");
+        document.getElementById("demo").innerHTML = d.getMonth() + 1;
+        const month = new Date();
+        document.getElementById("month").innerHTML = month.getMonth() + 1;
+
+    </script>
+</body>
+</html>

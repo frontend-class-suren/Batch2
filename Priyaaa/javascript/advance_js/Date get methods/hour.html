@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getHours() Method</h2>
+    <p>The getHours() method returns the hours of a date as a number (0-23):</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="hour"></p>
+    <script>
+        const hour = new Date();
+        document.getElementById("demo").innerHTML = hour.getHours();
+        const demo = new Date("2022-03-25");
+        document.getElementById("hour").innerHTML = demo.getHours();
+    </script>
+</body>
+</html>

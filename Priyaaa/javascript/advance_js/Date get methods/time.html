@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getTime() Method</h2>
+    <p>The getTime() method returns the number of milliseconds since January 1, 1970:</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="time"></p>
+    <hr>
+    <p id="jan"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getTime();
+        const time = new Date("2021-03-25");
+        document.getElementById("time").innerHTML = time.getTime();
+        const jan = new Date("1970-01-01");
+        document.getElementById("jan").innerHTML = jan.getTime();
+    </script>
+</body>
+</html>

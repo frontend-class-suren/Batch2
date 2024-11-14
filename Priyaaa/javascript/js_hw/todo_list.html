@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: green;
+            color: white;
+            height: 100px;
+            text-align: left;
+            padding: 5%;
+            font-size: 50px;
+        }
+        h3{
+            margin-left: 100px;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        input[type="text"]{
+            margin-left: 100px;
+            width: 30%;
+            height: 40px;
+        }
+        input[type="submit"]{
+            margin-left: 550px;
+            background-color: black;
+            color: white;
+            border: none;
+            width: 6%;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        /* .choose{ 
+            margin-top: -40px;
+        } */
+        /* .group{ 
+            width: 30%;
+            height: 40px;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <h3>Add Items</h3>
+ <label id="lblsuccess" class="text-success"
+         style="display: none;">
+ </label>
+ 
+ <form id="addForm">
+     <div class="row">
+         <div class="col-lg-7 col-md-7 col-sm-7">
+
+             <input type="text" onkeyup=
+                 "toggleButton(this, 'submit')"
+                 class="form-control" id="item
+
+">
+         </div>
+
+         <div class="col-lg-5 col-md-5 col-sm-5">
+         <input type="submit" class="btn btn-dark"
+                 id="submit" value="Submit" disabled>
+         </div>
+     </div>
+ </form>
+
+ <h3 class="mt-4">Tasks</h3>
+
+ <form id="addForm">
+     <ul class="list-group" id="items"></ul>
+ </form>
+</div>
+</body>
+<script src="list.js"></script>
+</html>

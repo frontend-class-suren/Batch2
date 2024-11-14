@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getMinutes() Method</h2>
+    <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="min"></p>
+    <script>
+        const minutes = new Date();
+        document.getElementById("demo").innerHTML = minutes.getMinutes();
+        const sec  = new Date("2021-03-25");
+        document.getElementById("min").innerHTML = sec.getMinutes();
+    </script>
+</body>
+</html>

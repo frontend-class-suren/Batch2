@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The getDate() Method</h1>
+    <p>The getDate() method returns the day of a date as a number (1-31):</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="date"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getDate();
+        const date = new Date("2021-03-25");
+        document.getElementById("date").innerHTML = date.getDate();
+
+    </script>
+</body>
+</html>

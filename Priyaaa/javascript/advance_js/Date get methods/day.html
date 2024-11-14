@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getDay() Method</h2>
+    <p>The getDay() method returns the weekday of a date as a number (0-6).</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="day"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getDay();
+        const day = new Date("2021-03-15");
+        document.getElementById("day").innerHTML = day.getDay();
+    </script>
+</body>
+</html>

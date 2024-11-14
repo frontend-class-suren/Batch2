@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The getMilliseconds() Method</h2>
+    <p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="mili"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getMilliseconds();
+        const sec = new Date("2021-03-25");
+        document.getElementById("mili").innerHTML = sec.getMilliseconds();
+    </script>
+</body>
+</html>
