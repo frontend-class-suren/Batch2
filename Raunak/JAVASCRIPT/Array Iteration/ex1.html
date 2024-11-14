@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Iteration</title>
+  </head>
+  <body>
+    <h2>ArrayForEach ( )</h2>
+    <p>The following numbers are : [44, 4, 8, 18, 24]</p>
+    <p id="each"></p>
+    <hr size="4px" color="orange">
+    <p>The name of following students are : ["Ashika", "Raunak", "Priya", "Simran"]</p>
+    <p id="std"></p>
+
+    <!-- //ArrayForEach  -->
+
+    <script>
+      const numbers = [44, 4, 8, 18, 24];
+
+      let txt = "";
+      numbers.forEach(myFunction);
+      document.getElementById("each").innerHTML = txt;
+
+      function myFunction(value, index, array) {
+        txt += value + "<br><br>";
+      }
+    </script>
+
+<script>
+    {
+    const students = ["Ashika", "Raunak", "Priya", "Simran"];
+
+    let txt = "";
+    students.forEach(myFunction);
+    document.getElementById("std").innerHTML = "<ol>" +txt+"</ol>";
+
+    function myFunction(value, index, array) {
+      txt += "<li>" +value + "</li>" + "<br><br>";
+    }
+}
+  </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Month</title>
+  </head>
+  <body>
+    <h2>Set Month ()</h2>
+    <p>The following month are as :</p>
+    <p id="month"></p>
+
+    <!-- //Set Month -->
+
+    <script>
+      const d = new Date();
+      d.setMonth(11);
+      document.getElementById("month").innerHTML = d;
+    </script>
+  </body>
+</html>

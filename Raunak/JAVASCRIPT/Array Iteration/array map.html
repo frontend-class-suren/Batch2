@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Map</title>
+  </head>
+  <body>
+    <h2>Array Map ( )</h2>
+    <p>The following values are : [44, 4, 8, 18, 24]</p>
+    <p id="map"></p>
+
+    <!-- //Array Map ( ) -->
+
+    <script>
+      const numbers1 = [44, 4, 8, 18, 24];
+      const numbers2 = numbers1.map(myFunction);
+      numbers2.sort();
+
+      document.getElementById("map").innerHTML = " The Results of the following values when multiplies by 4 are : " + numbers2 + " ";
+
+      function myFunction(value, index, array) {
+        return value * 4;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Day</title>
+  </head>
+  <body>
+    <h2>Get Day ( )</h2>
+    <p>The following day from the given date below :</p>
+    <p id="day"></p>
+    <br>
+    <hr size="4px" color="orange">
+    <p>The following day are as :</p>
+    <p id="arr"></p>
+
+    <!-- //Get Day -->
+
+    <script>
+      const d = new Date("2021-03-25");
+      document.getElementById("day").innerHTML = d.getDay();
+    </script>
+
+    <!-- //Get day in array -->
+
+    <script>
+      {
+        const days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+
+        const d = new Date("2021-03-25");
+        let day = days[d.getDay()];
+        document.getElementById("arr").innerHTML = day;
+      }
+    </script>
+  </body>
+</html>

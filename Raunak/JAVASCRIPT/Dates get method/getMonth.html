@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Month</title>
+  </head>
+  <body>
+    <h2>Get Month ( )</h2>
+    <p>The date of the day : 2021-03-25</p>
+    <p id="month"></p>
+    <br>
+    <hr size="4px" color="orange">
+    <p>The following months : ["January", "February", "March","April","May","June","July","August","September","October","November","December"]</p>
+    <p id="arr"></p>
+
+    <!-- //Get Month -->
+
+    <script>
+      const d = new Date("2021-03-25");
+      document.getElementById("month").innerHTML = d.getMonth() + 1;
+    </script>
+
+    <!-- //Get Month Array -->
+
+    <script>
+      {
+        const months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+
+        const d = new Date("2021-03-25");
+        let month = months[d.getMonth()];
+        document.getElementById("arr").innerHTML = month;
+      }
+    </script>
+  </body>
+</html>

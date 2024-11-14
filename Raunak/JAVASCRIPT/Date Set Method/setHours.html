@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Hours</title>
+  </head>
+  <body>
+    <h2>Set Hours</h2>
+    <p>The following hours in the given date is :</p>
+    <p id="hours"></p>
+
+    <!-- //Set Hours -->
+
+    <script>
+      const d = new Date();
+      d.setHours(22);
+      document.getElementById("hours").innerHTML = d;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Minutes</title>
+  </head>
+  <body>
+    <h2>Set Minutes</h2>
+    <p>The following Minutes in the given date is :</p>
+    <p id="Minutes"></p>
+
+    <!-- //Set Minutes -->
+
+    <script>
+      const d = new Date();
+      d.setMinutes(30);
+      document.getElementById("Minutes").innerHTML = d;
+    </script>
+  </body>
+</html>
