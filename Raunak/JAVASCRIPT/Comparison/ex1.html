@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison Js</title>
+  </head>
+  <body>
+    <h2>Comparison Js</h2>
+    <input id="age" value="" />
+
+    <button onclick="myFunction()" style="padding: 4px; color: black; background-color: orange; border-radius: 4px; outline: none;" >Have a try</button>
+
+    <p id="comp"></p>
+
+    <!-- //Comparison Js -->
+
+    <script>
+      function myFunction() {
+        let voteable;
+        let age = Number(document.getElementById("age").value);
+        if (isNaN(age)) {
+          voteable = "Enter your age in number";
+        } else {
+          voteable = age < 18 ? "Very Young" : "Old enough";
+        }
+        document.getElementById("comp").innerHTML = voteable + " for voting";
+      }
+    </script>
+  </body>
+</html>

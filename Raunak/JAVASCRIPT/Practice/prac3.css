@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+}
+
+#clock {
+  font-family: 'Times New Roman', Times, serif;
+  width: 900px;
+  margin: 200px;
+  color: #000;
+  background-color: #b7b2b2;
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: 4px solid #000;
+  text-align: center;
+  font-size: 175px;
+}

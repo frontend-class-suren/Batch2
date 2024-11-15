@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statement</title>
+  </head>
+  <body>
+    <h2>if ,else and else if Statement in Js</h2>
+    <input id="day" value="" />
+
+    <button onclick="myFunction()" style="padding: 4px; color: black; background-color: rgb(16, 116, 222); border-radius: 4px; outline: none;" >Have a try</button>
+    <p id="if"></p>
+    <hr size="4px" color="red">
+
+    <!-- //Conditional Statement -->
+
+    <script>
+          function myFunction(){
+          const time = new Date().setHours(12);
+          const realTime = time.getHours();
+          let greeting;
+          let day = Number(document.getElementById("day").value);
+          if(isNaN(day)){
+            greeting = "Enter the time "
+          }
+          else if (realTime < 10 ) {
+                    greeting = "Good morning";
+          } else if (realTime < 20) {
+                    greeting = "Good day";
+          } else {
+                    greeting = "Good evening";
+          } 
+          document.getElementById("if").innerHTML = greeting ;
+        }
+      </script>
+    </script>
+  </body>
+</html>
