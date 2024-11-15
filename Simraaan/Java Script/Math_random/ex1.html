@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+<body>
+    <h2>Random Integer</h2>
+    <p>This shows the random numbers.</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="no_decimal"></p>
+    <script>
+        let random = Math.random();
+        document.getElementById("demo").innerHTML = Math.random();
+        document.getElementById("no_decimal").innerHTML = Math.floor(Math.random()*50);
+
+    </script>
+</body>
+</html>

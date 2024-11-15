@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <h2>JavaScript if</h2>
+
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+<input type="text" id="input">
+<button onclick="my">Check Event</button>
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+time.setHours(33);
+let setTime = time.getHours()
+let greetings;
+    function my(hours){
+        
+if (new Date().getHours() < 12) {
+  document.getElementById("demo").innerHTML = "Good Day!";
+}
+else{
+    document.getElementById("demo").innerHTML = "Good Evening Ashika !"
+}
+</script>
+</body>
+</html>
