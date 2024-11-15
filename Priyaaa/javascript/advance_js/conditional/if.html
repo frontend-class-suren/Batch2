@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // 18is nothing but 6 o'clock at afternoon 
+        if(new Date().getHours() < 12) {
+            // if condition is true 
+            document.getElementById("demo").innerHTML = "Good Afternoon!";
+        }
+        else{
+            // if condition is not true 
+            document.getElementById("demo").innerHTML = "Good Eveninng";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 90vh;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6)
+        }
+        .form{
+            width: 40%;
+            height: 85vh;
+            border: 3px solid white;
+            outline: 3px solid #9b59b6;
+            text-align: center;
+            margin-left: 400px;
+            padding: 2%;
+            margin-top: 60px;
+        }
+        input[type="text"]{
+            width: 50%;
+            height: 30px;
+            margin: 8px;
+        }
+        input[type="submit"]{
+            width: 20%;
+            height: 40px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .details{
+            width: 100%;
+            height: 80vh;
+            border: 3px solid white;
+            outline: 3px solid #9b59b6;
+            text-align: center;
+            padding: 4%;
+            margin-top: 60px;
+        }
+        #first{
+            border-bottom: 4px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background:none;
+        }
+        #last{
+            border-bottom: 4px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background:none;
+        }
+        #mail{
+            border-bottom: 4px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background:none;
+        }
+        #add{
+            border-bottom: 4px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background:none;
+        }
+        #mess{
+            border-bottom: 4px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background:none;
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="forms">
+            <div class="form">
+              <h1><span class="title">Contact</span></h1><br>
+                <form action="">
+                <div><h2>First name: <input type="text" id="first" style="margin-left: 30px;" placeholder="Enter your first name"></h2></div><br>
+                <div><h2>Last name: <input type="text" id="last" style="margin-left: 30px;" placeholder="Enter your last name"></h2></div><br>
+                <div><h2 style="margin-left:0px;">E-Mail: <input type="text" id="mail" style="margin-left:68px;" placeholder="Enter your email"></h2></div><br>
+                <div><h2 style="margin-left:-5px;">Address: <input type="text" id="add" style="margin-left: 55px;" placeholder="Enter your Address"></h2></div><br>
+                <div><h2 style="margin-left: -5px;">Message: <input type="text" id="mess" style="height: 60px; margin-left: 50px;" placeholder="Your message here...."></h2></div>
+                <div><input type="Submit" name="" id=""></div>
+            </form>
+            <div class="details">
+                <h1><span>Details</span></h1><br>
+                <form action="">
+                <div><h2>First name: <input type="text" id="first" style="margin-left: 30px;"></h2></div><br>
+                <div><h2>Last name: <input type="text" id="last" style="margin-left: 30px;" ></h2></div><br>
+                <div><h2 style="margin-left:0px;">E-Mail: <input type="text" id="mail" style="margin-left:68px;" ></h2></div><br>
+                <div><h2 style="margin-left:-5px;">Address: <input type="text" id="add" style="margin-left: 55px;"></h2></div><br>
+                <div><h2 style="margin-left: -5px;">Message: <input type="text" id="mess" style="height: 60px; margin-left: 50px;"></h2></div>
+                </form>
+            </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
