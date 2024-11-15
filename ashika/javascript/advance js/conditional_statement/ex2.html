@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    const num = 3;
+    if (num>0){
+      document.getElementById('demo').innerHTML='Given number is positive.'+"<br>"+"the value is="+num;
+      console.log('Given number is positive');
+
+    }else if(num<0){
+      document.getElementById('demo').innerHTML='Given number is negative.'+"<br>"+"the value is="+num;
+      console.log('Given number is negative');
+
+    }else{
+      document.getElementById('demo').innerHTML='Given number is Zero.'+"<br>"+"the value is="+num;
+      console.log('Given number is zero');
+    }
+  </script>
+</body>
+</html>

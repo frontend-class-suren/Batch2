@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foreach method in JS</title>
+</head>
+<body>
+  <h2>Here is numbers list:</h2>
+  <p>[Ashika,Simran,Priya,Raunak]</p>
+  <p id="list"></p>
+  <script>
+    const numbers = ['Ashika','Simran','Raunak','Priya'];
+    let txt = "";
+    numbers.forEach(myFunction);
+    document.getElementById('list').innerHTML="<ol>"+ txt + "</ol>";
+    function myFunction(value,index,array){
+      txt += "<li>" + value + "</li>" + "<br>";
+    }
+  </script>
+</body>
+</html>

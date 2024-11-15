@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .todo{
+      background-color: green;
+      color: black;
+      font-family: cursive;
+      width: 100%;
+      height: 400px;
+    }
+     .title{
+      font-size: 80px;
+      padding-top: 10%;
+      padding-left: 5%;
+    }
+    .add{
+      /* text-align: left; */
+      margin-top: 2%;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 3%;
+      font-size: 20px;
+    }
+     #blank{
+      margin-top: 2%;
+      width: 600px;
+      padding: 15px;
+    }
+    #submit{
+      background: black;
+      color: white;
+      border: none;
+      padding: 15px;
+      margin-left: 2%;
+      width: 100px;
+      border-radius: 5px;
+    }
+    #submit:hover{
+      background-color: gray;
+      color: black;
+    }
+    .task{
+      margin-top: 2%;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 3%;
+      font-size: 20px;
+      display: block;
+      padding-bottom: 2%;
+    }
+    #input{
+      padding: 15px;
+      width: 900px;
+    }
+    #input1{
+      padding: 15px;
+      width: 900px;
+    }
+    .edit{
+      background-color:green;
+      color: white;
+      border: none;
+      padding: 15px;
+      width: 70px;
+      border-radius: 7px;
+    }
+    .del{
+      background-color:red ;
+      color: white;
+      border: none;
+      padding: 15px;
+      width: 100px;
+      border-radius: 7px;
+      margin-left: -8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo">
+    <h1 class="title">ToDo List</h1>
+  </div>
+  <div class="add">
+    <h1>Add Items</h1>
+    <input type="text" id="blank">
+    <input type="submit" id="submit">
+  </div>
+  <div class="task">
+    <h1>Tasks</h1>
+    <input type="text" placeholder="" id="input">
+    <button class="edit">Edit</button>
+    <button class="del">Delete</button>
+    <br>
+    <input type="text" placeholder="" id="input1">
+    <button class="edit">Edit</button>
+    <button class="del">Delete</button>
+  </div>
+</body>
+</html>
