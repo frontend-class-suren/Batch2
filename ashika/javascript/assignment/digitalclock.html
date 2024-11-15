@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital clock</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      box-sizing: border-box;
-    }
-.clock{
-  width: 100%;
-  min-height: 100vh;
-  background-color: beige;
-  color: black;
-  position: relative;
-}
-.header{
-  width: 800px;
-  height: 180px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: red;
-}
-.header{
-  width: 50%;
-  height: 50%;
-  background: rgba(235, 0, 255, 0.11);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(40px);
-  box-shadow: 10px 10px 10px 10px gray;
-  /* outline: 6px black; */
-}
-/* .header::before{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      .clock {
+        width: 100%;
+        min-height: 100vh;
+        background-color: beige;
+        color: black;
+        position: relative;
+      }
+      .header {
+        width: 800px;
+        height: 180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: red;
+      }
+      .header {
+        width: 50%;
+        height: 50%;
+        background: rgba(235, 0, 255, 0.11);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(40px);
+        box-shadow: 10px 10px 10px 10px gray;
+        /* outline: 6px black; */
+      }
+      /* .header::before{
   content: '';
   width: 180px;
   height: 180px;
@@ -51,7 +51,7 @@
   z-index: -1;
 
 } */
-/* .header::after{
+      /* .header::after{
   content: '';
   width: 180px;
   height: 180px;
@@ -63,63 +63,60 @@ bottom: -50px;
   z-index: -1;
 
 } */
-.time span{
-font-size: 80px;
-width: 110px;
-display: inline-block;
-text-align:center;
-position: relative;
-}
-.time span::after{
-  /* content: 'HOURS'; */
-font-size: 16px;
-position: absolute;
-/* width: 110px; */
- /* display: inline-block;  */
-bottom: -15px;
-left: 49%;
-transform: translateX(-50%);
-}
-#hrs::after{
-  content: 'HOURS';
-}
-#mins::after{
-  content: 'Mins';
-}
-#sec::after{
-  content: 'Sec';
-}
-
-  </style>
-</head>
-<body>
-  <div class="clock">
-    <div class="header">
-      <div class="time">
-        <span id="hrs">00</span>
-      <span >:</span>
-      <span id="mins">00</span>
-      <span>:</span>
-      <span id="sec">00</span>
+      .time span {
+        font-size: 80px;
+        width: 110px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+      }
+      .time span::after {
+        /* content: 'HOURS'; */
+        font-size: 16px;
+        position: absolute;
+        /* width: 110px; */
+        /* display: inline-block;  */
+        bottom: -15px;
+        left: 49%;
+        transform: translateX(-50%);
+      }
+      #hrs::after {
+        content: "HOURS";
+      }
+      #mins::after {
+        content: "Mins";
+      }
+      #sec::after {
+        content: "Sec";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="header">
+        <div class="time">
+          <span id="hrs">00</span>
+          <span>:</span>
+          <span id="mins">00</span>
+          <span>:</span>
+          <span id="sec">00</span>
+        </div>
       </div>
-
-
     </div>
-
-  </div>
-  <script>
-    let hrs = document.getElementById('hrs')
-    let mins = document.getElementById('mins')
-    let sec= document.getElementById('sec')
-    setInterval(()=>{
-      let currentTime = new Date();
-// console.log(currentTime.getHours());
-hrs.innerHTML = (currentTime.getHours()<10?"0":"")+currentTime.getHours();
-mins.innerHTML = (currentTime.getHours()<10?"0":"")+currentTime.getMinutes();
-sec.innerHTML =(currentTime.getHours()<10?"0":"")+currentTime.getSeconds();
-
-    },1000)
-
-  </script>
-</body>
+    <script>
+      let hrs = document.getElementById("hrs");
+      let mins = document.getElementById("mins");
+      let sec = document.getElementById("sec");
+      setInterval(() => {
+        let currentTime = new Date();
+        // console.log(currentTime.getHours());
+        hrs.innerHTML =
+          (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
+        mins.innerHTML =
+          (currentTime.getHours() < 10 ? "0" : "") + currentTime.getMinutes();
+        sec.innerHTML =
+          (currentTime.getHours() < 10 ? "0" : "") + currentTime.getSeconds();
+      }, 1000);
+    </script>
+  </body>
 </html>
