@@ -12,10 +12,12 @@ body {
   width: 900px;
   margin: 200px;
   color: #000;
-  background-color: #b7b2b2;
+  background-color: #1b1a1a;
   padding: 20px 40px;
   border-radius: 15px;
-  border: 4px solid #000;
+  border: 4px 0 4px #000;
+  box-shadow: 2px 0 4px gray;
+  text-shadow: 2px 0 4px silver;
   text-align: center;
   font-size: 175px;
 }
