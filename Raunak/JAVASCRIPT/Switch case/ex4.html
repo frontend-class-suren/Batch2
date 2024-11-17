@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch case Marks</title>
+  </head>
+  <body>
+    <h2>Enter Marks to Check Division</h2>
+    <input type="number" id="marks" placeholder="Enter marks" />
+    <button onclick="checkDivision()">Check Division</button>
+    <p id="result"></p>
+
+    <script>
+      function checkDivision() {
+        let grade = "B";
+        let result;
+        switch (grade) {
+          case "A":
+            result = "A (Excellent)";
+            break;
+          case "B":
+            result = "B (Average)";
+            break;
+          case "C":
+            result = "C (Good)";
+            break;
+            default:
+                result = "Invalid Marks";
+        }
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

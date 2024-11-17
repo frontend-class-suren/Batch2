@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Checker</title>
+</head>
+<body>
+    <h2>Enter Marks to Check Division</h2>
+    <input type="number" id="marks" placeholder="Enter marks" />
+    <button onclick="checkDivision()">Check Division</button>
+    <p id="result"></p>
+
+    <script>
+        function checkDivision() {
+            const marks = (document.getElementById("marks").value);
+            let division;
+
+            switch (marks) {
+                case (marks >= 60 || marks <= 100):
+                    division = "First Division";
+                    break;
+                case (marks >= 45 || marks < 60):
+                    division = "Second Division";
+                    break;
+                case (marks >= 33 || marks < 45):
+                    division = "Third Division";
+                    break;
+                case (marks < 33):
+                    division = "Fail";
+                    break;
+                    
+                    // Default marks
+                default:
+                    division = "Invalid marks entered";
+            }
+
+            document.getElementById("result").textContent = division;
+        }
+    </script>
+</body>
+</html>
