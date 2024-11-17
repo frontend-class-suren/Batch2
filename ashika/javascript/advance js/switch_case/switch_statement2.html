@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch statement</title>
+</head>
+<body>
+  <h1>Months using Switch statement</h1>
+  <p id="demo"></p>
+  <script>
+   let curentMonth = new Date().getMonth();
+   let month;
+   switch(1){
+      case 0:
+      month = "Jan";
+      break;
+      case 1:
+      month = "Feb";
+      break;
+      case 2:
+      month = "Mar";
+      break;
+      case 3:
+      month = "Apr";
+      break;
+      case 4:
+      month = "May";
+      break;
+      case 5:
+      month = "Jun";
+      break;
+      case 6:
+      month = "July";
+      break;
+      case 7:
+      month = "Aug";
+      break;
+      case 8:
+      month = "Sep";
+      break;
+      case 9:
+      month = "Oct";
+      break;
+      case 10:
+      month = "Nov";
+      break;
+      case 11:
+      month = "Dec";
+      break;
+      default:
+        Text= "This month is Nov";
+      
+   }
+   document.getElementById('demo').innerHTML="This month is:"+ month;
+  </script>
+</body>
+</html>

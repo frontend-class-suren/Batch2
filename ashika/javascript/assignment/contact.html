@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact_form">
+        <h2>CONTACT</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required />
+
+        <label for="Occupation">Occupation:</label>
+        <input type="text" id="occupation" required />
+        
+
+
+        <button onclick="submitContact()">Submit</button>
+      </div>
+      <div class="contact_details" id="contactDetails">
+        <h2>Contact Details</h2>
+        <p><strong>First Name:</strong> <span id="detailFirstName"></span></p>
+
+        <p><strong>Last Name:</strong> <span id="detailLastName"></span></p>
+
+        <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+
+        <p><strong>Phone Number:</strong> <span id="detailPhone"></span></p>
+
+        <p><strong>Occupation:</strong> <span id="detailOccupation"></span></p>
+
+        <p><strong>Address:</strong> <span id="detailAddress"></span></p>
+      </div>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>
