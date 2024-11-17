@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #153677, #4e085f);
+            padding: 10px;
+        }
+        .todo{
+            width: 100%;
+            max-width: 540px;
+            background: #fff;
+            margin: 100px auto 20px;
+            padding: 40px 30px 70px;
+            border-radius: 10px;
+            height: 400px;
+        }
+        .todo h2{
+            color: #002765;
+            align-items:center;
+            font-size: 40px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #edeef0;
+            border-radius: 30px;
+            padding-left: 20px;
+            height: 50px;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 10px;
+            font-weight: 20px;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 16px 30px;
+            background: #ff5945;
+            color: #fff;
+            outline: 16px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 15px;
+        }
+        ul li{
+            list-style-type: none;
+            font-size: 17px;
+            padding: 12px 8px 12px 50px;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            color: red;
+        }
+        ul li ::before{ 
+            content: '';
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            top: 12px;
+            left:8px;
+            }
+        ul li.checked{
+            color: red;
+            text-decoration: line-through;
+        }    
+        ul li span{
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            font-size: 22px;
+            color: black;
+            line-height: 40px;
+            text-align: center;
+        }
+        ul li  span:hover{
+            background: gray;
+        }
+        /*ul li image{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            font-size: 22px;
+            line-height: 40px;
+            margin-left: -70px;
+            margin-top: -10px;
+            display: none;
+        }*/
+        </style>
+</head>
+<body>
+    <div class="container">
+<div class="todo">
+    <h2>To-Do List</h2>
+    <div class="row">
+        <input type="text" id="input" placeholder="Add your text">
+        <button onclick="addTask()">Submit</button>
+    </div>
+    <ul id="list">
+        <li class="checked"></li>
+    </ul>
+</div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+        let grade = "default";
+        let result;
+        switch(grade){
+            case "A":
+            result = "A (Excellent)";
+            break;
+
+            case "B":
+            result = "B (Average)";
+            break;
+              
+            case "C":
+            result = "C (Below than average)";
+            break;
+            
+            default:
+            result = "No Grade";
+        }
+        document.getElementById("demo").innerHTML = "Your grades are" + " " + result;
+    </script>
+</body>
+</html>
