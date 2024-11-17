@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let today = 8;
+        let month;
+        switch(today){
+            case 0:
+            month = "January";
+            break;
+            
+            case 1:
+            month = "Feburary";
+            break;
+
+            case 2:
+            month = "March";
+            break;   
+                
+            case 3:
+            month = "April";
+            break;    
+
+            case 4:
+            month = "May";
+            break;    
+
+            case 5:
+            month = "June";
+            break;    
+
+            case 6:
+            month = "July";
+            break;    
+
+            case 7:
+            month = "August";
+            break;    
+
+            case 8:
+            month = "September";
+            break;    
+
+            case 9:
+            month = "October";
+            break;
+
+            case 10:
+            month = "November";
+            break;
+
+            case 11:
+            month = "December";
+            break;
+
+            default:
+                month = "It is not included."
+        }
+        document.getElementById("demo").innerHTML = "Today is" + " "+ month;
+    </script>
+</body>
+</html>
