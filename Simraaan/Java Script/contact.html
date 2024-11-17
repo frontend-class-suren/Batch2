@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <!-- <link rel="stylesheet" href="prac4.css" /> -->
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #bcbbba;
+  }
+
+  .container {
+    display: flex;
+    gap: 200px;
+  }
+
+  /* Contact Form styling */
+  .contact-form {
+    width: 500px;
+    /* background-color: #ffffff; */
+    background-color: rgb(223, 210, 210);
+    padding: 20px;
+    box-shadow: 20px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .contact-form h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: xx-large;
+    /* background: linear-gradient(90deg, rgba(228,196,1,1) 28%, rgba(214,122,21,1) 51%, rgba(0,212,255,1) 96%); */
+    /* background: black; */
+    border-radius: 4px;
+    text-align: center;
+  }
+   
+   select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #358ec1;
+    box-shadow: 2px 0 8px  rgb(152, 152, 152);
+    border-radius: 4px;
+  }
+
+  .contact-form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #319a49;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .contact-form button:hover {
+    background-color: #0a4417;
+    transition: .8s ease;
+  }
+
+  /* Contact Details styling */
+  .contact-details {
+    width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 20px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+
+  .contact-details h2 {
+    margin: 0 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    font-size: xx-large;
+  }
+     </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>CONTACT</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required />
+
+        <label for="qul">Qualification:</label>
+        <input type="text" id="qualification" required />
+
+        <!-- <label for="address">Address:</label>
+          <textarea id="address" rows="3" required></textarea> -->
+
+        <label for="address">Address</label>
+        <select id="address" name="address">
+          <option value=""></option>
+          <option value="Bhairahawa">Bhairahawa</option>
+          <option value="Dang">Dang</option>
+          <option value="Butwal">Butwal</option>
+          <option value="Kathmandu">Kathmandu</option>
+          <option value="Pokhara">Pokhara</option>
+        </select>
+
+        <button onclick="submitContact()">Submit</button>
+      </div>
+
+      <!-- Contact Details Display -->
+      <div class="contact-details" id="contactDetails">
+        <h2>Contact Details</h2>
+        <p><strong>First Name:</strong> <span id="detailFirstName"></span></p>
+
+        <p><strong>Last Name:</strong> <span id="detailLastName"></span></p>
+
+        <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+
+        <p><strong>Phone Number:</strong> <span id="detailPhone"></span></p>
+
+        <p><strong>Qualification:</strong> <span id="detailqul"></span></p>
+
+        <p><strong>Address:</strong> <span id="detailAddress"></span></p>
+      </div>
+    </div>
+
+    <!-- //JavaScript Section -->
+    <script>
+        function submitContact() {
+    // Get the input values
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const profession =document.getElementById('qualification').value;
+    const address = document.getElementById('address').value;
+
+    // Display the values in the contact details section
+    document.getElementById('detailFirstName').textContent = firstName;
+    document.getElementById('detailLastName').textContent = lastName;
+    document.getElementById('detailEmail').textContent = email;
+    document.getElementById('detailPhone').textContent = phone;
+    document.getElementById('detailqul').textContent = profession;
+    document.getElementById('detailAddress').textContent = address;
+
+    // Show the contact details section
+    document.getElementById('contactDetails').style.display = 'block';
+
+    // Clear form inputs
+    document.getElementById('firstName').value = '';
+    document.getElementById('lastName').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('profession').value = '';
+    document.getElementById('address').value = '';
+  }
+    </script>
+  </body>
+</html>
