@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add set method</title>
+</head>
+<body>
+  <p id="add"></p>
+  <h2>here is list of set element</h2>
+  <p id="list"></p>
+  <script>
+    //first how to create set with new keyword step by step
+    const letters = new Set (["a", "b" , "c"]);
+    //how to add value with the help of add set method
+    letters.add('d');
+    letters.add('e');
+    letters.add('e');//duplicate values are rejected
+
+    //listing set elements
+    let txt = "";
+    for(const X of letters){
+      txt += X+ " "+"= element"+"<br>"
+    }
+document.getElementById('list').innerHTML=txt;
+    //display the set size of value
+    document.getElementById('add').innerHTML = "The value of set after add value is:"+letters.size+"values";
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continue statement in JS</title>
+</head>
+<body>
+  <p id="cont"></p>
+  <script>
+let txt = "";
+for(let i=0;i<10;i++){
+  if(i===6){
+    continue;
+    // txt += i+"<br>"
+  }
+  txt += i+"<br>"
+
+}
+document.getElementById('cont').innerHTML=txt;
+  </script>
+</body>
+</html>
