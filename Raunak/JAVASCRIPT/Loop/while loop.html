@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While Loop Statement</title>
+  </head>
+  <body>
+    <h2>While Loop</h2>
+    <p id="while"></p>
+
+    <!-- //While Loop  -->
+
+    <script>
+      let text = "";
+      let i = 0;
+      while (i < 10) {
+        text += "<br>The number is " + i;
+        i++;
+      }
+      document.getElementById("while").innerHTML = text;
+    </script>
+  </body>
+</html>

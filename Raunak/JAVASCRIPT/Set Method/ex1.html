@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Method</title>
+  </head>
+  <body>
+    <h2>Set Method JavaScript</h2>
+    <p id="set"></p>
+    <hr size="4px" color="orange" />
+
+    <p>Listing the element</p>
+    <p id="set_list"></p>
+
+    <!-- //Set Method -->
+
+    <script>
+      // Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      // Add Values to the Set
+      letters.add("d");
+      letters.add("e");
+
+      // Display the Size
+      document.getElementById("set").innerHTML =
+        "The set has " + letters.size + " values.";
+    </script>
+
+    <!-- //Listing the element -->
+
+    <script>
+      {
+        // Create a Set
+        const letters = new Set(["a", "b", "c", "d"]);
+
+        // List all Elements
+        let text = "";
+        for (const x of letters) {
+          text += x + "<br>";
+        }
+
+        document.getElementById("set_list").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
