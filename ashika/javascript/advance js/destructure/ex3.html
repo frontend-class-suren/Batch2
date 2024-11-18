@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="name"></p>
+  <hr>
+  <p id="country"></p>
+  <hr>
+  <p id="code"></p>
+  <hr>
+    <p id="article"></p>
+    <script>
+
+      let obj = {
+        name : "Simran",
+        add:{
+          country : "Nepal",
+          state :{
+            code: "JS programming Language",
+            pincode: "231232435353",
+            article: {
+              topic:"destructing"
+            }
+          }
+        }
+      }
+      let { name } = obj ;
+      //console.log(name)
+      document.getElementById('name').innerHTML = name;
+      let { add: { country: abcd } }=obj;
+      //console.log(add)
+      document.getElementById('country').innerHTML=abcd;
+      let { add: {  state: {cde: cd } } } = obj
+      //console.log(cd)
+      document.getElementById('code').innerHTML = cd;
+      // let { add: { state: {code:cd}}}
+      let { add: { state: { article: {topic:title} } } } = obj;
+      document.getElementById('article').innerHTML = title;
+    </script>
+</body>
+</html>

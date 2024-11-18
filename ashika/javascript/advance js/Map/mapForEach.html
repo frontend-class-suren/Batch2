@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For each map method in js</title>
+</head>
+<body>
+  <p id="forEach"></p>
+  <script>
+    const staffs = new Map(
+      [
+        ["students",500],
+        ["teachers",300],
+        ["leaders",200]
+      ]
+    );
+    let txt = "";
+    staffs.forEach(function(value,key){
+txt += key + " "+value + "<br>";
+
+    })
+    document.getElementById('forEach').innerHTML = txt;
+  </script>
+</body>
+</html>

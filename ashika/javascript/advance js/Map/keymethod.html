@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key  map Method in JS</title>
+</head>
+<body>
+  <p id="key"></p>
+  <script>
+    const staffs = new Map(
+      [
+        ["students",500],
+        ["teachers",300],
+        ["leaders",200]
+      ]
+    );
+    let txt = "";
+    for(const X of staffs.keys()){
+      txt += X + "<br>";
+
+    }
+    document.getElementById('key').innerHTML = txt ;
+  </script>
+</body>
+</html>

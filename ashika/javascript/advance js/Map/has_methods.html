@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="has"></p>
+  <script>
+    const staffs = new Map(
+      [
+        ["students",500],
+        ["teachers",300],
+        ["leaders",200]
+      ]
+    );
+    //using this gives false statement otherwise true
+    let removeItem = staffs.delete("teachers"); 
+        //has map method to check the key and values into map and return boolean true/false
+    let search = staffs.has('teachers');
+    document.getElementById('has').innerHTML = "the item teachers is available or not :"+ search;
+  </script>
+</body>
+</html>

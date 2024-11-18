@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="del"></p><p id="delitem"></p>
+  <script>
+    const fruits = new Map(
+      [
+        ["apple",500],
+        ["pear",800],
+        ["guava",400]
+
+      ]
+    )
+    let deleteMap = fruits.delete('apple');
+    document.getElementById('del').innerHTML = "After deleting :" + fruits.size;
+    document.getElementById("delitem").innerHTML = "Deleted item is" + deleteMap ;
+  </script>
+</body>
+</html>
