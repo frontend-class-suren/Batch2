@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Destructure</title>
+  </head>
+  <body>
+    <h2>Object Destructure</h2>
+    <p id="name"></p>
+    <hr />
+    <p id="country"></p>
+    <hr />
+    <p id="code"></p>
+    <hr />
+    <p id="pincode"></p>
+    <hr />
+    <p id="topic"></p>
+
+    <script>
+      let obj = {
+        name: "MyLove",
+        add: {
+          country: "YourHeart",
+          state: {
+            code: "JS",
+            pincode: "820800",
+            article: {
+              topic: "Destructuring",
+            },
+          },
+        },
+      };
+
+      // Destructure properties
+      let { name } = obj;
+      let { add: { country: country } } = obj;
+      let { add: { state: { code: cd } } } = obj;
+      let { add: { state: { pincode } } } = obj;
+      let { add: { state: { article: { topic: title } } } } = obj;
+
+      // Display in the HTML
+      document.getElementById("name").innerText = "Name : " +name;
+      document.getElementById("country").innerText = "Country : " +country;
+      document.getElementById("code").innerText = "Code : " +cd;
+      document.getElementById("pincode").innerText = "Pincode : " +pincode;
+      document.getElementById("topic").innerText = "Topic : " +title ;
+    </script>
+  </body>
+</html>

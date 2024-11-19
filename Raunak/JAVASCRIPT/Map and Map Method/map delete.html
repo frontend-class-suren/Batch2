@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map JavaScript</title>
+  </head>
+  <body>
+    <h2>new Map Delete ( ) Method</h2>
+    <p id="del"></p>
+    <hr size="4px" color="orange">
+    <h2>After delete </h2>
+    <p id="size"></p>
+
+    <!-- //Map Delete Method JavaScript -->
+
+    <script>
+
+      //Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+      
+      //Map Delete
+      let numb = fruits.delete("apples");
+      document.getElementById("del").innerHTML = " The deleted fruit map is " +numb;
+
+      let num = fruits.size;
+      document.getElementById("size").innerHTML = " After delete the size of fruits map are " +num;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Map JavaScript</title>
+</head>
+<body>
+    <h2>Set Map ( ) Method</h2>
+    <p id="set"></p>
+    <hr size="4px" color="orange">
+    <h2>DataType Set Map</h2>
+    <p id="type"></p>
+
+    <!-- //Set Map Method -->
+
+    <script>
+        const fruits = new Map();
+
+        //Set the values into map
+
+        fruits.set("apples",500);
+        fruits.set("bananas",300);
+        fruits.set("oranges",200);
+
+        fruits.set("oranges",200)
+        let datatype = typeof(fruits);
+        let numb = fruits.get("oranges",200);
+        document.getElementById("set").innerHTML = " There are "+numb+ " oranges. ";
+        document.getElementById("type").innerHTML = "DataType is "+datatype;
+    </script>
+</body>
+</html>

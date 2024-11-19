@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map JavaScript</title>
+  </head>
+  <body>
+    <h2>new Map Has ( ) Method</h2>
+    <p id="has"></p>
+    <hr size="4px" color="orange">
+    <p>The has () method returns true if not then false :</p>
+    <p id="dem"></p>
+
+    <!-- //Map Has Method JavaScript -->
+
+    <script>
+      //Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      //Map Has
+      let numb = fruits.has("apples");
+      document.getElementById("has").innerHTML =
+        " The fruit map has the item which is " + numb;
+    </script>
+
+    <script>
+        {
+      // Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      // Delete an Element
+      fruits.delete("apples");
+      let numb = fruits.has("apples");
+
+      document.getElementById("dem").innerHTML = "The item fruits is available or not : " +numb;
+        }
+    </script>
+  </body>
+</html>

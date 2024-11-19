@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map JavaScript</title>
+  </head>
+  <body>
+    <h2>new Map ( ) Method</h2>
+    <p id="map"></p>
+
+    <!-- //Map JavaScript -->
+
+    <script>
+
+      //Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      let numb = fruits.get("apples");
+      document.getElementById("map").innerHTML = " There are "+numb+ " apples.";
+    </script>
+  </body>
+</html>

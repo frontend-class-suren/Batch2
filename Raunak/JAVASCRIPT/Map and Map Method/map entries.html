@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Entries Method</title>
+  </head>
+  <body>
+    <h2>Map Entries( ) Method</h2>
+    <p id="ent"></p>
+
+    <!-- //Map Entries Method -->
+
+    <script>
+      // Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      let text = "";
+      for (const x of fruits.entries()) {
+        text += x + "<br>";
+      }
+
+      document.getElementById("ent").innerHTML = text;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map JavaScript</title>
+  </head>
+  <body>
+    <h2>new Map Size ( ) Method</h2>
+    <p id="size"></p>
+
+    <!-- //Map JavaScript -->
+
+    <script>
+
+      //Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+      
+      //Map Size Property
+      let numb = fruits.size;
+      document.getElementById("size").innerHTML = " The size of fruits map are " +numb;
+    </script>
+  </body>
+</html>
