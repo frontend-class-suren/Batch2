@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Method</title>
+  </head>
+  <body>
+    <h2>Object Keys ( ) Method</h2>
+    <p id="key"></p>
+
+    <!-- //Object Key Method -->
+
+    <script>
+      // Create an Object
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+
+      // Get the Keys
+      const keys = Object.keys(person);
+      document.getElementById("key").innerHTML = keys;
+    </script>
+  </body>
+</html>

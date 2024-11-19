@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Management Method</title>
+  </head>
+  <body>
+    <h2>Object define property ( )</h2>
+    <p>Adding the property</p>
+    <p id="prop"></p>
+    <hr size="4px" color="orange">
+    <h2>Changing the property</h2>
+    <p id="change"></p>
+
+    <!-- //Object define property -->
+
+    <script>
+      // Create an Object:
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        language: "EN",
+      };
+
+      // Add a Property
+      Object.defineProperty(person, "year", { value: "2004" });
+
+      // Display the Property
+      document.getElementById("prop").innerHTML = person.year;
+    </script>
+    
+    
+    <!-- //Changing the property -->
+    <script>
+        {
+      // Create an Object:
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        language: "EN",
+      };
+
+      // Change a Property
+      Object.defineProperty(person, "language", { value: "NO" });
+
+      // Display the Property
+      document.getElementById("change").innerHTML = person.language;
+    }
+    </script>
+  </body>
+</html>

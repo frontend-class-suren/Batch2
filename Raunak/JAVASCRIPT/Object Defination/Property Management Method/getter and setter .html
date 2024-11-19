@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Management Property</title>
+  </head>
+  <body>
+    <h2>DefineProperty Method</h2>
+    <p>Adding Getter and Setter Method :</p>
+    <p id="add"></p>
+
+    <!-- //Adding Getter and Setter  -->
+
+    <script>
+      // Create an Object:
+      const person = { firstName: "James", lastName: "Bond" };
+
+      // Define a Getter
+      Object.defineProperty(person, "fullName", {
+        get: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      });
+
+      // Display fullName
+      document.getElementById("add").innerHTML = person.fullName;
+    </script>
+  </body>
+</html>

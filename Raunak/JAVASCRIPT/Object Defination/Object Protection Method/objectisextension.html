@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Protection Method</title>
+  </head>
+  <body>
+    <h2>ObjectIsExtension ( ) Method</h2>
+    <p id="is"></p>
+
+    <!-- //ObjectIsExtension Method -->
+
+    <script>
+      // Create Object
+      const person = { firstName: "John", lastName: "Doe" };
+
+      // Prevent Extensions
+      Object.preventExtensions(person);
+
+      // This will return false
+      let answer = Object.isExtensible(person);
+      document.getElementById("is").innerHTML = answer;
+    </script>
+  </body>
+</html>
