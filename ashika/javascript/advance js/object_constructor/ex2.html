@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Defination</title>
+  </head>
+  <body>
+    <h2>JavaScript Object Constructr</h2>
+    <p id="obj"></p>
+    <hr size="4px" color="orange">
+    <h2>Constructor Function for two person object</h2>
+    <p id="obje"></p>
+
+    <!-- //Object Defination -->
+
+    <script>
+      // Constructor Function for Person objects
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+
+      // Create a Person object
+      const myName = new Person("James", "Bond", 40, "blue");
+
+      // Display age
+      document.getElementById("obj").innerHTML =
+        "My age is " + myName.age + ".";
+    </script>
+
+    <script>
+      {
+        // Constructor function for Person objects
+        function Person(first, last, age, eye) {
+          this.firstName = first;
+          this.lastName = last;
+          this.age = age;
+          this.eyeColor = eye;
+          this.nationality = 'Nepali';
+        }
+
+        // Create two Person objects
+        const myFather = new Person("John", "Doe", 50, "blue");
+        const myMother = new Person("Sally", "Rally", 48, "green");
+
+        // Display age
+        document.getElementById("obje").innerHTML =
+          "My father is " +myFather.age + "Nationality is "+myFather.nationality+ ". My mother is " +myMother.age +".";
+          document.getElementById('Sister').innerHTML = 
+          "My sister name is"  + mySister.firstName + "Nationality is" + mySister.nationality+".";
+      }
+    </script>
+  </body>
+</html>
