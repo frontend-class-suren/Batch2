@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Protection Method</title>
+  </head>
+  <body>
+    <h2>Object.Prevent Extension ( )</h2>
+    <p id="pro"></p>
+
+    <!-- //Object Prevent Extension -->
+
+    <script>
+      // Create Object
+      const person = { firstName: "James", lastName: "Bond" };
+
+      // Prevent Extensions
+      Object.preventExtensions(person);
+
+      // Test Error
+      let text = "";
+      try {
+        person.nationality = "English";
+      } catch (err) {
+        text = err;
+      }
+
+      document.getElementById("pro").innerHTML = text;
+    </script>
+  </body>
+</html>

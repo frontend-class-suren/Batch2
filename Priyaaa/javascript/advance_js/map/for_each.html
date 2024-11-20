@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each map mathod in js</title>
+</head>
+<body>
+    <h2>Map.forEach()</h2>
+    <p>The forEach() method invokes a callback for each key/value pair in a map:</p>
+    <p id="demo"></p>
+    <script>
+        const staff = new Map([
+            ["Students", 500],
+            ["Teachers", 300],
+            ["Leaders", 200]
+        ]);
+
+        let txt = "";
+        staff.forEach(function(value, key){
+            txt += key +" = "+value+"<br>"
+        });
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+</html>

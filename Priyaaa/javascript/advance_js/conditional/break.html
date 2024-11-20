@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Statement in javascript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let txt = "";
+        for(let i=0; i< 10;i++){
+            if(i === 5){
+                break;
+            }
+            txt += i + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Method</title>
+  </head>
+  <body>
+    <h2>Object Assign ( ) Method</h2>
+    <p id="obj"></p>
+
+    <!-- //Object Assign  -->
+
+    <script>
+      // Create Target Object
+      const person1 = {
+        firstName: "James",
+        lastName: "Bond",
+        age: 40,
+        eyeColor: "Skyblue",
+      };
+
+      // Create Source Object
+      const person2 = { firstName: "Jenny", lastName: "Taylor" };
+
+      // Assign Source to Target
+      Object.assign(person1, person2);
+
+      // Display Target
+      let text = Object.entries(person1);
+      document.getElementById("obj").innerHTML = text;
+    </script>
+  </body>
+</html>

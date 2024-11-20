@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructing</title>
+</head>
+<body>
+    <h2>Object Destructuring</h2>
+    <p id="demo"></p>
+    <script>
+        // create an object 
+        const person = {
+            firstName: "John",
+            lastName : "Doe",
+            age : 50
+        };
+        // Destructing 
+        let {firstName, lastName} = person;
+
+        // display primitive values 
+        document.getElementById("demo").innerHTML = firstName+ " "+ lastName;
+    </script>
+</body>
+</html>

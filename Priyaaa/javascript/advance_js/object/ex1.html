@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor Functions</title>
+</head>
+<body>
+    <h1>Object Constructor Functions</h1>
+    <p id="demo"></p>
+    <p id="sister"></p>
+    <p id="brother"></p>
+    <script>
+        function Person(first, last, age, eye, nationality) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        this.nationality = "Nepali";
+}
+
+// Create a Person object
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+const mySister = new Person("Jenisha", "Rally", 20, "black");
+const myBrother = new Person("Sandy", "Rally", 24, "brown");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.nationality + "."+ "My mother is" + myMother.age + "."; 
+
+document.getElementById("sister").innerHTML ="My sister  first name is " + mySister.firstName + "."
+document.getElementById("brother").innerHTML ="My brother eyecolor is " + myBrother.eyeColor + "."
+</script>
+</body>
+</html>

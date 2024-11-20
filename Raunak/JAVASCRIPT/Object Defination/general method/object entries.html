@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Method</title>
+  </head>
+  <body>
+    <h2>Object entries( )</h2>
+    <p id="ent"></p>
+    <hr size="4px" color="Orange" />
+    <h2>Object entries method to use in loop</h2>
+    <p id="obje"></p>
+    <hr size="4px" color="Orange">
+    <h3>Object fromEntries ( )</h3>
+    <p id="from"></p>
+
+    <!-- //Object entries -->
+
+    <script>
+      const person = {
+        firstName: "James",
+        lastName: "Bond",
+        age: 40,
+        eyeColor: "Skyblue",
+      };
+
+      let text = Object.entries(person);
+      document.getElementById("ent").innerHTML = text;
+    </script>
+    
+    <!-- //Object entries in loop -->
+    <script>
+      {
+        const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
+
+        let text = "";
+        for (let [fruit, amount] of Object.entries(fruits)) {
+          text += fruit + ": " + amount + "<br>";
+        }
+
+        document.getElementById("obje").innerHTML = text;
+      }
+    </script>
+
+
+    <!-- //Object fromEntries -->
+    <script>
+      {
+        const fruits = [
+          ["apples", 300],
+          ["pears", 900],
+          ["bananas", 500],
+        ];
+
+        const myObj = Object.fromEntries(fruits);
+        document.getElementById("from").innerHTML = myObj.pears;
+      }
+    </script>
+  </body>
+</html>

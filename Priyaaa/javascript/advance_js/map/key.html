@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key map method in js</title>
+</head>
+<body>
+    <h2>Map.keys()</h2>
+    <p>The keys() method returns an iterator object with the keys in a map:</p>
+    <p id="demo"></p>
+    <script>
+        const staff = new Map([
+            ["Students", 500],
+            ["Teachers", 300],
+            ["Leaders", 200]
+        ]);
+        let txt = "";
+        for(const x of staff.keys()){
+            txt += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+</html>
