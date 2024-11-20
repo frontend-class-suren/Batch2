@@ -1,15 +1,24 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(58, 58, 58);
+  background: radial-gradient(circle, #0b456b, #021c37);
 }
 .clock-dial{
   width: 500px;
   height: 500px;
-  border: 20px solid rgb(0, 0, 0);
-  box-shadow: 2px 0 8px 2px rgb(255, 0, 0);
+  border: 20px solid #00d9ff;
+  box-shadow: 2px 0 8px 4px #ee00ff;
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
+  background: radial-gradient(circle, #05263c, #000d1a);
+}
+.clock-dial::before{
+  content: "";
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border-radius: 50%;
+  
 }
 .point{
   width: 20px;
@@ -24,9 +33,10 @@ body{
 .hour{
   font-size: 30px;
   font-weight: bold;
-  color: rgb(246, 243, 243);
+  color: #00d9ff;
+  text-shadow: 0 0 12px #ee00ff;
   border-radius: 40%;
-  box-shadow: 2px 0 4px 2px rgb(26, 26, 26);
+  /* box-shadow: 2px 0 4px 2px rgb(26, 26, 26); */
   position: absolute;
 }
 .hour-1{
@@ -81,7 +91,8 @@ body{
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: rgb(220, 220, 220);
+  color: #00d9ff;
+  text-shadow: 0 0 12px #ee00ff;
   position: absolute;
   top: 90px;
   left: 42%;
@@ -103,7 +114,7 @@ body{
 .minute-hand .hand{
   width: 4px;
   height: 200px;
-  background-color: black;
+  background-color: rgb(24, 120, 237);
   position: absolute;
   left: 198px;
 }
@@ -111,7 +122,7 @@ body{
 .minute-hand .arrow{
   font-size: 30px;
   font-weight: bold;
-  color: black;
+  color: rgb(24, 120, 237);
   transform: rotate(180deg);
   position: absolute;
   left: 190px;
@@ -132,9 +143,9 @@ body{
 }
 
 .hour-hand .hand{
-  width: 6px;
+  width: 4px;
   height: 150px;
-  background-color: black;
+  background-color: rgb(235, 95, 43);
   position: absolute;
   left: 148px;
 }
@@ -142,7 +153,7 @@ body{
 .hour-hand .arrow{
   font-size: 30px;
   font-weight: bold;
-  color: black;
+  color: rgb(235, 95, 43);
   transform: rotate(180deg);
   position: absolute;
   left: 140px;
@@ -165,7 +176,7 @@ body{
 .second-hand .hand{
   width: 2px;
   height: 175px;
-  background-color: black;
+  background-color: rgb(240, 34, 255);
   position: absolute;
   left: 174px;
 }
