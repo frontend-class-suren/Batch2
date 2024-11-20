@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set (add) the values of map</title>
+</head>
+<body>
+    <h2>The set() Method</h2>
+    <p id="type"></p>
+    <p id="instance"></p>
+    <p id="demo"></p>
+    <script>
+        // create a map
+        const fruits = new Map();
+        // set the values into map
+        fruits.set("apples", 300);
+        fruits.set("bananas", 100);
+        fruits.set("oranges", 200);
+
+        // set map method also can use to change or update values 
+        fruits.set("oranges",100);
+        let datatype = typeof(fruits);
+
+        let number = fruits.get("oranges");
+        document.getElementById("type").innerHTML = "Datatype of fruits is"+ " "+ datatype;
+        document.getElementById("instance").innerHTML = fruits instanceof Map;
+        document.getElementById("demo").innerHTML = "There are"+ " "+ number + " " +"oranges.";
+    </script>
+</body>
+</html>

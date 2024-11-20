@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Object.entries()</h2>
+    <p>Object.entries() returns an array of the key/value pairs in an object:</p>
+    <p id="demo"></p>
+    <script>
+        const Person = {
+            firstName: "John",
+            lastName: "Doe", 
+            age: 45,
+            eyeColor: "black"
+        };
+        let text = Object.entries(Person);
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Has map method in js</title>
+</head>
+<body>
+    <h2>Map.has()</h2>
+    <p>The has() method returns true if a key exists in a map:</p>
+    <p id="demo"></p>
+    <script>
+        const staff = new Map([
+            ["Students", 500],
+            ["Teachers", 300],
+            ["Leaders", 200]
+        ]);
+        // before has removed item  
+        let removeitem = staff.delete("Teachers");
+        // has map method to check the key and values into map and return boolean true/false 
+        let search = staff.has("Teachers");
+        document.getElementById("demo").innerHTML = "The item Teachers is available or not"+ search;
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Using the prototype Property</h2>
+    <p>The JavaScript prototype property allows you to add new properties to object constructors:</p>
+    <p id="demo"></p>
+    <hr>
+    <p id="dell"></p>
+    <script>
+        function Person(first,last,age,eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        Person.prototype.nationality = "Nepali";
+
+        Person.prototype.name = function(){
+            return this.firstName+ " "+ this.lastName
+        };
+
+        const myFather = new Person("John", "Doe", "48", "black");
+        
+        document.getElementById("demo").innerHTML = "The nationality of my father is "+ " "+ myFather.nationality;
+        const myMother = new Person("Sally", "Doe", "35", "black")
+        document.getElementById("dell").innerHTML = "My mother name is"+ myMother.name();
+    </script>
+</body>
+</html>

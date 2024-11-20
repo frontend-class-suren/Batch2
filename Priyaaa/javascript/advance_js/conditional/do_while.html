@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do while loop in js</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let txt = "";
+        let i = 0;
+        do{
+            txt += i+"<br>";
+            i++;
+        }
+        while(i < 6);
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+</html>
