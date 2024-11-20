@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS MAP</h1>
+    <p id="set"></p>
+    <script>
+        //create map using new keyword
+        const fruits = new Map(
+            [["apples",500],
+            ["banana",400],
+            ["oranges",200]]
+        );
+        let number = fruits.get("apples");
+        document.getElementById("set").innerHTML = "There are "+ number+" apples"
+    </script>
+</body>
+</html>

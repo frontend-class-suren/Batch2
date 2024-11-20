@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Defination</title>
+  </head>
+  <body>
+    <h2>JavaScript Object Constructor</h2>
+    <p id="obj"></p>
+
+    <!-- //Object Defination -->
+
+    <script>
+      // Constructor Function for Person objects
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+
+      // Create a Person object
+      const myName = new Person("James", "Bond", 40, "blue");
+
+      // Display age
+      document.getElementById("obj").innerHTML =
+        "My age is " + myName.age + ".";
+    </script>
+  </body>
+</html>

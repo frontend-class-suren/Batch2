@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>For in Loop</h2>
+    <p id="obj"></p>
+    <script>
+        const person = {
+            firstName: "Abc",
+            lastName: "Xyz",
+            email:"abc@gmail.com",
+            contact: 9812345678
+        }
+        let txt = "";
+        for (let x in person){
+            txt +="<br>"+person[x];
+        }
+        document.getElementById("obj").innerHTML = "The details of the person is: "  +txt;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Size Map in Map Method</h1>
+    <p id="size"></p>
+
+    <script>
+        const fruits = new Map([
+            ["apples",500],
+            ["bananas",400],
+            ["mangoes", 700]
+        ])
+
+        let size = fruits.size;
+        document.getElementById("size").innerHTML = "The size is "+ size;
+    </script>
+</body>
+</html>

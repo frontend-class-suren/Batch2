@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ForEach MAP in JS</h1>
+    <p id="foreach"></p>
+
+    <script>
+          const fruits = new Map([
+            ["apples",500],
+            ["bananas",400],
+            ["mangoes", 700]
+        ]);
+        let txt ="";
+        fruits.forEach(function(value,key){
+            txt += key+" "+value+"<br>";
+        })
+        document.getElementById("foreach").innerHTML = txt;
+    </script>
+</body>
+</html>

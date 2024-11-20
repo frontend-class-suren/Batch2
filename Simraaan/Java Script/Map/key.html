@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Key Method in JS</h1>
+    <p id="key"></p>
+
+    <script>
+        const fruits = new Map([
+            ["apples",500],
+            ["bananas",400],
+            ["mangoes", 700]
+        ]);
+        let txt ="";
+        for(const x of fruits.keys()){
+            txt += x+"<br>"
+        }
+        document.getElementById("key").innerHTML = txt;
+    </script>
+</body>
+</html>

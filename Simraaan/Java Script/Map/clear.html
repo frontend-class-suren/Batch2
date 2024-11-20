@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clear in Map</h1>
+    <p id="clear"></p>
+
+    <script>
+          const fruits = new Map([
+            ["apples",500],
+            ["bananas",400],
+            ["mangoes", 700]
+        ])
+        let removeAll = fruits.clear();
+        document.getElementById("clear").innerHTML = "After Clear item in map size is "+ fruits.size;
+        document.getElementById("delitem").innerHTML = "Deleted Item is "+ DeleteMap;
+
+    </script>
+</body>
+</html>
