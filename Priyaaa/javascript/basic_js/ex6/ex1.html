@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript try catch</title>
+</head>
+<body>
+    <h2>Input Validation Example</h2>
+   
+    <input type="text" name="" id="throw">
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="p01"></p>
+    <script>
+    function myFunction(){
+        const message = document.getElementById("p01");
+        message.innerHTML = "";
+        let x = document.getElementById("throw").value;
+    try { 
+    if(x.trim() == "")  throw "empty please enter some input!";
+    if(isNaN(x)) throw "not a number don't enter the combination of string and number!";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+    
+    </script>
+</body>
+</html>
