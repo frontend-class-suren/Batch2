@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Throw Error</title>
+  </head>
+  <body>
+    <p>Please input a number between 5 and 10:</p>
+
+    <input id="throw" type="text" />
+    <button type="button" onclick="myFunction()" style="background-color: orange; border-radius: 8px;">Test Input</button>
+    <p id="p01"></p>
+
+    <script>
+      function myFunction() {
+        const message = document.getElementById("p01");
+        message.innerHTML = "";
+        let x = document.getElementById("throw").value;
+        try {
+          if (x.trim() == "") throw "empty";
+          if (isNaN(x)) throw "not a number";
+          x = Number(x);
+          if (x < 5) throw "very low";
+          if (x > 10) throw "very high";
+        } 
+        catch (err) {
+          message.innerHTML = "Input is " + err;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Error</title>
+  </head>
+  <body>
+    <h2>Js Error</h2>
+    <p>Welcome Dear !</p>
+    <p id="err"></p>
+
+    <!-- //Js Error -->
+
+    <script>
+      try {
+        alert("Welcome MyLove!");
+      } catch (err) {
+        document.getElementById("err").innerHTML = err.message;
+      }
+    </script>
+  </body>
+</html>
