@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class Method</title>
+  </head>
+  <body>
+    <h2>Class Method</h2>
+    <p id="cls"></p>
+
+    <!-- //Class Method -->
+
+    <script>
+      class Car {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+        age() {
+          const date = new Date();
+          return date.getFullYear() - this.year;
+        }
+      }
+
+      const myCar = new Car("BMW", 2004);
+      document.getElementById("cls").innerHTML =
+        "My car is way to old it's been " + myCar.age() + " years since i bought this car.";
+    </script>
+  </body>
+</html>
