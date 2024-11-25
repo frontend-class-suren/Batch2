@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+</head>
+<body>
+    <h2>Windows Object</h2>
+    <p id="win"></p>
+    <hr>
+    <h3>Screen width</h3>
+    <p id="scr"></p>
+    <hr>
+    <h3>Screen Color Depth</h3>
+    <p id="col"></p>
+
+    <!-- //Windows Object -->
+
+    <script>
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        
+
+        //Window inner width and height
+        document.getElementById("win").innerHTML = " Browser inner width is : " + window.innerWidth + "px. <br>" +
+         "Browser inner height is : " + window.innerHeight + "px."
+
+         //Screen Width and Height
+         document.getElementById("scr").innerHTML = " Screen Width is : " +screen.width + "<br>" + " Screen Height is : " + screen.height;
+         
+         //Screen Color Depth
+         document.getElementById("col").innerHTML = " Screen Color Depth is : " +screen.colorDepth;
+    </script>
+</body>
+</html>

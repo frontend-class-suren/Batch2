@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Notation</title>
+</head>
+<body>
+    <h2>To find window location </h2>
+    <p id="loc"></p>
+    <hr>
+    <h3>Display the name of the host</h3>
+    <p id="host"></p>
+
+    <!-- //window location -->
+
+    <script>
+        document.getElementById("loc").innerHTML = " Page is : " +window.location.href;
+
+        document.getElementById("host").innerHTML = " page host is : " +window.location.hostname;
+    </script>
+</body>
+</html>
