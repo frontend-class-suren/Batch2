@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>List of method creating in class by using constructor</h2>
+    <p id="demo"></p>
+    <script>
+        class Person{
+            constructor(fname, lname, city, country, phone, email){
+                this.fname = fname;
+                this.lname = lname;
+                this.city = city;
+                this.country = country;
+                this.phone = phone;
+                this.email = email;
+            }
+            fullname(){
+                const  name = this.fname+this.lname;
+                return name; 
+            }
+            address(){
+                const addr = this.city + " , "+ this.country;
+                return addr;
+            }
+            contact(){
+                const cont = this.phone;
+                return cont;
+            }
+            mess(){
+                const mail = this.email;
+                return mail;
+            }
+        }
+        const p1 = new Person("Priya", "Saru", "Butwal", "Nepal", 9329382, "sarupriya23@gmail.com");
+        document.getElementById("demo").innerHTML = "My full name is "+ p1.fullname() + "<br><br>" + "Address : " +p1.address() +
+        "<br> <br>"+ "Contact : " + p1.contact()+ "<br> <br>"+ "Email : " + p1.mess() ;
+        // document.getElementById("address").innerHTML = Person.address();
+    </script>
+</body>
+</html>

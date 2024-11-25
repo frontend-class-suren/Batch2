@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes in javascript</title>
+</head>
+<body>
+    <p id="cls"></p>
+    <script>
+        class Car {
+          constructor(name, year){
+            this.name = name;
+            this.year = year;
+          }
+        }
+        const myCar1 = new Car("Tata", 2024);
+        const myCar2 = new Car("Ford", 2022);
+
+        document.getElementById("cls").innerHTML = 
+        "My first car name is "+ " "+ myCar1.name + " ."+ "Year of model ="+ myCar1.year +"<br>"+
+        "My second car name is "+ " "+ myCar2.name + " ."+ "Year of model ="+myCar2.year;
+    </script>
+</body>
+</html>

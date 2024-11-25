@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #8c53ff;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        #container{
+            background-color: #fff;
+            width: 800px;
+            height: 600px;
+            padding: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+            text-align: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow-y: scroll;
+            box-shadow: 0px 10px 15px 10px rgba(0, 0 , 0, 0.5);
+        }
+        #list-header{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+        }
+        #note{
+            background-color: silver;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid plum;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #note:hover{
+            transition: 0.25s;
+            background-color: whitesmoke;
+        }
+        #note i{
+            font-size: 70px;
+            color: gainsboro;
+        }
+        .blank{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            border: none;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #list-container{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        li{
+            background-color: #fff385;
+            /* margin: 5px 0; */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 8px;
+            flex-direction: column;
+            box-shadow:  9px 9px 18px #b3b3b3, -9px -9px 18px #ffffff;
+        }
+        li span{
+            font-size: 12px;
+            flex-grow: 1;
+            word-wrap: break-word;
+            overflow-y: scroll;
+        }
+        #editBtn, #deleteBtn{
+            background-color: #c6aaff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px ;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 12px;
+            width: 60px;
+        }
+        #editBtn{
+            background-color: gainsboro;
+        }
+        #deleteBtn:hover{
+            background-color: #8c53ff;
+        }
+        #editBtn:hover{
+            background-color: gray;
+        }
+        #popupContainer{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        textarea{
+            width: 300px;
+            height: 200px;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 2px solid #8c53ff;
+        }
+        #btn-container{
+            display: flex;
+        }
+        #submitBtn, #closeBtn{
+            width: 100px;
+            background-color: #8c53ff;
+            color: #fff;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #closeBtn{
+            background-color: gainsboro;
+        }
+        #editing-container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #submitBtn, #closeBtn{
+            width: 100px;
+            background-color: #8c53ff;
+            color: #fff;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #closeBtn{
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="list-header">
+            <div id="note" onclick="popup()"><i class="fa-solid fa-plus"></i></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+        </div>
+        <div id="list-container">
+            <ul id="notes-list"></ul>
+        </div>
+    </div>
+    <script>
+        function popup(){
+            const popupContainer = document.createElement("div");
+            popupContainer.innerHTML = ` 
+            <div id= "popupContainer">
+                <h1>New Note</h1>
+                <textarea id = "note-text" placeholder="Enter your note..."></textarea> 
+                <div id = "btn-container">
+                    <button id="submitBtn" onclick="createNote()">Create Note</button>
+                    <button id = "closeBtn" onclick="closepopup()">Close</button>
+                    </div>
+                </div>`;
+                document.body.appendChild(popupContainer);
+        }
+        function closepopup(){
+            const popupContainer = document.getElementById("popupContainer");
+            if(popupContainer){
+                popupContainer.remove();
+            }
+        }
+        function createNote(){
+            const popupContainer = document.getElementById('popupContainer');
+            const noteText = document.getElementById('note-text').value;
+            if(noteText.trim() !== ''){
+                const note = {
+                    id: new Date().getTime(),
+                    text:noteText
+                };
+
+                const existingNotes = JSON.parse(localStorage.getItem('notes')) || [];
+                existingNotes.push(note);
+
+                localStorage.setItem('notes', JSON.stringify(existingNotes));
+
+                document.getElementById('note-text').value = '';
+
+                popupContainer.remove();
+                displayNotes();
+            }
+        }
+        /*function displayNotes(){
+            const notesList = document,getElementById('notes-list');
+            notesList.innerHTML = '';
+
+            const  notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+            notes.forEach(note =>{
+
+            })
+               }*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+        button{
+            font-size: 1.4em;
+            padding: 1em 2em;
+            border-radius: 2em;
+            border: 5px solid white;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            letter-spacing: 5px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+    <script>
+        let btn = document.querySelector('button');
+        function random(number){
+            return Math.floor(Math.random()*number);
+        }
+        
+        function background(){
+            const rndcol = 'rgb(' + random(255)+ ','+ random(255)+ ','+random(255)+')';
+            document.body.style.backgroundColor = rndcol;
+        }
+
+        btn.addEventListener('click', background);
+        /*
+        const btn = document.getElementById("btn");
+        let randomNum = () => {
+            console.log("function called")
+            return Math.floor(Math.random() * 256);
+        };
+        let changeColor = () => {
+            let randomColor = `rgb(${randomNum()},$
+            {randomNum()},${randomNum()})`;
+            document.body.style.backgroundColor = changeColor;
+        };
+        btn.addEventListener("click", changeColor);
+        window.addEventListener("load", changeColor);
+        */
+    </script>
+</body>
+</html>
