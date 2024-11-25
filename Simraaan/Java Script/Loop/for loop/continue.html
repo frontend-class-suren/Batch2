@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS  Continue</h1>
+    <p id="count"></p>
+    <script>
+        let txt = "";
+        for (let i = 0;i<10 ; i++){
+        if(i === 3){
+            continue;
+            }
+            txt += i+"<br>";
+        }
+        document.getElementById("count").innerHTML = txt;
+    </script>
+</body>
+</html>

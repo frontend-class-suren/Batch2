@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Delete Method of MAP in JS</h1>
+    <p id="del"></p>
+    <p id="delitem"></p>
+
+    <script>
+         const fruits = new Map([
+            ["apples",500],
+            ["bananas",400],
+            ["mangoes", 700]
+        ])
+        let DeleteMap = fruits.delete("apples");
+        document.getElementById("del").innerHTML = "After deleted item in map size is"+ fruits.size;
+        document.getElementById("delitem").innerHTML = "Deleted Item is "+ DeleteMap;
+
+    </script>
+</body>
+</html>

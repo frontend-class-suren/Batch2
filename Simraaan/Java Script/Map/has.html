@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HAS in Map</h1>
+    <p id="has"></p>
+
+    <script>
+        const fruits = new Map([
+            ["apples",500],
+            ["bananas",400],
+            ["mangoes", 700]
+        ]);
+        let removeAll = fruits.delete("apples");
+        //has map method to check the key and values into map and return boolean true/false
+        let search = fruits.has("apples");
+        document.getElementById("has").innerHTML = "The items Fruits is available or not "+search;
+    </script>
+</body>
+</html>

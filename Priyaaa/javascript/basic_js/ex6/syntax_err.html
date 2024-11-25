@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Errors</title>
+</head>
+<body>
+    <h2>The SyntaxError</h2>
+    <p>You cannot evaluate code that contains a syntax error:</p>
+    <p id="demo"></p>
+    <script>
+       try {
+        eval("alert('Hello)"); //syntax error due to missing 'symbol'
+       }
+       catch(err) {
+        document.getElementById("demo").innerHTML = err.message;
+       }
+</script>
+
+</body>
+</html>

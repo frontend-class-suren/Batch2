@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Destructuring </h1>
+    <p id="name"></p>
+    <hr>
+    <p id="con"></p>
+    <hr>
+    <p id="code"></p>
+    <hr>
+    <p id="article"></p>
+
+    <script>
+        let obj = {
+            name: "Simran",
+
+            add:{
+                country: "Nepal",
+                state:{
+                    code:"JS programming language",
+                    pincode:"28373643",
+                    article :{
+                        topic:"Destructuring",
+                    }
+                }
+            }
+        }
+
+        //Destructuring Properties
+        let { name }= obj;
+        document.getElementById("name").innerHTML = name;
+        let {add:{country:abcd}} =obj;
+        document.getElementById("con").innerHTML = abcd;
+        let {add:{state:{code:cd}}}= obj;
+        document.getElementById("code").innerHTML = cd;
+        let {add:{state:{article:{topic:title}}}}= obj; 
+        document.getElementById("article").innerHTML = title;
+
+    </script>
+</body>
+</html>

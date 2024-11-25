@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syntax Error</title>
+  </head>
+  <body>
+    <h2>Syntax Error</h2>
+    <p id="syn"></p>
+
+    <!-- //Syntax Error -->
+
+    <script>
+      try {
+        eval("alert('Hello)"); // Missing ' will produce an error
+      } catch (err) {
+        document.getElementById("syn").innerHTML = err.message;
+      }
+    </script>
+  </body>
+</html>

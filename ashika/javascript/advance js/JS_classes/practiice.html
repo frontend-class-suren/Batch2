@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <!-- <p id="address"></p> -->
+  <script>
+    class Person{
+      constructor (fName,lName,city,country,contact,email,education,experience){
+        this.fName = fName;
+        this.lName = lName;
+        this.city = city;
+        this.country = country;
+        this.contact = contact;
+        this.education = education;
+        this.experience = experience;
+        this.email= email;
+      }
+     
+       fullname(){
+        const name = this.fName + this.lName;
+        return name;
+        console.log(fullname());
+      }
+      address(){
+        const addr = this.city + ","+ this.country;
+        return addr;
+      }
+      contact1(){
+        const con = this.contact+" and my email is:"+this.email;
+        return con;
+      }
+    }
+     const p1 = new Person("Ashika", "Aryal","butwal","Nepal", 5464646464,"abc@gmail.com", "bachelore In BCA", "Internship in Web Developer");
+     document.getElementById("demo").innerHTML="My name is" + p1.fullname()+"<br>" + "My Adress is "+ p1.address()+"<br>"+"My contact no is"+p1.contact1();
+
+  </script>
+</body>
+</html>
