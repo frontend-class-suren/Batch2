@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #ecf4fb;
+        }
+        .img-gallery{
+            width: 80%;
+            margin: 100px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        } 
+        .img-gallery img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .img-gallery img:hover{
+            transform: scale(0.9);
+            border-radius: 20px;
+            box-shadow: 0, 32px 75px rgba(68,77,136,0.2);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img-gallery">
+        <img src="img6.webp" alt="">
+        <img src="image/img8.jpg" alt="">
+        <img src="image/img6.webp" alt="">
+        <img src="image/img1.webp" alt="">
+        <img src="image/img2.webp" alt="">
+        <img src="image/img4.webp" alt="">
+        <img src="image/img5.webp" alt="">
+        <img src="image/img3.jpg" alt="">
+        <img src="image/img9.jpg" alt="">
+    </div>
+</body>
+</html>
