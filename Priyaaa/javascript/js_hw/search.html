@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            padding: 5%;
+            background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0,8,51,0.9)), url(img6.webp);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .searchbar{
+            width: 100%;
+            max-width: 500px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+            padding: 10px 20px;
+            backdrop-filter: blur(4px) saturate(180%);
+        }
+        .searchbar input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 24px 20px;
+            font-size: 20px;
+            color: white;
+        }
+        .searchbar button img{
+            width: 25px;
+        }
+        .searchbar button{
+            border: 0;
+            border-radius: 50px;
+            width: 40px;
+            height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+      <form action="https:\\www.google.com/search" method="get" class="searchbar" >
+        <input type="text" placeholder="Search anything" name="q" id="">
+        <button type="submit"><img src="search.png" alt=""></button>
+      </form>
+    </div>
+</body>
+</html>

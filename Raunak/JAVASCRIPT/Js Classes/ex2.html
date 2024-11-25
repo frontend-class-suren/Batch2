@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Method</title>
+  </head>
+  <body>
+    <h2>Detail of a person</h2>
+    <p id="det"></p>
+
+    <!-- //Class Method -->
+
+    <script>
+      class person {
+        constructor(name, year, country, city, contact, education) {
+          this.name = name;
+          this.year = year;
+          this.country =country;
+          this.city = city;
+          this.contact = contact;
+          this.education = education;
+        }
+       countryDet() {
+          const country = this.country;
+          return country;
+        }
+        cityDet(){
+            const city = this.city;
+            return city;
+        }
+        age() {
+          const date = new Date();
+          return date.getFullYear() - this.year;
+        }
+        contactDet() {
+          const contact = this.contact;
+          return contact;
+        }
+        educationDet() {
+          const education = this.education;
+          return education;
+        }
+      }
+
+      const firstName = new person(
+        "James",
+        2018,
+        "Nepal", "Butwal" ,
+        9800000001,
+        "Bachelor"
+      );
+      const lastName = new person("Bond");
+
+      document.getElementById("det").innerHTML =
+        " My name is " +
+        firstName.name +
+        " " +
+        
+        lastName.name +
+        "." +
+        "<br> <br>" +
+        "Country : " +
+        firstName.countryDet() + " <br><br> City : " +firstName.city+
+        " <br><br>Education : " +
+        firstName.educationDet() +
+        "<br><br>" +
+        "I have " +
+        firstName.age() +
+        " years of experience in this field." +
+        "<br><br>" +
+        " Contact : " +
+        firstName.contact;
+    </script>
+  </body>
+</html>

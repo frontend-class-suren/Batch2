@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            padding: 5%;
+            background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0,8,51,0.9)), url(img6.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .search-box{
+            width: 600px;
+            background: white;
+            margin: 200px auto 0;
+            border-radius: 5px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        input{
+            flex:1;
+            height: 50px;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        button{
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+        button .fa-solid{
+            width: 50px;
+            color: #555;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 250px;
+        }
+        .result ul{
+            border-top: 1px solid #999;
+            padding: 15px  10px;
+        }
+        .result-box ul li{
+            list-style: none;
+            border-radius: 3px;
+            padding: 15px 10px;
+            cursor: pointer;
+        }
+        .result-box ul li:hover{
+            background: #e9f3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <div class="row">
+            <form action="https:\\www.google.com/search" method="get">
+            <input type="text" placeholder="Search anything" id="input-box" autocomplete="off">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="result-box"></div>
+   
+    </div>
+    <script>
+        let availablekeywords = [
+            'HTML',
+            'CSS',
+            'Easy Tutorials',
+            'Web design tutorials',
+            'Javascript',
+            'Where to learn coding online',
+            'Where to learn web design',,
+            'How to create a website',
+        ];
+        const resultBox = document.querySelector(".result-box");
+        const inputBox = document.getElementById("input-box");
+
+        inputBox.onkeyup = function(){
+            let result = [];
+            let input = inputBox.value;
+            if(input.length){
+                result = availablekeywords.filter((keyword) =>{
+                return keyword.toLowerCase().includes(input.toLowerCase());
+                });
+                // console.log(result);
+            }
+            display(result);
+        }
+
+        function display(result){
+            const content = result.map((list)=> {
+                return "<li onclick= selectInput(this)>"+ list + "</li> ";
+            });
+            resultBox.innerHTML = "<ul>"+ content.join('') + "</ul>"
+        }
+        function selectInput(list){
+            inputBox.value = list.innerHTML;
+        }
+    </script>
+</body>
+</html>

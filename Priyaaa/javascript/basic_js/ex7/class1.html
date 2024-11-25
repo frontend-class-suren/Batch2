@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class methode in javascript</title>
+</head>
+<body>
+    <p id="age"></p>
+    <script>
+        class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                // const date = new Date();
+                // return date.getFullYear() - this.year;
+                const age = this.year + this.name;
+                return age;
+            }
+        }
+        const myCar = new Car("Ford", 20);
+        document.getElementById("age").innerHTML = "My car is "+ myCar.age() + " "+ " years old";
+    </script>
+</body>
+</html>
