@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+  <header>
+    <h1>Notes App</h1>
+  </header>
+
+  <div class="container">
+    <div class="add-note-card" id="add-note">
+      <div class="plus-icon">+</div>
+      <p>Add new note</p>
+    </div>
+
+    <div class="notes-container" id="notes-container">
+      <!-- Notes will be dynamically added here -->
+    </div>
+  </div>
+
+  <div class="modal" id="note-modal">
+    <div class="modal-content">
+      <textarea id="note-text" placeholder="Write your note here..."></textarea>
+      <button id="save-note" class="btn-primary">Save Note</button>
+      <button id="cancel" class="btn-secondary">Cancel</button>
+    </div>
+  </div>
+
+  <script src="project3.js"></script>
+</body>
+</html>

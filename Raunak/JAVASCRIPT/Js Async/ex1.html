@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Function</title>
+  </head>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>Callback Functions</h2>
+
+    <p>The result of the calculation is:</p>
+    <p id="cal"></p>
+
+    <script>
+      function myDisplayer(something) {
+        document.getElementById("cal").innerHTML = something;
+      }
+
+      function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        myCallback(sum);
+      }
+
+      myCalculator(5, 5, myDisplayer);
+    </script>
+  </body>
+</html>

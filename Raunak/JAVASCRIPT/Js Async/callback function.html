@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Function</title>
+  </head>
+  <body>
+    <h2>Function Seqeunce</h2>
+    <p>Javascript are call in sequence when they are called.</p>
+    <p id="fun"></p>
+
+    <!-- //Function Seqeunce -->
+
+    <script>
+      function myDisplayer(some) {
+        document.getElementById("fun").innerHTML = some;
+      }
+
+      function myFirst() {
+        myDisplayer("Hey");
+      }
+
+      function mySecond() {
+        myDisplayer("MyLove<3");
+      }
+
+      myFirst();
+      mySecond();
+    </script>
+  </body>
+</html>

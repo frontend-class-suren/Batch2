@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Async</title>
+  </head>
+  <body>
+    <h2>Waiting for file</h2>
+    <p id="wait"></p>
+
+    <!-- //Waiting for file -->
+
+    <script>
+      function myDisplayer(some) {
+        document.getElementById("wait").innerHTML = some;
+      }
+
+      function getFile(myCallback) {
+        let req = new XMLHttpRequest();
+        req.onload = function () {
+          if (req.status == 200) {
+            myCallback(this.responseText);
+          } else {
+            myCallback("Error: " + req.status);
+          }
+        };
+        req.open("GET", "file.html");
+        req.send();
+      }
+
+      getFile(myDisplayer);
+    </script>
+  </body>
+</html>

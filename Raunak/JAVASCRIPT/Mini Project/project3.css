@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header {
+    background-color: #4a90e2;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.8rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+  
+  /* Add Note Card */
+  .add-note-card {
+    width: 200px;
+    height: 200px;
+    border: 4px dashed #4a90e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .add-note-card .plus-icon {
+    font-size: 2rem;
+    color: #4a90e2;
+  }
+  
+  .add-note-card p {
+    margin-top: 10px;
+    color: #4a90e2;
+  }
+  
+  /* Notes */
+  .notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .note-card {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .note-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .note-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .note-card .note-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  /* Show modal */
+  .modal.show {
+    display: flex;
+  }
+  

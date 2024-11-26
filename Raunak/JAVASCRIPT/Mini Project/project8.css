@@ -1,0 +1,70 @@
+body {
+    background-color:  #05263c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+    color: #fff;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle,#f66d44, #fcb045);
+    box-shadow: 2px 0 8px 4px #fcb045 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    position: relative;
+}
+
+.time-display {
+    font-size: 3.5em;
+    background: transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0 10px;
+    border: none;
+    border-radius: 50px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+.laps-list {
+    list-style: none;
+    padding: 0;
+}
+
+.laps-list li {
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    border-radius: 5px;
+}

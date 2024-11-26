@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Async</title>
+  </head>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>setTimeout() with a Callback</h2>
+
+    <!-- <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p> -->
+
+    <h1 id="set"></h1>
+
+    <script>
+      setTimeout(function () {
+        myFunction("I love You Babe <3");
+      }, 3000);
+
+      function myFunction(value) {
+        document.getElementById("set").innerHTML = value;
+        document.getElementById("set").style.color = "red";
+      }
+    </script>
+  </body>
+</html>
