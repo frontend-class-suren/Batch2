@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise for callback</title>
+</head>
+<body>
+    <h2>Two state and result</h2>
+    <input type="number" value="" id="input">
+    <button onclick="myDisplayer()">Submit</button>
+    <p id="demo"></p>
+    <script>
+      function myDisplayer(some) {
+      document.getElementById("demo").innerHTML = some;   
+    }
+
+    let myPromise = new Promise(function(myResolve, myReject) {
+    // let x = document.getElementById("input").value; 
+    let x= 0;
+
+   // some code (try to change x to 5)
+    if (x == 0) {
+        myResolve("OK the value of x is equal to zero");
+    } else {
+        myReject("Error when x value is not equal to zero or greater than x>0");
+    }
+    });
+
+    myPromise.then(
+    function(value) {myDisplayer(value);},
+    function(error) {myDisplayer(error);}
+);
+</script>
+</body>
+</html>

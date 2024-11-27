@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: powderblue;
+            place-items: center;
+            display: grid;
+            
+        }
+        .container{
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background: white;
+            margin: 10%;
+            border-radius: 10px;
+        }
+        h1{
+            margin: 5%;
+            text-align: center;
+        }
+        input{
+            width: 100%;
+            max-width: 50%;
+            height: 50px;
+            display: block;
+            padding: 10px;
+            margin: 50px 120px;
+            border: 2px solid black;
+            outline: none;
+            font-size: 16px;
+        }
+        button{
+            margin: 10px 38%;
+            width: 20%;
+            height: 40px;
+            font-size: 17px;
+            background: rgb(3, 3, 126);
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: orangered;
+        }
+        #result{
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 150px;
+            margin-top: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Spy Number Checker</h1>
+        <div>
+            <input type="number" name="" id="numinput" placeholder="Enter a number">
+            <button type="button" onclick="checkspynum()">Check</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script>
+          function checkspynum(){
+            const numinput = document.getElementById("numinput").value;
+
+            const digits = numinput.toString().split("").map(Number);
+            const sum = digits.reduce((a, b)=> a + b, 0);
+            const product =digits.reduce((a, b)=> a * b, 1);
+
+            if(sum == product){
+                document.getElementById("result").textContent = `${numinput} is a spy number!`;
+                document.getElementById("result").style.color = "blue";
+            }
+            else{
+                document.getElementById("result").textContent = `${numinput} is not a spy number.`;
+                document.getElementById("result").style.color = "red";
+            }
+          }
+    </script>
+</body>
+</html>

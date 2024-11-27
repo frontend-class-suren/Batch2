@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #ecf4fb;
+        }
+        .img-gallery{
+            width: 80%;
+            margin: 100px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        } 
+        .img-gallery img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .img-gallery img:hover{
+            transform: scale(0.9);
+            border-radius: 20px;
+        }
+        .full-img{
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        .full-img img{
+            width: 90%;
+            max-width: 500px;
+        }
+        .full-img span{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-img" id="imgBox">
+        <img src="img6.webp" alt="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="img6.webp" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img8.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img6.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img1.webp" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img2.webp" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img4.webp" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img5.webp" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img3.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="image/img9.avif" alt="" onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var imgBox = document.getElementById("imgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            imgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            imgBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>

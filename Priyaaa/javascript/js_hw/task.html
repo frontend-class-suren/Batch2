@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 80vh;
+            background: linear-gradient(45deg, #6ac1c5, #bda5ff);
+        }
+        main{
+            background-color: white;
+            width: 100%;
+            max-width: 80%;
+            height: 350px;
+            margin-top: 100px;
+            margin-left: 100px;
+            /* border: 1px solid black;  */
+            box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.8);
+        }
+        header{
+            font-size: 30px;
+            text-align: center;
+            padding: 3%;
+            font-weight: 500;
+            background-color: rgb(107, 171, 224);
+            color: white;
+        }
+        input[type="text"]{
+            margin-left: 250px;
+            width: 100%;
+            max-width: 20%;
+            height: 50px;
+            font-size: 18px;
+            padding: 2%;
+            outline: none;
+            border: 2px solid grey;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+        select{
+            width: 100%;
+            max-width: 13%;
+            height: 50px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid gray;
+            font-size: 15px;
+        }
+        input[type="date"]{
+            width: 100%;
+            max-width: 13%;
+            height: 50px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid gray;
+            font-size: 15px;
+        }
+        button{
+            width: 100%;
+            max-width: 10%;
+            height: 50px;
+            outline: none;
+            border-radius: 5px;
+            font-size: 15px;
+            border: none;
+            background: rgb(40, 40, 172);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background: orangered;
+        }
+        .task-list{
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header><h1>Task Scheduler</h1></header>
+        <div class="form">
+            <input type="text" placeholder="Enter task..." id="task" >
+            <select name="" id="priority">
+                <option value="top">Top Priority</option>
+                <option value="middle">Middle Priority</option>
+                <option value="low">Less Priority</option>
+            </select>
+            <input type="date" id="deadline">
+            <button id="add-task">Add Task</button>
+        </div>
+        <div class="list"></div>
+        <script src="task.js"></script>
+    </main>
+</body>
+</html>

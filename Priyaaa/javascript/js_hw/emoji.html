@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+           background: linear-gradient(135deg, #f4fb8f, #ff6b6b);
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin: 0;
+        }
+        .container{
+            background: rgba(255,255,255,0.9);
+            width: 80%;
+            max-width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow:  0 10px 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease; 
+        }
+        h1{
+            color: #00a136;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .emoji-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .emoji{
+            font-size: 5rem;
+            transition: transform 0.3s ease-in-out;
+            color: #ff6b6b;
+        }
+        .emoji-name{
+            font-size: 1.5rem;
+            color: #444;
+            font-weight: bold;
+        }
+        .feeling-buttons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 200px;
+        }
+        .btn{
+            background-color: #4e6bff;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 40%;
+        }
+        .btn:hover{
+            background-image: linear-gradient(45deg, #4e6bff, #ff6b6b);
+            transform: scale(1.05);
+        }
+        .random-button{
+            background-color: #4e6bff;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 50%;
+            margin: 20px;
+        }
+        .random-button:hover{
+            background-image: linear-gradient(45deg, #4e6bff, #ff6b6b);
+            transform: scale(1.05);
+        }
+        .copied{
+            animation: pulse 1s ease infinite;
+        }
+        @keyframes pulse {
+            0% {
+               transform: scale(1);
+            }
+            50% {
+               transform: scale(1.1);
+            }
+            100% {
+               transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emoji Generator</h1>
+        <div class="emoji-container">
+            <div id="emoji" class="emoji"></div>
+            <p id="emoji-name" class="emoji-name"></p>
+        </div>
+        <div class="feeling-buttons">
+            <button class="btn" data-feeling="Happy">Happy</button>
+            <button class="btn" data-feeling="Angry">Angry</button>
+            <button class="btn" data-feeling="Sad">Sad</button>
+            <button class="btn" data-feeling="Excited">Excited</button>
+        </div>
+        <button id="random-btn" class="random-button">Generate random emoji</button>
+    </div>
+    <script src="emoji.js"></script>
+</body>
+</html>

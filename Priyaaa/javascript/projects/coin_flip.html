@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background: #1f5a82;
+        }
+        .container{
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+            padding: 35px;
+            margin: 10px auto;
+            box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+        }
+        .coin{
+            height: 150px;
+            width: 300px;
+            position: relative;
+            margin: 32px auto;
+            transform-style: preserve-3d;
+            margin-left: 80px;
+        }
+        .heads, .tails{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .tails{
+            transform: rotateX(180deg);
+        }
+        @keyframes spin-tails{
+            0%{
+                transform: rotateX(0);
+            }
+            100%{
+                transform: rotateX(1980deg);
+            }
+        }
+        @keyframes spin-heads{
+            0%{
+                transform: rotateX(0);
+            }
+        }
+        .stats{
+            display: flex;
+            font-weight: 500;
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+        }
+        .stats p:nth-last-child(1){
+            margin-left: 50%;
+
+        }
+        button{
+            width: 30%;
+            height: 50px;
+            padding: 15px 0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            background: gray;
+            cursor: pointer;
+            margin: 25px;
+        }
+        /*#flip-button:disabled{
+           background: #e1e0ee;
+           border-color: #e1e0ee;
+           color: #101020; 
+        }*/
+        #flip-button{
+            background-color: #1f5a82;
+            color: white;
+        }
+        #reset-button{
+            color: white;
+            background: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coin" id="coin">
+        <div class="heads">
+            <img width="50%" src="https://en.numista.com/catalogue/photos/nepal/597-original.jpg" alt="">
+        </div>
+        <div class="tails">
+            <img width="50%" src="https://i.ebayimg.com/images/g/Qm4AAOSweKFiYA8O/s-l1200.jpg" alt="">
+        </div>
+        </div>
+        <div class="stats">
+            <p id="heads-count">Heads: 0</p>
+            <p id="tails-count">Tails: 0</p>
+        </div>
+        <div class="buttons">
+            <button id="flip-button">Flip Coin</button>
+            <button id="reset-button">Reset Coin</button>
+        </div>
+    </div>
+    <script src="coin_flip.js"></script>
+</body>
+</html>
