@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM method innnerHTML for update the content of html element</h1>
+    <p id="memo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit earum, tempore placeat asperiores itaque!</p>
+    <button onclick="clickButton()">Click Update </button>
+    <script>
+        function clickButton(){
+            document.getElementById("memo").innerHTML="Hello World ! Welcome to DOM Method";
+            document.getElementById("memo").style.color="blue";
+        }
+    </script>
+</body>
+</html>

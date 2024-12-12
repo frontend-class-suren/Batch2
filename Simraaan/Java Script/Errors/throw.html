@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Throw Error</h1>
+    <p>Please input a number between 5 to 10</p>
+    <input type="text" id="thro">
+    <button type="button" onclick="myy()">Test Input</button>
+    <p id="p01"></p>
+    <script>
+        function myy(){
+            const msg = document.getElementById("p01");
+            msg.innerHTML= "";
+            let x = document.getElementById("thro").value;
+            try{
+                if(x.trim()=="") throw "Empty, Please Enter the value !!"
+                if(isNaN(x)) throw "NaN, Don't enter the combination of string and number !"
+                x = Number(x);
+                if (x<5) throw "too low";
+                if (x>10) throw "too high";
+            }
+            catch(err){
+                msg.innerHTML ="Input is "+ err;
+            }
+        }
+    </script>
+</body>
+</html>

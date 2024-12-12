@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This Keyword in JS</h1>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstNAme: "Simran",
+            lastNAme: "Shrestha",
+            id: 777,
+            fullName: function () {
+                return this.firstNAme + " " + this.lastNAme;
+            }
+        }
+        document.getElementById("demo").innerHTML = person.fullName()
+    </script>
+</body>
+
+</html>
