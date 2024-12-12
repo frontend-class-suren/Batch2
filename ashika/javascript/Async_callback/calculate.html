@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate sum of two number</title>
+</head>
+<body>
+  <p>JavaScript functions are executed in the sequence they are called.</p>
+  <p id="sum"></p>
+  <script>
+    //some value is same as return value = 10
+    function myDisplayer(some){
+      document.getElementById('sum').innerHTML="sum=num1+num2 where sum is:" + some;
+
+    }
+    //num1 = 5 and num2 = 5 where sum = 10
+     function myCalc(num1,num2){
+let sum = num1 + num2;
+return sum;
+     }
+     //sum of num1+num2 = 10 where sum = 10 return sum value in plave results value both are equal = result
+     let result = myCalc(5,5);
+     myDisplayer(result);
+  </script>
+</body>
+</html>

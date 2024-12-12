@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Function</title>
+</head>
+
+<body>
+  <h2>Waiting for file</h2>
+  <p id="file"></p>
+
+  <script>
+    function myDisplayer(some) {
+      document.getElementById("file").innerHTML = some;
+    }
+
+    function getFile(myCallback) {
+      let req = new XMLHttpRequest();
+      req.onload = function () {
+        if (req.status == 200) {
+          myCallback(this.responseText);
+        } else {
+          myCallback("Error: " + req.status);
+        }
+      }
+      req.open('GET', "file.html");
+      req.send();
+    }
+
+    getFile(myDisplayer); 
+  </script>
+</body>
+
+</html>

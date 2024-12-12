@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <link rel="stylesheet" href="project4.css">
+</head>
+<body>
+  <div class="navbar">
+    <span class="restro">RESTAURANT</span>
+    <button class="menu" id="menu">
+      <span>&#9776;</span>
+    </button>
+  </div>
+  <div class="bar" id="bar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Photoshoot</a></li>
+      <li><a href="#">Reservations</a></li>
+    </ul>
+  </div>
+  <div class="image">
+  </div>
+  <script>
+    document.getElementById('menu').addEventListener('click', function () {
+    const sidebar = document.getElementById('bar');
+    const content = document.querySelector('.content');
+    sidebar.classList.toggle('open');
+    content.classList.toggle('openbar');
+  });
+  
+  </script>
+</body>
+</html>
