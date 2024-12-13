@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top mb-5">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a href="#" class="nav-link active ">Link1</a></li>
+          <li class="nav-item"><a href="#" class="nav-link ">Link2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link ">Link3</a></li>
+          <li class="nav-item"><a href="#" class="nav-link disabled ">Link4</a></li>
+        </ul>
+        <form class="d-flex">
+          <input type="text" class="form-control me-2" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section class="slider">
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://thumbs.dreamstime.com/b/breathtaking-tropical-beach-scene-swaying-palm-trees-mesmerizing-sunset-330195710.jpg" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVhY2h8ZW58MHx8MHx8fDA%3D" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VhJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+    <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </section>
+  <section class="modal">
+    <div class="accordian">
+      <div class="card">
+        <div class="card-header">
+          <a href="#collapseOne" data-bs-toggle="collapse" class="btn">Collapsible Group Item #1</a>
+  
+        </div>
+        <div id="collapseOne" class="collapse hide" data-bs-parent="#accordian">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nihil soluta blanditiis, possimus quisquam
+            eligendi quia voluptatem labore corporis dolore ex dicta, cumque corrupti delectus minima distinctio!
+            Reprehenderit, autem aliquam.
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-header">
+          <a href="#collapseTwo" data-bs-toggle="collapse" class="collapsed btn">Collapsible Group Item #2</a>
+  
+        </div>
+        <div id="collapseTwo" class="collapse hide" data-bs-parent="#accordian">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nihil soluta blanditiis, possimus quisquam
+            eligendi quia voluptatem labore corporis dolore ex dicta, cumque corrupti delectus minima distinctio!
+            Reprehenderit, autem aliquam.
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-header">
+          <a href="#collapseThree" data-bs-toggle="collapse" class="collapsed btn">Collapsible Group Item #3</a>
+  
+        </div>
+        <div id="collapseThree" class="collapse hide" data-bs-parent="#accordian">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nihil soluta blanditiis, possimus quisquam
+            eligendi quia voluptatem labore corporis dolore ex dicta, cumque corrupti delectus minima distinctio!
+            Reprehenderit, autem aliquam.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product mt-6">
+    <div class="container mt-5">
+      <div class="row m-3">
+        <div class="col-sm-3 m-1">
+          <div class="card">
+            <div class="card-header">
+              <h2>Product1</h2>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                voluptate beatae molestiae quae quia repellendus!</p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary" type="button">ReadMore</button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-success" type="button">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 m-1">
+          <div class="card">
+            <div class="card-header">
+              <h2>Product1</h2>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                voluptate beatae molestiae quae quia repellendus!</p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary" type="button">ReadMore</button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-success" type="button">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 m-1">
+          <div class="card">
+            <div class="card-header">
+              <h2>Product1</h2>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                voluptate beatae molestiae quae quia repellendus!</p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary" type="button">ReadMore</button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-success" type="button">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-3">
+          <div class="col-sm-3 m-1">
+            <div class="card">
+              <div class="card-header">
+                <h2>Product1</h2>
+              </div>
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                  voluptate beatae molestiae quae quia repellendus!</p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-primary" type="button">ReadMore</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-success" type="button">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1">
+            <div class="card">
+              <div class="card-header">
+                <h2>Product1</h2>
+              </div>
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                  voluptate beatae molestiae quae quia repellendus!</p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-primary" type="button">ReadMore</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-success" type="button">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1">
+            <div class="card">
+              <div class="card-header">
+                <h2>Product1</h2>
+              </div>
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                  voluptate beatae molestiae quae quia repellendus!</p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-primary" type="button">ReadMore</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-success" type="button">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  See More Product
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Latest product</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container mt-5">
+          <div class="row m-3">
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Product1</h2>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                    voluptate beatae molestiae quae quia repellendus!</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <button class="btn btn-primary" type="button">ReadMore</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success" type="button">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Product1</h2>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                    voluptate beatae molestiae quae quia repellendus!</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <button class="btn btn-primary" type="button">ReadMore</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success" type="button">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Product1</h2>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                    voluptate beatae molestiae quae quia repellendus!</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <button class="btn btn-primary" type="button">ReadMore</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success" type="button">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-3">
+              <div class="col-sm-3 m-1">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Product1</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                      voluptate beatae molestiae quae quia repellendus!</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col">
+                        <button class="btn btn-primary" type="button">ReadMore</button>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-success" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 m-1">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Product1</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                      voluptate beatae molestiae quae quia repellendus!</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col">
+                        <button class="btn btn-primary" type="button">ReadMore</button>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-success" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 m-1">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Product1</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos labore porro ipsam dolores
+                      voluptate beatae molestiae quae quia repellendus!</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col">
+                        <button class="btn btn-primary" type="button">ReadMore</button>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-success" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <div class="FAQ">
+      <div class="accordian">
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapseOne" data-bs-toggle="collapse" class="btn">Collapsible Group Item #1</a>
+    
+          </div>
+          <div id="collapseOne" class="collapse hide" data-bs-parent="#accordian">
+            <div class="card-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nihil soluta blanditiis, possimus quisquam
+              eligendi quia voluptatem labore corporis dolore ex dicta, cumque corrupti delectus minima distinctio!
+              Reprehenderit, autem aliquam.
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapseTwo" data-bs-toggle="collapse" class="collapsed btn">Collapsible Group Item #2</a>
+    
+          </div>
+          <div id="collapseTwo" class="collapse hide" data-bs-parent="#accordian">
+            <div class="card-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nihil soluta blanditiis, possimus quisquam
+              eligendi quia voluptatem labore corporis dolore ex dicta, cumque corrupti delectus minima distinctio!
+              Reprehenderit, autem aliquam.
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapseThree" data-bs-toggle="collapse" class="collapsed btn">Collapsible Group Item #3</a>
+    
+          </div>
+          <div id="collapseThree" class="collapse hide" data-bs-parent="#accordian">
+            <div class="card-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nihil soluta blanditiis, possimus quisquam
+              eligendi quia voluptatem labore corporis dolore ex dicta, cumque corrupti delectus minima distinctio!
+              Reprehenderit, autem aliquam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
