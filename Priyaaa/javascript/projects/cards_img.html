@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+            width: 90vw;
+        }
+        .panel{
+            background-size: auto 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80vh;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            flex: 0.5;
+            margin: 0.5;
+            position: relative;
+            transition: flex 0.7s ease-in;
+            -webkit-transition: all 700ms ease-in;
+        }
+        .panel h3{
+            font-size: 30px;
+            font-weight: bolder;
+            bottom: 20px;
+            left: 20px;
+            position: absolute;
+             opacity: 0;
+        }
+        .panel.active{
+            flex: 5;
+        }
+        .panel.active h3{
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel active" style="background-image: url(img6.webp);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img1.webp);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img2.webp);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img3.jpg);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img4.webp);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img5.webp);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img6.jpg);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img8.jpg);">
+            <h3>Explore the world</h3>
+        </div>
+        <div class="panel" style="background-image: url(image/img9.avif);">
+            <h3>Explore the world</h3>
+        </div> 
+    </div>
+    <script src="cardsimg.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Ranger Slider with Min-Max Input</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            /* background: #17A288; */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #353842;
+        }
+        /*::selection{
+            color: white;
+            background: #353842 ;
+        }*/
+        .wrapper{
+            width: 450px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px 25px 40px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8);
+        }
+        header h2{
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        header p{
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .price-input{
+            width: 100%;
+            display: flex;
+            margin: 30px 0 35px;
+        }
+        .price-input .field{
+            height: 50px;
+            width: 100%;
+            display: flex;
+        }
+        .field input{
+            width: 100%;
+            height: 100%;
+            outline: none;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 12px;
+            border-radius: 5px;
+            border: 1px solid #999;
+            /* -moz-appearance: textfield; */
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        .price-input .separator{
+            width: 80%;
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        span{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .slider{
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            position: relative;
+        }
+        .slider .progress{
+            height: 100%;
+            left: 25%;
+            right: 25%;
+            position: absolute; 
+            /* background: #17a288; */
+            background: blue;
+            border-radius: 5px;
+        }
+        .range-input{
+            position: relative;
+        }
+        .range-input input{
+            position: absolute;
+            top: -5px;
+            height: 5px;
+            width: 100%;
+            background: none;
+            -webkit-appearance: none;
+            pointer-events: none;
+            /* background: blue; */
+        }
+        input[type="range"]::-webkit-slider-thumb{
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            pointer-events: auto;
+            -webkit-appearance: none; 
+            background: blue;
+            box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        }
+        input[type="range"]::-moz-range-thumb{
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            pointer-events: auto;
+            -moz-appearance: none;
+            background: blue;
+            box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Price Ranger</h1>
+            <p>Use slider or enter min and max price</p>
+        </header>
+        <div class="price-input">
+            <div class="field">
+                <span>Min</span>
+                <input type="number" class="input-min" value="2500" id="">
+            </div>
+            <div class="separator">-</div>
+            <div class="field">
+                <span>Max</span>
+                <input type="number" class="input-max" value="7500" id="">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="progress"></div>
+        </div>
+        <div class="range-input">
+            <input type="range" class="range-min" id="" min="0" max="10000" step="100" value="2500">
+            <input type="range" class="range-max" id="" min="0" max="10000" step="100" value="7500">
+        </div>
+    </div>
+    <script src="price.js"></script>
+</body>
+</html>

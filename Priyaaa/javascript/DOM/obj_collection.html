@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    input[type="text"]{
+        border: 2px solid gray;
+        outline: none;
+        width: 20%;
+        padding: 1%;
+        font-size: 15px;
+        margin: 20px;
+    }
+    input[type="submit"]{
+        width: 10%;
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        background: blue;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+    <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+    <form id="frm1" action="">
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+    <p>These are the values of each element in the form:</p>
+    <p id="demo"></p>
+    <script>
+        const x = document.forms["frm1"];
+        let text = "";
+        for (let i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+        </script>
+</body>
+</html>
