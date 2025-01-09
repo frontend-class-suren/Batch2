@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Element</title>
+  </head>
+  <body>
+    <h2>ByTagName Element</h2>
+    <p>Finding the HTML element</p>
+    <p>This is the example of <b>ByTagName</b> Element</p>
+    <p id="ele"></p>
+
+    <!-- //ByTagName Element -->
+
+    <script>
+      const element = document.getElementsByTagName("p");
+
+      document.getElementById("ele").innerHTML =
+        "The text in first paragraph (index 0) is: " + element[1].innerHTML;
+    </script>
+  </body>
+</html>

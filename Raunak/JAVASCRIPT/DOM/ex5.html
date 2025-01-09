@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Element</title>
+  </head>
+  <body>
+    <h2>Finding the HTML object collection</h2>
+    <form id="frm1" action="action_page.php">
+      First Name : <input type="text" name="F_Name" value="James" /><br />
+      Last Name : <input type="text" name="L_Name" value=" Bond" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>These are the values of each element in the form:</p>
+    <p id="obj"></p>
+
+    <!-- //HTML object collection -->
+
+    <script>
+      const x = document.forms["frm1"];
+      let text = "";
+      for (let i = 0; i < x.length; i++) {
+        text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("obj").innerHTML = text;
+    </script>
+  </body>
+</html>

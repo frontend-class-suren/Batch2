@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Method</title>
+</head>
+<body>
+    <h2>DOM Method for innerHTML for changing the content of HTML document</h2>
+    <p id="dom">Hello Beautiful <br> <br>
+         <button onclick="clickbutton()" style="padding: 4px; background-color: rgb(0, 208, 255); box-shadow: 2px 0 2px  rgb(162, 0, 255); border-radius: 8px; color: rgb(255, 0, 47);">Touch Me</button></p>
+
+    <!-- //DOM Method -->
+
+    <script>
+        function clickbutton(){
+            document.getElementById("dom").innerHTML = "Hey MyWorld <3";
+            document.getElementById("dom").style.color = "red";
+        }
+    </script>
+</body>
+</html>
