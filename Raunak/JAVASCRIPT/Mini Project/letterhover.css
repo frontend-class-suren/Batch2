@@ -1,0 +1,24 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+.hover-container {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+.hover-container span {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+}
+.hover-container span:hover {
+    transform: translateY(-10px);
+    color: #ffe53b;
+}

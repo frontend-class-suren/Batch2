@@ -1,0 +1,59 @@
+body{
+    background-color: #021c37;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+#bar input{
+    /* text-align: center; */
+    margin: 10px 400px;
+    padding: 10px;
+    outline: none;
+    border: 2px #0b456b;
+    box-shadow: 2px 0 8px 4px #ee00ff;
+    
+}
+h2{
+    text-align: center;
+    text-decoration: underline  #00d9ff;
+    color: #00d9ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #ee00ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+#btn{
+    padding: 10px;
+    color:#00d9ff;
+    font-size: 20px;
+    margin: 10px 450px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px #0b456b;
+    background-color:rgb(166, 166, 166);
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 12px #ee00ff;
+}
+#btn:hover{
+    background-color: rgb(255, 77, 0);
+    color: white;
+    transition: 0.8s ease-in-out;
+    text-shadow: 0 0 12px  #d57e12 ;
+}
+#result{
+    text-align: center;
+    color: #00d9ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #ee00ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+#score{
+    text-align: center;
+    color: #00d9ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #ee00ff;
+    font-family: 'Times New Roman', Times, serif;
+}

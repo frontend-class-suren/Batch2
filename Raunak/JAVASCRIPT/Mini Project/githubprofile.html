@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Search</title>
+    <link rel="stylesheet" href="github.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Profiles</h1>
+        <input type="text" id="searchInput" placeholder="Search a GitHub User" onkeypress="if(event.key === 'Enter') fetchGitHubProfile()">
+        <button onclick="fetchGitHubProfile()">Search</button>
+        <div id="profileCard" class="profile-card hidden">
+            <img id="profileImage" alt="Profile Image">
+            <h2 id="profileName"></h2>
+            <p id="profileBio"></p>
+            <div class="stats">
+                <span><strong id="followers">0</strong> Followers</span>
+                <span><strong id="following">0</strong> Following</span>
+                <span><strong id="repos">0</strong> Repos</span>
+            </div>
+            <div id="reposList" class="repos"></div>
+        </div>
+    </div>
+    <script src="github.js"></script>
+</body>
+</html>
