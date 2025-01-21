@@ -10,6 +10,7 @@ const Garage = () => {
     <Car brand={carInfo} />
     <Football/>
     <Goal/>
+    
     </>
   )
 }

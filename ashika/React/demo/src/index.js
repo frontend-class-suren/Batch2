@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import { Table } from 'react-bootstrap';
-import Status from './components/Status';
+// import App from './App';
+// import { Form, Table } from 'react-bootstrap';
+// import Status from './components/Status';
+// import Map_list from './lists/MapList';
+// import MapList from './lists/MapList';
+// import MyForm from './form/MyForm';
+import Form from './form/Form';
 // import Garage from './components/Garage';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // function Car(){
@@ -49,11 +53,14 @@ import Status from './components/Status';
 //     </>
 //   )
 // }
-const cars = ["thar","Bmw","Ford"];
+// const cars = ["thar","Bmw","Ford"];
 // // const abc = <h2 className='text_color'>Hello this is Ashika</h2>
  const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Status isLogin = {false}/>
+  // <Status isLogin = {false}/>
+  // <MapList/>
+  // <MyForm/>
+  <Form/>
   // <Garage cars={cars}/>
   // <Car />
   // myElement
