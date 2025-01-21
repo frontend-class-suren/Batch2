@@ -1,0 +1,24 @@
+body{
+    /* margin: 0; */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(246, 217, 179);
+}
+#setup{
+    font-size: 25px;
+    color: red;
+}
+#punchline{
+    font-size: 25px;
+    color: rgb(255, 123, 0);
+}
+#btn{
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 248, 234);
+    border-radius: 8px;
+}
+#btn:hover{
+    color: rgb(255, 245, 245);
+    background-color: rgb(255, 0, 0);
+    transition: 0.4s ease;
+}

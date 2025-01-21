@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(248, 245, 242);
+}
+#container {
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+#card {
+  background-color: brown;
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+  box-sizing: border-box;
+  /* justify-content: center; */
+  /* display: flex; */
+}
+#flags {
+  width: 150px;
+  height: 150px;
+  margin-left: calc(160px - 1px);
+  object-fit: contain;
+}
+#card h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  /* margin-top: 45%; */
+}
+#name {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  /* margin-top: 55%; */
+}
+h3 {
+  color: white;
+}
+#capital {
+  color: white;
+  /* margin-top: 65%; */
+}
+#area {
+  color: white;
+}
+#population {
+  color: white;
+  /* margin-top: 50px; */
+}
+#btn{
+    background-color: rgb(249, 0, 0);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(248, 59, 59);
+    color: white;
+}
