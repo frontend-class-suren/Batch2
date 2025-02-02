@@ -1,0 +1,19 @@
+body{
+    background-color:linen;
+}
+nav{
+    background-color: rgb(231, 227, 227);
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    /* position: fixed;  */
+}
+ul, li{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 30px;
+}

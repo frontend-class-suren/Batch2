@@ -1,0 +1,25 @@
+.image{
+    margin-left: 400px;
+    border-radius: 20px;
+    margin-top: -40%;
+}
+h1{
+    font-size: 40px;
+}
+h3{
+    width: 15%;
+    font-size: 28px;
+    margin-left: 50px;
+    color: navy;
+}
+.para1{
+    width: 15%;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.para2{
+    width: 50%;
+    margin-left: 45%;
+    margin-top: -25%;
+    font-size: 18px;
+}

@@ -3,12 +3,17 @@ label{
 }
 form{
     width: 40%;
-    height: 500px;
+    height: 600px;
     text-align: center;
     border: 2px solid black;
     margin-left: 400px;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: floralwhite;
+    border-radius: 10px;
+}
+input{
+    height: 30px;
+    border: 1px solid darkgray;
 }
 input[type='submit']{
     width: 20%;
