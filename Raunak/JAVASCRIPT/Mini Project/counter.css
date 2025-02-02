@@ -1,0 +1,53 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+.counter-container {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+.count {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.clicks {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.increment {
+    background: #28a745;
+    color: white;
+}
+.decrement {
+    background: #dc3545;
+    color: white;
+}
+.increment:hover {
+    background: #218838;
+}
+.decrement:hover {
+    background: #c82333;
+}

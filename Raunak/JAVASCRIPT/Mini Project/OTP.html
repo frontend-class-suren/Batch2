@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Input Field</title>
+    <link rel="stylesheet" href="OTP.css">
+</head>
+<body>
+    <div class="otp-container">
+        <h2>Enter OTP</h2>
+        <div class="otp-inputs">
+            <input type="text" maxlength="1" oninput="moveNext(this, 'otp2')" id="otp1">
+            <input type="text" maxlength="1" oninput="moveNext(this, 'otp3')" id="otp2">
+            <input type="text" maxlength="1" oninput="moveNext(this, 'otp4')" id="otp3">
+            <input type="text" maxlength="1" oninput="moveNext(this, 'otp5')" id="otp4">
+            <input type="text" maxlength="1" oninput="moveNext(this, 'otp6')" id="otp5">
+            <input type="text" maxlength="1" id="otp6">
+        </div>
+        <button onclick="getOTP()">Submit</button>
+    </div>
+
+    <script src="OTP.js"></script>
+</body>
+</html>
