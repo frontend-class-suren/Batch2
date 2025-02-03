@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Layout from './Router/Layout'
-import Home from './Router/Home'
-import Blogs from './Router/Blogs'
-import Contact from './Router/Contact'
-import NoPage from './Router/NoPage'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Submit from './project/Submit';
+ import Layout from './Router/Layout'
+ import Home from './Router/Home'
+ import Blogs from './Router/Blogs'
+ import Contact from './Router/Contact'
+ import NoPage from './Router/NoPage'
+ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import MyForm from './components/form/MyForm';
 // import Maplist from './components/lists/Maplist';
 // import Status from './components/pages/Status';
@@ -40,16 +41,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-  <Routes>
+
+   <BrowserRouter>
+   <Routes>
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path='blogs' element={<Blogs/>} />
       <Route path='contact' element={<Contact/>} />
       <Route path='*' element={<NoPage/>} />
     </Route>
-  </Routes>
-  </BrowserRouter>
+   </Routes>
+   </BrowserRouter>
   // <MyForm/>
   // <Maplist/>
   // <Garage cars = {cars} />
