@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 // import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Layout from './Pages/Layout'
-import Home from './Pages/Home'
-import Blogs from './Pages/Blogs'
-import NoPage from './Pages/NoPage'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Layout from './Pages/Layout'
+// import Home from './Pages/Home'
 // import Blogs from './Pages/Blogs'
-import Contact from './Pages/Contact'
+// import NoPage from './Pages/NoPage'
+// // import Blogs from './Pages/Blogs'
+// import Contact from './Pages/Contact'
+import Submit from './Project/submit';
 
 
 
@@ -35,16 +36,18 @@ import Contact from './Pages/Contact'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home/>} />
-          <Route path='/blogs' element={<Blogs />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<NoPage />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <Submit/>
+
+  // <BrowserRouter>
+  //     <Routes>
+  //       <Route path='/' element={<Layout />}>
+  //         <Route index element={<Home/>} />
+  //         <Route path='/blogs' element={<Blogs />} />
+  //         <Route path='/contact' element={<Contact />} />
+  //         <Route path='*' element={<NoPage />} />
+  //     </Route>
+  //   </Routes>
+  // </BrowserRouter>
   
 
 
