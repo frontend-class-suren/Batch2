@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Todos from './components/Todos';
 // import Cards from './components/Cards';
 
 function App() {
   const [count, setCount] = useState(0);
-  const [todos, setTodos] = useState(["todo 1", "todo 2"]);
+  const [todos] = useState(["todo 1", "todo 2"]);
   const increment = () => {
     setCount((c) => c + 1);
   };
