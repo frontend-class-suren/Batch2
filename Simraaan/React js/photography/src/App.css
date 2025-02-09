@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/* src/styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.introduction {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  max-width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.explore-button {
+  background-color: #facc12;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  background-color: #ffa600;
+}
+
+.buy-plans {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.buy-plans h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.buy-plans p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.subscription-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.subscription-option {
+  flex: 0 1 calc(48% - 10px);
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.subscription-option h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.subscribe-button {
+  background-color: #fcd61a;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-gallery a {
+  flex: 0 1 calc(33.33% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo-gallery img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.1);
 }
