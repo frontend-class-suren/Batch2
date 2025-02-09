@@ -1,0 +1,39 @@
+{
+    "recipes" :[{
+        "calories" : "500",
+        "title" : "Pizza",
+        "ingredients" : {
+            "dough": "dough",
+            "olive": "olive",
+            "sauce" : "sauce"
+        }
+        
+    },{
+        "calories" : "500",
+        "title" : "burger",
+        "ingredients" : {
+            "dough": "dough",
+            "olive": "olive",
+            "sauce" : "sauce"
+        }
+        
+    },{
+        "calories" : "500",
+        "title" : "chicken",
+        "ingredients" : {
+            "dough": "dough",
+            "olive": "olive",
+            "sauce" : "sauce"
+        }
+        
+    },{
+        "calories" : "500",
+        "title" : "momo",
+        "ingredients" : {
+            "dough": "dough",
+            "olive": "olive",
+            "sauce" : "sauce"
+        }
+        
+    }] 
+}

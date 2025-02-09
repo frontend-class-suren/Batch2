@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.recipe{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(63, 60, 60);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, 
+        #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
+        #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    align-items: center;
+    min-width: 40%;
+    font-family: 'Lobster', cursive;   
+}
+
+.image{
+    border-radius: 10px;
+    margin:0px 0px 20px 0px;
+}
