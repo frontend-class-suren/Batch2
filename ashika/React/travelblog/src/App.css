@@ -1,0 +1,136 @@
+/* App.css*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  
+}
+
+a {
+  color: #d74180;
+  font-size: 16px;
+}
+
+a:hover{
+  color: #808080;
+}
+
+section {
+  padding: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h4, p {
+  padding-bottom:5px;
+  margin: 0;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.journal-header {
+  background-color: #d74180;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px 36px;
+  color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+    'wght' 200,
+    'GRAD' 20,
+    'opsz' 24,
+} */
+
+.card-img {
+
+  min-width: 300px;
+  border-radius: 9px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 10px;
+  display: block;
+}
+
+.card-country {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.card-country-title {
+  font-size: 40px;
+}
+
+.card-date {
+  font-size: 18px;
+}
+
+.card {
+  /* align-items: center; */
+  /* width: 175px; */
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  flex: 0 0 auto;
+  position: relative;
+  margin-top: 80px;
+  margin-right: 15px;
+  margin-left: 15px;
+  
+  
+}
+
+.column-left {
+  flex: 40%;
+  padding-right: 30px;
+}
+
+.column-right {
+  flex: 40%;
+}
+
+.journal-footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #5a595a;
+  height: 130px;
+
+  display: flex;
+  color: white;
+  clear: both;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-caption {
+  padding-left: 5px;
+}
+
+/* For mobile phones: */
+[class*=&quot;card-&quot;] {
+  width : 100%;
+  flex-direction : column;
+
+}
+
+/* media queries */
+@media (max-width: 400px) {
+  .card {
+    background-color: #de3163;
+  }
+}
