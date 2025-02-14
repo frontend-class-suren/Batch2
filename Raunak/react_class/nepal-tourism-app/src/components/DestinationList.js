@@ -1,35 +1,36 @@
+// DestinationList.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import destinations from './Destinations';
 
-const List = styled.ul`
-list-style: none;
-padding: 0;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-`;
+// const List = styled.ul`
+// list-style: none;
+// padding: 0;
+// display: flex;
+// justify-content: space-around;
+// flex-wrap: wrap;
+// `;
 
-const ListItem = styled.li`
-margin-bottom: 20px;
-text-align: center;
-`;
+// const ListItem = styled.li`
+// margin-bottom: 20px;
+// text-align: center;
+// `;
 
-const Image = styled.img`
-width: 100%;
-height: auto;
-border-radius: 8px;
-`;
+// const Image = styled.img`
+// width: 100%;
+// height: auto;
+// border-radius: 8px;
+// `;
 
-const Button = styled.button`
-background: #3498db;
-color: #fff;
-border: none;
-padding: 5px 10px;
-border-radius: 4px;
-cursor: pointer;
-`;
+// const Button = styled.button`
+// background: #3498db;
+// color: #fff;
+// border: none;
+// padding: 5px 10px;
+// border-radius: 4px;
+// cursor: pointer;
+// `;
 
 const DestinationList = () => {
 	const [favorites, setFavorites] = useState([]);

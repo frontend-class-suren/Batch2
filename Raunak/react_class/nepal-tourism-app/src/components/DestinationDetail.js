@@ -1,27 +1,28 @@
+// DestinationDetail.js
 import React from 'react';
 import styled from 'styled-components';
 import destinations from './Destinations';
 
-const DetailContainer = styled.div`
-max-width: 600px;
-margin: auto;
-`;
+// const DetailContainer = styled.div`
+// max-width: 600px;
+// margin: auto;
+// `;
 
-const DetailImage = styled.img`
-width: 100%;
-height: auto;
-border-radius: 8px;
-margin-bottom: 20px;
-`;
+// const DetailImage = styled.img`
+// width: 100%;
+// height: auto;
+// border-radius: 8px;
+// margin-bottom: 20px;
+// `;
 
-const DetailButton = styled.button`
-background: #3498db;
-color: #fff;
-border: none;
-padding: 10px;
-border-radius: 4px;
-cursor: pointer;
-`;
+// const DetailButton = styled.button`
+// background: #3498db;
+// color: #fff;
+// border: none;
+// padding: 10px;
+// border-radius: 4px;
+// cursor: pointer;
+// `;
 
 const DestinationDetail = ({ match }) => {
 	const destinationId =

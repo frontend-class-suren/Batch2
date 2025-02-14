@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import {
 	BrowserRouter as Router,
@@ -8,10 +9,16 @@ import {
 	Navbar, Nav,
 	NavDropdown, Carousel
 } from 'react-bootstrap';
-import DestinationDetail from './components/DestinationDetail';
-import DestinationList from './components/DestinationList';
-import ContactForm from './components/ContactForm';
+import DestinationList
+	from './components/DestinationList';
+import DestinationDetail
+	from './components/DestinationDetail';
+import ContactForm
+	from './components/ContactForm';
+
 import './App.css';
+import './components/DesitinationList.css'
+
 const App = () => {
 	return (
 		<Router>

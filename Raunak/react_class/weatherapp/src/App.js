@@ -2,8 +2,8 @@
 import { Oval } from 'react-loader-spinner';
 import React, { useState } from 'react';
 import axios from 'axios';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faFrown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
@@ -74,17 +74,17 @@ function App() {
   return (
       <div className="App">
           <h1 className="app-name">
-              GeeksforGeeks Weather App
+              My Weather App
           </h1>
           <div className="search-bar">
               <input
                   type="text"
                   className="city-search"
-                  placeholder="Enter City Name.."
+                  placeholder="Enter Your City Name.."
                   name="query"
                   value={input}
                   onChange={(event) => setInput(event.target.value)}
-                  onKeyPress={search}
+                  onKeyDown={search}
               />
           </div>
           {weather.loading && (
