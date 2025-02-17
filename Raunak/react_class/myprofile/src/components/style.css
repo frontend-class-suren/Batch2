@@ -5,9 +5,12 @@ body {
 }
 
 .box{
-    height: 120vh;
+    height: 230vh;
 }
 .boxs{
+    height: 80vh;
+}
+.boxes{
     height: 80vh;
 }
 .container {

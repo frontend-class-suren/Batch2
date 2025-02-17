@@ -43,27 +43,13 @@ const Skills = () => {
 						className="mr-2" /> 
 					Bootstrap 
 				</li> 
-				{/* <li> 
-					<FontAwesomeIcon icon={faLaptopCode} 
-						className="mr-2" /> 
-					DSA 
-				</li>  */}
+				
 				<li> 
 					<FontAwesomeIcon icon={faLaptopCode} 
 						className="mr-2" /> 
 					Node.js 
 				</li> 
-				{/* <li> 
-					<FontAwesomeIcon icon={faLaptopCode} 
-						className="mr-2" /> 
-					Python 
-				</li>  */}
-				{/* <li> 
-					<FontAwesomeIcon icon={faLaptopCode} 
-						className="mr-2" /> 
-					JavaScript
-				</li>  */}
-				{/* Add more skills as needed */} 
+				
 			</ul> 
 		</section> 
 	); 

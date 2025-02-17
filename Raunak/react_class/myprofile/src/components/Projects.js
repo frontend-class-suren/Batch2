@@ -21,6 +21,16 @@ const Projects = () => {
       image: 's2.jpeg',
       link: 'https://website-woad-psi-92.vercel.app' 
     },
+    {
+      title: 'Travel Website',
+      image: 's3.jpeg',
+      link: 'https://travel-sandy-seven.vercel.app' 
+    },
+    {
+      title: 'Utensil Website',
+      image: 's4.jpeg',
+      link: 'https://projects-alpha-lake.vercel.app' 
+    },
   ];
 
   return (

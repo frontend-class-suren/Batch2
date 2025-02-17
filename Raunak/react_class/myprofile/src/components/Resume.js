@@ -1,18 +1,18 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
-import Breadcrumbs from './Breadcrumbs';
-import Skills from './Skills';
-import './style.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import Breadcrumbs from "./Breadcrumbs";
+import Skills from "./Skills";
+import "./style.css";
 
 const Resume = () => {
   const breadcrumbsPaths = [
-    { title: 'Home', to: '/' },
-    { title: 'Resume', to: '/resume' }
+    { title: "Home", to: "/" },
+    { title: "Resume", to: "/resume" },
   ];
 
   return (
-    <section id="resume" className="container text-center boxs">
+    <section id="resume" className="container text-center boxes">
       <Breadcrumbs paths={breadcrumbsPaths} />
       <div className="row justify-content-center align-items-center">
         <div className="col-md-8">
@@ -21,11 +21,11 @@ const Resume = () => {
             Resume
           </h2>
           <p className="section-description">
-            Download my resume to learn more about my professional experience and skills.
+            Download my resume to learn more about my professional experience
+            and skills.
           </p>
-          {/* Update href and ensure the public directory is set up correctly */}
           <a
-            href={`${process.env.PUBLIC_URL}/Raunak_Amatya_-_Frontend_Developer.pdf`}
+            href="/Raunak_Amatya_-_Frontend_Developer.pdf"
             className="resume-download-btn"
             download="Raunak_Amatya_-_Frontend_Developer.pdf"
           >
