@@ -1,0 +1,85 @@
+/* Header.css */
+
+.custom-navbar {
+    background-color: #343a40;
+    padding: 1rem 0;
+}
+
+.FontAwesomeIcon {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+.brand-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.brand-name:hover {
+    color: #17a2b8;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.nav-link span {
+    margin-right: 0.5rem;
+}
+
+.nav-link:hover,
+.ho:hover,
+.nav-link:hover span {
+    color: #17a2b8 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* Font Awesome Icons */
+.fa-lg {
+    margin-right: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+    }
+
+    .ml-auto {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
