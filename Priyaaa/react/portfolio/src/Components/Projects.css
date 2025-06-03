@@ -1,0 +1,428 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f8f9fa; */
+    color: #ffffff;
+    height: auto;
+    width: auto;
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* About Section Styles */
+#about {
+    padding: 20px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.resume-download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    /* border-radius: 5px; */
+    transition: background-color 0.3s;
+}
+
+.resume-download-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.profile-image-container {
+    overflow: hidden;
+    border-radius: 50%; 
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Skills Component Styles */
+.skills-container {
+    margin-top: 40px;
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    color: #17a2b8;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.skills-list li {
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.skills-list li:last-child {
+    margin-right: 0;
+}
+
+/* Projects Section Styles */
+#projects {
+    height: 210vh;
+} 
+
+.section-title {
+    font-size: 2.5rem;
+    /* color: #17a2b8; */
+    color: white;
+     margin-top: 50px; 
+    /* margin-bottom: 20px; */
+    margin-left: 60px; 
+}
+/* Project Card Styles */
+.card {
+    border-radius: 15px;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+/* Resume Section Styles */
+ #resume {
+    padding: 10px 0;
+    /* height: 100vh; */
+}
+#resume .section-title{
+    margin-top: 20px;
+}
+#resume h2 {
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-bottom: 20px;
+}
+
+#resume p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-left: 200px;
+}
+
+.resume-download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-download-btn:hover {
+    background-color: #0d5c1e;
+} 
+
+
+
+/* Contact Section Styles */
+#contact {
+    padding: 10px 0;
+}
+.form{
+    width: 50%;
+    height: 90vh;
+    /* background-color:red ; */
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    /* margin-bottom: 20px; */
+    margin-top: -30px; 
+}
+
+#contact .section-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-left: 400px; 
+    margin-top: -20px;
+}
+form{
+    background-color: white;
+    width: 80%;
+    height: 70vh;
+    border: 2px solid black;
+    padding: 2.5%;
+    text-align: center;
+    margin-left: 0px;
+    color: black;
+    border-radius: 15px;
+}
+.name{
+    margin-left: -75%;
+}
+.email{
+    margin-left: -85%;
+}
+.message{
+    margin-left: -80%;
+}
+input[type='file']{
+    /* width: 26%; */
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+/* input{ 
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}*/
+#email{
+    margin-left: 50px;
+}
+/* .contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #17a2b8;
+}
+
+.contact-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Hover effect for contact links */
+.contact-list a:hover {
+    color: #17a2b8;
+} */
+
+
+/* Skills Section Styles */
+.skills-title{
+    color: white;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.skills-list li {
+    background-color: white;
+    width: 25%;
+    height: 20vh;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s;
+
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.skills-list li:last-child {
+    margin-right: 0;
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+}
+
+
+/* Button Styles */
+.btn-primary {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #136b7d;
+}
+
+/*Footer Styles*/
+.footer{
+    color: white;
+    background-color: #343a40;
+    padding: 2%;
+    position: fixed;
+    display: flex;
+    height: 80px;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: 15%; */
+}
+.footer p{
+    margin-top: -20px;
+}
+.social-icons {
+    margin-top: -20px;
+    display: flex;
+    justify-content:space-around;
+}
+
+/* Footer Styles 
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    /* bottom: 0; 
+    width: 100%;
+    height: 8vh;
+}
+
+/* .footer p {
+    margin-bottom: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Hover effect for social icons 
+.social-icons a:hover {
+    color: #17a2b8;
+} */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    /* Breadcrumb background color */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.breadcrumb-item a {
+    color: #007bff;
+    /* Breadcrumb link color */
+    text-decoration: none;
+
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #343a40;
+    /* Active breadcrumb item color */
+    font-weight: bold;
+}
+
+.breadcrumb-item span::before {
+    display: none;
+    /* Remove separator for the last breadcrumb */
+}
